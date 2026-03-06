@@ -22,24 +22,8 @@ Then open <http://localhost:3000>.
 Copy `.env.example` to `.env.local`.
 
 - `MAPBOX_TOKEN` (optional for this MVP; required if you switch to Mapbox tiles)
-- `SUPABASE_URL` (required for persistent guestbook posts)
-- `SUPABASE_KEY` (fallback key for guestbook if service key is not set)
-- `SUPABASE_SERVICE_ROLE_KEY` (preferred for guestbook API writes)
-
-## Guestbook Persistence (Supabase)
-
-Create this table in Supabase SQL editor:
-
-```sql
-create table if not exists public.guestbook_entries (
-  id uuid primary key default gen_random_uuid(),
-  name text not null,
-  message text not null,
-  created_at timestamptz not null default now()
-);
-```
-
-Then add `SUPABASE_URL` + `SUPABASE_SERVICE_ROLE_KEY` in Vercel project env vars.
+- `SUPABASE_URL` (future data backend)
+- `SUPABASE_KEY` (future data backend)
 
 ## MVP Features Included
 
