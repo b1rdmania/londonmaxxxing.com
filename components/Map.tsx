@@ -10,6 +10,7 @@ import { toGeoJson } from "@/lib/mapUtils";
 interface MapProps {
   listings: OfficeListing[];
   ecosystemPoints: EcosystemPoint[];
+  showOfficeLayer: boolean;
   showVcOverlay: boolean;
   showTechOverlay: boolean;
 }
@@ -115,10 +116,15 @@ const ecosystemLabelLayer: LayerProps = {
   }
 };
 
-export default function Map({ listings, ecosystemPoints, showVcOverlay, showTechOverlay }: MapProps) {
+export default function Map({ listings, ecosystemPoints, showOfficeLayer, showVcOverlay, showTechOverlay }: MapProps) {
   const mapRef = useRef<MapRef | null>(null);
   const [popupListingId, setPopupListingId] = useState<string | null>(null);
   const [popupEcosystemId, setPopupEcosystemId] = useState<string | null>(null);
+  const interactiveLayerIds = [
+    ...(showOfficeLayer ? ["clusters", "unclustered-point"] : []),
+    ...(showVcOverlay ? ["vc-points"] : []),
+    ...(showTechOverlay ? ["tech-points"] : [])
+  ];
 
   const officeGeoJson = useMemo(() => toGeoJson(listings), [listings]);
 
@@ -149,9 +155,14 @@ export default function Map({ listings, ecosystemPoints, showVcOverlay, showTech
   const onMapClick = (event: MapLayerMouseEvent) => {
     const map = mapRef.current?.getMap();
     if (!map) return;
+    if (!interactiveLayerIds.length) {
+      setPopupListingId(null);
+      setPopupEcosystemId(null);
+      return;
+    }
 
     const features = map.queryRenderedFeatures(event.point, {
-      layers: ["clusters", "unclustered-point", "vc-points", "tech-points"]
+      layers: interactiveLayerIds
     });
 
     if (!features.length) {
@@ -203,24 +214,26 @@ export default function Map({ listings, ecosystemPoints, showVcOverlay, showTech
           zoom: 12.8
         }}
         mapStyle="https://basemaps.cartocdn.com/gl/dark-matter-gl-style/style.json"
-        interactiveLayerIds={["clusters", "unclustered-point", "vc-points", "tech-points"]}
+        interactiveLayerIds={interactiveLayerIds}
         onClick={onMapClick}
       >
-        <Source id="offices" type="geojson" data={officeGeoJson} cluster clusterRadius={45} clusterMaxZoom={14}>
-          <Layer {...clusterLayer} />
-          <Layer {...clusterCountLayer} />
-          <Layer {...unclusteredPointLayer} />
-        </Source>
+        {showOfficeLayer ? (
+          <Source id="offices" type="geojson" data={officeGeoJson} cluster clusterRadius={45} clusterMaxZoom={14}>
+            <Layer {...clusterLayer} />
+            <Layer {...clusterCountLayer} />
+            <Layer {...unclusteredPointLayer} />
+          </Source>
+        ) : null}
 
         {showVcOverlay || showTechOverlay ? (
           <Source id="ecosystem" type="geojson" data={ecosystemGeoJson}>
             {showVcOverlay ? <Layer {...vcLayer} /> : null}
             {showTechOverlay ? <Layer {...techLayer} /> : null}
-            <Layer {...ecosystemLabelLayer} />
+            {(showVcOverlay || showTechOverlay) ? <Layer {...ecosystemLabelLayer} /> : null}
           </Source>
         ) : null}
 
-        {popupListing ? (
+        {popupListing && showOfficeLayer ? (
           <Popup
             longitude={popupListing.longitude}
             latitude={popupListing.latitude}

@@ -11,39 +11,52 @@ interface MapPageClientProps {
 }
 
 export default function MapPageClient({ listings, ecosystemPoints }: MapPageClientProps) {
-  const [showVcOverlay, setShowVcOverlay] = useState(false);
-  const [showTechOverlay, setShowTechOverlay] = useState(false);
+  const [showOfficeLayer, setShowOfficeLayer] = useState(false);
+  const [showVcOverlay, setShowVcOverlay] = useState(true);
+  const [showTechOverlay, setShowTechOverlay] = useState(true);
+  const vcCount = ecosystemPoints.filter((point) => point.type === "vc").length;
+  const techCount = ecosystemPoints.filter((point) => point.type === "tech").length;
 
   return (
     <main className="shell">
       <header className="topbar">
-        <div>
+        <div className="topbar-brand">
           <h1>LONDONMAXXXING.COM</h1>
-          <p>infrastructure map // shoreditch office availability</p>
+          <p>london startup ecosystem map</p>
+        </div>
+        <nav className="topbar-nav" aria-label="Map layers">
+          <button
+            type="button"
+            className={showVcOverlay ? "topbar-btn active" : "topbar-btn"}
+            onClick={() => setShowVcOverlay((value) => !value)}
+          >
+            VC ({vcCount})
+          </button>
+          <button
+            type="button"
+            className={showTechOverlay ? "topbar-btn active" : "topbar-btn"}
+            onClick={() => setShowTechOverlay((value) => !value)}
+          >
+            TECH ({techCount})
+          </button>
+          <button
+            type="button"
+            className={showOfficeLayer ? "topbar-btn active" : "topbar-btn"}
+            onClick={() => setShowOfficeLayer((value) => !value)}
+          >
+            OFFICE (W2)
+          </button>
+        </nav>
+        <div className="topbar-meta">
+          <span>{listings.length} office listings loaded</span>
         </div>
       </header>
 
       <section className="map-shell">
-        <div className="layer-controls">
-          <h2>[ LAYERS ]</h2>
-          <label>
-            <input type="checkbox" checked={showVcOverlay} onChange={(e) => setShowVcOverlay(e.target.checked)} />
-            VC offices
-          </label>
-          <label>
-            <input type="checkbox" checked={showTechOverlay} onChange={(e) => setShowTechOverlay(e.target.checked)} />
-            Tech offices
-          </label>
-          <p>green/amber/red = low/mid/high monthly cost</p>
-          <p>
-            {listings.length} offices // {ecosystemPoints.filter((p) => p.type === "vc").length} VC // {" "}
-            {ecosystemPoints.filter((p) => p.type === "tech").length} tech
-          </p>
-        </div>
-
         <Map
           listings={listings}
           ecosystemPoints={ecosystemPoints}
+          showOfficeLayer={showOfficeLayer}
           showVcOverlay={showVcOverlay}
           showTechOverlay={showTechOverlay}
         />

@@ -6,12 +6,10 @@
 
 html,
 body {
-  background: #000;
-  color: #0f0;
-  font-family: 'Times New Roman', Times, serif;
-  font-size: 16px;
-  line-height: 1.4;
   height: 100%;
+  background: #e8e8e8;
+  color: #111;
+  font-family: Georgia, "Times New Roman", Times, serif;
 }
 
 body {
@@ -19,75 +17,71 @@ body {
 }
 
 .shell {
+  min-height: 100vh;
   display: grid;
   grid-template-rows: auto 1fr;
-  min-height: 100vh;
 }
 
 .topbar {
-  border-bottom: 1px solid #0f0;
-  padding: 12px;
-  background: #000;
+  border-bottom: 1px solid #b8b8b8;
+  background: #ececec;
+  padding: 10px 14px;
+  display: grid;
+  grid-template-columns: auto 1fr auto;
+  gap: 14px;
+  align-items: center;
 }
 
-.topbar h1 {
-  font-size: 18px;
-  font-weight: normal;
-  letter-spacing: 2px;
-}
-
-.topbar p {
+.topbar-brand h1 {
   font-size: 14px;
-  margin-top: 4px;
-  opacity: 0.7;
+  letter-spacing: 0.08em;
+  font-weight: 600;
+}
+
+.topbar-brand p {
+  font-size: 11px;
+  color: #555;
+  text-transform: lowercase;
+}
+
+.topbar-nav {
+  display: flex;
+  gap: 8px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.topbar-btn {
+  border: 1px solid #333;
+  background: transparent;
+  color: #222;
+  font-size: 12px;
+  padding: 5px 10px;
+  cursor: pointer;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  font-family: "Courier New", Courier, monospace;
+}
+
+.topbar-btn.active {
+  background: #111;
+  color: #f2f2f2;
+}
+
+.topbar-meta {
+  font-size: 11px;
+  color: #666;
+  white-space: nowrap;
 }
 
 .map-shell {
-  position: relative;
   min-height: 0;
 }
 
-.layer-controls {
-  position: absolute;
-  top: 12px;
-  left: 12px;
-  z-index: 10;
-  background: #000;
-  border: 1px solid #0f0;
-  padding: 12px;
-  min-width: 200px;
-}
-
-.layer-controls h2 {
-  font-size: 14px;
-  font-weight: normal;
-  margin-bottom: 8px;
-  text-transform: uppercase;
-  letter-spacing: 1px;
-}
-
-.layer-controls label {
-  display: block;
-  font-size: 13px;
-  margin-bottom: 6px;
-  cursor: pointer;
-}
-
-.layer-controls input[type="checkbox"] {
-  margin-right: 6px;
-}
-
-.layer-controls p {
-  font-size: 12px;
-  margin-top: 8px;
-  padding-top: 8px;
-  border-top: 1px solid #0f0;
-  opacity: 0.7;
-}
-
 .map-wrap {
-  height: 100%;
   width: 100%;
+  height: calc(100vh - 58px);
+  border-top: 1px solid #d3d3d3;
 }
 
 .maplibregl-map {
@@ -95,90 +89,55 @@ body {
   height: 100%;
 }
 
-/* Override maplibre popup styles for hacker aesthetic */
 .maplibregl-popup-content {
-  background: #000 !important;
-  border: 1px solid #0f0 !important;
-  color: #0f0 !important;
-  font-family: 'Times New Roman', Times, serif !important;
-  padding: 12px !important;
-  border-radius: 0 !important;
+  border: 1px solid #222;
+  border-radius: 0;
+  box-shadow: none;
+  background: #f4f4f4;
+  color: #111;
+  padding: 10px 12px;
+  font-family: "Courier New", Courier, monospace;
 }
 
 .maplibregl-popup-close-button {
-  color: #0f0 !important;
-  font-size: 18px !important;
-  padding: 4px 8px !important;
-}
-
-.maplibregl-popup-close-button:hover {
-  background: #0f0 !important;
-  color: #000 !important;
+  color: #111;
+  font-size: 16px;
 }
 
 .maplibregl-popup-tip {
-  border-top-color: #0f0 !important;
+  border-top-color: #222;
 }
 
-.popup-card {
-  font-family: 'Times New Roman', Times, serif;
-}
-
-.popup-card h3 {
-  font-size: 14px;
-  font-weight: normal;
-  margin-bottom: 8px;
-  text-transform: uppercase;
-  letter-spacing: 1px;
-}
-
-.popup-card p {
-  font-size: 13px;
-  margin-bottom: 6px;
-}
-
-.popup-card strong {
-  font-weight: bold;
-}
-
-.popup-card a {
-  color: #0f0;
-  text-decoration: underline;
-  font-size: 13px;
-}
-
-.popup-card a:hover {
-  background: #0f0;
-  color: #000;
-}
-
-/* Marker info popup */
-.marker-info {
-  font-size: 13px;
-}
-
+.popup-card h3,
 .marker-info h3 {
-  font-size: 14px;
-  font-weight: normal;
-  margin-bottom: 8px;
-  text-transform: uppercase;
-  letter-spacing: 1px;
-}
-
-.marker-info p {
+  font-size: 13px;
   margin-bottom: 6px;
+  letter-spacing: 0.04em;
 }
 
-.marker-info strong {
-  font-weight: bold;
+.popup-card p,
+.marker-info p {
+  font-size: 12px;
+  margin-bottom: 4px;
 }
 
+.popup-card a,
 .marker-info a {
-  color: #0f0;
+  color: #111;
   text-decoration: underline;
 }
 
-.marker-info a:hover {
-  background: #0f0;
-  color: #000;
+@media (max-width: 860px) {
+  .topbar {
+    grid-template-columns: 1fr;
+    gap: 8px;
+  }
+
+  .topbar-nav {
+    justify-content: flex-start;
+  }
+
+  .map-wrap {
+    height: calc(100vh - 114px);
+  }
 }
