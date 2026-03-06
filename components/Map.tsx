@@ -146,8 +146,6 @@ export default function Map({ ecosystemPoints, enabledTypes, darkMode = false }:
                 >
                   {ECOSYSTEM_META[popupEcosystem.type].label.toUpperCase()}
                 </span>
-                <span className="popup-meta-text">London</span>
-                <span className="popup-meta-text">Verified source</span>
               </div>
               {popupEcosystem.notes ? <p className="popup-description">{popupEcosystem.notes}</p> : null}
               <p className="popup-address">{popupEcosystem.address}</p>
@@ -162,9 +160,6 @@ export default function Map({ ecosystemPoints, enabledTypes, darkMode = false }:
                     𝕏
                   </a>
                 ) : null}
-                <a className="popup-btn" href={popupEcosystem.source_url} target="_blank" rel="noreferrer">
-                  Source
-                </a>
               </div>
             </div>
           </Popup>
