@@ -61,12 +61,12 @@ export default function MapPageClient({ ecosystemPoints }: MapPageClientProps) {
     <main className="shell">
       <header className="topbar">
         <div className="topbar-brand">
+          <span className="topbar-cta">
+            [Add your company <a href="mailto:birdandy@me.com?subject=Add%20my%20company%20to%20londonmaxxxing.com">here</a>]
+          </span>
           <h1>London Tech heat map 🔥</h1>
         </div>
         <nav className="topbar-nav" aria-label="Map layers">
-          <span className="topbar-cta">
-            Add your company <a href="mailto:birdandy@me.com?subject=Add%20my%20company%20to%20londonmaxxxing.com">here</a>
-          </span>
           {availableTypes.map((type) => {
             const isOn = enabledByType[type];
             return (
