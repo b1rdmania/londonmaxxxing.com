@@ -158,14 +158,14 @@ body {
   border-radius: 999px;
   padding: 2px 8px;
   font-size: 11px;
-  font-family: "Courier New", Courier, monospace;
+  font-family: "Times New Roman", Times, serif;
   letter-spacing: 0.03em;
 }
 
 .popup-meta-text {
   font-size: 11px;
   color: #606060;
-  font-family: "Courier New", Courier, monospace;
+  font-family: "Times New Roman", Times, serif;
 }
 
 .popup-description {
@@ -194,7 +194,7 @@ body {
   color: #111;
   text-decoration: none;
   font-size: 12px;
-  font-family: "Courier New", Courier, monospace;
+  font-family: "Times New Roman", Times, serif;
 }
 
 .popup-btn:hover {
