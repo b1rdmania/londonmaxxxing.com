@@ -76,7 +76,7 @@ export default function MapPageClient({ ecosystemPoints }: MapPageClientProps) {
         <div className="topbar-brand">
           <h1>london tech heatmap 🔥</h1>
           <span className="topbar-cta">
-            [Add your company <a href="mailto:birdandy@me.com?subject=Add%20my%20company%20to%20londonmaxxxing.com">here</a>] [{ecosystemPoints.length} so far]
+            [Add your company <a href="mailto:birdandy@me.com?subject=Add%20my%20company%20to%20londonmaxxxing.com">here</a>] [{ecosystemPoints.length} so far] [currently buggy, upgrading address data]
           </span>
         </div>
         <nav className="topbar-nav" aria-label="Map layers">
