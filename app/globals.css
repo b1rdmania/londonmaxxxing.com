@@ -206,6 +206,30 @@ body {
   background: #efefef;
 }
 
+/* Mobile optimizations */
+@media (max-width: 768px) {
+  .topbar {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 10px 12px;
+  }
+
+  .topbar-brand {
+    width: 100%;
+    justify-content: space-between;
+  }
+
+  /* Hide category toggles on mobile - just show the map */
+  .topbar-nav {
+    display: none;
+  }
+
+  /* Keep CTA visible */
+  .topbar-cta {
+    font-size: 12px;
+  }
+}
+
 /* Dark mode */
 .shell.dark {
   background: #000;

@@ -1,0 +1,27 @@
+{
+  "PolyAI": {
+    "address": "Part Lower Garden Floor, Sheldon Square",
+    "postcode": "W2 6HY",
+    "source": "Companies House"
+  },
+  "Builder.ai": {
+    "address": "15 Westferry Circus, Canary Wharf",
+    "postcode": "E14 4HD",
+    "source": "Companies House"
+  },
+  "Robin AI": {
+    "address": "112-116 New Oxford Street",
+    "postcode": "WC1A 1HH",
+    "source": "Companies House"
+  },
+  "Luminance": {
+    "address": "6 Duke Street, St James's",
+    "postcode": "SW1Y 6BN",
+    "source": "Companies House + HQ address"
+  },
+  "Faculty": {
+    "address": "Level 5, 160 Old Street",
+    "postcode": "EC1V 9BW",
+    "source": "Companies House"
+  }
+}

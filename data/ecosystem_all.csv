@@ -1,0 +1,153 @@
+id,name,category,address,postcode,city,country,website,source_url,notes,latitude,longitude,twitter,geocode_confidence
+cand-ai-001,OpenAI,ai,50 Broadway,SW1H 0BL,London,UK,,https://openai.com/index/introducing-openai-london/,London office launched,51.4993,-0.1327,@OpenAI,high
+cand-ai-002,ElevenLabs,ai,"Wardour Street, Soho",W1F 0UG,London,UK,,https://elevenlabs.io/blog/london-office-opening,London HQ and operations,51.5134,-0.1333,@elevenlabsio,high
+cand-ai-003,PolyAI,ai,London,,London,UK,,https://poly.ai/contact/,London-founded conversational AI company,,,,low
+cand-ai-004,Builder.ai,ai,London,,London,UK,,https://www.builder.ai/,London-founded AI app platform,,,,low
+cand-ai-005,Robin AI,ai,London,,London,UK,,https://www.wired.com/story/the-hottest-startups-in-london-in-2024/,London legal AI startup (WIRED list),,,,low
+cand-ai-006,PhysicsX,ai,London,,London,UK,,https://sifted.eu/rankings/ai-100-2025,London AI engineering startup (WIRED/Sifted),,,,low
+cand-ai-007,Graphcore,ai,107 Cheapside,EC2V 6DN,London,UK,,https://www.graphcore.ai/,UK AI chip company with London presence,51.5148,-0.0937,@Graphcore,high
+cand-ai-008,Darktrace,ai,"Maurice House, 1 Holborn Circus",EC1N 2HL,London,UK,,https://www.darktrace.com/,UK AI cybersecurity company (London HQ),51.5176,-0.1089,@Darktrace,high
+cand-ai-009,Luminance,ai,London,,London,UK,,https://www.luminance.com/,London legal AI company,,,,low
+cand-ai-010,Causaly,ai,London,,London,UK,,https://www.causaly.com/,AI scientific platform with London base,,,,low
+cand-ai-011,Seldon,ai,London,,London,UK,,https://www.seldon.io/,London MLOps / AI deployment company,,,,low
+cand-ai-012,Signal AI,ai,London,,London,UK,,https://www.signal-ai.com/,London AI media intelligence company,,,,low
+cand-ai-013,Eigen Technologies,ai,London,,London,UK,,https://www.eigentech.com/,London NLP automation company,,,,low
+cand-ai-014,Faculty,ai,London,,London,UK,,https://faculty.ai/,London AI consultancy/product company,,,,low
+cand-ai-015,Harvey,ai,London,,London,UK,,https://www.londonandpartners.com/newsroom/news-and-communications/london-leading-global-city-for-ai-businesses-to-grow,AI legal startup expanding into London,,,,low
+cand-ai-016,Mphasis AI Innovation Hub,ai,London,,London,UK,,https://www.londonandpartners.com/newsroom/news-and-communications/london-leading-global-city-for-ai-businesses-to-grow,London AI hub expansion cited by London & Partners,,,,low
+cand-ai-017,Huma,ai,London,,London,UK,,https://www.huma.com/,London health AI / digital health scaleup,,,,low
+cand-ai-018,Relation Therapeutics,ai,London,,London,UK,,https://www.londonandpartners.com/newsroom/news-and-communications/london-hits-all-time-high-for-venture-capital-investment-into-ai-in-2024,London health AI startup (L&P 2024 list),,,,low
+cand-ai-019,Limbic,ai,London,,London,UK,,https://www.limbic.ai/,London mental-health AI company,,,,low
+cand-ai-020,Baseimmune,ai,London,,London,UK,,https://www.baseimmune.com/,London biotech/AI company,,,,low
+cand-ai-021,Fetch.ai,ai,London,,London,UK,,https://fetch.ai/,London-origin AI x web3 company,,,,low
+cand-ai-022,Synthflow AI,ai,London,,London,UK,,https://www.synthflow.ai/,London conversational AI startup,,,,low
+cand-web3-001,OKX,web3,London,,London,UK,,https://www.okx.com/,Global exchange with UK/London operations,,,,low
+cand-web3-002,Crypto.com,web3,London,,London,UK,,https://crypto.com/,Global exchange with UK presence,,,,low
+cand-web3-003,eToro,web3,London,,London,UK,,https://www.etoro.com/,London office and UK operations,,,,low
+cand-web3-004,Bitpanda,web3,London,,London,UK,,https://www.bitpanda.com/,UK expansion and London presence,,,,low
+cand-web3-005,Nexo,web3,London,,London,UK,,https://nexo.com/,UK-facing crypto platform with London activity,,,,low
+cand-web3-006,Blockdaemon,web3,London,,London,UK,,https://blockdaemon.com/,Institutional web3 infra with London base,,,,low
+cand-web3-007,Alchemy,web3,London,,London,UK,,https://www.alchemy.com/,Web3 infra company with London hiring/presence,,,,low
+cand-web3-008,QuickNode,web3,London,,London,UK,,https://www.quicknode.com/,Web3 infra provider with London presence,,,,low
+cand-web3-009,Chainlink Labs,web3,London,,London,UK,,https://chain.link/,Major web3 infra team with London footprint,,,,low
+cand-web3-010,CertiK,web3,London,,London,UK,,https://www.certik.com/,Web3 security firm with London presence,,,,low
+cand-web3-011,Argent,web3,London,,London,UK,,https://www.argent.xyz/,London crypto wallet startup,,,,low
+cand-web3-012,Ramp Network,web3,London,,London,UK,,https://ramp.network/,London web3 payments infrastructure,,,,low
+cand-web3-013,Sorare,web3,London,,London,UK,,https://sorare.com/,Has London office/presence in UK market,,,,low
+cand-web3-014,Immutable,web3,London,,London,UK,,https://www.immutable.com/,Web3 gaming company with London team presence,,,,low
+cand-web3-015,Dapper Labs,web3,London,,London,UK,,https://www.dapperlabs.com/,Web3/NFT company with London hiring footprint,,,,low
+cand-web3-016,R3,web3,London,,London,UK,,https://www.r3.com/,Enterprise blockchain company with London HQ,,,,low
+cand-web3-017,Coincover,web3,London,,London,UK,,https://www.coincover.com/,UK crypto custody protection company,,,,low
+cand-web3-018,Ziglu,web3,London,,London,UK,,https://www.ziglu.io/,London crypto fintech,,,,low
+cand-web3-019,Mercuryo,web3,London,,London,UK,,https://mercuryo.io/,Crypto payments with UK/London presence,,,,low
+cand-web3-020,Transak,web3,London,,London,UK,,https://transak.com/,Web3 onboarding with UK presence,,,,low
+cand-web3-021,Safe (Gnosis Safe),web3,London,,London,UK,,https://safe.global/,Core team presence in London ecosystem,,,,low
+cand-web3-022,Worldcoin (Tools for Humanity),web3,London,,London,UK,,https://world.org/,London activity and hiring,,,,low
+cand-web3-023,Elliptic Enterprises,web3,London,,London,UK,,https://www.elliptic.co/,Additional legal entities/teams in London,,,,low
+cand-web3-024,TRM Labs UK,web3,London,,London,UK,,https://www.trmlabs.com/,Crypto compliance company with London expansion,,,,low
+cand-fintech-001,9fin,fintech,London,,London,UK,,https://en.wikipedia.org/wiki/9fin,London fintech debt intelligence,,,,low
+cand-fintech-002,Rapyd,fintech,London,,London,UK,,https://en.wikipedia.org/wiki/Rapyd,London-headquartered payments company,,,,low
+cand-fintech-003,Allica Bank,fintech,London,,London,UK,,https://en.wikipedia.org/wiki/Allica_Bank,London/Milton Keynes challenger bank,,,,low
+cand-fintech-004,Zilch,fintech,16 Great Chapel Street,W1F 8FL,London,UK,,https://en.wikipedia.org/wiki/Zilch_%28company%29,London BNPL fintech,51.5142,-0.1334,@zilchhq,high
+cand-fintech-005,Noda,fintech,London,,London,UK,,https://en.wikipedia.org/wiki/Noda_%28company%29,London open banking platform,,,,low
+cand-fintech-006,Tide,fintech,2-4 Brushfield Street,E1 6AN,London,UK,,https://www.tide.co/,London SME banking fintech,51.5186,-0.0765,@Tide,high
+cand-fintech-007,SumUp,fintech,London,,London,UK,,https://www.sumup.com/,Large payments company with London HQ,,,,low
+cand-fintech-008,Monese,fintech,London,,London,UK,,https://www.monese.com/,London digital banking fintech,,,,low
+cand-fintech-009,Cleo,fintech,London,,London,UK,,https://web.meetcleo.com/,London consumer finance app,,,,low
+cand-fintech-010,Plum,fintech,London,,London,UK,,https://withplum.com/,London savings/investing fintech,,,,low
+cand-fintech-011,Modulr,fintech,London,,London,UK,,https://www.modulrfinance.com/,London payments infrastructure,,,,low
+cand-fintech-012,Yapily,fintech,London,,London,UK,,https://www.yapily.com/,London open banking API company,,,,low
+cand-fintech-013,PensionBee,fintech,London,,London,UK,,https://www.pensionbee.com/,London pension fintech,,,,low
+cand-fintech-014,Nutmeg,fintech,London,,London,UK,,https://www.nutmeg.com/,London wealthtech,,,,low
+cand-fintech-015,Chip,fintech,London,,London,UK,,https://www.getchip.uk/,London savings fintech,,,,low
+cand-fintech-016,PrimaryBid,fintech,London,,London,UK,,https://www.primarybid.com/,London retail investment platform,,,,low
+cand-fintech-017,Curve,fintech,London,,London,UK,,https://www.curve.com/,London fintech super card,,,,low
+cand-fintech-018,Soldo,fintech,London,,London,UK,,https://www.soldo.com/,London spend management fintech,,,,low
+cand-fintech-019,Airwallex UK,fintech,London,,London,UK,,https://www.airwallex.com/,Global fintech with London presence,,,,low
+cand-fintech-020,Mollie UK,fintech,London,,London,UK,,https://www.mollie.com/,Payments company with London office,,,,low
+cand-fintech-021,Pleo UK,fintech,London,,London,UK,,https://www.pleo.io/,Spend management with London team,,,,low
+cand-fintech-022,Flagstone,fintech,London,,London,UK,,https://www.flagstoneim.com/,UK savings fintech with London presence,,,,low
+cand-fintech-023,Volt,fintech,London,,London,UK,,https://www.wired.com/story/the-hottest-startups-in-london-in-2024/,London open payments startup (WIRED),,,,low
+cand-fintech-024,Gaia Family,fintech,London,,London,UK,,https://www.wired.com/story/the-hottest-startups-in-london-in-2024/,London fertility-finance startup (WIRED),,,,low
+cand-fintech-025,Salary Finance,fintech,London,,London,UK,,https://www.salaryfinance.com/,London fintech for employee finance,,,,low
+cand-fintech-026,Abound,fintech,London,,London,UK,,https://www.abound.com/,London AI lending startup,,,,low
+cand-fintech-027,Payhawk UK,fintech,London,,London,UK,,https://payhawk.com/,Finance ops with London office,,,,low
+cand-fintech-028,ClearScore,fintech,London,,London,UK,,https://www.clearscore.com/,London consumer credit fintech,,,,low
+cand-fintech-029,Wealthify,fintech,London,,London,UK,,https://www.wealthify.com/,UK wealthtech with London presence,,,,low
+cand-fintech-030,Iwoca,fintech,London,,London,UK,,https://www.iwoca.co.uk/,London SME lender,,,,low
+cand-edu-001,Multiverse,edu,33 Kingsway,WC2B 6UF,London,UK,,https://www.multiverse.io/,London workforce upskilling platform,51.5149,-0.1201,@MultiverseIO,high
+cand-edu-002,Century Tech,edu,London,,London,UK,,https://www.century.tech/,London AI learning platform,,,,low
+cand-edu-003,Seneca Learning,edu,London,,London,UK,,https://senecalearning.com/,London edtech platform,,,,low
+cand-edu-004,Atom Learning,edu,London,,London,UK,,https://atomlearning.com/,London adaptive learning startup,,,,low
+cand-edu-005,Firefly Learning,edu,London,,London,UK,,https://www.fireflylearning.com/,London school platform,,,,low
+cand-edu-006,Edumentors,edu,London,,London,UK,,https://en.wikipedia.org/wiki/Edumentors,London AI tutoring startup,,,,low
+cand-edu-007,Perlego,edu,London,,London,UK,,https://www.perlego.com/,London learning subscription platform,,,,low
+cand-edu-008,Memrise,edu,London,,London,UK,,https://www.memrise.com/,London language learning company,,,,low
+cand-edu-009,Lingumi,edu,London,,London,UK,,https://lingumi.com/,London kids English edtech,,,,low
+cand-edu-010,MyTutor,edu,London,,London,UK,,https://www.mytutor.co.uk/,London tutoring marketplace,,,,low
+cand-edu-011,FutureLearn,edu,London,,London,UK,,https://www.futurelearn.com/,London online education platform,,,,low
+cand-edu-012,Sparx Learning,edu,London,,London,UK,,https://sparx.co.uk/,UK edtech with London presence,,,,low
+cand-edu-013,Third Space Learning,edu,London,,London,UK,,https://thirdspacelearning.com/,London maths tutoring platform,,,,low
+cand-edu-014,Arbor Education,edu,London,,London,UK,,https://arbor-education.com/,UK edtech with London office,,,,low
+cand-edu-015,Kahoot UK,edu,London,,London,UK,,https://kahoot.com/,Edtech with London operations,,,,low
+cand-tech-001,Lindus Health,tech,London,,London,UK,,https://www.wired.com/story/the-hottest-startups-in-london-in-2024/,London clinical trials startup (WIRED),,,,low
+cand-tech-002,GetHarley,tech,London,,London,UK,,https://www.wired.com/story/the-hottest-startups-in-london-in-2024/,London dermatology platform (WIRED),,,,low
+cand-tech-003,Field,tech,London,,London,UK,,https://www.wired.com/story/the-hottest-startups-in-london-in-2024/,London battery storage startup (WIRED),,,,low
+cand-tech-004,Opna,tech,London,,London,UK,,https://www.wired.com/story/the-hottest-startups-in-london-in-2024/,London carbon platform (WIRED),,,,low
+cand-tech-005,Sylvera,tech,London,,London,UK,,https://www.wired.com/story/the-hottest-startups-in-london-in-2024/,London carbon ratings startup (WIRED),,,,low
+cand-tech-006,Newcleo,tech,London,,London,UK,,https://www.wired.com/story/the-hottest-startups-in-london-in-2024/,Nuclear startup with London office (WIRED),,,,low
+cand-tech-007,Snyk,tech,40 Whitfield Street,W1T 2RH,London,UK,,https://snyk.io/,London-origin devsecops unicorn,51.5234,-0.1359,@snyksec,high
+cand-tech-008,Paddle,tech,"The Cotton Building, Whitechapel High Street",E1 8QS,London,UK,,https://www.paddle.com/,London payments infra startup,51.5154,-0.0734,@PaddleHQ,high
+cand-tech-009,Freetrade,tech,"Interchange, 81-85 Railway Street",N1 9SD,London,UK,,https://freetrade.io/,London investing startup,51.5339,-0.1042,@freetrade,high
+cand-tech-010,Marshmallow,tech,10 John Street,WC1N 2EB,London,UK,,https://www.marshmallow.com/,London insurtech startup,51.52,-0.1166,@getmarshmallow,high
+cand-tech-011,Lendable,tech,London,,London,UK,,https://www.lendable.co.uk/,London lending startup,,,,low
+cand-tech-012,Cera,tech,London,,London,UK,,https://www.cera.care/,London healthtech scaleup,,,,low
+cand-tech-013,Quantum Motion,tech,London,,London,UK,,https://quantummotion.tech/,London quantum startup,,,,low
+cand-tech-014,Orbital Materials,tech,London,,London,UK,,https://orbitalmaterials.com/,London AI materials startup,,,,low
+cand-tech-015,Trint,tech,London,,London,UK,,https://trint.com/,London AI transcription startup,,,,low
+cand-tech-016,Nothing,tech,101-103 Farringdon Road,EC1R 3BW,London,UK,,https://nothing.tech/,London consumer hardware startup,51.5211,-0.1087,@nothing,high
+cand-tech-017,Onfido,tech,3 Finsbury Avenue,EC2M 2PA,London,UK,,https://onfido.com/,London identity startup,51.5209,-0.0851,@Onfido,high
+cand-tech-018,Tessian,tech,London,,London,UK,,https://www.tessian.com/,London email security startup,,,,low
+cand-tech-019,Gousto,tech,"The Frames, 1 Phipp Street",EC2A 4PS,London,UK,,https://www.gousto.co.uk/,London foodtech scaleup,51.5252,-0.0804,@GoustoUK,high
+cand-tech-020,Zego,tech,"Runway East, 10 Finsbury Square",EC2A 1AF,London,UK,,https://www.zego.com/,London insurtech scaleup,51.5212,-0.0878,@zego,high
+cand-tech-021,Motorway,tech,London,,London,UK,,https://motorway.co.uk/,London used-car marketplace,,,,low
+cand-tech-022,Fyxer AI,tech,London,,London,UK,,https://www.fyxer.com/,London AI workflow startup,,,,low
+cand-tech-023,Laka,tech,London,,London,UK,,https://laka.co/,London insurtech startup,,,,low
+cand-tech-024,Peppy,tech,London,,London,UK,,https://www.peppy.health/,London digital health startup,,,,low
+cand-tech-025,Maven Clinic UK,tech,London,,London,UK,,https://www.mavenclinic.com/,US health startup with London office,,,,low
+cand-tech-026,Pactio,tech,London,,London,UK,,https://www.pactio.io/,London AI negotiation startup,,,,low
+cand-tech-027,ComplyAdvantage,tech,London,,London,UK,,https://complyadvantage.com/,London regtech scaleup,,,,low
+cand-tech-028,Qatalog,tech,London,,London,UK,,https://qatalog.com/,London workplace software startup,,,,low
+cand-tech-029,Hived,tech,London,,London,UK,,https://www.hived.space/,London logistics startup,,,,low
+cand-tech-030,V7,tech,London,,London,UK,,https://www.v7labs.com/,London AI data labeling startup,,,,low
+cand-tech-031,MUBI GO UK Tech,tech,London,,London,UK,,https://mubi.com/,London media-tech presence,,,,low
+cand-tech-032,Google UK,tech,6 Pancras Square,N1C 4AG,London,UK,,https://about.google/locations/london/,Large London offices incl. King’s Cross,51.5353,-0.1247,@Google,high
+cand-tech-033,Microsoft UK,tech,"2 Kingdom Street, Paddington",W2 6BD,London,UK,,https://news.microsoft.com/en-gb/,Major London and UK AI expansion,51.5181,-0.1769,@Microsoft,high
+cand-tech-034,Amazon UK,tech,"1 Principal Place, Worship Street",EC2A 2FA,London,UK,,https://www.aboutamazon.co.uk/,Large London corporate and tech offices,51.5232,-0.0804,@amazon,high
+cand-tech-035,Meta UK,tech,"10 Brock Street, Regent's Place",NW1 3FG,London,UK,,https://about.meta.com/,London engineering and policy offices,51.5263,-0.1426,@Meta,high
+cand-tech-036,Apple UK,tech,"1 Battersea Power Station, Circus Road South",SW8 5BN,London,UK,,https://www.apple.com/uk/retail/battersea/,London offices incl. Battersea,51.4816,-0.1451,@Apple,high
+cand-tech-037,TikTok UK,tech,"Kaleidoscope, 4 Lindsey Street",EC1A 9HP,London,UK,,https://newsroom.tiktok.com/en-gb,Large London office and staff base,51.5199,-0.0978,@TikTokComms,high
+cand-tech-038,Salesforce UK,tech,"Salesforce Tower, 110 Bishopsgate",EC2N 4AY,London,UK,,https://www.salesforce.com/uk/,London office and UK AI expansion,51.5159,-0.0811,@salesforce,high
+cand-tech-039,Oracle UK,tech,London,,London,UK,,https://www.oracle.com/uk/,Major London office presence,,,,low
+cand-tech-040,SAP UK,tech,London,,London,UK,,https://www.sap.com/uk/,London office presence,,,,low
+cand-tech-041,NVIDIA UK,tech,London,,London,UK,,https://www.nvidia.com/en-gb/,London AI ecosystem presence,,,,low
+cand-tech-042,Databricks UK,tech,London,,London,UK,,https://www.databricks.com/company/contact,London office and UK hiring,,,,low
+cand-tech-043,Snowflake UK,tech,London,,London,UK,,https://www.snowflake.com/en/,London office presence,,,,low
+cand-tech-044,Palantir UK,tech,19-25 Birchin Lane,EC3V 9DU,London,UK,,https://www.palantir.com/,London office and public-sector work,51.5131,-0.0862,@PalantirTech,high
+cand-tech-045,Adobe UK,tech,London,,London,UK,,https://www.adobe.com/uk/,London office presence,,,,low
+cand-tech-046,IBM UK,tech,London,,London,UK,,https://www.ibm.com/uk-en,London and UK research presence,,,,low
+cand-tech-047,Intel UK,tech,London,,London,UK,,https://www.intel.com/content/www/us/en/company-overview/worldwide-locations.html,London office presence,,,,low
+cand-tech-048,Cisco UK,tech,London,,London,UK,,https://www.cisco.com/site/uk/,London office presence,,,,low
+cand-tech-049,Cloudflare UK,tech,London,,London,UK,,https://www.cloudflare.com/,London engineering and go-to-market,,,,low
+cand-tech-050,Atlassian UK,tech,London,,London,UK,,https://www.atlassian.com/company/contact,London office presence,,,,low
+cand-tech-051,Zoom UK,tech,London,,London,UK,,https://explore.zoom.us/en/about/,London office/presence,,,,low
+cand-tech-052,HubSpot UK,tech,London,,London,UK,,https://www.hubspot.com/company/contact,London office presence,,,,low
+cand-tech-053,ServiceNow UK,tech,London,,London,UK,,https://www.servicenow.com/uk/,London office presence,,,,low
+cand-tech-054,Twilio UK,tech,London,,London,UK,,https://www.twilio.com/,London office presence,,,,low
+cand-tech-055,Dropbox UK,tech,London,,London,UK,,https://dropbox.tech/,London office presence,,,,low
+cand-tech-056,Airbnb UK,tech,100 New Bridge Street,EC4V 6JA,London,UK,,https://news.airbnb.com/,London office presence,51.5136,-0.1026,@Airbnb,high
+cand-tech-057,Uber UK,tech,"Aldgate Tower, 2 Leman Street",E1 8FA,London,UK,,https://www.uber.com/gb/en/,London HQ operations for UK market,51.5137,-0.0735,@Uber,high
+cand-tech-058,Spotify UK,tech,"The Adelphi, 1-11 John Adam Street",WC2N 6HT,London,UK,,https://www.lifeatspotify.com/,London office presence,51.5085,-0.1242,@Spotify,high
+cand-tech-059,Netflix UK,tech,30 Berners Street,W1T 3LR,London,UK,,https://about.netflix.com/,London office presence,51.5182,-0.1352,@netflix,high
+cand-tech-060,ByteDance UK,tech,London,,London,UK,,https://www.bytedance.com/en/,London office presence,,,,low
+cand-tech-061,Wise Platform UK,tech,London,,London,UK,,https://wise.com/platform/,Large London operations (enterprise arm),,,,low

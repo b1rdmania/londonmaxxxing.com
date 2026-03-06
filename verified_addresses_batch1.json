@@ -1,0 +1,114 @@
+{
+  "companies": [
+    {
+      "id": "cand-tech-032",
+      "name": "Google UK",
+      "address": "6 Pancras Square",
+      "postcode": "N1C 4AG",
+      "latitude": 51.5353,
+      "longitude": -0.1247,
+      "twitter": "@Google",
+      "geocode_confidence": "high",
+      "source": "Companies House and official website"
+    },
+    {
+      "id": "cand-tech-035",
+      "name": "Meta UK",
+      "address": "10 Brock Street, Regent's Place",
+      "postcode": "NW1 3FG",
+      "latitude": 51.5263,
+      "longitude": -0.1426,
+      "twitter": "@Meta",
+      "geocode_confidence": "high",
+      "source": "Companies House"
+    },
+    {
+      "id": "cand-tech-034",
+      "name": "Amazon UK",
+      "address": "1 Principal Place, Worship Street",
+      "postcode": "EC2A 2FA",
+      "latitude": 51.5232,
+      "longitude": -0.0804,
+      "twitter": "@amazon",
+      "geocode_confidence": "high",
+      "source": "Companies House"
+    },
+    {
+      "id": "cand-tech-036",
+      "name": "Apple UK",
+      "address": "1 Battersea Power Station, Circus Road South",
+      "postcode": "SW8 5BN",
+      "latitude": 51.4816,
+      "longitude": -0.1451,
+      "twitter": "@Apple",
+      "geocode_confidence": "high",
+      "source": "Companies House and newsroom"
+    },
+    {
+      "id": "cand-tech-033",
+      "name": "Microsoft UK",
+      "address": "2 Kingdom Street, Paddington",
+      "postcode": "W2 6BD",
+      "latitude": 51.5181,
+      "longitude": -0.1769,
+      "twitter": "@Microsoft",
+      "geocode_confidence": "high",
+      "source": "Official website"
+    },
+    {
+      "id": "cand-tech-038",
+      "name": "Salesforce UK",
+      "address": "Salesforce Tower, 110 Bishopsgate",
+      "postcode": "EC2N 4AY",
+      "latitude": 51.5159,
+      "longitude": -0.0811,
+      "twitter": "@salesforce",
+      "geocode_confidence": "high",
+      "source": "Companies House"
+    },
+    {
+      "id": "cand-tech-037",
+      "name": "TikTok UK",
+      "address": "Kaleidoscope, 4 Lindsey Street",
+      "postcode": "EC1A 9HP",
+      "latitude": 51.5199,
+      "longitude": -0.0978,
+      "twitter": "@TikTokComms",
+      "geocode_confidence": "high",
+      "source": "Companies House"
+    },
+    {
+      "id": "cand-tech-044",
+      "name": "Palantir UK",
+      "address": "19-25 Birchin Lane",
+      "postcode": "EC3V 9DU",
+      "latitude": 51.5131,
+      "longitude": -0.0862,
+      "twitter": "@PalantirTech",
+      "geocode_confidence": "high",
+      "source": "Companies House"
+    },
+    {
+      "id": "cand-tech-050",
+      "name": "Spotify UK",
+      "address": "The Adelphi, 1-11 John Adam Street",
+      "postcode": "WC2N 6HT",
+      "latitude": 51.5085,
+      "longitude": -0.1242,
+      "twitter": "@Spotify",
+      "geocode_confidence": "high",
+      "source": "Companies House"
+    },
+    {
+      "id": "cand-tech-051",
+      "name": "Netflix UK",
+      "address": "30 Berners Street",
+      "postcode": "W1T 3LR",
+      "latitude": 51.5182,
+      "longitude": -0.1352,
+      "twitter": "@netflix",
+      "geocode_confidence": "high",
+      "source": "Companies House"
+    }
+  ]
+}

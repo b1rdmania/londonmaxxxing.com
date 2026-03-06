@@ -1,0 +1,38 @@
+id,name,category,address,postcode,city,country,website,source_url,notes,latitude,longitude,twitter,geocode_confidence
+cand-ai-011,Seldon,ai,London,,London,UK,,https://www.seldon.io/,London MLOps / AI deployment company,,,,low
+cand-ai-018,Relation Therapeutics,ai,London,,London,UK,,https://www.londonandpartners.com/newsroom/news-and-communications/london-hits-all-time-high-for-venture-capital-investment-into-ai-in-2024,London health AI startup (L&P 2024 list),,,,low
+cand-ai-022,Synthflow AI,ai,London,,London,UK,,https://www.synthflow.ai/,London conversational AI startup,,,,low
+cand-web3-001,OKX,web3,London,,London,UK,,https://www.okx.com/,Global exchange with UK/London operations,,,,low
+cand-web3-002,Crypto.com,web3,London,,London,UK,,https://crypto.com/,Global exchange with UK presence,,,,low
+cand-web3-004,Bitpanda,web3,London,,London,UK,,https://www.bitpanda.com/,UK expansion and London presence,,,,low
+cand-web3-006,Blockdaemon,web3,London,,London,UK,,https://blockdaemon.com/,Institutional web3 infra with London base,,,,low
+cand-web3-007,Alchemy,web3,London,,London,UK,,https://www.alchemy.com/,Web3 infra company with London hiring/presence,,,,low
+cand-web3-008,QuickNode,web3,London,,London,UK,,https://www.quicknode.com/,Web3 infra provider with London presence,,,,low
+cand-web3-010,CertiK,web3,London,,London,UK,,https://www.certik.com/,Web3 security firm with London presence,,,,low
+cand-web3-013,Sorare,web3,London,,London,UK,,https://sorare.com/,Has London office/presence in UK market,,,,low
+cand-web3-014,Immutable,web3,London,,London,UK,,https://www.immutable.com/,Web3 gaming company with London team presence,,,,low
+cand-web3-019,Mercuryo,web3,London,,London,UK,,https://mercuryo.io/,Crypto payments with UK/London presence,,,,low
+cand-web3-020,Transak,web3,London,,London,UK,,https://transak.com/,Web3 onboarding with UK presence,,,,low
+cand-web3-021,Safe (Gnosis Safe),web3,London,,London,UK,,https://safe.global/,Core team presence in London ecosystem,,,,low
+cand-web3-022,Worldcoin (Tools for Humanity),web3,London,,London,UK,,https://world.org/,London activity and hiring,,,,low
+cand-web3-024,TRM Labs UK,web3,London,,London,UK,,https://www.trmlabs.com/,Crypto compliance company with London expansion,,,,low
+cand-fintech-018,Soldo,fintech,London,,London,UK,,https://www.soldo.com/,London spend management fintech,,,,low
+cand-fintech-028,ClearScore,fintech,London,,London,UK,,https://www.clearscore.com/,London consumer credit fintech,,,,low
+cand-fintech-029,Wealthify,fintech,London,,London,UK,,https://www.wealthify.com/,UK wealthtech with London presence,,,,low
+cand-edu-006,Edumentors,edu,London,,London,UK,,https://en.wikipedia.org/wiki/Edumentors,London AI tutoring startup,,,,low
+cand-edu-008,Memrise,edu,London,,London,UK,,https://www.memrise.com/,London language learning company,,,,low
+cand-edu-011,FutureLearn,edu,London,,London,UK,,https://www.futurelearn.com/,London online education platform,,,,low
+cand-edu-015,Kahoot UK,edu,London,,London,UK,,https://kahoot.com/,Edtech with London operations,,,,low
+cand-tech-001,Lindus Health,tech,London,,London,UK,,https://www.wired.com/story/the-hottest-startups-in-london-in-2024/,London clinical trials startup (WIRED),,,,low
+cand-tech-002,GetHarley,tech,London,,London,UK,,https://www.wired.com/story/the-hottest-startups-in-london-in-2024/,London dermatology platform (WIRED),,,,low
+cand-tech-004,Opna,tech,London,,London,UK,,https://www.wired.com/story/the-hottest-startups-in-london-in-2024/,London carbon platform (WIRED),,,,low
+cand-tech-012,Cera,tech,London,,London,UK,,https://www.cera.care/,London healthtech scaleup,,,,low
+cand-tech-026,Pactio,tech,London,,London,UK,,https://www.pactio.io/,London AI negotiation startup,,,,low
+cand-tech-041,NVIDIA UK,tech,London,,London,UK,,https://www.nvidia.com/en-gb/,London AI ecosystem presence,,,,low
+cand-tech-046,IBM UK,tech,London,,London,UK,,https://www.ibm.com/uk-en,London and UK research presence,,,,low
+cand-tech-047,Intel UK,tech,London,,London,UK,,https://www.intel.com/content/www/us/en/company-overview/worldwide-locations.html,London office presence,,,,low
+cand-tech-048,Cisco UK,tech,London,,London,UK,,https://www.cisco.com/site/uk/,London office presence,,,,low
+cand-tech-051,Zoom UK,tech,London,,London,UK,,https://explore.zoom.us/en/about/,London office/presence,,,,low
+cand-tech-052,HubSpot UK,tech,London,,London,UK,,https://www.hubspot.com/company/contact,London office presence,,,,low
+cand-tech-054,Twilio UK,tech,London,,London,UK,,https://www.twilio.com/,London office presence,,,,low
+cand-tech-060,ByteDance UK,tech,London,,London,UK,,https://www.bytedance.com/en/,London office presence,,,,low

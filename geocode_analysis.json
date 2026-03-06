@@ -1,0 +1,1889 @@
+{
+  "high": [
+    {
+      "id": "vc-001",
+      "name": "Balderton Capital",
+      "address": "The Stables 28 Britannia Street",
+      "postcode": "WC1X 9JF",
+      "coords": "51.529874,-0.118818",
+      "reason": "Has full address + postcode with verified coordinates"
+    },
+    {
+      "id": "vc-002",
+      "name": "Index Ventures",
+      "address": "5-8 Lower John Street",
+      "postcode": "W1F 9DY",
+      "coords": "51.511127,-0.137015",
+      "reason": "Has full address + postcode with verified coordinates"
+    },
+    {
+      "id": "vc-003",
+      "name": "Atomico",
+      "address": "29 Rathbone Street",
+      "postcode": "W1T 1NJ",
+      "coords": "51.518334,-0.135567",
+      "reason": "Has full address + postcode with verified coordinates"
+    },
+    {
+      "id": "vc-005",
+      "name": "LocalGlobe",
+      "address": "1 Brill Place",
+      "postcode": "NW1 1EL",
+      "coords": "51.532366,-0.130668",
+      "reason": "Has full address + postcode with verified coordinates"
+    },
+    {
+      "id": "vc-006",
+      "name": "Accel Partners",
+      "address": "6th Floor 1 New Burlington Place",
+      "postcode": "W1S 2HR",
+      "coords": "51.512369,-0.140495",
+      "reason": "Has full address + postcode with verified coordinates"
+    },
+    {
+      "id": "vc-007",
+      "name": "Seedcamp",
+      "address": "72-74 Dean Street",
+      "postcode": "W1D 3SG",
+      "coords": "51.513706,-0.132932",
+      "reason": "Has full address + postcode with verified coordinates"
+    },
+    {
+      "id": "vc-008",
+      "name": "Passion Capital",
+      "address": "Second Floor Laxmi The Tanneries 57 Bermondsey Street",
+      "postcode": "SE1 3XJ",
+      "coords": "51.501822,-0.08195",
+      "reason": "Has full address + postcode with verified coordinates"
+    },
+    {
+      "id": "vc-009",
+      "name": "MMC Ventures",
+      "address": "3rd Floor 24 High Holborn",
+      "postcode": "WC1V 6AZ",
+      "coords": "51.51856,-0.113144",
+      "reason": "Has full address + postcode with verified coordinates"
+    },
+    {
+      "id": "vc-010",
+      "name": "Forward Partners",
+      "address": "20 Garrick Street",
+      "postcode": "WC2E 9BT",
+      "coords": "51.511823,-0.126552",
+      "reason": "Has full address + postcode with verified coordinates"
+    },
+    {
+      "id": "vc-011",
+      "name": "Notion Capital",
+      "address": "91 Wimpole Street",
+      "postcode": "W1G 0EF",
+      "coords": "51.516222,-0.147573",
+      "reason": "Has full address + postcode with verified coordinates"
+    },
+    {
+      "id": "vc-012",
+      "name": "Dawn Capital",
+      "address": "Ilona Rose House Manette Street",
+      "postcode": "W1D 4AL",
+      "coords": "51.514539,-0.130476",
+      "reason": "Has full address + postcode with verified coordinates"
+    },
+    {
+      "id": "vc-013",
+      "name": "Northzone",
+      "address": "7-9 St James's Square",
+      "postcode": "SW1Y 4JU",
+      "coords": "51.508154,-0.134989",
+      "reason": "Has full address + postcode with verified coordinates"
+    },
+    {
+      "id": "vc-014",
+      "name": "Episode 1 Ventures",
+      "address": "4th Floor 112-116 New Oxford Street",
+      "postcode": "WC1A 1HH",
+      "coords": "51.516,-0.128",
+      "reason": "Has full address + postcode with verified coordinates"
+    },
+    {
+      "id": "vc-015",
+      "name": "Entrepreneur First",
+      "address": "Shoreditch Exchange Senna Building Gorsuch Place",
+      "postcode": "E2 8JF",
+      "coords": "51.530169,-0.075481",
+      "reason": "Has full address + postcode with verified coordinates"
+    },
+    {
+      "id": "vc-017",
+      "name": "Felix Capital",
+      "address": "27 Beak Street",
+      "postcode": "W1F 9RU",
+      "coords": "51.512312,-0.138159",
+      "reason": "Has full address + postcode with verified coordinates"
+    },
+    {
+      "id": "vc-018",
+      "name": "Stride VC",
+      "address": "4 Grotto Passage",
+      "postcode": "W1U 4JX",
+      "coords": "51.520443,-0.15302",
+      "reason": "Has full address + postcode with verified coordinates"
+    },
+    {
+      "id": "vc-019",
+      "name": "Anthemis",
+      "address": "3rd Floor 25 Soho Square",
+      "postcode": "W1D 3QR",
+      "coords": "51.5148,-0.1317",
+      "reason": "Has full address + postcode with verified coordinates"
+    },
+    {
+      "id": "vc-022",
+      "name": "Connect Ventures",
+      "address": "4th Floor 140 Aldersgate Street",
+      "postcode": "EC1A 4HY",
+      "coords": "51.519648,-0.097518",
+      "reason": "Has full address + postcode with verified coordinates"
+    },
+    {
+      "id": "vc-023",
+      "name": "Hoxton Ventures",
+      "address": "55 New Oxford Street Eighth Floor",
+      "postcode": "WC1A 1BS",
+      "coords": "51.516679,-0.127074",
+      "reason": "Has full address + postcode with verified coordinates"
+    },
+    {
+      "id": "vc-027",
+      "name": "Outlier Ventures",
+      "address": "11 Cursitor Street",
+      "postcode": "EC4A 1LL",
+      "coords": "51.516566,-0.111065",
+      "reason": "Has full address + postcode with verified coordinates"
+    },
+    {
+      "id": "ai-001",
+      "name": "Google DeepMind",
+      "address": "6 Pancras Square",
+      "postcode": "N1C 4AG",
+      "coords": "51.533481,-0.125043",
+      "reason": "Has full address + postcode with verified coordinates"
+    },
+    {
+      "id": "ai-002",
+      "name": "Anthropic",
+      "address": "9th Floor 107 Cheapside",
+      "postcode": "EC2V 6DN",
+      "coords": "51.514178,-0.093552",
+      "reason": "Has full address + postcode with verified coordinates"
+    },
+    {
+      "id": "ai-003",
+      "name": "Cohere",
+      "address": "Fourth Floor 51 Great Marlborough Street",
+      "postcode": "W1F 7JT",
+      "coords": "51.514406,-0.137933",
+      "reason": "Has full address + postcode with verified coordinates"
+    },
+    {
+      "id": "ai-004",
+      "name": "Synthesia",
+      "address": "Level 3 South 20 Triton Street Regent's Place",
+      "postcode": "NW1 3BF",
+      "coords": "51.524907,-0.142319",
+      "reason": "Has full address + postcode with verified coordinates"
+    },
+    {
+      "id": "ai-005",
+      "name": "Wayve",
+      "address": "230 York Way",
+      "postcode": "N7 9AG",
+      "coords": "51.543004,-0.125603",
+      "reason": "Has full address + postcode with verified coordinates"
+    },
+    {
+      "id": "ai-006",
+      "name": "Stability AI",
+      "address": "Fora-United House 9 Pembridge Road Notting Hill Gate",
+      "postcode": "W11 3JY",
+      "coords": "51.509246,-0.197373",
+      "reason": "Has full address + postcode with verified coordinates"
+    },
+    {
+      "id": "ai-007",
+      "name": "Faculty AI",
+      "address": "Level 5 160 Old Street",
+      "postcode": "EC1V 9BW",
+      "coords": "51.525032,-0.091296",
+      "reason": "Has full address + postcode with verified coordinates"
+    },
+    {
+      "id": "ai-008",
+      "name": "BenevolentAI",
+      "address": "4-8 Maple Street",
+      "postcode": "W1T 5HD",
+      "coords": "51.522903,-0.137341",
+      "reason": "Has full address + postcode with verified coordinates"
+    },
+    {
+      "id": "ai-009",
+      "name": "Isomorphic Labs",
+      "address": "22 Handyside Street",
+      "postcode": "N1C 4DN",
+      "coords": "51.537412,-0.123973",
+      "reason": "Has full address + postcode with verified coordinates"
+    },
+    {
+      "id": "ai-010",
+      "name": "Tractable",
+      "address": "71-75 Shelton Street",
+      "postcode": "WC2H 9JQ",
+      "coords": "51.514897,-0.123615",
+      "reason": "Has full address + postcode with verified coordinates"
+    },
+    {
+      "id": "ai-011",
+      "name": "Quantexa",
+      "address": "280 Bishopsgate",
+      "postcode": "EC2M 4AG",
+      "coords": "51.519875,-0.07838",
+      "reason": "Has full address + postcode with verified coordinates"
+    },
+    {
+      "id": "ai-012",
+      "name": "Vercel",
+      "address": "8 Northumberland Avenue",
+      "postcode": "WC2N 5BY",
+      "coords": "51.50715,-0.12673",
+      "reason": "Has full address + postcode with verified coordinates"
+    },
+    {
+      "id": "ai-013",
+      "name": "Mindgard",
+      "address": "34 Lime Street",
+      "postcode": "EC3M 7AT",
+      "coords": "51.512201,-0.082566",
+      "reason": "Has full address + postcode with verified coordinates"
+    },
+    {
+      "id": "ai-014",
+      "name": "Fractile",
+      "address": "2 Communications Road Greenham Business Park",
+      "postcode": "RG19 6AB",
+      "coords": "51.373915,-1.283065",
+      "reason": "Has full address + postcode with verified coordinates"
+    },
+    {
+      "id": "fintech-001",
+      "name": "Revolut",
+      "address": "30 South Colonnade",
+      "postcode": "E14 5HX",
+      "coords": "51.505703,-0.020068",
+      "reason": "Has full address + postcode with verified coordinates"
+    },
+    {
+      "id": "fintech-002",
+      "name": "Monzo",
+      "address": "Broadwalk House 5 Appold Street",
+      "postcode": "EC2A 2AG",
+      "coords": "51.521036,-0.081185",
+      "reason": "Has full address + postcode with verified coordinates"
+    },
+    {
+      "id": "fintech-003",
+      "name": "Wise",
+      "address": "1st Floor Worship Square 65 Clifton Street",
+      "postcode": "EC2A 4JE",
+      "coords": "51.522389,-0.083637",
+      "reason": "Has full address + postcode with verified coordinates"
+    },
+    {
+      "id": "fintech-004",
+      "name": "Stripe",
+      "address": "9th Floor 107 Cheapside",
+      "postcode": "EC2V 6DN",
+      "coords": "51.514178,-0.093552",
+      "reason": "Has full address + postcode with verified coordinates"
+    },
+    {
+      "id": "fintech-005",
+      "name": "Checkout.com",
+      "address": "Wenlock Works Shepherdess Walk",
+      "postcode": "N1 7BQ",
+      "coords": "51.530026,-0.092586",
+      "reason": "Has full address + postcode with verified coordinates"
+    },
+    {
+      "id": "fintech-006",
+      "name": "GoCardless",
+      "address": "Sutton Yard 65 Goswell Road",
+      "postcode": "EC1V 7EN",
+      "coords": "51.524419,-0.099539",
+      "reason": "Has full address + postcode with verified coordinates"
+    },
+    {
+      "id": "fintech-007",
+      "name": "Plaid",
+      "address": "Techspace Level 4 25 Worship Street",
+      "postcode": "EC2A 2DX",
+      "coords": "51.522317,-0.085269",
+      "reason": "Has full address + postcode with verified coordinates"
+    },
+    {
+      "id": "fintech-008",
+      "name": "Klarna",
+      "address": "10 York Road",
+      "postcode": "SE1 7ND",
+      "coords": "51.503492,-0.11564",
+      "reason": "Has full address + postcode with verified coordinates"
+    },
+    {
+      "id": "fintech-009",
+      "name": "OakNorth",
+      "address": "3rd Floor 57 Broadwick Street Soho",
+      "postcode": "W1F 9QS",
+      "coords": "51.513054,-0.137196",
+      "reason": "Has full address + postcode with verified coordinates"
+    },
+    {
+      "id": "fintech-010",
+      "name": "Zopa",
+      "address": "Level 12 20 Water Street Canary Wharf",
+      "postcode": "E14 5GX",
+      "coords": "51.502783,-0.014907",
+      "reason": "Has full address + postcode with verified coordinates"
+    },
+    {
+      "id": "fintech-011",
+      "name": "Starling Bank",
+      "address": "3rd Floor 2 Finsbury Avenue",
+      "postcode": "EC2M 2PP",
+      "coords": "51.519418,-0.085229",
+      "reason": "Has full address + postcode with verified coordinates"
+    },
+    {
+      "id": "fintech-012",
+      "name": "Funding Circle",
+      "address": "5th Floor 71 Queen Victoria Street",
+      "postcode": "EC4V 4AY",
+      "coords": "51.511977,-0.094796",
+      "reason": "Has full address + postcode with verified coordinates"
+    },
+    {
+      "id": "fintech-013",
+      "name": "ClearBank",
+      "address": "201 Haverstock Hill",
+      "postcode": "NW3 4QG",
+      "coords": "51.550623,-0.16559",
+      "reason": "Has full address + postcode with verified coordinates"
+    },
+    {
+      "id": "fintech-014",
+      "name": "TrueLayer",
+      "address": "Angel Building 407 St John Street",
+      "postcode": "EC1V 4AB",
+      "coords": "51.531291,-0.106865",
+      "reason": "Has full address + postcode with verified coordinates"
+    },
+    {
+      "id": "fintech-015",
+      "name": "Thought Machine",
+      "address": "7 Herbrand Street",
+      "postcode": "WC1N 1EX",
+      "coords": "51.525,-0.122",
+      "reason": "Has full address + postcode with verified coordinates"
+    },
+    {
+      "id": "web3-001",
+      "name": "Blockchain.com",
+      "address": "145-157 St John Street",
+      "postcode": "EC1V 4PY",
+      "coords": "51.529461,-0.10679",
+      "reason": "Has full address + postcode with verified coordinates"
+    },
+    {
+      "id": "web3-002",
+      "name": "Copper",
+      "address": "17 Broadwick Street Soho",
+      "postcode": "W1F 0DE",
+      "coords": "51.513527,-0.135245",
+      "reason": "Has full address + postcode with verified coordinates"
+    },
+    {
+      "id": "web3-003",
+      "name": "MoonPay",
+      "address": "20-22 Wenlock Road",
+      "postcode": "N1 7GU",
+      "coords": "51.530737,-0.09371",
+      "reason": "Has full address + postcode with verified coordinates"
+    },
+    {
+      "id": "web3-004",
+      "name": "B2C2",
+      "address": "86-90 Paul Street",
+      "postcode": "EC2A 4NE",
+      "coords": "51.525617,-0.083602",
+      "reason": "Has full address + postcode with verified coordinates"
+    },
+    {
+      "id": "web3-005",
+      "name": "Fnality",
+      "address": "41 Luke Street",
+      "postcode": "EC2A 4DP",
+      "coords": "51.523893,-0.083775",
+      "reason": "Has full address + postcode with verified coordinates"
+    },
+    {
+      "id": "web3-006",
+      "name": "Aave",
+      "address": "71-75 Shelton Street Covent Garden",
+      "postcode": "WC2H 9JQ",
+      "coords": "51.514897,-0.123615",
+      "reason": "Has full address + postcode with verified coordinates"
+    },
+    {
+      "id": "web3-008",
+      "name": "Elliptic",
+      "address": "Office 7 35-37 Ludgate Hill",
+      "postcode": "EC4M 7JN",
+      "coords": "51.513832,-0.102113",
+      "reason": "Has full address + postcode with verified coordinates"
+    },
+    {
+      "id": "web3-009",
+      "name": "Chainalysis",
+      "address": "77 Kingsway 2nd Floor",
+      "postcode": "WC2B 6SR",
+      "coords": "51.515858,-0.119598",
+      "reason": "Has full address + postcode with verified coordinates"
+    },
+    {
+      "id": "web3-010",
+      "name": "ConsenSys",
+      "address": "80-83 Long Lane",
+      "postcode": "EC1A 9ET",
+      "coords": "51.517,-0.097",
+      "reason": "Has full address + postcode with verified coordinates"
+    },
+    {
+      "id": "web3-011",
+      "name": "Encode Club",
+      "address": "41 Pitfield Street",
+      "postcode": "N1 6DA",
+      "coords": "51.528,-0.083",
+      "reason": "Has full address + postcode with verified coordinates"
+    },
+    {
+      "id": "web3-012",
+      "name": "Ramen Space",
+      "address": "Unit 6 Sledge Tower Dalston Square",
+      "postcode": "E8 3GP",
+      "coords": "51.545061,-0.073901",
+      "reason": "Has full address + postcode with verified coordinates"
+    },
+    {
+      "id": "web3-013",
+      "name": "Luno",
+      "address": "7th Floor 30 Moorgate",
+      "postcode": "EC2R 6DA",
+      "coords": "51.516083,-0.089033",
+      "reason": "Has full address + postcode with verified coordinates"
+    },
+    {
+      "id": "web3-014",
+      "name": "Kraken",
+      "address": "Floor 14 110 Bishopsgate",
+      "postcode": "EC2N 4AY",
+      "coords": "51.516378,-0.081179",
+      "reason": "Has full address + postcode with verified coordinates"
+    },
+    {
+      "id": "web3-015",
+      "name": "Coinbase UK",
+      "address": "1 Bartholomew Close",
+      "postcode": "EC1A 7BL",
+      "coords": "51.517671,-0.098753",
+      "reason": "Has full address + postcode with verified coordinates"
+    },
+    {
+      "id": "web3-016",
+      "name": "Gemini",
+      "address": "25 Copthall Avenue",
+      "postcode": "EC2R 7BP",
+      "coords": "51.51681,-0.08782",
+      "reason": "Has full address + postcode with verified coordinates"
+    },
+    {
+      "id": "web3-017",
+      "name": "Bitstamp",
+      "address": "27 Old Gloucester Street",
+      "postcode": "WC1N 3AX",
+      "coords": "51.520593,-0.122185",
+      "reason": "Has full address + postcode with verified coordinates"
+    },
+    {
+      "id": "web3-018",
+      "name": "Circle",
+      "address": "1 Bartholomew Lane",
+      "postcode": "EC2N 2AX",
+      "coords": "51.514557,-0.08754",
+      "reason": "Has full address + postcode with verified coordinates"
+    },
+    {
+      "id": "web3-019",
+      "name": "Ripple",
+      "address": "40 Whitfield Street",
+      "postcode": "W1T 2RH",
+      "coords": "51.520238,-0.134841",
+      "reason": "Has full address + postcode with verified coordinates"
+    },
+    {
+      "id": "web3-020",
+      "name": "Fireblocks",
+      "address": "1 Lackington Street",
+      "postcode": "EC2A 1AL",
+      "coords": "51.519839,-0.086064",
+      "reason": "Has full address + postcode with verified coordinates"
+    },
+    {
+      "id": "web3-022",
+      "name": "Archax",
+      "address": "10 Lower Thames Street",
+      "postcode": "EC3R 6AF",
+      "coords": "51.509143,-0.084784",
+      "reason": "Has full address + postcode with verified coordinates"
+    },
+    {
+      "id": "web3-023",
+      "name": "Zodia Markets",
+      "address": "125 Old Broad Street",
+      "postcode": "EC2N 1AR",
+      "coords": "51.514543,-0.086114",
+      "reason": "Has full address + postcode with verified coordinates"
+    },
+    {
+      "id": "web3-024",
+      "name": "Wintermute",
+      "address": "Milton Gate 60 Chiswell Street",
+      "postcode": "EC1Y 4AG",
+      "coords": "51.520,-0.088",
+      "reason": "Has full address + postcode with verified coordinates"
+    },
+    {
+      "id": "edu-001",
+      "name": "Imperial College London Dept of Computing",
+      "address": "Huxley Building 180 Queen's Gate South Kensington",
+      "postcode": "SW7 2AZ",
+      "coords": "51.499334,-0.179178",
+      "reason": "Has full address + postcode with verified coordinates"
+    },
+    {
+      "id": "edu-002",
+      "name": "UCL Centre for Artificial Intelligence",
+      "address": "66-72 Gower Street",
+      "postcode": "WC1E 6BT",
+      "coords": "51.523571,-0.132398",
+      "reason": "Has full address + postcode with verified coordinates"
+    },
+    {
+      "id": "edu-003",
+      "name": "King's College London Institute for AI",
+      "address": "Bush House Strand Campus",
+      "postcode": "WC2R 2LS",
+      "coords": "51.511613,-0.116228",
+      "reason": "Has full address + postcode with verified coordinates"
+    },
+    {
+      "id": "edu-004",
+      "name": "The Alan Turing Institute",
+      "address": "96 Euston Road British Library First Floor",
+      "postcode": "NW1 2DB",
+      "coords": "51.529987,-0.126989",
+      "reason": "Has full address + postcode with verified coordinates"
+    }
+  ],
+  "medium": [
+    {
+      "id": "vc-004",
+      "name": "Octopus Ventures",
+      "address": "33 Holborn",
+      "postcode": "EC1N 2HT",
+      "coords": "51.517537,-0.108272",
+      "reason": "Has partial address info with coordinates"
+    },
+    {
+      "id": "vc-016",
+      "name": "Backed VC",
+      "address": "London",
+      "postcode": "EC2A 3AR",
+      "coords": "51.526359,-0.080053",
+      "reason": "Has partial address info with coordinates"
+    },
+    {
+      "id": "vc-020",
+      "name": "Playfair Capital",
+      "address": "London",
+      "postcode": "EC2A 4NE",
+      "coords": "51.525617,-0.083602",
+      "reason": "Has partial address info with coordinates"
+    },
+    {
+      "id": "vc-021",
+      "name": "Kindred Capital",
+      "address": "London",
+      "postcode": "EC2A 3AY",
+      "coords": "51.526082,-0.079041",
+      "reason": "Has partial address info with coordinates"
+    },
+    {
+      "id": "vc-024",
+      "name": "Speedinvest",
+      "address": "London",
+      "postcode": "EC2A 2FH",
+      "coords": "51.520356,-0.084155",
+      "reason": "Has partial address info with coordinates"
+    },
+    {
+      "id": "vc-025",
+      "name": "83North",
+      "address": "London",
+      "postcode": "W1S 1HQ",
+      "coords": "51.513921,-0.143069",
+      "reason": "Has partial address info with coordinates"
+    },
+    {
+      "id": "vc-026",
+      "name": "Fabric Ventures",
+      "address": "London",
+      "postcode": "EC2A 3EY",
+      "coords": "51.524448,-0.078144",
+      "reason": "Has partial address info with coordinates"
+    },
+    {
+      "id": "web3-021",
+      "name": "Ledger",
+      "address": "London",
+      "postcode": "EC1V 2NX",
+      "coords": "51.527304,-0.088894",
+      "reason": "Has partial address info with coordinates"
+    }
+  ],
+  "low": [
+    {
+      "id": "cand-ai-001",
+      "name": "OpenAI",
+      "address": "London",
+      "postcode": "",
+      "coords": "51.5138,-0.1439",
+      "reason": "Generic location only (London) - needs research"
+    },
+    {
+      "id": "cand-ai-002",
+      "name": "ElevenLabs",
+      "address": "London",
+      "postcode": "",
+      "coords": "51.5138,-0.1439",
+      "reason": "Generic location only (London) - needs research"
+    },
+    {
+      "id": "cand-ai-003",
+      "name": "PolyAI",
+      "address": "London",
+      "postcode": "",
+      "coords": "51.5138,-0.1439",
+      "reason": "Generic location only (London) - needs research"
+    },
+    {
+      "id": "cand-ai-004",
+      "name": "Builder.ai",
+      "address": "London",
+      "postcode": "",
+      "coords": "51.5311,-0.124",
+      "reason": "Generic location only (London) - needs research"
+    },
+    {
+      "id": "cand-ai-005",
+      "name": "Robin AI",
+      "address": "London",
+      "postcode": "",
+      "coords": "51.5167,-0.093",
+      "reason": "Generic location only (London) - needs research"
+    },
+    {
+      "id": "cand-ai-006",
+      "name": "PhysicsX",
+      "address": "London",
+      "postcode": "",
+      "coords": "51.5311,-0.124",
+      "reason": "Generic location only (London) - needs research"
+    },
+    {
+      "id": "cand-ai-007",
+      "name": "Graphcore",
+      "address": "London",
+      "postcode": "",
+      "coords": "51.5198,-0.1455",
+      "reason": "Generic location only (London) - needs research"
+    },
+    {
+      "id": "cand-ai-008",
+      "name": "Darktrace",
+      "address": "London",
+      "postcode": "",
+      "coords": "51.5074,-0.1278",
+      "reason": "Generic location only (London) - needs research"
+    },
+    {
+      "id": "cand-ai-009",
+      "name": "Luminance",
+      "address": "London",
+      "postcode": "",
+      "coords": "51.5074,-0.1278",
+      "reason": "Generic location only (London) - needs research"
+    },
+    {
+      "id": "cand-ai-010",
+      "name": "Causaly",
+      "address": "London",
+      "postcode": "",
+      "coords": "51.5311,-0.124",
+      "reason": "Generic location only (London) - needs research"
+    },
+    {
+      "id": "cand-ai-011",
+      "name": "Seldon",
+      "address": "London",
+      "postcode": "",
+      "coords": "51.5167,-0.093",
+      "reason": "Generic location only (London) - needs research"
+    },
+    {
+      "id": "cand-ai-012",
+      "name": "Signal AI",
+      "address": "London",
+      "postcode": "",
+      "coords": "51.5074,-0.1278",
+      "reason": "Generic location only (London) - needs research"
+    },
+    {
+      "id": "cand-ai-013",
+      "name": "Eigen Technologies",
+      "address": "London",
+      "postcode": "",
+      "coords": "51.5074,-0.1278",
+      "reason": "Generic location only (London) - needs research"
+    },
+    {
+      "id": "cand-ai-014",
+      "name": "Faculty",
+      "address": "London",
+      "postcode": "",
+      "coords": "51.525,-0.0913",
+      "reason": "Generic location only (London) - needs research"
+    },
+    {
+      "id": "cand-ai-015",
+      "name": "Harvey",
+      "address": "London",
+      "postcode": "",
+      "coords": "51.5074,-0.1278",
+      "reason": "Generic location only (London) - needs research"
+    },
+    {
+      "id": "cand-ai-016",
+      "name": "Mphasis AI Innovation Hub",
+      "address": "London",
+      "postcode": "",
+      "coords": "51.5074,-0.1278",
+      "reason": "Generic location only (London) - needs research"
+    },
+    {
+      "id": "cand-ai-017",
+      "name": "Huma",
+      "address": "London",
+      "postcode": "",
+      "coords": "51.5074,-0.1278",
+      "reason": "Generic location only (London) - needs research"
+    },
+    {
+      "id": "cand-ai-018",
+      "name": "Relation Therapeutics",
+      "address": "London",
+      "postcode": "",
+      "coords": "51.5311,-0.124",
+      "reason": "Generic location only (London) - needs research"
+    },
+    {
+      "id": "cand-ai-019",
+      "name": "Limbic",
+      "address": "London",
+      "postcode": "",
+      "coords": "51.5074,-0.1278",
+      "reason": "Generic location only (London) - needs research"
+    },
+    {
+      "id": "cand-ai-020",
+      "name": "Baseimmune",
+      "address": "London",
+      "postcode": "",
+      "coords": "51.5311,-0.124",
+      "reason": "Generic location only (London) - needs research"
+    },
+    {
+      "id": "cand-ai-021",
+      "name": "Fetch.ai",
+      "address": "London",
+      "postcode": "",
+      "coords": "51.5074,-0.1278",
+      "reason": "Generic location only (London) - needs research"
+    },
+    {
+      "id": "cand-ai-022",
+      "name": "Synthflow AI",
+      "address": "London",
+      "postcode": "",
+      "coords": "51.5074,-0.1278",
+      "reason": "Generic location only (London) - needs research"
+    },
+    {
+      "id": "cand-web3-001",
+      "name": "OKX",
+      "address": "London",
+      "postcode": "",
+      "coords": "51.5138,-0.0896",
+      "reason": "Generic location only (London) - needs research"
+    },
+    {
+      "id": "cand-web3-002",
+      "name": "Crypto.com",
+      "address": "London",
+      "postcode": "",
+      "coords": "51.5074,-0.1278",
+      "reason": "Generic location only (London) - needs research"
+    },
+    {
+      "id": "cand-web3-003",
+      "name": "eToro",
+      "address": "London",
+      "postcode": "",
+      "coords": "51.5044,-0.0223",
+      "reason": "Generic location only (London) - needs research"
+    },
+    {
+      "id": "cand-web3-004",
+      "name": "Bitpanda",
+      "address": "London",
+      "postcode": "",
+      "coords": "51.5074,-0.1278",
+      "reason": "Generic location only (London) - needs research"
+    },
+    {
+      "id": "cand-web3-005",
+      "name": "Nexo",
+      "address": "London",
+      "postcode": "",
+      "coords": "51.5074,-0.1278",
+      "reason": "Generic location only (London) - needs research"
+    },
+    {
+      "id": "cand-web3-006",
+      "name": "Blockdaemon",
+      "address": "London",
+      "postcode": "",
+      "coords": "51.5074,-0.1278",
+      "reason": "Generic location only (London) - needs research"
+    },
+    {
+      "id": "cand-web3-007",
+      "name": "Alchemy",
+      "address": "London",
+      "postcode": "",
+      "coords": "51.5135,-0.1026",
+      "reason": "Generic location only (London) - needs research"
+    },
+    {
+      "id": "cand-web3-008",
+      "name": "QuickNode",
+      "address": "London",
+      "postcode": "",
+      "coords": "51.5074,-0.1278",
+      "reason": "Generic location only (London) - needs research"
+    },
+    {
+      "id": "cand-web3-009",
+      "name": "Chainlink Labs",
+      "address": "London",
+      "postcode": "",
+      "coords": "51.5074,-0.1278",
+      "reason": "Generic location only (London) - needs research"
+    },
+    {
+      "id": "cand-web3-010",
+      "name": "CertiK",
+      "address": "London",
+      "postcode": "",
+      "coords": "51.5074,-0.1278",
+      "reason": "Generic location only (London) - needs research"
+    },
+    {
+      "id": "cand-web3-011",
+      "name": "Argent",
+      "address": "London",
+      "postcode": "",
+      "coords": "51.5359,-0.1256",
+      "reason": "Generic location only (London) - needs research"
+    },
+    {
+      "id": "cand-web3-012",
+      "name": "Ramp Network",
+      "address": "London",
+      "postcode": "",
+      "coords": "51.5074,-0.1278",
+      "reason": "Generic location only (London) - needs research"
+    },
+    {
+      "id": "cand-web3-013",
+      "name": "Sorare",
+      "address": "London",
+      "postcode": "",
+      "coords": "51.5074,-0.1278",
+      "reason": "Generic location only (London) - needs research"
+    },
+    {
+      "id": "cand-web3-014",
+      "name": "Immutable",
+      "address": "London",
+      "postcode": "",
+      "coords": "51.5074,-0.1278",
+      "reason": "Generic location only (London) - needs research"
+    },
+    {
+      "id": "cand-web3-015",
+      "name": "Dapper Labs",
+      "address": "London",
+      "postcode": "",
+      "coords": "51.5074,-0.1278",
+      "reason": "Generic location only (London) - needs research"
+    },
+    {
+      "id": "cand-web3-016",
+      "name": "R3",
+      "address": "London",
+      "postcode": "",
+      "coords": "51.5074,-0.1278",
+      "reason": "Generic location only (London) - needs research"
+    },
+    {
+      "id": "cand-web3-017",
+      "name": "Coincover",
+      "address": "London",
+      "postcode": "",
+      "coords": "51.5074,-0.1278",
+      "reason": "Generic location only (London) - needs research"
+    },
+    {
+      "id": "cand-web3-018",
+      "name": "Ziglu",
+      "address": "London",
+      "postcode": "",
+      "coords": "51.5074,-0.1278",
+      "reason": "Generic location only (London) - needs research"
+    },
+    {
+      "id": "cand-web3-019",
+      "name": "Mercuryo",
+      "address": "London",
+      "postcode": "",
+      "coords": "51.5074,-0.1278",
+      "reason": "Generic location only (London) - needs research"
+    },
+    {
+      "id": "cand-web3-020",
+      "name": "Transak",
+      "address": "London",
+      "postcode": "",
+      "coords": "51.5074,-0.1278",
+      "reason": "Generic location only (London) - needs research"
+    },
+    {
+      "id": "cand-web3-021",
+      "name": "Safe (Gnosis Safe)",
+      "address": "London",
+      "postcode": "",
+      "coords": "51.5074,-0.1278",
+      "reason": "Generic location only (London) - needs research"
+    },
+    {
+      "id": "cand-web3-022",
+      "name": "Worldcoin (Tools for Humanity)",
+      "address": "London",
+      "postcode": "",
+      "coords": "51.5074,-0.1278",
+      "reason": "Generic location only (London) - needs research"
+    },
+    {
+      "id": "cand-web3-023",
+      "name": "Elliptic Enterprises",
+      "address": "London",
+      "postcode": "",
+      "coords": "51.5138,-0.1021",
+      "reason": "Generic location only (London) - needs research"
+    },
+    {
+      "id": "cand-web3-024",
+      "name": "TRM Labs UK",
+      "address": "London",
+      "postcode": "",
+      "coords": "51.5074,-0.1278",
+      "reason": "Generic location only (London) - needs research"
+    },
+    {
+      "id": "cand-fintech-001",
+      "name": "9fin",
+      "address": "London",
+      "postcode": "",
+      "coords": "51.5138,-0.1439",
+      "reason": "Generic location only (London) - needs research"
+    },
+    {
+      "id": "cand-fintech-002",
+      "name": "Rapyd",
+      "address": "London",
+      "postcode": "",
+      "coords": "51.5074,-0.1278",
+      "reason": "Generic location only (London) - needs research"
+    },
+    {
+      "id": "cand-fintech-003",
+      "name": "Allica Bank",
+      "address": "London",
+      "postcode": "",
+      "coords": "51.5074,-0.1278",
+      "reason": "Generic location only (London) - needs research"
+    },
+    {
+      "id": "cand-fintech-004",
+      "name": "Zilch",
+      "address": "London",
+      "postcode": "",
+      "coords": "51.5074,-0.1278",
+      "reason": "Generic location only (London) - needs research"
+    },
+    {
+      "id": "cand-fintech-005",
+      "name": "Noda",
+      "address": "London",
+      "postcode": "",
+      "coords": "51.5074,-0.1278",
+      "reason": "Generic location only (London) - needs research"
+    },
+    {
+      "id": "cand-fintech-006",
+      "name": "Tide",
+      "address": "London",
+      "postcode": "",
+      "coords": "51.5138,-0.0896",
+      "reason": "Generic location only (London) - needs research"
+    },
+    {
+      "id": "cand-fintech-007",
+      "name": "SumUp",
+      "address": "London",
+      "postcode": "",
+      "coords": "51.5074,-0.1278",
+      "reason": "Generic location only (London) - needs research"
+    },
+    {
+      "id": "cand-fintech-008",
+      "name": "Monese",
+      "address": "London",
+      "postcode": "",
+      "coords": "51.5074,-0.1278",
+      "reason": "Generic location only (London) - needs research"
+    },
+    {
+      "id": "cand-fintech-009",
+      "name": "Cleo",
+      "address": "London",
+      "postcode": "",
+      "coords": "51.5167,-0.093",
+      "reason": "Generic location only (London) - needs research"
+    },
+    {
+      "id": "cand-fintech-010",
+      "name": "Plum",
+      "address": "London",
+      "postcode": "",
+      "coords": "51.5167,-0.093",
+      "reason": "Generic location only (London) - needs research"
+    },
+    {
+      "id": "cand-fintech-011",
+      "name": "Modulr",
+      "address": "London",
+      "postcode": "",
+      "coords": "51.5074,-0.1278",
+      "reason": "Generic location only (London) - needs research"
+    },
+    {
+      "id": "cand-fintech-012",
+      "name": "Yapily",
+      "address": "London",
+      "postcode": "",
+      "coords": "51.5074,-0.1278",
+      "reason": "Generic location only (London) - needs research"
+    },
+    {
+      "id": "cand-fintech-013",
+      "name": "PensionBee",
+      "address": "London",
+      "postcode": "",
+      "coords": "51.5211,-0.073",
+      "reason": "Generic location only (London) - needs research"
+    },
+    {
+      "id": "cand-fintech-014",
+      "name": "Nutmeg",
+      "address": "London",
+      "postcode": "",
+      "coords": "51.5074,-0.1278",
+      "reason": "Generic location only (London) - needs research"
+    },
+    {
+      "id": "cand-fintech-015",
+      "name": "Chip",
+      "address": "London",
+      "postcode": "",
+      "coords": "51.5074,-0.1278",
+      "reason": "Generic location only (London) - needs research"
+    },
+    {
+      "id": "cand-fintech-016",
+      "name": "PrimaryBid",
+      "address": "London",
+      "postcode": "",
+      "coords": "51.5074,-0.1278",
+      "reason": "Generic location only (London) - needs research"
+    },
+    {
+      "id": "cand-fintech-017",
+      "name": "Curve",
+      "address": "London",
+      "postcode": "",
+      "coords": "51.5211,-0.073",
+      "reason": "Generic location only (London) - needs research"
+    },
+    {
+      "id": "cand-fintech-018",
+      "name": "Soldo",
+      "address": "London",
+      "postcode": "",
+      "coords": "51.5074,-0.1278",
+      "reason": "Generic location only (London) - needs research"
+    },
+    {
+      "id": "cand-fintech-019",
+      "name": "Airwallex UK",
+      "address": "London",
+      "postcode": "",
+      "coords": "51.5074,-0.1278",
+      "reason": "Generic location only (London) - needs research"
+    },
+    {
+      "id": "cand-fintech-020",
+      "name": "Mollie UK",
+      "address": "London",
+      "postcode": "",
+      "coords": "51.5074,-0.1278",
+      "reason": "Generic location only (London) - needs research"
+    },
+    {
+      "id": "cand-fintech-021",
+      "name": "Pleo UK",
+      "address": "London",
+      "postcode": "",
+      "coords": "51.5074,-0.1278",
+      "reason": "Generic location only (London) - needs research"
+    },
+    {
+      "id": "cand-fintech-022",
+      "name": "Flagstone",
+      "address": "London",
+      "postcode": "",
+      "coords": "51.5074,-0.1278",
+      "reason": "Generic location only (London) - needs research"
+    },
+    {
+      "id": "cand-fintech-023",
+      "name": "Volt",
+      "address": "London",
+      "postcode": "",
+      "coords": "51.5074,-0.1278",
+      "reason": "Generic location only (London) - needs research"
+    },
+    {
+      "id": "cand-fintech-024",
+      "name": "Gaia Family",
+      "address": "London",
+      "postcode": "",
+      "coords": "51.5074,-0.1278",
+      "reason": "Generic location only (London) - needs research"
+    },
+    {
+      "id": "cand-fintech-025",
+      "name": "Salary Finance",
+      "address": "London",
+      "postcode": "",
+      "coords": "51.5074,-0.1278",
+      "reason": "Generic location only (London) - needs research"
+    },
+    {
+      "id": "cand-fintech-026",
+      "name": "Abound",
+      "address": "London",
+      "postcode": "",
+      "coords": "51.5074,-0.1278",
+      "reason": "Generic location only (London) - needs research"
+    },
+    {
+      "id": "cand-fintech-027",
+      "name": "Payhawk UK",
+      "address": "London",
+      "postcode": "",
+      "coords": "51.5074,-0.1278",
+      "reason": "Generic location only (London) - needs research"
+    },
+    {
+      "id": "cand-fintech-028",
+      "name": "ClearScore",
+      "address": "London",
+      "postcode": "",
+      "coords": "51.4862,-0.1185",
+      "reason": "Generic location only (London) - needs research"
+    },
+    {
+      "id": "cand-fintech-029",
+      "name": "Wealthify",
+      "address": "London",
+      "postcode": "",
+      "coords": "51.5074,-0.1278",
+      "reason": "Generic location only (London) - needs research"
+    },
+    {
+      "id": "cand-fintech-030",
+      "name": "Iwoca",
+      "address": "London",
+      "postcode": "",
+      "coords": "51.5074,-0.1278",
+      "reason": "Generic location only (London) - needs research"
+    },
+    {
+      "id": "cand-edu-001",
+      "name": "Multiverse",
+      "address": "London",
+      "postcode": "",
+      "coords": "51.5203,-0.157",
+      "reason": "Generic location only (London) - needs research"
+    },
+    {
+      "id": "cand-edu-002",
+      "name": "Century Tech",
+      "address": "London",
+      "postcode": "",
+      "coords": "51.5074,-0.1278",
+      "reason": "Generic location only (London) - needs research"
+    },
+    {
+      "id": "cand-edu-003",
+      "name": "Seneca Learning",
+      "address": "London",
+      "postcode": "",
+      "coords": "51.5074,-0.1278",
+      "reason": "Generic location only (London) - needs research"
+    },
+    {
+      "id": "cand-edu-004",
+      "name": "Atom Learning",
+      "address": "London",
+      "postcode": "",
+      "coords": "51.5074,-0.1278",
+      "reason": "Generic location only (London) - needs research"
+    },
+    {
+      "id": "cand-edu-005",
+      "name": "Firefly Learning",
+      "address": "London",
+      "postcode": "",
+      "coords": "51.5074,-0.1278",
+      "reason": "Generic location only (London) - needs research"
+    },
+    {
+      "id": "cand-edu-006",
+      "name": "Edumentors",
+      "address": "London",
+      "postcode": "",
+      "coords": "51.5074,-0.1278",
+      "reason": "Generic location only (London) - needs research"
+    },
+    {
+      "id": "cand-edu-007",
+      "name": "Perlego",
+      "address": "London",
+      "postcode": "",
+      "coords": "51.5074,-0.1278",
+      "reason": "Generic location only (London) - needs research"
+    },
+    {
+      "id": "cand-edu-008",
+      "name": "Memrise",
+      "address": "London",
+      "postcode": "",
+      "coords": "51.5184,-0.0739",
+      "reason": "Generic location only (London) - needs research"
+    },
+    {
+      "id": "cand-edu-009",
+      "name": "Lingumi",
+      "address": "London",
+      "postcode": "",
+      "coords": "51.5074,-0.1278",
+      "reason": "Generic location only (London) - needs research"
+    },
+    {
+      "id": "cand-edu-010",
+      "name": "MyTutor",
+      "address": "London",
+      "postcode": "",
+      "coords": "51.5074,-0.1278",
+      "reason": "Generic location only (London) - needs research"
+    },
+    {
+      "id": "cand-edu-011",
+      "name": "FutureLearn",
+      "address": "London",
+      "postcode": "",
+      "coords": "51.5074,-0.1278",
+      "reason": "Generic location only (London) - needs research"
+    },
+    {
+      "id": "cand-edu-012",
+      "name": "Sparx Learning",
+      "address": "London",
+      "postcode": "",
+      "coords": "51.5074,-0.1278",
+      "reason": "Generic location only (London) - needs research"
+    },
+    {
+      "id": "cand-edu-013",
+      "name": "Third Space Learning",
+      "address": "London",
+      "postcode": "",
+      "coords": "51.5074,-0.1278",
+      "reason": "Generic location only (London) - needs research"
+    },
+    {
+      "id": "cand-edu-014",
+      "name": "Arbor Education",
+      "address": "London",
+      "postcode": "",
+      "coords": "51.5074,-0.1278",
+      "reason": "Generic location only (London) - needs research"
+    },
+    {
+      "id": "cand-edu-015",
+      "name": "Kahoot UK",
+      "address": "London",
+      "postcode": "",
+      "coords": "51.5074,-0.1278",
+      "reason": "Generic location only (London) - needs research"
+    },
+    {
+      "id": "cand-tech-001",
+      "name": "Lindus Health",
+      "address": "London",
+      "postcode": "",
+      "coords": "51.5074,-0.1278",
+      "reason": "Generic location only (London) - needs research"
+    },
+    {
+      "id": "cand-tech-002",
+      "name": "GetHarley",
+      "address": "London",
+      "postcode": "",
+      "coords": "51.5074,-0.1278",
+      "reason": "Generic location only (London) - needs research"
+    },
+    {
+      "id": "cand-tech-003",
+      "name": "Field",
+      "address": "London",
+      "postcode": "",
+      "coords": "51.5074,-0.1278",
+      "reason": "Generic location only (London) - needs research"
+    },
+    {
+      "id": "cand-tech-004",
+      "name": "Opna",
+      "address": "London",
+      "postcode": "",
+      "coords": "51.5074,-0.1278",
+      "reason": "Generic location only (London) - needs research"
+    },
+    {
+      "id": "cand-tech-005",
+      "name": "Sylvera",
+      "address": "London",
+      "postcode": "",
+      "coords": "51.5074,-0.1278",
+      "reason": "Generic location only (London) - needs research"
+    },
+    {
+      "id": "cand-tech-006",
+      "name": "Newcleo",
+      "address": "London",
+      "postcode": "",
+      "coords": "51.5074,-0.1278",
+      "reason": "Generic location only (London) - needs research"
+    },
+    {
+      "id": "cand-tech-007",
+      "name": "Snyk",
+      "address": "London",
+      "postcode": "",
+      "coords": "51.5287,-0.1321",
+      "reason": "Generic location only (London) - needs research"
+    },
+    {
+      "id": "cand-tech-008",
+      "name": "Paddle",
+      "address": "London",
+      "postcode": "",
+      "coords": "51.5074,-0.1278",
+      "reason": "Generic location only (London) - needs research"
+    },
+    {
+      "id": "cand-tech-009",
+      "name": "Freetrade",
+      "address": "London",
+      "postcode": "",
+      "coords": "51.5074,-0.1278",
+      "reason": "Generic location only (London) - needs research"
+    },
+    {
+      "id": "cand-tech-010",
+      "name": "Marshmallow",
+      "address": "London",
+      "postcode": "",
+      "coords": "51.5074,-0.1278",
+      "reason": "Generic location only (London) - needs research"
+    },
+    {
+      "id": "cand-tech-011",
+      "name": "Lendable",
+      "address": "London",
+      "postcode": "",
+      "coords": "51.5249,-0.0846",
+      "reason": "Generic location only (London) - needs research"
+    },
+    {
+      "id": "cand-tech-012",
+      "name": "Cera",
+      "address": "London",
+      "postcode": "",
+      "coords": "51.5074,-0.1278",
+      "reason": "Generic location only (London) - needs research"
+    },
+    {
+      "id": "cand-tech-013",
+      "name": "Quantum Motion",
+      "address": "London",
+      "postcode": "",
+      "coords": "51.5466,-0.1187",
+      "reason": "Generic location only (London) - needs research"
+    },
+    {
+      "id": "cand-tech-014",
+      "name": "Orbital Materials",
+      "address": "London",
+      "postcode": "",
+      "coords": "51.5074,-0.1278",
+      "reason": "Generic location only (London) - needs research"
+    },
+    {
+      "id": "cand-tech-015",
+      "name": "Trint",
+      "address": "London",
+      "postcode": "",
+      "coords": "51.5074,-0.1278",
+      "reason": "Generic location only (London) - needs research"
+    },
+    {
+      "id": "cand-tech-016",
+      "name": "Nothing",
+      "address": "London",
+      "postcode": "",
+      "coords": "51.5129,-0.134",
+      "reason": "Generic location only (London) - needs research"
+    },
+    {
+      "id": "cand-tech-017",
+      "name": "Onfido",
+      "address": "London",
+      "postcode": "",
+      "coords": "51.5167,-0.093",
+      "reason": "Generic location only (London) - needs research"
+    },
+    {
+      "id": "cand-tech-018",
+      "name": "Tessian",
+      "address": "London",
+      "postcode": "",
+      "coords": "51.5074,-0.1278",
+      "reason": "Generic location only (London) - needs research"
+    },
+    {
+      "id": "cand-tech-019",
+      "name": "Gousto",
+      "address": "London",
+      "postcode": "",
+      "coords": "51.5074,-0.1278",
+      "reason": "Generic location only (London) - needs research"
+    },
+    {
+      "id": "cand-tech-020",
+      "name": "Zego",
+      "address": "London",
+      "postcode": "",
+      "coords": "51.5074,-0.1278",
+      "reason": "Generic location only (London) - needs research"
+    },
+    {
+      "id": "cand-tech-021",
+      "name": "Motorway",
+      "address": "London",
+      "postcode": "",
+      "coords": "51.5074,-0.1278",
+      "reason": "Generic location only (London) - needs research"
+    },
+    {
+      "id": "cand-tech-022",
+      "name": "Fyxer AI",
+      "address": "London",
+      "postcode": "",
+      "coords": "51.5074,-0.1278",
+      "reason": "Generic location only (London) - needs research"
+    },
+    {
+      "id": "cand-tech-023",
+      "name": "Laka",
+      "address": "London",
+      "postcode": "",
+      "coords": "51.5127,-0.0706",
+      "reason": "Generic location only (London) - needs research"
+    },
+    {
+      "id": "cand-tech-024",
+      "name": "Peppy",
+      "address": "London",
+      "postcode": "",
+      "coords": "51.5074,-0.1278",
+      "reason": "Generic location only (London) - needs research"
+    },
+    {
+      "id": "cand-tech-025",
+      "name": "Maven Clinic UK",
+      "address": "London",
+      "postcode": "",
+      "coords": "51.5074,-0.1278",
+      "reason": "Generic location only (London) - needs research"
+    },
+    {
+      "id": "cand-tech-026",
+      "name": "Pactio",
+      "address": "London",
+      "postcode": "",
+      "coords": "51.5074,-0.1278",
+      "reason": "Generic location only (London) - needs research"
+    },
+    {
+      "id": "cand-tech-027",
+      "name": "ComplyAdvantage",
+      "address": "London",
+      "postcode": "",
+      "coords": "51.5074,-0.1278",
+      "reason": "Generic location only (London) - needs research"
+    },
+    {
+      "id": "cand-tech-028",
+      "name": "Qatalog",
+      "address": "London",
+      "postcode": "",
+      "coords": "51.5074,-0.1278",
+      "reason": "Generic location only (London) - needs research"
+    },
+    {
+      "id": "cand-tech-029",
+      "name": "Hived",
+      "address": "London",
+      "postcode": "",
+      "coords": "51.5015,0.0275",
+      "reason": "Generic location only (London) - needs research"
+    },
+    {
+      "id": "cand-tech-030",
+      "name": "V7",
+      "address": "London",
+      "postcode": "",
+      "coords": "51.5074,-0.1278",
+      "reason": "Generic location only (London) - needs research"
+    },
+    {
+      "id": "cand-tech-031",
+      "name": "MUBI GO UK Tech",
+      "address": "London",
+      "postcode": "",
+      "coords": "51.5074,-0.1278",
+      "reason": "Generic location only (London) - needs research"
+    },
+    {
+      "id": "cand-tech-032",
+      "name": "Google UK",
+      "address": "London",
+      "postcode": "",
+      "coords": "51.5367,-0.1246",
+      "reason": "Generic location only (London) - needs research"
+    },
+    {
+      "id": "cand-tech-033",
+      "name": "Microsoft UK",
+      "address": "London",
+      "postcode": "",
+      "coords": "51.5177,-0.1432",
+      "reason": "Generic location only (London) - needs research"
+    },
+    {
+      "id": "cand-tech-034",
+      "name": "Amazon UK",
+      "address": "London",
+      "postcode": "",
+      "coords": "51.5044,-0.0223",
+      "reason": "Generic location only (London) - needs research"
+    },
+    {
+      "id": "cand-tech-035",
+      "name": "Meta UK",
+      "address": "London",
+      "postcode": "",
+      "coords": "51.5138,-0.1439",
+      "reason": "Generic location only (London) - needs research"
+    },
+    {
+      "id": "cand-tech-036",
+      "name": "Apple UK",
+      "address": "London",
+      "postcode": "",
+      "coords": "51.4777,-0.1748",
+      "reason": "Generic location only (London) - needs research"
+    },
+    {
+      "id": "cand-tech-037",
+      "name": "TikTok UK",
+      "address": "London",
+      "postcode": "",
+      "coords": "51.5211,-0.073",
+      "reason": "Generic location only (London) - needs research"
+    },
+    {
+      "id": "cand-tech-038",
+      "name": "Salesforce UK",
+      "address": "London",
+      "postcode": "",
+      "coords": "51.5044,-0.0223",
+      "reason": "Generic location only (London) - needs research"
+    },
+    {
+      "id": "cand-tech-039",
+      "name": "Oracle UK",
+      "address": "London",
+      "postcode": "",
+      "coords": "51.5074,-0.1278",
+      "reason": "Generic location only (London) - needs research"
+    },
+    {
+      "id": "cand-tech-040",
+      "name": "SAP UK",
+      "address": "London",
+      "postcode": "",
+      "coords": "51.5074,-0.1278",
+      "reason": "Generic location only (London) - needs research"
+    },
+    {
+      "id": "cand-tech-041",
+      "name": "NVIDIA UK",
+      "address": "London",
+      "postcode": "",
+      "coords": "51.5074,-0.1278",
+      "reason": "Generic location only (London) - needs research"
+    },
+    {
+      "id": "cand-tech-042",
+      "name": "Databricks UK",
+      "address": "London",
+      "postcode": "",
+      "coords": "51.5074,-0.1278",
+      "reason": "Generic location only (London) - needs research"
+    },
+    {
+      "id": "cand-tech-043",
+      "name": "Snowflake UK",
+      "address": "London",
+      "postcode": "",
+      "coords": "51.5074,-0.1278",
+      "reason": "Generic location only (London) - needs research"
+    },
+    {
+      "id": "cand-tech-044",
+      "name": "Palantir UK",
+      "address": "London",
+      "postcode": "",
+      "coords": "51.5138,-0.1439",
+      "reason": "Generic location only (London) - needs research"
+    },
+    {
+      "id": "cand-tech-045",
+      "name": "Adobe UK",
+      "address": "London",
+      "postcode": "",
+      "coords": "51.5074,-0.1278",
+      "reason": "Generic location only (London) - needs research"
+    },
+    {
+      "id": "cand-tech-046",
+      "name": "IBM UK",
+      "address": "London",
+      "postcode": "",
+      "coords": "51.5074,-0.1278",
+      "reason": "Generic location only (London) - needs research"
+    },
+    {
+      "id": "cand-tech-047",
+      "name": "Intel UK",
+      "address": "London",
+      "postcode": "",
+      "coords": "51.5074,-0.1278",
+      "reason": "Generic location only (London) - needs research"
+    },
+    {
+      "id": "cand-tech-048",
+      "name": "Cisco UK",
+      "address": "London",
+      "postcode": "",
+      "coords": "51.5074,-0.1278",
+      "reason": "Generic location only (London) - needs research"
+    },
+    {
+      "id": "cand-tech-049",
+      "name": "Cloudflare UK",
+      "address": "London",
+      "postcode": "",
+      "coords": "51.5074,-0.1278",
+      "reason": "Generic location only (London) - needs research"
+    },
+    {
+      "id": "cand-tech-050",
+      "name": "Atlassian UK",
+      "address": "London",
+      "postcode": "",
+      "coords": "51.5074,-0.1278",
+      "reason": "Generic location only (London) - needs research"
+    },
+    {
+      "id": "cand-tech-051",
+      "name": "Zoom UK",
+      "address": "London",
+      "postcode": "",
+      "coords": "51.5074,-0.1278",
+      "reason": "Generic location only (London) - needs research"
+    },
+    {
+      "id": "cand-tech-052",
+      "name": "HubSpot UK",
+      "address": "London",
+      "postcode": "",
+      "coords": "51.5074,-0.1278",
+      "reason": "Generic location only (London) - needs research"
+    },
+    {
+      "id": "cand-tech-053",
+      "name": "ServiceNow UK",
+      "address": "London",
+      "postcode": "",
+      "coords": "51.5074,-0.1278",
+      "reason": "Generic location only (London) - needs research"
+    },
+    {
+      "id": "cand-tech-054",
+      "name": "Twilio UK",
+      "address": "London",
+      "postcode": "",
+      "coords": "51.5074,-0.1278",
+      "reason": "Generic location only (London) - needs research"
+    },
+    {
+      "id": "cand-tech-055",
+      "name": "Dropbox UK",
+      "address": "London",
+      "postcode": "",
+      "coords": "51.5074,-0.1278",
+      "reason": "Generic location only (London) - needs research"
+    },
+    {
+      "id": "cand-tech-056",
+      "name": "Airbnb UK",
+      "address": "London",
+      "postcode": "",
+      "coords": "51.5074,-0.1278",
+      "reason": "Generic location only (London) - needs research"
+    },
+    {
+      "id": "cand-tech-057",
+      "name": "Uber UK",
+      "address": "London",
+      "postcode": "",
+      "coords": "51.5211,-0.073",
+      "reason": "Generic location only (London) - needs research"
+    },
+    {
+      "id": "cand-tech-058",
+      "name": "Spotify UK",
+      "address": "London",
+      "postcode": "",
+      "coords": "51.5074,-0.1278",
+      "reason": "Generic location only (London) - needs research"
+    },
+    {
+      "id": "cand-tech-059",
+      "name": "Netflix UK",
+      "address": "London",
+      "postcode": "",
+      "coords": "51.5074,-0.1278",
+      "reason": "Generic location only (London) - needs research"
+    },
+    {
+      "id": "cand-tech-060",
+      "name": "ByteDance UK",
+      "address": "London",
+      "postcode": "",
+      "coords": "51.5074,-0.1278",
+      "reason": "Generic location only (London) - needs research"
+    },
+    {
+      "id": "cand-tech-061",
+      "name": "Wise Platform UK",
+      "address": "London",
+      "postcode": "",
+      "coords": "51.5224,-0.0836",
+      "reason": "Generic location only (London) - needs research"
+    }
+  ],
+  "needsGeocoding": []
+}

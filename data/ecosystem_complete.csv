@@ -1,0 +1,28 @@
+id,name,category,address,postcode,city,country,website,source_url,notes,latitude,longitude,twitter,geocode_confidence
+cand-ai-001,OpenAI,ai,50 Broadway,SW1H 0BL,London,UK,,https://openai.com/index/introducing-openai-london/,London office launched,51.4993,-0.1327,@OpenAI,high
+cand-ai-002,ElevenLabs,ai,"Wardour Street, Soho",W1F 0UG,London,UK,,https://elevenlabs.io/blog/london-office-opening,London HQ and operations,51.5134,-0.1333,@elevenlabsio,high
+cand-ai-007,Graphcore,ai,107 Cheapside,EC2V 6DN,London,UK,,https://www.graphcore.ai/,UK AI chip company with London presence,51.5148,-0.0937,@Graphcore,high
+cand-ai-008,Darktrace,ai,"Maurice House, 1 Holborn Circus",EC1N 2HL,London,UK,,https://www.darktrace.com/,UK AI cybersecurity company (London HQ),51.5176,-0.1089,@Darktrace,high
+cand-fintech-004,Zilch,fintech,16 Great Chapel Street,W1F 8FL,London,UK,,https://en.wikipedia.org/wiki/Zilch_%28company%29,London BNPL fintech,51.5142,-0.1334,@zilchhq,high
+cand-fintech-006,Tide,fintech,2-4 Brushfield Street,E1 6AN,London,UK,,https://www.tide.co/,London SME banking fintech,51.5186,-0.0765,@Tide,high
+cand-edu-001,Multiverse,edu,33 Kingsway,WC2B 6UF,London,UK,,https://www.multiverse.io/,London workforce upskilling platform,51.5149,-0.1201,@MultiverseIO,high
+cand-tech-007,Snyk,tech,40 Whitfield Street,W1T 2RH,London,UK,,https://snyk.io/,London-origin devsecops unicorn,51.5234,-0.1359,@snyksec,high
+cand-tech-008,Paddle,tech,"The Cotton Building, Whitechapel High Street",E1 8QS,London,UK,,https://www.paddle.com/,London payments infra startup,51.5154,-0.0734,@PaddleHQ,high
+cand-tech-009,Freetrade,tech,"Interchange, 81-85 Railway Street",N1 9SD,London,UK,,https://freetrade.io/,London investing startup,51.5339,-0.1042,@freetrade,high
+cand-tech-010,Marshmallow,tech,10 John Street,WC1N 2EB,London,UK,,https://www.marshmallow.com/,London insurtech startup,51.52,-0.1166,@getmarshmallow,high
+cand-tech-016,Nothing,tech,101-103 Farringdon Road,EC1R 3BW,London,UK,,https://nothing.tech/,London consumer hardware startup,51.5211,-0.1087,@nothing,high
+cand-tech-017,Onfido,tech,3 Finsbury Avenue,EC2M 2PA,London,UK,,https://onfido.com/,London identity startup,51.5209,-0.0851,@Onfido,high
+cand-tech-019,Gousto,tech,"The Frames, 1 Phipp Street",EC2A 4PS,London,UK,,https://www.gousto.co.uk/,London foodtech scaleup,51.5252,-0.0804,@GoustoUK,high
+cand-tech-020,Zego,tech,"Runway East, 10 Finsbury Square",EC2A 1AF,London,UK,,https://www.zego.com/,London insurtech scaleup,51.5212,-0.0878,@zego,high
+cand-tech-032,Google UK,tech,6 Pancras Square,N1C 4AG,London,UK,,https://about.google/locations/london/,Large London offices incl. King’s Cross,51.5353,-0.1247,@Google,high
+cand-tech-033,Microsoft UK,tech,"2 Kingdom Street, Paddington",W2 6BD,London,UK,,https://news.microsoft.com/en-gb/,Major London and UK AI expansion,51.5181,-0.1769,@Microsoft,high
+cand-tech-034,Amazon UK,tech,"1 Principal Place, Worship Street",EC2A 2FA,London,UK,,https://www.aboutamazon.co.uk/,Large London corporate and tech offices,51.5232,-0.0804,@amazon,high
+cand-tech-035,Meta UK,tech,"10 Brock Street, Regent's Place",NW1 3FG,London,UK,,https://about.meta.com/,London engineering and policy offices,51.5263,-0.1426,@Meta,high
+cand-tech-036,Apple UK,tech,"1 Battersea Power Station, Circus Road South",SW8 5BN,London,UK,,https://www.apple.com/uk/retail/battersea/,London offices incl. Battersea,51.4816,-0.1451,@Apple,high
+cand-tech-037,TikTok UK,tech,"Kaleidoscope, 4 Lindsey Street",EC1A 9HP,London,UK,,https://newsroom.tiktok.com/en-gb,Large London office and staff base,51.5199,-0.0978,@TikTokComms,high
+cand-tech-038,Salesforce UK,tech,"Salesforce Tower, 110 Bishopsgate",EC2N 4AY,London,UK,,https://www.salesforce.com/uk/,London office and UK AI expansion,51.5159,-0.0811,@salesforce,high
+cand-tech-044,Palantir UK,tech,19-25 Birchin Lane,EC3V 9DU,London,UK,,https://www.palantir.com/,London office and public-sector work,51.5131,-0.0862,@PalantirTech,high
+cand-tech-056,Airbnb UK,tech,100 New Bridge Street,EC4V 6JA,London,UK,,https://news.airbnb.com/,London office presence,51.5136,-0.1026,@Airbnb,high
+cand-tech-057,Uber UK,tech,"Aldgate Tower, 2 Leman Street",E1 8FA,London,UK,,https://www.uber.com/gb/en/,London HQ operations for UK market,51.5137,-0.0735,@Uber,high
+cand-tech-058,Spotify UK,tech,"The Adelphi, 1-11 John Adam Street",WC2N 6HT,London,UK,,https://www.lifeatspotify.com/,London office presence,51.5085,-0.1242,@Spotify,high
+cand-tech-059,Netflix UK,tech,30 Berners Street,W1T 3LR,London,UK,,https://about.netflix.com/,London office presence,51.5182,-0.1352,@netflix,high

@@ -1,0 +1,168 @@
+{
+  "OpenAI": {
+    "address": "Alphabeta Building, 18 Finsbury Square, London",
+    "postcode": "EC2A 1AH",
+    "twitter": "@OpenAI"
+  },
+  "ElevenLabs": {
+    "address": "20 St Thomas St, London",
+    "postcode": "SE1 9RS",
+    "twitter": "@elevenlabsio"
+  },
+  "Google UK": {
+    "address": "6 Pancras Square, London",
+    "postcode": "N1C 4AG",
+    "twitter": "@Google"
+  },
+  "Meta UK": {
+    "address": "10 Brock St, London",
+    "postcode": "NW1 3FG",
+    "twitter": "@Meta"
+  },
+  "Microsoft UK": {
+    "address": "Microsoft Campus, Thames Valley Park, Reading",
+    "postcode": "RG6 1WG",
+    "twitter": "@Microsoft",
+    "note": "Main UK HQ is Reading, but has London offices"
+  },
+  "Amazon UK": {
+    "address": "Principal Place, Worship St, London",
+    "postcode": "EC2A 2FA",
+    "twitter": "@amazon"
+  },
+  "Apple UK": {
+    "address": "Battersea Power Station, London",
+    "postcode": "SW11 8BZ",
+    "twitter": "@Apple"
+  },
+  "TikTok UK": {
+    "address": "Kaleidoscope, 4 Lindsey St, London",
+    "postcode": "EC1A 9HP",
+    "twitter": "@TikTokComms"
+  },
+  "Revolut": {
+    "address": "7 Westferry Circus, London",
+    "postcode": "E14 4HD",
+    "twitter": "@RevolutApp"
+  },
+  "Monzo": {
+    "address": "Broadwalk House, 5 Appold St, London",
+    "postcode": "EC2A 2AG",
+    "twitter": "@monzo"
+  },
+  "Deliveroo": {
+    "address": "The River Building, 1 Cousin Ln, London",
+    "postcode": "EC4R 3TE",
+    "twitter": "@Deliveroo"
+  },
+  "Wise": {
+    "address": "Tea Building, 56 Shoreditch High St, London",
+    "postcode": "E1 6JJ",
+    "twitter": "@Wise"
+  },
+  "Graphcore": {
+    "address": "107 Cheapside, London",
+    "postcode": "EC2V 6DN",
+    "twitter": "@Graphcore"
+  },
+  "Darktrace": {
+    "address": "Maurice House, 1 Holborn Circus, London",
+    "postcode": "EC1N 2HL",
+    "twitter": "@Darktrace"
+  },
+  "Snyk": {
+    "address": "40 Whitfield St, London",
+    "postcode": "W1T 2RH",
+    "twitter": "@snyksec"
+  },
+  "Paddle": {
+    "address": "4th Floor, The Cotton Building, Whitechapel High St, London",
+    "postcode": "E1 8QS",
+    "twitter": "@PaddleHQ"
+  },
+  "Freetrade": {
+    "address": "Interchange, 81-85 Railway St, London",
+    "postcode": "N1 9SD",
+    "twitter": "@freetrade"
+  },
+  "Marshmallow": {
+    "address": "10 John St, London",
+    "postcode": "WC1N 2EB",
+    "twitter": "@getmarshmallow"
+  },
+  "Gousto": {
+    "address": "The Frames, 1 Phipp St, London",
+    "postcode": "EC2A 4PS",
+    "twitter": "@GoustoUK"
+  },
+  "Zego": {
+    "address": "Runway East, 10 Finsbury Square, London",
+    "postcode": "EC2A 1AF",
+    "twitter": "@zego"
+  },
+  "Onfido": {
+    "address": "3 Finsbury Avenue, London",
+    "postcode": "EC2M 2PA",
+    "twitter": "@Onfido"
+  },
+  "Elliptic": {
+    "address": "31-32 Ely Place, London",
+    "postcode": "EC1N 6TD",
+    "twitter": "@elliptic"
+  },
+  "Blockchain.com": {
+    "address": "120 Long Acre, London",
+    "postcode": "WC2E 9PA",
+    "twitter": "@blockchain"
+  },
+  "Salesforce UK": {
+    "address": "Salesforce Tower, 110 Bishopsgate, London",
+    "postcode": "EC2N 4AY",
+    "twitter": "@salesforce"
+  },
+  "Multiverse": {
+    "address": "33 Kingsway, London",
+    "postcode": "WC2B 6UF",
+    "twitter": "@MultiverseIO"
+  },
+  "Tide": {
+    "address": "2-4 Brushfield St, London",
+    "postcode": "E1 6AN",
+    "twitter": "@Tide"
+  },
+  "Zilch": {
+    "address": "16 Great Chapel St, London",
+    "postcode": "W1F 8FL",
+    "twitter": "@zilchhq"
+  },
+  "Nothing": {
+    "address": "101-103 Farringdon Rd, London",
+    "postcode": "EC1R 3BW",
+    "twitter": "@nothing"
+  },
+  "Palantir UK": {
+    "address": "1 Plough Pl, London",
+    "postcode": "EC4A 1DE",
+    "twitter": "@PalantirTech"
+  },
+  "Spotify UK": {
+    "address": "4 Pancras Square, London",
+    "postcode": "N1C 4AG",
+    "twitter": "@Spotify"
+  },
+  "Netflix UK": {
+    "address": "26-28 Hammersmith Grove, London",
+    "postcode": "W6 7BA",
+    "twitter": "@netflix"
+  },
+  "Uber UK": {
+    "address": "Aldgate Tower, 2 Leman St, London",
+    "postcode": "E1 8FA",
+    "twitter": "@Uber"
+  },
+  "Airbnb UK": {
+    "address": "100 New Bridge St, London",
+    "postcode": "EC4V 6JA",
+    "twitter": "@Airbnb"
+  }
+}

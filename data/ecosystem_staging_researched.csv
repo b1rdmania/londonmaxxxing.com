@@ -1,0 +1,153 @@
+id,name,category,address,postcode,city,country,website,source_url,notes,latitude,longitude,twitter,geocode_confidence
+cand-ai-001,OpenAI,ai,"Suite 1, 7th Floor, 50 Broadway",SW1H 0BL,London,UK,,,Verified London address,,,,needs_geocoding
+cand-ai-002,ElevenLabs,ai,"Floor 4, 33 Broadwick Street",W1F 0DQ,London,UK,,,Verified London address,,,,needs_geocoding
+cand-ai-003,PolyAI,ai,3 Sheldon Square,W2 6HY,London,UK,,,Verified London address,,,,needs_geocoding
+cand-ai-004,Builder.ai,ai,"6th Floor, North West House, 119 Marylebone Road",NW1 5PU,London,UK,,,Verified London address,,,,needs_geocoding
+cand-ai-005,Robin AI,ai,10 Devonshire Square,EC2M 4YP,London,UK,,,Verified London address,,,,needs_geocoding
+cand-ai-006,PhysicsX,ai,"Victoria House, 1 Leonard Circus",EC2A 4DQ,London,UK,,,Verified London address,,,,needs_geocoding
+cand-ai-007,Graphcore,ai,"Lynton House, 7-12 Tavistock Square",WC1H 9LT,London,UK,,,Verified London address,,,,needs_geocoding
+cand-ai-008,Darktrace,ai,80 Strand,WC2R 0DT,London,UK,,,Verified London address,,,,needs_geocoding
+cand-ai-009,Luminance,ai,,,London,UK,,,Pending research,,,,pending
+cand-ai-010,Causaly,ai,10-16 Elm Street,WC1X 0BJ,London,UK,,,Verified London address,,,,needs_geocoding
+cand-ai-011,Seldon,ai,"Rise London, 41 Luke Street",EC2A 4DP,London,UK,,,Verified London address,,,,needs_geocoding
+cand-ai-012,Signal AI,ai,"1st Floor Sackville House, 143-149 Fenchurch Street",EC3M 6BN,London,UK,,,Verified London address,,,,needs_geocoding
+cand-ai-013,Eigen Technologies,ai,"Fetter Yard, 86 Fetter Lane",EC4A 1EN,London,UK,,,Verified London address,,,,needs_geocoding
+cand-ai-014,Faculty,ai,"Level 5, 160 Old Street",EC1V 9BW,London,UK,,,Verified London address,,,,needs_geocoding
+cand-ai-015,Harvey,ai,,,London,UK,,,Pending research,,,,pending
+cand-ai-016,Mphasis AI Innovation Hub,ai,,,London,UK,,,Pending research,,,,pending
+cand-ai-017,Huma,ai,"13th Floor Millbank Tower, 21-24 Millbank",SW1P 4QP,London,UK,,,Verified London address,,,,needs_geocoding
+cand-ai-018,Relation Therapeutics,ai,"Regents Place, 338 Euston Road",NW1 3BG,London,UK,,,Verified London address,,,,needs_geocoding
+cand-ai-019,Limbic,ai,128 City Road,EC1V 2NX,London,UK,,,Verified London address,,,,needs_geocoding
+cand-ai-020,Baseimmune,ai,"The London Bioscience Innovation Centre, Royal College Street",NW1 0NH,London,UK,,,Verified London address,,,,needs_geocoding
+cand-ai-021,Fetch.ai,ai,,,London,UK,,,Pending research,,,,pending
+cand-ai-022,Synthflow AI,ai,,,London,UK,,,Pending research,,,,pending
+cand-web3-001,OKX,web3,,,London,UK,,,Pending research,,,,pending
+cand-web3-002,Crypto.com,web3,"Suite 5, 7th Floor, 50 Broadway",SW1H 0DB,London,UK,,,Verified London address,,,,needs_geocoding
+cand-web3-003,eToro,web3,"24th Floor, One Canada Square, Canary Wharf",E14 5AB,London,UK,,,Verified London address,,,,needs_geocoding
+cand-web3-004,Bitpanda,web3,32 Threadneedle Street,EC2R 8AY,London,UK,,,Verified London address,,,,needs_geocoding
+cand-web3-005,Nexo,web3,,,London,UK,,,Pending research,,,,pending
+cand-web3-006,Blockdaemon,web3,,,London,UK,,,Pending research,,,,pending
+cand-web3-007,Alchemy,web3,,,London,UK,,,Pending research,,,,pending
+cand-web3-008,QuickNode,web3,,,London,UK,,,Pending research,,,,pending
+cand-web3-009,Chainlink Labs,web3,,,London,UK,,,Pending research,,,,pending
+cand-web3-010,CertiK,web3,,,London,UK,,,Pending research,,,,pending
+cand-web3-011,Argent,web3,,,London,UK,,,Pending research,,,,pending
+cand-web3-012,Ramp Network,web3,,,London,UK,,,Pending research,,,,pending
+cand-web3-013,Sorare,web3,,,London,UK,,,Pending research,,,,pending
+cand-web3-014,Immutable,web3,,,London,UK,,,Pending research,,,,pending
+cand-web3-015,Dapper Labs,web3,,,London,UK,,,Pending research,,,,pending
+cand-web3-016,R3,web3,,,London,UK,,,Pending research,,,,pending
+cand-web3-017,Coincover,web3,,,London,UK,,,Pending research,,,,pending
+cand-web3-018,Ziglu,web3,,,London,UK,,,Pending research,,,,pending
+cand-web3-019,Mercuryo,web3,,,London,UK,,,Pending research,,,,pending
+cand-web3-020,Transak,web3,,,London,UK,,,Pending research,,,,pending
+cand-web3-021,Safe (Gnosis Safe),web3,,,London,UK,,,Pending research,,,,pending
+cand-web3-022,Worldcoin (Tools for Humanity),web3,,,London,UK,,,Pending research,,,,pending
+cand-web3-023,Elliptic Enterprises,web3,,,London,UK,,,Pending research,,,,pending
+cand-web3-024,TRM Labs UK,web3,,,London,UK,,,Pending research,,,,pending
+cand-fintech-001,9fin,fintech,"8th Floor, 100 Bishopsgate",EC2N 4AG,London,UK,,,Verified London address,,,,needs_geocoding
+cand-fintech-002,Rapyd,fintech,"North West House, 119 Marylebone Road",NW1 5PU,London,UK,,,Verified London address,,,,needs_geocoding
+cand-fintech-003,Allica Bank,fintech,,,London,UK,,,Pending research,,,,pending
+cand-fintech-004,Zilch,fintech,111 Buckingham Palace Road,SW1W 0SR,London,UK,,,Verified London address,,,,needs_geocoding
+cand-fintech-005,Noda,fintech,,,London,UK,,,Pending research,,,,pending
+cand-fintech-006,Tide,fintech,"4th Floor, The Featherstone Building, 66 City Road",EC1Y 2AL,London,UK,,,Verified London address,,,,needs_geocoding
+cand-fintech-007,SumUp,fintech,,,London,UK,,,Pending research,,,,pending
+cand-fintech-008,Monese,fintech,"Eagle House, 163 City Road",EC1V 1NR,London,UK,,,Verified London address,,,,needs_geocoding
+cand-fintech-009,Cleo,fintech,14 Gray's Inn Road,WC1X 8HN,London,UK,,,Verified London address,,,,needs_geocoding
+cand-fintech-010,Plum,fintech,"2-7 Clerkenwell Green, 2nd Floor",EC1R 0DE,London,UK,,,Verified London address,,,,needs_geocoding
+cand-fintech-011,Modulr,fintech,,,London,UK,,,Pending research,,,,pending
+cand-fintech-012,Yapily,fintech,,,London,UK,,,Pending research,,,,pending
+cand-fintech-013,PensionBee,fintech,,,London,UK,,,Pending research,,,,pending
+cand-fintech-014,Nutmeg,fintech,,,London,UK,,,Pending research,,,,pending
+cand-fintech-015,Chip,fintech,,,London,UK,,,Pending research,,,,pending
+cand-fintech-016,PrimaryBid,fintech,,,London,UK,,,Pending research,,,,pending
+cand-fintech-017,Curve,fintech,15-19 Bloomsbury Way,WC1A 2TH,London,UK,,,Verified London address,,,,needs_geocoding
+cand-fintech-018,Soldo,fintech,,,London,UK,,,Pending research,,,,pending
+cand-fintech-019,Airwallex UK,fintech,,,London,UK,,,Pending research,,,,pending
+cand-fintech-020,Mollie UK,fintech,,,London,UK,,,Pending research,,,,pending
+cand-fintech-021,Pleo UK,fintech,,,London,UK,,,Pending research,,,,pending
+cand-fintech-022,Flagstone,fintech,,,London,UK,,,Pending research,,,,pending
+cand-fintech-023,Volt,fintech,,,London,UK,,,Pending research,,,,pending
+cand-fintech-024,Gaia Family,fintech,,,London,UK,,,Pending research,,,,pending
+cand-fintech-025,Salary Finance,fintech,,,London,UK,,,Pending research,,,,pending
+cand-fintech-026,Abound,fintech,,,London,UK,,,Pending research,,,,pending
+cand-fintech-027,Payhawk UK,fintech,,,London,UK,,,Pending research,,,,pending
+cand-fintech-028,ClearScore,fintech,,,London,UK,,,Pending research,,,,pending
+cand-fintech-029,Wealthify,fintech,,,London,UK,,,Pending research,,,,pending
+cand-fintech-030,Iwoca,fintech,,,London,UK,,,Pending research,,,,pending
+cand-edu-001,Multiverse,edu,,,London,UK,,,Pending research,,,,pending
+cand-edu-002,Century Tech,edu,,,London,UK,,,Pending research,,,,pending
+cand-edu-003,Seneca Learning,edu,,,London,UK,,,Pending research,,,,pending
+cand-edu-004,Atom Learning,edu,,,London,UK,,,Pending research,,,,pending
+cand-edu-005,Firefly Learning,edu,,,London,UK,,,Pending research,,,,pending
+cand-edu-006,Edumentors,edu,,,London,UK,,,Pending research,,,,pending
+cand-edu-007,Perlego,edu,,,London,UK,,,Pending research,,,,pending
+cand-edu-008,Memrise,edu,,,London,UK,,,Pending research,,,,pending
+cand-edu-009,Lingumi,edu,,,London,UK,,,Pending research,,,,pending
+cand-edu-010,MyTutor,edu,,,London,UK,,,Pending research,,,,pending
+cand-edu-011,FutureLearn,edu,,,London,UK,,,Pending research,,,,pending
+cand-edu-012,Sparx Learning,edu,,,London,UK,,,Pending research,,,,pending
+cand-edu-013,Third Space Learning,edu,,,London,UK,,,Pending research,,,,pending
+cand-edu-014,Arbor Education,edu,,,London,UK,,,Pending research,,,,pending
+cand-edu-015,Kahoot UK,edu,,,London,UK,,,Pending research,,,,pending
+cand-tech-001,Lindus Health,tech,,,London,UK,,,Pending research,,,,pending
+cand-tech-002,GetHarley,tech,,,London,UK,,,Pending research,,,,pending
+cand-tech-003,Field,tech,,,London,UK,,,Pending research,,,,pending
+cand-tech-004,Opna,tech,,,London,UK,,,Pending research,,,,pending
+cand-tech-005,Sylvera,tech,,,London,UK,,,Pending research,,,,pending
+cand-tech-006,Newcleo,tech,,,London,UK,,,Pending research,,,,pending
+cand-tech-007,Snyk,tech,"Mainframe Building - Euston, Floor 3, 24 Eversholt Street",NW1 1AD,London,UK,,,Verified London address,,,,needs_geocoding
+cand-tech-008,Paddle,tech,"Judd House, 18-29 Mora Street",EC1V 8BT,London,UK,,,Verified London address,,,,needs_geocoding
+cand-tech-009,Freetrade,tech,,,London,UK,,,Pending research,,,,pending
+cand-tech-010,Marshmallow,tech,,,London,UK,,,Pending research,,,,pending
+cand-tech-011,Lendable,tech,,,London,UK,,,Pending research,,,,pending
+cand-tech-012,Cera,tech,,,London,UK,,,Pending research,,,,pending
+cand-tech-013,Quantum Motion,tech,,,London,UK,,,Pending research,,,,pending
+cand-tech-014,Orbital Materials,tech,,,London,UK,,,Pending research,,,,pending
+cand-tech-015,Trint,tech,,,London,UK,,,Pending research,,,,pending
+cand-tech-016,Nothing,tech,,,London,UK,,,Pending research,,,,pending
+cand-tech-017,Onfido,tech,,,London,UK,,,Pending research,,,,pending
+cand-tech-018,Tessian,tech,,,London,UK,,,Pending research,,,,pending
+cand-tech-019,Gousto,tech,,,London,UK,,,Pending research,,,,pending
+cand-tech-020,Zego,tech,,,London,UK,,,Pending research,,,,pending
+cand-tech-021,Motorway,tech,,,London,UK,,,Pending research,,,,pending
+cand-tech-022,Fyxer AI,tech,,,London,UK,,,Pending research,,,,pending
+cand-tech-023,Laka,tech,,,London,UK,,,Pending research,,,,pending
+cand-tech-024,Peppy,tech,,,London,UK,,,Pending research,,,,pending
+cand-tech-025,Maven Clinic UK,tech,,,London,UK,,,Pending research,,,,pending
+cand-tech-026,Pactio,tech,,,London,UK,,,Pending research,,,,pending
+cand-tech-027,ComplyAdvantage,tech,,,London,UK,,,Pending research,,,,pending
+cand-tech-028,Qatalog,tech,,,London,UK,,,Pending research,,,,pending
+cand-tech-029,Hived,tech,,,London,UK,,,Pending research,,,,pending
+cand-tech-030,V7,tech,,,London,UK,,,Pending research,,,,pending
+cand-tech-031,MUBI GO UK Tech,tech,,,London,UK,,,Pending research,,,,pending
+cand-tech-032,Google UK,tech,,,London,UK,,,Pending research,,,,pending
+cand-tech-033,Microsoft UK,tech,,,London,UK,,,Pending research,,,,pending
+cand-tech-034,Amazon UK,tech,,,London,UK,,,Pending research,,,,pending
+cand-tech-035,Meta UK,tech,,,London,UK,,,Pending research,,,,pending
+cand-tech-036,Apple UK,tech,,,London,UK,,,Pending research,,,,pending
+cand-tech-037,TikTok UK,tech,,,London,UK,,,Pending research,,,,pending
+cand-tech-038,Salesforce UK,tech,,,London,UK,,,Pending research,,,,pending
+cand-tech-039,Oracle UK,tech,,,London,UK,,,Pending research,,,,pending
+cand-tech-040,SAP UK,tech,,,London,UK,,,Pending research,,,,pending
+cand-tech-041,NVIDIA UK,tech,,,London,UK,,,Pending research,,,,pending
+cand-tech-042,Databricks UK,tech,,,London,UK,,,Pending research,,,,pending
+cand-tech-043,Snowflake UK,tech,,,London,UK,,,Pending research,,,,pending
+cand-tech-044,Palantir UK,tech,,,London,UK,,,Pending research,,,,pending
+cand-tech-045,Adobe UK,tech,,,London,UK,,,Pending research,,,,pending
+cand-tech-046,IBM UK,tech,,,London,UK,,,Pending research,,,,pending
+cand-tech-047,Intel UK,tech,,,London,UK,,,Pending research,,,,pending
+cand-tech-048,Cisco UK,tech,,,London,UK,,,Pending research,,,,pending
+cand-tech-049,Cloudflare UK,tech,,,London,UK,,,Pending research,,,,pending
+cand-tech-050,Atlassian UK,tech,,,London,UK,,,Pending research,,,,pending
+cand-tech-051,Zoom UK,tech,,,London,UK,,,Pending research,,,,pending
+cand-tech-052,HubSpot UK,tech,,,London,UK,,,Pending research,,,,pending
+cand-tech-053,ServiceNow UK,tech,,,London,UK,,,Pending research,,,,pending
+cand-tech-054,Twilio UK,tech,,,London,UK,,,Pending research,,,,pending
+cand-tech-055,Dropbox UK,tech,,,London,UK,,,Pending research,,,,pending
+cand-tech-056,Airbnb UK,tech,,,London,UK,,,Pending research,,,,pending
+cand-tech-057,Uber UK,tech,,,London,UK,,,Pending research,,,,pending
+cand-tech-058,Spotify UK,tech,,,London,UK,,,Pending research,,,,pending
+cand-tech-059,Netflix UK,tech,,,London,UK,,,Pending research,,,,pending
+cand-tech-060,ByteDance UK,tech,,,London,UK,,,Pending research,,,,pending
+cand-tech-061,Wise Platform UK,tech,,,London,UK,,,Pending research,,,,pending
