@@ -15,9 +15,9 @@ vc-013,Northzone,vc,7-9 St James's Square,SW1Y 4JU,London,UK,https://northzone.c
 vc-014,Episode 1 Ventures,vc,London,W1F 7EF,London,UK,https://ep1.vc,https://ep1.vc,Seed and Series A European startups,51.51334,-0.138798
 vc-015,Entrepreneur First,vc,Shoreditch Exchange Senna Building Gorsuch Place,E2 8JF,London,UK,https://joinef.com,https://find-and-update.company-information.service.gov.uk/company/OC397263,Pre-seed talent investor,51.530169,-0.075481
 vc-016,Backed VC,vc,London,EC2A 3AR,London,UK,https://backed.vc,https://backed.vc,Pre-seed and seed European founders,51.526359,-0.080053
-vc-017,Felix Capital,vc,London,W1T 1JU,London,UK,https://felixcap.com,https://felixcap.com,Seed through growth consumer technology,,
-vc-018,Stride VC,vc,61 Great Tower Street,EC3R 5AX,London,UK,https://stride.vc,https://stride.vc,Seed and Series A B2B software,,
-vc-019,Anthemis,vc,London,EC2M 4YD,London,UK,https://anthemis.com,https://anthemis.com,Financial services innovation,,
+vc-017,Felix Capital,vc,27 Beak Street,W1F 9RU,London,UK,https://felixcap.com,https://felixcap.com,Seed through growth consumer technology,51.512312,-0.138159
+vc-018,Stride VC,vc,4 Grotto Passage,W1U 4JX,London,UK,https://stride.vc,https://stride.vc,Seed and Series A B2B software,51.520443,-0.15302
+vc-019,Anthemis,vc,3rd Floor 25 Soho Square,W1D 3QR,London,UK,https://anthemis.com,https://anthemis.com,Financial services innovation,51.5148,-0.1317
 vc-020,Playfair Capital,vc,London,EC2A 4NE,London,UK,https://playfair.vc,https://playfair.vc,Pre-seed and seed deep tech,51.525617,-0.083602
 vc-021,Kindred Capital,vc,London,EC2A 3AY,London,UK,https://kindredcapital.vc,https://kindredcapital.vc,Seed stage European B2B,51.526082,-0.079041
 vc-022,Connect Ventures,vc,4th Floor 140 Aldersgate Street,EC1A 4HY,London,UK,https://connectventures.co,https://find-and-update.company-information.service.gov.uk/company/OC367566,Seed and Series A,51.519648,-0.097518
@@ -50,12 +50,12 @@ fintech-007,Plaid,fintech,Techspace Level 4 25 Worship Street,EC2A 2DX,London,UK
 fintech-008,Klarna,fintech,10 York Road,SE1 7ND,London,UK,https://klarna.com,https://find-and-update.company-information.service.gov.uk/company/08706739,Buy now pay later,51.503492,-0.11564
 fintech-009,OakNorth,fintech,3rd Floor 57 Broadwick Street Soho,W1F 9QS,London,UK,https://oaknorth.co.uk,https://find-and-update.company-information.service.gov.uk/company/08595042,Business lending platform,51.513054,-0.137196
 fintech-010,Zopa,fintech,Level 12 20 Water Street Canary Wharf,E14 5GX,London,UK,https://zopa.com,https://find-and-update.company-information.service.gov.uk/company/10627575,Digital bank and lending,51.502783,-0.014907
-fintech-011,Starling Bank,fintech,3rd Floor 2 Finsbury Avenue,EC2M 2PP,London,UK,https://starlingbank.com,https://find-and-update.company-information.service.gov.uk/company/09092149,Digital bank,,
+fintech-011,Starling Bank,fintech,3rd Floor 2 Finsbury Avenue,EC2M 2PP,London,UK,https://starlingbank.com,https://find-and-update.company-information.service.gov.uk/company/09092149,Digital bank,51.519418,-0.085229
 fintech-012,Funding Circle,fintech,5th Floor 71 Queen Victoria Street,EC4V 4AY,London,UK,https://fundingcircle.com,https://find-and-update.company-information.service.gov.uk/company/06968588,SME lending platform,51.511977,-0.094796
 fintech-013,ClearBank,fintech,201 Haverstock Hill,NW3 4QG,London,UK,https://clearbank.co.uk,https://find-and-update.company-information.service.gov.uk/company/10193375,Banking infrastructure clearing bank,51.550623,-0.16559
 fintech-014,TrueLayer,fintech,Angel Building 407 St John Street,EC1V 4AB,London,UK,https://truelayer.com,https://find-and-update.company-information.service.gov.uk/company/10124530,Open banking API,51.531291,-0.106865
 fintech-015,Thought Machine,fintech,78 York Street,W1H 1DP,London,UK,https://thoughtmachine.net,https://find-and-update.company-information.service.gov.uk/company/08019163,Core banking technology cloud-native,51.520027,-0.162511
-web3-001,Blockchain.com,web3,145-157 St John Street,EC1V 4PY,London,UK,https://blockchain.com,https://find-and-update.company-information.service.gov.uk/company/08021223,Crypto wallet and exchange,,
+web3-001,Blockchain.com,web3,145-157 St John Street,EC1V 4PY,London,UK,https://blockchain.com,https://find-and-update.company-information.service.gov.uk/company/08021223,Crypto wallet and exchange,51.529461,-0.10679
 web3-002,Copper,web3,17 Broadwick Street Soho,W1F 0DE,London,UK,https://copper.co,https://find-and-update.company-information.service.gov.uk/company/11148681,Digital asset custody exploring IPO 2026,51.513527,-0.135245
 web3-003,MoonPay,web3,20-22 Wenlock Road,N1 7GU,London,UK,https://moonpay.com,https://find-and-update.company-information.service.gov.uk/company/12055543,Crypto payment infrastructure,51.530737,-0.09371
 web3-004,B2C2,web3,86-90 Paul Street,EC2A 4NE,London,UK,https://b2c2.com,https://find-and-update.company-information.service.gov.uk/company/09217126,Institutional crypto liquidity provider,51.525617,-0.083602
@@ -74,7 +74,7 @@ web3-016,Gemini,web3,25 Copthall Avenue,EC2R 7BP,London,UK,https://gemini.com,ht
 web3-017,Bitstamp,web3,27 Old Gloucester Street,WC1N 3AX,London,UK,https://bitstamp.net,https://find-and-update.company-information.service.gov.uk/company/FC032353,Crypto exchange trading,51.520593,-0.122185
 web3-018,Circle,web3,1 Bartholomew Lane,EC2N 2AX,London,UK,https://circle.com,https://circle.com,USDC stablecoin issuer payments,51.514557,-0.08754
 web3-019,Ripple,web3,40 Whitfield Street,W1T 2RH,London,UK,https://ripple.com,https://ripple.com,Cross-border payments XRP,51.520238,-0.134841
-web3-020,Fireblocks,web3,Cannon Green 27 Bush Lane,EC4R 0AA,London,UK,https://fireblocks.com,https://fireblocks.com,Digital asset custody infrastructure,,
+web3-020,Fireblocks,web3,1 Lackington Street,EC2A 1AL,London,UK,https://fireblocks.com,https://fireblocks.com,Digital asset custody infrastructure,51.519839,-0.086064
 web3-021,Ledger,web3,London,EC1V 2NX,London,UK,https://ledger.com,https://ledger.com,Hardware wallet self-custody,51.527304,-0.088894
 web3-022,Archax,web3,10 Lower Thames Street,EC3R 6AF,London,UK,https://archax.com,https://find-and-update.company-information.service.gov.uk/company/11959766,FCA-regulated digital securities exchange,51.509143,-0.084784
 web3-023,Zodia Markets,web3,125 Old Broad Street,EC2N 1AR,London,UK,https://zodiamarkets.com,https://zodiamarkets.com,Standard Chartered crypto brokerage,51.514543,-0.086114

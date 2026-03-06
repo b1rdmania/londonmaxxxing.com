@@ -3,13 +3,13 @@ import "maplibre-gl/dist/maplibre-gl.css";
 import "./globals.css";
 
 export const metadata: Metadata = {
-  title: "LONDONMAXXXING // Infrastructure Map of London Tech Ecosystem",
-  description: "Real-time map of London's tech infrastructure: 27 VCs, 14 AI companies, 15 fintechs, 24 Web3 firms, office availability, and founder hubs. Data-first directory for builders.",
+  title: "london tech heatmap 🔥",
+  description: "where london tech happens. vcs, ai labs, fintech, web3. raw data, real addresses.",
   openGraph: {
-    title: "LONDONMAXXXING // London Tech Infrastructure Map",
-    description: "84 verified companies. VCs, AI, fintech, Web3, coworking. Raw data for builders.",
+    title: "london tech heatmap 🔥",
+    description: "where london tech happens. vcs, ai labs, fintech, web3. raw data, real addresses.",
     url: "https://londonmaxxxing.com",
-    siteName: "LONDONMAXXXING",
+    siteName: "london tech heatmap",
     images: [
       {
         url: "/og-image.png", // Placeholder - user will create
@@ -23,8 +23,8 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "LONDONMAXXXING // London Tech Infrastructure",
-    description: "Map of London tech: VCs, AI, fintech, Web3, offices. Data for builders.",
+    title: "london tech heatmap 🔥",
+    description: "where london tech happens. vcs, ai labs, fintech, web3. raw data, real addresses.",
     images: ["/og-image.png"] // Placeholder - user will create
   },
   robots: {
