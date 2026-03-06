@@ -1,12 +1,15 @@
-# Londonmaxxxing.com MVP
+# londonmaxxxing.com
 
-Map-first MVP for startup office availability in Shoreditch and East London.
+Interactive map of London's tech ecosystem — 235+ AI labs, VCs, big tech offices, fintechs, and startups in Shoreditch, King's Cross, and beyond.
+
+Built entirely by [GhostClaw](https://github.com/qwibitai/ghostclaw) — an AI assistant that codes, commits, and ships.
 
 ## Stack
 
-- Next.js (App Router, TypeScript)
-- MapLibre GL + react-map-gl
-- Seeded in-memory data (30 listings + ecosystem points)
+- Next.js 14 (App Router, TypeScript)
+- MapLibre GL JS + react-map-gl
+- CSV-based data source
+- Deployed on Vercel
 
 ## Run Locally
 
@@ -15,35 +18,24 @@ npm install
 npm run dev
 ```
 
-Then open <http://localhost:3000>.
+Then open http://localhost:3000
 
-## Environment Variables
+## Data
 
-Copy `.env.example` to `.env.local`.
+All companies are in `data/ecosystem.csv`. Categories:
+- **AI**: AI labs, research orgs, and AI-focused startups
+- **VC**: Venture capital firms and investors
+- **Big Tech**: Major tech companies (Google, Meta, Amazon, etc.)
+- **Fintech**: Financial technology companies
+- **Web3**: Crypto and blockchain companies
+- **AI × Bio**: AI-driven biotech and drug discovery
 
-- `MAPBOX_TOKEN` (optional for this MVP; required if you switch to Mapbox tiles)
-- `SUPABASE_URL` (future data backend)
-- `SUPABASE_KEY` (future data backend)
+## Contributing
 
-## MVP Features Included
+Found a missing company or wrong address? Open an issue or PR with the company details.
 
-- Map-first landing experience
-- Office marker clustering
-- Marker color by price tier (green/amber/red)
-- Marker size by desk capacity
-- Marker popup with normalized pricing fields
-- Optional VC office layer toggle
-- Optional tech office layer toggle
+## Links
 
-## Data Model
-
-See `/lib/types.ts` and `/lib/data.ts` for the normalized listing schema used by the map layer.
-
-## Deployment
-
-Deploy directly to Vercel:
-
-1. Push this folder to a GitHub repo.
-2. Import repo in Vercel.
-3. Add env vars from `.env.example`.
-4. Deploy.
+- Live site: [londonmaxxxing.com](https://londonmaxxxing.com)
+- Built with: [GhostClaw](https://github.com/qwibitai/ghostclaw)
+- Curated by: [@b1rdmania](https://x.com/b1rdmania)

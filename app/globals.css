@@ -280,6 +280,39 @@ body {
   background: #1f1f1f;
 }
 
+/* Credits footer */
+.map-credits {
+  position: absolute;
+  bottom: 12px;
+  right: 12px;
+  font-size: 11px;
+  color: #666;
+  background: rgba(255, 255, 255, 0.9);
+  padding: 6px 10px;
+  border-radius: 4px;
+  backdrop-filter: blur(4px);
+  z-index: 1;
+}
+
+.map-credits a {
+  color: #333;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.map-credits a:hover {
+  text-decoration: underline;
+}
+
+.shell.dark .map-credits {
+  background: rgba(0, 0, 0, 0.8);
+  color: #999;
+}
+
+.shell.dark .map-credits a {
+  color: #ddd;
+}
+
 @media (max-width: 860px) {
   .topbar {
     flex-direction: column;

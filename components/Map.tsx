@@ -189,6 +189,13 @@ export default function Map({ ecosystemPoints, enabledTypes, darkMode = false }:
           </Popup>
         ) : null}
       </MapGL>
+
+      {/* Credits footer */}
+      <div className="map-credits">
+        Built by <a href="https://github.com/qwibitai/ghostclaw" target="_blank" rel="noreferrer">GhostClaw</a>
+        {" · "}
+        <a href="https://github.com/b1rdmania/londonmaxxxing.com" target="_blank" rel="noreferrer">GitHub</a>
+      </div>
     </div>
   );
 }
