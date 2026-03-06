@@ -2,7 +2,6 @@
 
 import { useMemo, useRef, useState } from "react";
 import MapGL, { Layer, LayerProps, MapLayerMouseEvent, MapRef, Popup, Source } from "react-map-gl/maplibre";
-import "maplibre-gl/dist/maplibre-gl.css";
 
 import MarkerPopup from "@/components/MarkerPopup";
 import { EcosystemPoint, OfficeListing } from "@/lib/types";
