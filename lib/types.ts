@@ -6,7 +6,7 @@ export type DeskBucket = "1_4" | "4_10" | "10_20" | "20_plus";
 
 export type BudgetBucket = "lt_2k" | "2k_5k" | "5k_10k" | "10k_plus";
 
-export type EcosystemType = "vc" | "ai" | "fintech" | "web3" | "edu" | "tech";
+export type EcosystemType = "vc" | "ai" | "fintech" | "web3" | "edu" | "big_tech";
 
 export interface OfficeListing {
   id: string;
