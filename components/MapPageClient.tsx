@@ -3,18 +3,15 @@
 import { useState } from "react";
 
 import Map from "@/components/Map";
-import { EcosystemPoint, OfficeListing } from "@/lib/types";
+import { EcosystemPoint } from "@/lib/types";
 
 interface MapPageClientProps {
-  listings: OfficeListing[];
   ecosystemPoints: EcosystemPoint[];
 }
 
-export default function MapPageClient({ listings, ecosystemPoints }: MapPageClientProps) {
-  const [showOfficeLayer, setShowOfficeLayer] = useState(false);
+export default function MapPageClient({ ecosystemPoints }: MapPageClientProps) {
   const [showVcOverlay, setShowVcOverlay] = useState(true);
   const [showTechOverlay, setShowTechOverlay] = useState(true);
-  const hasOfficeData = listings.length > 0;
   const hasVcData = ecosystemPoints.some((point) => point.type === "vc");
   const hasTechData = ecosystemPoints.some((point) => point.type === "tech");
 
@@ -22,8 +19,7 @@ export default function MapPageClient({ listings, ecosystemPoints }: MapPageClie
     <main className="shell">
       <header className="topbar">
         <div className="topbar-brand">
-          <h1>London Tech Map</h1>
-          <p>London Tech heat map</p>
+          <h1>London Tech heat map 🔥</h1>
         </div>
         <nav className="topbar-nav" aria-label="Map layers">
           <button
@@ -44,23 +40,12 @@ export default function MapPageClient({ listings, ecosystemPoints }: MapPageClie
             <span className="dot dot-tech" aria-hidden="true" />
             Tech
           </button>
-          <button
-            type="button"
-            className={showOfficeLayer ? "topbar-btn active" : "topbar-btn"}
-            onClick={() => setShowOfficeLayer((value) => !value)}
-            disabled={!hasOfficeData}
-          >
-            <span className="dot dot-office" aria-hidden="true" />
-            Office
-          </button>
         </nav>
       </header>
 
       <section className="map-shell">
         <Map
-          listings={listings}
           ecosystemPoints={ecosystemPoints}
-          showOfficeLayer={showOfficeLayer}
           showVcOverlay={showVcOverlay}
           showTechOverlay={showTechOverlay}
         />

@@ -33,15 +33,9 @@ body {
 }
 
 .topbar-brand h1 {
-  font-size: 34px;
+  font-size: 46px;
   line-height: 0.98;
   font-weight: 700;
-}
-
-.topbar-brand p {
-  font-size: 12px;
-  color: #555;
-  margin-top: 3px;
 }
 
 .topbar-nav {
@@ -95,11 +89,6 @@ body {
 .dot-tech {
   background: #ff7b22;
   border-color: #ff7b22;
-}
-
-.dot-office {
-  background: #18a558;
-  border-color: #18a558;
 }
 
 .topbar-btn:not(.active) .dot {

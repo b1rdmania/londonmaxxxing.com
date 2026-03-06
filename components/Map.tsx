@@ -3,69 +3,13 @@
 import { useMemo, useRef, useState } from "react";
 import MapGL, { Layer, LayerProps, MapLayerMouseEvent, MapRef, Popup, Source } from "react-map-gl/maplibre";
 
-import MarkerPopup from "@/components/MarkerPopup";
-import { EcosystemPoint, OfficeListing } from "@/lib/types";
-import { toGeoJson } from "@/lib/mapUtils";
+import { EcosystemPoint } from "@/lib/types";
 
 interface MapProps {
-  listings: OfficeListing[];
   ecosystemPoints: EcosystemPoint[];
-  showOfficeLayer: boolean;
   showVcOverlay: boolean;
   showTechOverlay: boolean;
 }
-
-const clusterLayer: LayerProps = {
-  id: "clusters",
-  type: "circle",
-  source: "offices",
-  filter: ["has", "point_count"],
-  paint: {
-    "circle-color": "#7fd7a0",
-    "circle-radius": ["step", ["get", "point_count"], 16, 10, 22, 25, 28],
-    "circle-stroke-width": 2,
-    "circle-stroke-color": "#1f4f2f"
-  }
-};
-
-const clusterCountLayer: LayerProps = {
-  id: "cluster-count",
-  type: "symbol",
-  source: "offices",
-  filter: ["has", "point_count"],
-  layout: {
-    "text-field": ["get", "point_count_abbreviated"],
-    "text-size": 12
-  },
-  paint: {
-    "text-color": "#0b2e17"
-  }
-};
-
-const unclusteredPointLayer: LayerProps = {
-  id: "unclustered-point",
-  type: "circle",
-  source: "offices",
-  filter: ["!", ["has", "point_count"]],
-  paint: {
-    "circle-color": "#18a558",
-    "circle-radius": [
-      "interpolate",
-      ["linear"],
-      ["get", "desk_count"],
-      1,
-      6,
-      10,
-      10,
-      20,
-      14,
-      30,
-      18
-    ],
-    "circle-stroke-width": 1,
-    "circle-stroke-color": "#0b2e17"
-  }
-};
 
 const vcLayer: LayerProps = {
   id: "vc-points",
@@ -108,17 +52,13 @@ const ecosystemLabelLayer: LayerProps = {
   }
 };
 
-export default function Map({ listings, ecosystemPoints, showOfficeLayer, showVcOverlay, showTechOverlay }: MapProps) {
+export default function Map({ ecosystemPoints, showVcOverlay, showTechOverlay }: MapProps) {
   const mapRef = useRef<MapRef | null>(null);
-  const [popupListingId, setPopupListingId] = useState<string | null>(null);
   const [popupEcosystemId, setPopupEcosystemId] = useState<string | null>(null);
   const interactiveLayerIds = [
-    ...(showOfficeLayer ? ["clusters", "unclustered-point"] : []),
     ...(showVcOverlay ? ["vc-points"] : []),
     ...(showTechOverlay ? ["tech-points"] : [])
   ];
-
-  const officeGeoJson = useMemo(() => toGeoJson(listings), [listings]);
 
   const ecosystemGeoJson = useMemo(
     () => ({
@@ -141,14 +81,12 @@ export default function Map({ listings, ecosystemPoints, showOfficeLayer, showVc
     [ecosystemPoints]
   );
 
-  const popupListing = popupListingId ? listings.find((listing) => listing.id === popupListingId) : null;
   const popupEcosystem = popupEcosystemId ? ecosystemPoints.find((point) => point.id === popupEcosystemId) : null;
 
   const onMapClick = (event: MapLayerMouseEvent) => {
     const map = mapRef.current?.getMap();
     if (!map) return;
     if (!interactiveLayerIds.length) {
-      setPopupListingId(null);
       setPopupEcosystemId(null);
       return;
     }
@@ -158,40 +96,14 @@ export default function Map({ listings, ecosystemPoints, showOfficeLayer, showVc
     });
 
     if (!features.length) {
-      setPopupListingId(null);
       setPopupEcosystemId(null);
       return;
     }
 
     const feature = features[0];
 
-    if (feature.layer.id === "clusters") {
-      const clusterId = Number(feature.properties?.cluster_id);
-      const source = map.getSource("offices") as unknown as {
-        getClusterExpansionZoom: (id: number, cb: (error: Error | null, zoom: number) => void) => void;
-      };
-
-      if (Number.isFinite(clusterId) && source?.getClusterExpansionZoom) {
-        source.getClusterExpansionZoom(clusterId, (error, zoom) => {
-          if (error) return;
-          const geometry = feature.geometry;
-          if (geometry.type !== "Point") return;
-          map.easeTo({ center: geometry.coordinates as [number, number], zoom });
-        });
-      }
-      return;
-    }
-
     const id = feature.properties?.id;
     if (typeof id !== "string") return;
-
-    if (feature.layer.id === "unclustered-point") {
-      setPopupEcosystemId(null);
-      setPopupListingId(id);
-      return;
-    }
-
-    setPopupListingId(null);
     setPopupEcosystemId(id);
   };
 
@@ -209,33 +121,12 @@ export default function Map({ listings, ecosystemPoints, showOfficeLayer, showVc
         interactiveLayerIds={interactiveLayerIds}
         onClick={onMapClick}
       >
-        {showOfficeLayer ? (
-          <Source id="offices" type="geojson" data={officeGeoJson} cluster clusterRadius={45} clusterMaxZoom={14}>
-            <Layer {...clusterLayer} />
-            <Layer {...clusterCountLayer} />
-            <Layer {...unclusteredPointLayer} />
-          </Source>
-        ) : null}
-
         {showVcOverlay || showTechOverlay ? (
           <Source id="ecosystem" type="geojson" data={ecosystemGeoJson}>
             {showVcOverlay ? <Layer {...vcLayer} /> : null}
             {showTechOverlay ? <Layer {...techLayer} /> : null}
             {(showVcOverlay || showTechOverlay) ? <Layer {...ecosystemLabelLayer} /> : null}
           </Source>
-        ) : null}
-
-        {popupListing && showOfficeLayer ? (
-          <Popup
-            longitude={popupListing.longitude}
-            latitude={popupListing.latitude}
-            closeButton
-            closeOnClick={false}
-            onClose={() => setPopupListingId(null)}
-            maxWidth="320px"
-          >
-            <MarkerPopup listing={popupListing} />
-          </Popup>
         ) : null}
 
         {popupEcosystem ? (

@@ -1,8 +1,8 @@
 import MapPageClient from "@/components/MapPageClient";
-import { loadEcosystemPoints, loadOfficeListings } from "@/lib/data";
+import { loadEcosystemPoints } from "@/lib/data";
 
 export default async function HomePage() {
-  const [listings, ecosystemPoints] = await Promise.all([loadOfficeListings(), loadEcosystemPoints()]);
+  const ecosystemPoints = await loadEcosystemPoints();
 
-  return <MapPageClient listings={listings} ecosystemPoints={ecosystemPoints} />;
+  return <MapPageClient ecosystemPoints={ecosystemPoints} />;
 }
