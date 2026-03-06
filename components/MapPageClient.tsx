@@ -1,6 +1,6 @@
 "use client";
 
-import { useEffect, useMemo, useState } from "react";
+import { useMemo, useState } from "react";
 
 import Map from "@/components/Map";
 import { ECOSYSTEM_META, ECOSYSTEM_ORDER } from "@/lib/ecosystemConfig";
@@ -30,18 +30,6 @@ function buildInitialState(points: EcosystemPoint[]): Record<EcosystemType, bool
 const DEFAULT_VISIBLE_TYPES: EcosystemType[] = ["vc", "ai", "fintech", "web3", "edu", "tech"];
 
 export default function MapPageClient({ ecosystemPoints }: MapPageClientProps) {
-  const [darkMode, setDarkMode] = useState(() => {
-    if (typeof window !== "undefined") {
-      return window.matchMedia("(prefers-color-scheme: dark)").matches;
-    }
-    return false;
-  });
-
-  useEffect(() => {
-    const mediaQuery = window.matchMedia("(prefers-color-scheme: dark)");
-    setDarkMode(mediaQuery.matches);
-  }, []);
-
   const [enabledByType, setEnabledByType] = useState<Record<EcosystemType, boolean>>(() => {
     const initial = buildInitialState(ecosystemPoints);
     const hasAny = Object.values(initial).some(Boolean);
@@ -71,7 +59,7 @@ export default function MapPageClient({ ecosystemPoints }: MapPageClientProps) {
   );
 
   return (
-    <main className={darkMode ? "shell dark" : "shell"}>
+    <main className="shell">
       <header className="topbar">
         <div className="topbar-brand">
           <h1>london tech heatmap 🔥</h1>
@@ -80,13 +68,6 @@ export default function MapPageClient({ ecosystemPoints }: MapPageClientProps) {
           </span>
         </div>
         <nav className="topbar-nav" aria-label="Map layers">
-          <button
-            type="button"
-            className="topbar-btn"
-            onClick={() => setDarkMode(!darkMode)}
-          >
-            {darkMode ? "☀" : "☾"}
-          </button>
           {availableTypes.map((type) => {
             const isOn = enabledByType[type];
             return (
@@ -105,7 +86,7 @@ export default function MapPageClient({ ecosystemPoints }: MapPageClientProps) {
       </header>
 
       <section className="map-shell">
-        <Map ecosystemPoints={ecosystemPoints} enabledTypes={enabledTypes} darkMode={darkMode} />
+        <Map ecosystemPoints={ecosystemPoints} enabledTypes={enabledTypes} />
       </section>
     </main>
   );
