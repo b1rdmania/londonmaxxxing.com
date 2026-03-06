@@ -6,7 +6,7 @@ import path from "path";
 import { EcosystemPoint, EcosystemType, OfficeListing, OfficeType } from "@/lib/types";
 
 const OFFICE_TYPES: ReadonlySet<OfficeType> = new Set(["serviced", "managed", "coworking"]);
-const ECO_TYPES: ReadonlySet<EcosystemType> = new Set(["vc", "tech"]);
+const ECO_TYPES: ReadonlySet<EcosystemType> = new Set(["vc", "ai", "fintech", "web3", "edu", "tech"]);
 
 function parseCsv(text: string): Array<Record<string, string>> {
   const rows: string[][] = [];
@@ -115,21 +115,29 @@ function toOfficeListing(record: Record<string, string>): OfficeListing | null {
 }
 
 function toEcosystemPoint(record: Record<string, string>): EcosystemPoint | null {
-  const type = record.type as EcosystemType;
+  const rawType = (record.category || record.type || "").trim().toLowerCase();
+  const type = rawType as EcosystemType;
   if (!ECO_TYPES.has(type)) return null;
 
   const latitude = parseNumber(record.latitude);
   const longitude = parseNumber(record.longitude);
   if (latitude === null || longitude === null) return null;
 
+  const addressParts = [record.address, record.city, record.postcode, record.country]
+    .map((part) => part?.trim())
+    .filter((part, index, arr) => Boolean(part) && arr.indexOf(part) === index);
+  const fullAddress = addressParts.join(", ");
+
   return {
     id: record.id,
     name: record.name,
-    address: record.address,
+    address: fullAddress || record.address,
     latitude,
     longitude,
     type,
-    source_url: record.source_url
+    source_url: record.source_url,
+    website: record.website || undefined,
+    notes: record.notes || undefined
   };
 }
 
@@ -145,6 +153,6 @@ export async function loadOfficeListings(): Promise<OfficeListing[]> {
 }
 
 export async function loadEcosystemPoints(): Promise<EcosystemPoint[]> {
-  const records = await readCsv("companies.csv");
+  const records = await readCsv("data/ecosystem.csv");
   return records.map(toEcosystemPoint).filter((row): row is EcosystemPoint => row !== null);
 }

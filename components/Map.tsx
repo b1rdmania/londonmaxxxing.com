@@ -3,39 +3,13 @@
 import { useMemo, useRef, useState } from "react";
 import MapGL, { Layer, LayerProps, MapLayerMouseEvent, MapRef, Popup, Source } from "react-map-gl/maplibre";
 
-import { EcosystemPoint } from "@/lib/types";
+import { ECOSYSTEM_META } from "@/lib/ecosystemConfig";
+import { EcosystemPoint, EcosystemType } from "@/lib/types";
 
 interface MapProps {
   ecosystemPoints: EcosystemPoint[];
-  showVcOverlay: boolean;
-  showTechOverlay: boolean;
+  enabledTypes: EcosystemType[];
 }
-
-const vcLayer: LayerProps = {
-  id: "vc-points",
-  type: "circle",
-  source: "ecosystem",
-  filter: ["==", ["get", "type"], "vc"],
-  paint: {
-    "circle-color": "#2f62ff",
-    "circle-radius": 6,
-    "circle-stroke-width": 1,
-    "circle-stroke-color": "#ffffff"
-  }
-};
-
-const techLayer: LayerProps = {
-  id: "tech-points",
-  type: "circle",
-  source: "ecosystem",
-  filter: ["==", ["get", "type"], "tech"],
-  paint: {
-    "circle-color": "#ff7b22",
-    "circle-radius": 6,
-    "circle-stroke-width": 1,
-    "circle-stroke-color": "#ffffff"
-  }
-};
 
 const ecosystemLabelLayer: LayerProps = {
   id: "ecosystem-labels",
@@ -52,13 +26,30 @@ const ecosystemLabelLayer: LayerProps = {
   }
 };
 
-export default function Map({ ecosystemPoints, showVcOverlay, showTechOverlay }: MapProps) {
+function layerId(type: EcosystemType): string {
+  return `ecosystem-${type}`;
+}
+
+function categoryLayer(type: EcosystemType): LayerProps {
+  const meta = ECOSYSTEM_META[type];
+  return {
+    id: layerId(type),
+    type: "circle",
+    source: "ecosystem",
+    filter: ["==", ["get", "type"], type],
+    paint: {
+      "circle-color": meta.color,
+      "circle-radius": 6,
+      "circle-stroke-width": 1,
+      "circle-stroke-color": "#ffffff"
+    }
+  };
+}
+
+export default function Map({ ecosystemPoints, enabledTypes }: MapProps) {
   const mapRef = useRef<MapRef | null>(null);
   const [popupEcosystemId, setPopupEcosystemId] = useState<string | null>(null);
-  const interactiveLayerIds = [
-    ...(showVcOverlay ? ["vc-points"] : []),
-    ...(showTechOverlay ? ["tech-points"] : [])
-  ];
+  const interactiveLayerIds = enabledTypes.map(layerId);
 
   const ecosystemGeoJson = useMemo(
     () => ({
@@ -70,7 +61,8 @@ export default function Map({ ecosystemPoints, showVcOverlay, showTechOverlay }:
           name: point.name,
           address: point.address,
           type: point.type,
-          source_url: point.source_url
+          source_url: point.source_url,
+          website: point.website
         },
         geometry: {
           type: "Point" as const,
@@ -100,9 +92,7 @@ export default function Map({ ecosystemPoints, showVcOverlay, showTechOverlay }:
       return;
     }
 
-    const feature = features[0];
-
-    const id = feature.properties?.id;
+    const id = features[0].properties?.id;
     if (typeof id !== "string") return;
     setPopupEcosystemId(id);
   };
@@ -113,19 +103,20 @@ export default function Map({ ecosystemPoints, showVcOverlay, showTechOverlay }:
         ref={mapRef}
         style={{ width: "100%", height: "100%" }}
         initialViewState={{
-          longitude: -0.0815,
-          latitude: 51.5218,
-          zoom: 12.8
+          longitude: -0.098,
+          latitude: 51.515,
+          zoom: 11.2
         }}
         mapStyle="https://basemaps.cartocdn.com/gl/positron-gl-style/style.json"
         interactiveLayerIds={interactiveLayerIds}
         onClick={onMapClick}
       >
-        {showVcOverlay || showTechOverlay ? (
+        {enabledTypes.length ? (
           <Source id="ecosystem" type="geojson" data={ecosystemGeoJson}>
-            {showVcOverlay ? <Layer {...vcLayer} /> : null}
-            {showTechOverlay ? <Layer {...techLayer} /> : null}
-            {(showVcOverlay || showTechOverlay) ? <Layer {...ecosystemLabelLayer} /> : null}
+            {enabledTypes.map((type) => (
+              <Layer key={type} {...categoryLayer(type)} />
+            ))}
+            <Layer {...ecosystemLabelLayer} />
           </Source>
         ) : null}
 
@@ -136,14 +127,21 @@ export default function Map({ ecosystemPoints, showVcOverlay, showTechOverlay }:
             closeButton
             closeOnClick={false}
             onClose={() => setPopupEcosystemId(null)}
-            maxWidth="300px"
+            maxWidth="320px"
           >
             <div className="popup-card">
               <h3>{popupEcosystem.name}</h3>
               <p>{popupEcosystem.address}</p>
               <p>
-                Type: <strong>{popupEcosystem.type.toUpperCase()}</strong>
+                Type: <strong>{ECOSYSTEM_META[popupEcosystem.type].label.toUpperCase()}</strong>
               </p>
+              {popupEcosystem.website ? (
+                <p>
+                  <a href={popupEcosystem.website} target="_blank" rel="noreferrer">
+                    Website
+                  </a>
+                </p>
+              ) : null}
               <a href={popupEcosystem.source_url} target="_blank" rel="noreferrer">
                 Source
               </a>

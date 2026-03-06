@@ -81,20 +81,6 @@ body {
   border: 1px solid #444;
 }
 
-.dot-vc {
-  background: #2f62ff;
-  border-color: #2f62ff;
-}
-
-.dot-tech {
-  background: #ff7b22;
-  border-color: #ff7b22;
-}
-
-.topbar-btn:not(.active) .dot {
-  background: transparent;
-}
-
 .map-shell {
   min-height: 0;
 }
