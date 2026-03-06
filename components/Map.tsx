@@ -21,10 +21,10 @@ const clusterLayer: LayerProps = {
   source: "offices",
   filter: ["has", "point_count"],
   paint: {
-    "circle-color": "#17253e",
+    "circle-color": "#a9a9a9",
     "circle-radius": ["step", ["get", "point_count"], 16, 10, 22, 25, 28],
     "circle-stroke-width": 2,
-    "circle-stroke-color": "#8cb6ff"
+    "circle-stroke-color": "#2a2a2a"
   }
 };
 
@@ -38,7 +38,7 @@ const clusterCountLayer: LayerProps = {
     "text-size": 12
   },
   paint: {
-    "text-color": "#e6eeff"
+    "text-color": "#111111"
   }
 };
 
@@ -52,10 +52,10 @@ const unclusteredPointLayer: LayerProps = {
       "match",
       ["get", "price_tier"],
       0,
-      "#20c55e",
+      "#b0b0b0",
       1,
-      "#f59e0b",
-      "#ef4444"
+      "#888888",
+      "#575757"
     ],
     "circle-radius": [
       "interpolate",
@@ -71,7 +71,7 @@ const unclusteredPointLayer: LayerProps = {
       18
     ],
     "circle-stroke-width": 1,
-    "circle-stroke-color": "#0a0d12"
+    "circle-stroke-color": "#111111"
   }
 };
 
@@ -81,10 +81,10 @@ const vcLayer: LayerProps = {
   source: "ecosystem",
   filter: ["==", ["get", "type"], "vc"],
   paint: {
-    "circle-color": "#4c8dff",
+    "circle-color": "#050505",
     "circle-radius": 6,
     "circle-stroke-width": 1,
-    "circle-stroke-color": "#0a0d12"
+    "circle-stroke-color": "#f2f2f2"
   }
 };
 
@@ -94,10 +94,10 @@ const techLayer: LayerProps = {
   source: "ecosystem",
   filter: ["==", ["get", "type"], "tech"],
   paint: {
-    "circle-color": "#d946ef",
+    "circle-color": "#4a4a4a",
     "circle-radius": 6,
     "circle-stroke-width": 1,
-    "circle-stroke-color": "#0a0d12"
+    "circle-stroke-color": "#f2f2f2"
   }
 };
 
@@ -112,7 +112,7 @@ const ecosystemLabelLayer: LayerProps = {
     "text-anchor": "top"
   },
   paint: {
-    "text-color": "#dce5ff"
+    "text-color": "#1f1f1f"
   }
 };
 
@@ -213,7 +213,7 @@ export default function Map({ listings, ecosystemPoints, showOfficeLayer, showVc
           latitude: 51.5218,
           zoom: 12.8
         }}
-        mapStyle="https://basemaps.cartocdn.com/gl/dark-matter-gl-style/style.json"
+        mapStyle="https://basemaps.cartocdn.com/gl/positron-gl-style/style.json"
         interactiveLayerIds={interactiveLayerIds}
         onClick={onMapClick}
       >
