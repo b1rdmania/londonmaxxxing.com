@@ -116,7 +116,8 @@ export default function Map({ ecosystemPoints, enabledTypes, darkMode = false }:
         interactiveLayerIds={interactiveLayerIds}
         onClick={onMapClick}
         attributionControl={{
-          customAttribution: '<a href="https://x.com/b1rdmania" target="_blank" rel="noreferrer">b1rdmania</a>'
+          compact: false,
+          customAttribution: '<a href="https://x.com/b1rdmania" target="_blank" rel="noreferrer">Built by Birdmania</a>'
         }}
       >
         {enabledTypes.length ? (
