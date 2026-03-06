@@ -1,0 +1,11 @@
+id,source_id,target_id,relation,confidence,source_url,notes
+rel-001,vc-002,ai-004,invests_in,0.95,https://www.synthesia.io/post/synthesia-series-d,Index participated in Synthesia funding.
+rel-002,vc-001,ai-005,invests_in,0.9,https://wayve.ai/news/series-c,Balderton linked to Wayve financing rounds.
+rel-003,vc-007,fintech-001,invests_in,0.8,https://seedcamp.com/portfolio/,Seedcamp portfolio linkage.
+rel-004,vc-015,fintech-002,accelerated,0.75,https://www.joinef.com/portfolio,EF portfolio/acceleration pathway.
+rel-005,vc-004,fintech-005,invests_in,0.7,https://octopusventures.com,Octopus fintech thesis linkage.
+rel-006,vc-026,web3-003,invests_in,0.9,https://fabric.vc/portfolio,Fabric Ventures portfolio linkage.
+rel-007,vc-027,web3-006,accelerated,0.85,https://outlierventures.io/portfolio,Outlier accelerator/portfolio linkage.
+rel-008,edu-001,ai-001,alumni_link,0.65,https://www.imperial.ac.uk/computing/,Imperial talent/research pipeline to AI ecosystem.
+rel-009,edu-004,ai-002,partnered_with,0.6,https://www.turing.ac.uk,Research ecosystem overlap.
+rel-010,web3-002,fintech-003,partnered_with,0.55,https://copper.co/newsroom,Infra partnership pattern in UK fintech stack.
