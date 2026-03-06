@@ -1,0 +1,153 @@
+id,latitude,longitude,notes
+cand-ai-001,51.5138,-0.1439,Research candidate (high): London office launched
+cand-ai-002,51.5138,-0.1439,Research candidate (high): London HQ and operations
+cand-ai-003,51.5138,-0.1439,Research candidate (high): London-founded conversational AI company
+cand-ai-004,51.5311,-0.124,Research candidate (medium): London-founded AI app platform
+cand-ai-005,51.5167,-0.093,Research candidate (medium): London legal AI startup (WIRED list)
+cand-ai-006,51.5311,-0.124,Research candidate (high): London AI engineering startup (WIRED/Sifted)
+cand-ai-007,51.5198,-0.1455,Research candidate (medium): UK AI chip company with London presence
+cand-ai-008,51.5074,-0.1278,Research candidate (high): UK AI cybersecurity company (London HQ)
+cand-ai-009,51.5074,-0.1278,Research candidate (medium): London legal AI company
+cand-ai-010,51.5311,-0.124,Research candidate (medium): AI scientific platform with London base
+cand-ai-011,51.5167,-0.093,Research candidate (medium): London MLOps / AI deployment company
+cand-ai-012,51.5074,-0.1278,Research candidate (high): London AI media intelligence company
+cand-ai-013,51.5074,-0.1278,Research candidate (medium): London NLP automation company
+cand-ai-014,51.525,-0.0913,Research candidate (medium): London AI consultancy/product company
+cand-ai-015,51.5074,-0.1278,Research candidate (medium): AI legal startup expanding into London
+cand-ai-016,51.5074,-0.1278,Research candidate (medium): London AI hub expansion cited by London & Partners
+cand-ai-017,51.5074,-0.1278,Research candidate (medium): London health AI / digital health scaleup
+cand-ai-018,51.5311,-0.124,Research candidate (medium): London health AI startup (L&P 2024 list)
+cand-ai-019,51.5074,-0.1278,Research candidate (medium): London mental-health AI company
+cand-ai-020,51.5311,-0.124,Research candidate (medium): London biotech/AI company
+cand-ai-021,51.5074,-0.1278,Research candidate (medium): London-origin AI x web3 company
+cand-ai-022,51.5074,-0.1278,Research candidate (low): London conversational AI startup
+cand-web3-001,51.5138,-0.0896,Research candidate (medium): Global exchange with UK/London operations
+cand-web3-002,51.5074,-0.1278,Research candidate (medium): Global exchange with UK presence
+cand-web3-003,51.5044,-0.0223,Research candidate (high): London office and UK operations
+cand-web3-004,51.5074,-0.1278,Research candidate (medium): UK expansion and London presence
+cand-web3-005,51.5074,-0.1278,Research candidate (low): UK-facing crypto platform with London activity
+cand-web3-006,51.5074,-0.1278,Research candidate (medium): Institutional web3 infra with London base
+cand-web3-007,51.5135,-0.1026,Research candidate (medium): Web3 infra company with London hiring/presence
+cand-web3-008,51.5074,-0.1278,Research candidate (medium): Web3 infra provider with London presence
+cand-web3-009,51.5074,-0.1278,Research candidate (medium): Major web3 infra team with London footprint
+cand-web3-010,51.5074,-0.1278,Research candidate (low): Web3 security firm with London presence
+cand-web3-011,51.5359,-0.1256,Research candidate (high): London crypto wallet startup
+cand-web3-012,51.5074,-0.1278,Research candidate (high): London web3 payments infrastructure
+cand-web3-013,51.5074,-0.1278,Research candidate (medium): Has London office/presence in UK market
+cand-web3-014,51.5074,-0.1278,Research candidate (low): Web3 gaming company with London team presence
+cand-web3-015,51.5074,-0.1278,Research candidate (low): Web3/NFT company with London hiring footprint
+cand-web3-016,51.5074,-0.1278,Research candidate (high): Enterprise blockchain company with London HQ
+cand-web3-017,51.5074,-0.1278,Research candidate (medium): UK crypto custody protection company
+cand-web3-018,51.5074,-0.1278,Research candidate (medium): London crypto fintech
+cand-web3-019,51.5074,-0.1278,Research candidate (low): Crypto payments with UK/London presence
+cand-web3-020,51.5074,-0.1278,Research candidate (low): Web3 onboarding with UK presence
+cand-web3-021,51.5074,-0.1278,Research candidate (low): Core team presence in London ecosystem
+cand-web3-022,51.5074,-0.1278,Research candidate (medium): London activity and hiring
+cand-web3-023,51.5138,-0.1021,Research candidate (medium): Additional legal entities/teams in London
+cand-web3-024,51.5074,-0.1278,Research candidate (low): Crypto compliance company with London expansion
+cand-fintech-001,51.5138,-0.1439,Research candidate (high): London fintech debt intelligence
+cand-fintech-002,51.5074,-0.1278,Research candidate (high): London-headquartered payments company
+cand-fintech-003,51.5074,-0.1278,Research candidate (high): London/Milton Keynes challenger bank
+cand-fintech-004,51.5074,-0.1278,Research candidate (high): London BNPL fintech
+cand-fintech-005,51.5074,-0.1278,Research candidate (medium): London open banking platform
+cand-fintech-006,51.5138,-0.0896,Research candidate (high): London SME banking fintech
+cand-fintech-007,51.5074,-0.1278,Research candidate (high): Large payments company with London HQ
+cand-fintech-008,51.5074,-0.1278,Research candidate (high): London digital banking fintech
+cand-fintech-009,51.5167,-0.093,Research candidate (high): London consumer finance app
+cand-fintech-010,51.5167,-0.093,Research candidate (high): London savings/investing fintech
+cand-fintech-011,51.5074,-0.1278,Research candidate (high): London payments infrastructure
+cand-fintech-012,51.5074,-0.1278,Research candidate (high): London open banking API company
+cand-fintech-013,51.5211,-0.073,Research candidate (high): London pension fintech
+cand-fintech-014,51.5074,-0.1278,Research candidate (high): London wealthtech
+cand-fintech-015,51.5074,-0.1278,Research candidate (medium): London savings fintech
+cand-fintech-016,51.5074,-0.1278,Research candidate (medium): London retail investment platform
+cand-fintech-017,51.5211,-0.073,Research candidate (high): London fintech super card
+cand-fintech-018,51.5074,-0.1278,Research candidate (high): London spend management fintech
+cand-fintech-019,51.5074,-0.1278,Research candidate (medium): Global fintech with London presence
+cand-fintech-020,51.5074,-0.1278,Research candidate (medium): Payments company with London office
+cand-fintech-021,51.5074,-0.1278,Research candidate (medium): Spend management with London team
+cand-fintech-022,51.5074,-0.1278,Research candidate (medium): UK savings fintech with London presence
+cand-fintech-023,51.5074,-0.1278,Research candidate (high): London open payments startup (WIRED)
+cand-fintech-024,51.5074,-0.1278,Research candidate (medium): London fertility-finance startup (WIRED)
+cand-fintech-025,51.5074,-0.1278,Research candidate (medium): London fintech for employee finance
+cand-fintech-026,51.5074,-0.1278,Research candidate (medium): London AI lending startup
+cand-fintech-027,51.5074,-0.1278,Research candidate (medium): Finance ops with London office
+cand-fintech-028,51.4862,-0.1185,Research candidate (high): London consumer credit fintech
+cand-fintech-029,51.5074,-0.1278,Research candidate (low): UK wealthtech with London presence
+cand-fintech-030,51.5074,-0.1278,Research candidate (high): London SME lender
+cand-edu-001,51.5203,-0.157,Research candidate (high): London workforce upskilling platform
+cand-edu-002,51.5074,-0.1278,Research candidate (high): London AI learning platform
+cand-edu-003,51.5074,-0.1278,Research candidate (high): London edtech platform
+cand-edu-004,51.5074,-0.1278,Research candidate (high): London adaptive learning startup
+cand-edu-005,51.5074,-0.1278,Research candidate (high): London school platform
+cand-edu-006,51.5074,-0.1278,Research candidate (high): London AI tutoring startup
+cand-edu-007,51.5074,-0.1278,Research candidate (high): London learning subscription platform
+cand-edu-008,51.5184,-0.0739,Research candidate (high): London language learning company
+cand-edu-009,51.5074,-0.1278,Research candidate (medium): London kids English edtech
+cand-edu-010,51.5074,-0.1278,Research candidate (high): London tutoring marketplace
+cand-edu-011,51.5074,-0.1278,Research candidate (high): London online education platform
+cand-edu-012,51.5074,-0.1278,Research candidate (medium): UK edtech with London presence
+cand-edu-013,51.5074,-0.1278,Research candidate (medium): London maths tutoring platform
+cand-edu-014,51.5074,-0.1278,Research candidate (medium): UK edtech with London office
+cand-edu-015,51.5074,-0.1278,Research candidate (low): Edtech with London operations
+cand-tech-001,51.5074,-0.1278,Research candidate (high): London clinical trials startup (WIRED) [source-category: startup]
+cand-tech-002,51.5074,-0.1278,Research candidate (medium): London dermatology platform (WIRED) [source-category: startup]
+cand-tech-003,51.5074,-0.1278,Research candidate (high): London battery storage startup (WIRED) [source-category: startup]
+cand-tech-004,51.5074,-0.1278,Research candidate (medium): London carbon platform (WIRED) [source-category: startup]
+cand-tech-005,51.5074,-0.1278,Research candidate (high): London carbon ratings startup (WIRED) [source-category: startup]
+cand-tech-006,51.5074,-0.1278,Research candidate (medium): Nuclear startup with London office (WIRED) [source-category: startup]
+cand-tech-007,51.5287,-0.1321,Research candidate (high): London-origin devsecops unicorn [source-category: startup]
+cand-tech-008,51.5074,-0.1278,Research candidate (high): London payments infra startup [source-category: startup]
+cand-tech-009,51.5074,-0.1278,Research candidate (high): London investing startup [source-category: startup]
+cand-tech-010,51.5074,-0.1278,Research candidate (high): London insurtech startup [source-category: startup]
+cand-tech-011,51.5249,-0.0846,Research candidate (high): London lending startup [source-category: startup]
+cand-tech-012,51.5074,-0.1278,Research candidate (high): London healthtech scaleup [source-category: startup]
+cand-tech-013,51.5466,-0.1187,Research candidate (high): London quantum startup [source-category: startup]
+cand-tech-014,51.5074,-0.1278,Research candidate (medium): London AI materials startup [source-category: startup]
+cand-tech-015,51.5074,-0.1278,Research candidate (high): London AI transcription startup [source-category: startup]
+cand-tech-016,51.5129,-0.134,Research candidate (high): London consumer hardware startup [source-category: startup]
+cand-tech-017,51.5167,-0.093,Research candidate (high): London identity startup [source-category: startup]
+cand-tech-018,51.5074,-0.1278,Research candidate (high): London email security startup [source-category: startup]
+cand-tech-019,51.5074,-0.1278,Research candidate (high): London foodtech scaleup [source-category: startup]
+cand-tech-020,51.5074,-0.1278,Research candidate (high): London insurtech scaleup [source-category: startup]
+cand-tech-021,51.5074,-0.1278,Research candidate (high): London used-car marketplace [source-category: startup]
+cand-tech-022,51.5074,-0.1278,Research candidate (low): London AI workflow startup [source-category: startup]
+cand-tech-023,51.5127,-0.0706,Research candidate (medium): London insurtech startup [source-category: startup]
+cand-tech-024,51.5074,-0.1278,Research candidate (medium): London digital health startup [source-category: startup]
+cand-tech-025,51.5074,-0.1278,Research candidate (low): US health startup with London office [source-category: startup]
+cand-tech-026,51.5074,-0.1278,Research candidate (low): London AI negotiation startup [source-category: startup]
+cand-tech-027,51.5074,-0.1278,Research candidate (high): London regtech scaleup [source-category: startup]
+cand-tech-028,51.5074,-0.1278,Research candidate (low): London workplace software startup [source-category: startup]
+cand-tech-029,51.5015,0.0275,Research candidate (medium): London logistics startup [source-category: startup]
+cand-tech-030,51.5074,-0.1278,Research candidate (high): London AI data labeling startup [source-category: startup]
+cand-tech-031,51.5074,-0.1278,Research candidate (low): London media-tech presence [source-category: startup]
+cand-tech-032,51.5367,-0.1246,Research candidate (high): Large London offices incl. King’s Cross [source-category: big-tech]
+cand-tech-033,51.5177,-0.1432,Research candidate (high): Major London and UK AI expansion [source-category: big-tech]
+cand-tech-034,51.5044,-0.0223,Research candidate (high): Large London corporate and tech offices [source-category: big-tech]
+cand-tech-035,51.5138,-0.1439,Research candidate (high): London engineering and policy offices [source-category: big-tech]
+cand-tech-036,51.4777,-0.1748,Research candidate (high): London offices incl. Battersea [source-category: big-tech]
+cand-tech-037,51.5211,-0.073,Research candidate (high): Large London office and staff base [source-category: big-tech]
+cand-tech-038,51.5044,-0.0223,Research candidate (high): London office and UK AI expansion [source-category: big-tech]
+cand-tech-039,51.5074,-0.1278,Research candidate (high): Major London office presence [source-category: big-tech]
+cand-tech-040,51.5074,-0.1278,Research candidate (high): London office presence [source-category: big-tech]
+cand-tech-041,51.5074,-0.1278,Research candidate (medium): London AI ecosystem presence [source-category: big-tech]
+cand-tech-042,51.5074,-0.1278,Research candidate (high): London office and UK hiring [source-category: big-tech]
+cand-tech-043,51.5074,-0.1278,Research candidate (high): London office presence [source-category: big-tech]
+cand-tech-044,51.5138,-0.1439,Research candidate (high): London office and public-sector work [source-category: big-tech]
+cand-tech-045,51.5074,-0.1278,Research candidate (high): London office presence [source-category: big-tech]
+cand-tech-046,51.5074,-0.1278,Research candidate (high): London and UK research presence [source-category: big-tech]
+cand-tech-047,51.5074,-0.1278,Research candidate (high): London office presence [source-category: big-tech]
+cand-tech-048,51.5074,-0.1278,Research candidate (high): London office presence [source-category: big-tech]
+cand-tech-049,51.5074,-0.1278,Research candidate (high): London engineering and go-to-market [source-category: big-tech]
+cand-tech-050,51.5074,-0.1278,Research candidate (high): London office presence [source-category: big-tech]
+cand-tech-051,51.5074,-0.1278,Research candidate (medium): London office/presence [source-category: big-tech]
+cand-tech-052,51.5074,-0.1278,Research candidate (high): London office presence [source-category: big-tech]
+cand-tech-053,51.5074,-0.1278,Research candidate (high): London office presence [source-category: big-tech]
+cand-tech-054,51.5074,-0.1278,Research candidate (high): London office presence [source-category: big-tech]
+cand-tech-055,51.5074,-0.1278,Research candidate (medium): London office presence [source-category: big-tech]
+cand-tech-056,51.5074,-0.1278,Research candidate (high): London office presence [source-category: big-tech]
+cand-tech-057,51.5211,-0.073,Research candidate (high): London HQ operations for UK market [source-category: big-tech]
+cand-tech-058,51.5074,-0.1278,Research candidate (high): London office presence [source-category: big-tech]
+cand-tech-059,51.5074,-0.1278,Research candidate (high): London office presence [source-category: big-tech]
+cand-tech-060,51.5074,-0.1278,Research candidate (high): London office presence [source-category: big-tech]
+cand-tech-061,51.5224,-0.0836,Research candidate (medium): Large London operations (enterprise arm) [source-category: big-tech]

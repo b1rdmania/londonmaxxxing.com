@@ -27,7 +27,7 @@ function buildInitialState(points: EcosystemPoint[]): Record<EcosystemType, bool
   return initial;
 }
 
-const DEFAULT_VISIBLE_TYPES: EcosystemType[] = ["vc", "ai", "fintech", "web3", "edu"];
+const DEFAULT_VISIBLE_TYPES: EcosystemType[] = ["vc", "ai", "fintech", "web3", "edu", "tech"];
 
 export default function MapPageClient({ ecosystemPoints }: MapPageClientProps) {
   const [darkMode, setDarkMode] = useState(() => {
@@ -52,7 +52,8 @@ export default function MapPageClient({ ecosystemPoints }: MapPageClientProps) {
       ai: true,
       fintech: true,
       web3: true,
-      edu: true
+      edu: true,
+      tech: true
     };
   });
 
