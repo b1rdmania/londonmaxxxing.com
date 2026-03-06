@@ -1,0 +1,10 @@
+id,name,address,postcode,latitude,longitude,type,source_url
+eco-vc-001,Entrepreneur First,Senna Building Gorsuch Place London,E2 8JF,51.5303,-0.0759,vc,https://www.joinef.com/about/contact
+eco-vc-002,Seedcamp,12 Little Portland Street London,W1W 8BJ,51.5194,-0.1414,vc,https://seedcamp.com/contact/
+eco-vc-003,Hoxton Ventures,55 New Oxford Street London,WC1A 1BS,51.5165,-0.1264,vc,https://www.hoxtonventures.com/contact/
+eco-vc-004,Index Ventures,5-8 Lower John Street London,W1F 9DY,51.513,-0.1376,vc,https://www.indexventures.com/contact/
+eco-vc-005,Atomico,29 Rathbone Street London,W1T 1NJ,51.5189,-0.1347,vc,https://atomico.com/about/
+eco-tech-001,Monzo,Broadwalk House 5 Appold Street London,EC2A 2AG,51.5201,-0.0828,tech,https://monzo.com/legal/terms-and-conditions/
+eco-tech-002,Wise,Worship Square 65 Clifton Street London,EC2A 4JE,51.5235,-0.0842,tech,https://www.wise.com/gb/blog/wise-london-office-launch
+eco-tech-003,Snyk,Mainframe Building 24 Eversholt Street London,NW1 1AD,51.5291,-0.1338,tech,https://snyk.io/about/
+eco-tech-004,Revolut,30 South Colonnade London,E14 5HX,51.5047,-0.0194,tech,https://data.companieshouse.gov.uk/doc/company/08804411
