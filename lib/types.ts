@@ -38,6 +38,7 @@ export interface EcosystemPoint {
   source_url: string;
   website?: string;
   notes?: string;
+  twitter?: string;
 }
 
 export interface Bounds {

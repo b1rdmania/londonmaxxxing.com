@@ -63,7 +63,8 @@ export default function Map({ ecosystemPoints, enabledTypes, darkMode = false }:
           address: point.address,
           type: point.type,
           source_url: point.source_url,
-          website: point.website
+          website: point.website,
+          twitter: point.twitter
         },
         geometry: {
           type: "Point" as const,
@@ -154,6 +155,11 @@ export default function Map({ ecosystemPoints, enabledTypes, darkMode = false }:
                 {popupEcosystem.website ? (
                   <a className="popup-btn" href={popupEcosystem.website} target="_blank" rel="noreferrer">
                     Website
+                  </a>
+                ) : null}
+                {popupEcosystem.twitter ? (
+                  <a className="popup-btn" href={`https://x.com/${popupEcosystem.twitter}`} target="_blank" rel="noreferrer">
+                    𝕏
                   </a>
                 ) : null}
                 <a className="popup-btn" href={popupEcosystem.source_url} target="_blank" rel="noreferrer">
