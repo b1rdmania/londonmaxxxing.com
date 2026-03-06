@@ -137,7 +137,8 @@ function toEcosystemPoint(record: Record<string, string>): EcosystemPoint | null
     type,
     source_url: record.source_url,
     website: record.website || undefined,
-    notes: record.notes || undefined
+    notes: record.notes || undefined,
+    twitter: record.twitter || undefined
   };
 }
 
