@@ -3,10 +3,10 @@ import "maplibre-gl/dist/maplibre-gl.css";
 import "./globals.css";
 
 export const metadata: Metadata = {
-  title: "london tech heatmap 🔥",
+  title: "londonmaxxxing",
   description: "where london tech happens. vcs, ai labs, fintech, web3.",
   openGraph: {
-    title: "london tech heatmap 🔥",
+    title: "londonmaxxxing",
     description: "where london tech happens. vcs, ai labs, fintech, web3.",
     url: "https://londonmaxxxing.com",
     siteName: "london tech heatmap",
@@ -23,7 +23,7 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "london tech heatmap 🔥",
+    title: "londonmaxxxing",
     description: "where london tech happens. vcs, ai labs, fintech, web3.",
     images: ["/og-image.png"] // Placeholder - user will create
   },
