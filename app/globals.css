@@ -25,67 +25,78 @@ body {
 .topbar {
   border-bottom: 1px solid #8f8f8f;
   background: #ebebeb;
-  padding: 0 14px 8px;
+  padding: 8px 14px;
   display: grid;
-  grid-template-columns: auto 1fr auto;
+  grid-template-columns: auto 1fr;
   gap: 14px;
   align-items: center;
 }
 
-.status-line {
-  grid-column: 1 / -1;
-  border-bottom: 1px solid #b3b3b3;
-  font-size: 12px;
-  color: #222;
-  font-family: "Courier New", Courier, monospace;
-  padding: 4px 0 5px;
-}
-
 .topbar-brand h1 {
-  font-size: 38px;
-  line-height: 1;
-  letter-spacing: 0.02em;
+  font-size: 34px;
+  line-height: 0.98;
   font-weight: 700;
 }
 
 .topbar-brand p {
   font-size: 12px;
   color: #555;
-  margin-top: 2px;
+  margin-top: 3px;
 }
 
 .topbar-nav {
   display: flex;
   gap: 12px;
-  justify-content: center;
+  justify-content: flex-end;
   flex-wrap: wrap;
 }
 
 .topbar-btn {
-  border: 0;
-  background: transparent;
+  border: 1px solid #676767;
+  background: #f3f3f3;
   color: #222;
   font-size: 12px;
-  padding: 0;
+  padding: 4px 9px;
   cursor: pointer;
   font-family: "Courier New", Courier, monospace;
-  text-transform: lowercase;
-  text-decoration: none;
+  text-transform: uppercase;
+  display: inline-flex;
+  align-items: center;
+  gap: 7px;
 }
 
 .topbar-btn.active {
-  font-weight: 700;
+  border-color: #222;
+  background: #ffffff;
 }
 
 .topbar-btn:hover {
-  text-decoration: underline;
+  background: #ffffff;
 }
 
-.topbar-meta {
-  font-size: 12px;
-  color: #666;
-  white-space: nowrap;
-  font-family: "Courier New", Courier, monospace;
+.topbar-btn:disabled {
+  opacity: 0.45;
+  cursor: not-allowed;
+}
+
+.dot {
+  width: 10px;
+  height: 10px;
+  border-radius: 999px;
+  display: inline-block;
+  border: 1px solid #444;
+}
+
+.dot-vc {
+  background: #2f62ff;
+}
+
+.dot-tech {
+  background: #ff7b22;
+}
+
+.dot-office {
+  background: #18a558;
 }
 
 .map-shell {

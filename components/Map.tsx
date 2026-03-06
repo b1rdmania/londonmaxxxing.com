@@ -21,10 +21,10 @@ const clusterLayer: LayerProps = {
   source: "offices",
   filter: ["has", "point_count"],
   paint: {
-    "circle-color": "#a9a9a9",
+    "circle-color": "#7fd7a0",
     "circle-radius": ["step", ["get", "point_count"], 16, 10, 22, 25, 28],
     "circle-stroke-width": 2,
-    "circle-stroke-color": "#2a2a2a"
+    "circle-stroke-color": "#1f4f2f"
   }
 };
 
@@ -38,7 +38,7 @@ const clusterCountLayer: LayerProps = {
     "text-size": 12
   },
   paint: {
-    "text-color": "#111111"
+    "text-color": "#0b2e17"
   }
 };
 
@@ -48,15 +48,7 @@ const unclusteredPointLayer: LayerProps = {
   source: "offices",
   filter: ["!", ["has", "point_count"]],
   paint: {
-    "circle-color": [
-      "match",
-      ["get", "price_tier"],
-      0,
-      "#b0b0b0",
-      1,
-      "#888888",
-      "#575757"
-    ],
+    "circle-color": "#18a558",
     "circle-radius": [
       "interpolate",
       ["linear"],
@@ -71,7 +63,7 @@ const unclusteredPointLayer: LayerProps = {
       18
     ],
     "circle-stroke-width": 1,
-    "circle-stroke-color": "#111111"
+    "circle-stroke-color": "#0b2e17"
   }
 };
 
@@ -81,10 +73,10 @@ const vcLayer: LayerProps = {
   source: "ecosystem",
   filter: ["==", ["get", "type"], "vc"],
   paint: {
-    "circle-color": "#050505",
+    "circle-color": "#2f62ff",
     "circle-radius": 6,
     "circle-stroke-width": 1,
-    "circle-stroke-color": "#f2f2f2"
+    "circle-stroke-color": "#ffffff"
   }
 };
 
@@ -94,10 +86,10 @@ const techLayer: LayerProps = {
   source: "ecosystem",
   filter: ["==", ["get", "type"], "tech"],
   paint: {
-    "circle-color": "#4a4a4a",
+    "circle-color": "#ff7b22",
     "circle-radius": 6,
     "circle-stroke-width": 1,
-    "circle-stroke-color": "#f2f2f2"
+    "circle-stroke-color": "#ffffff"
   }
 };
 

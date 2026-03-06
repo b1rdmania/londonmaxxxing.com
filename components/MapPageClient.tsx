@@ -14,45 +14,46 @@ export default function MapPageClient({ listings, ecosystemPoints }: MapPageClie
   const [showOfficeLayer, setShowOfficeLayer] = useState(false);
   const [showVcOverlay, setShowVcOverlay] = useState(true);
   const [showTechOverlay, setShowTechOverlay] = useState(true);
-  const vcCount = ecosystemPoints.filter((point) => point.type === "vc").length;
-  const techCount = ecosystemPoints.filter((point) => point.type === "tech").length;
+  const hasOfficeData = listings.length > 0;
+  const hasVcData = ecosystemPoints.some((point) => point.type === "vc");
+  const hasTechData = ecosystemPoints.some((point) => point.type === "tech");
 
   return (
     <main className="shell">
       <header className="topbar">
-        <div className="status-line">
-          {`> ready // vc:${showVcOverlay ? "on" : "off"} tech:${showTechOverlay ? "on" : "off"} office:${showOfficeLayer ? "on" : "off"}`}
-        </div>
         <div className="topbar-brand">
-          <h1>LONDONMAXXXING.COM</h1>
-          <p>london startup ecosystem map</p>
+          <h1>London Tech Map</h1>
+          <p>London Tech heat map</p>
         </div>
         <nav className="topbar-nav" aria-label="Map layers">
           <button
             type="button"
             className={showVcOverlay ? "topbar-btn active" : "topbar-btn"}
             onClick={() => setShowVcOverlay((value) => !value)}
+            disabled={!hasVcData}
           >
-            [{showVcOverlay ? "x" : " "}] vc {vcCount}
+            <span className="dot dot-vc" aria-hidden="true" />
+            VC
           </button>
           <button
             type="button"
             className={showTechOverlay ? "topbar-btn active" : "topbar-btn"}
             onClick={() => setShowTechOverlay((value) => !value)}
+            disabled={!hasTechData}
           >
-            [{showTechOverlay ? "x" : " "}] tech {techCount}
+            <span className="dot dot-tech" aria-hidden="true" />
+            Tech
           </button>
           <button
             type="button"
             className={showOfficeLayer ? "topbar-btn active" : "topbar-btn"}
             onClick={() => setShowOfficeLayer((value) => !value)}
+            disabled={!hasOfficeData}
           >
-            [{showOfficeLayer ? "x" : " "}] office (w2)
+            <span className="dot dot-office" aria-hidden="true" />
+            Office
           </button>
         </nav>
-        <div className="topbar-meta">
-          <span>{listings.length} office listings indexed</span>
-        </div>
       </header>
 
       <section className="map-shell">
