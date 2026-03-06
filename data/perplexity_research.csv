@@ -1,0 +1,24 @@
+id,name,address,postcode,has_london_office,notes
+1,Crypto.com,32-33 Cartwright Gardens,WC1H 9EH,true,Registered office address from UK Companies House
+2,Bitpanda,32 Threadneedle Street,EC2R 8AY,true,UK Establishment address - main operational office
+3,Blockdaemon,30th Floor Leadenhall Building 122 Leadenhall St,EC3V 4AB,true,C/O Philip Lee - registered office address
+4,QuickNode,Kemp House 160 City Road,EC1V 2NX,true,Correspondence address for QuickNode Technologies Ltd
+5,Transak,7 Pancras Square,N1C 4AG,true,Registered office address confirmed on Terms of Service
+6,Safe (Gnosis Safe),60 Princes Gate Mews,SW7 2PR,true,Safe Global Limited registered office
+7,Tools for Humanity,Lower Ground Floor 14 Devonshire Square,EC2M 4YT,true,Listed in data processors documentation
+8,TRM Labs UK,Suite 1 7th Floor 50 Broadway,SW1H 0BL,true,Registered office address - incorporated March 2022
+9,Soldo,119 Marylebone Road C/O Wework,NW1 5PU,true,Registered office address
+10,Edumentors,505 Pinner Road Harrow,HA2 6EH,true,Registered office - Harrow is part of Greater London
+11,FutureLearn,Buchanan House 30 Holborn,EC1N 2HS,true,Registered and trading address
+12,Kahoot UK,The Trampery 239 Old Street,EC1V 9EY,true,Kahoot! Edu Limited registered office
+13,Lindus Health,65 Southwark Street,SE1 0HR,true,Registered office address
+14,GetHarley,15A North Audley Street,W1K 6WZ,true,Main trading address
+15,Cera,2nd Floor 175 Green Lanes Palmers Green,N13 4UR,true,London care location address
+16,Pactio,Hamilton House 1 Temple Avenue Temple,EC4Y 0HA,true,Registered office address
+17,NVIDIA UK,13th Floor One Angel Court,EC2R 7HJ,true,Registered office - changed July 2023
+18,IBM UK,20 York Road,SE1 7ND,true,Main London operational office near Waterloo
+19,Cisco UK,Park House 16-18 Finsbury Circus,EC2M 7EB,true,London correspondence address - main office in Bedfont Lakes
+20,HubSpot UK,199 Bishopsgate,EC2M 3TY,true,Primary London office address
+21,Twilio UK,C/O Company Secretarial Department 280 Bishopsgate,EC2M 4AG,true,Registered office address
+22,Airbnb UK,C/O Company Secretarial Department 280 Bishopsgate,EC2M 4AG,true,Registered office - also has operational office in Clerkenwell
+23,ByteDance UK,4 Lindsey Street Barbican,EC1A 9HP,true,TikTok Information Technologies UK Limited address
