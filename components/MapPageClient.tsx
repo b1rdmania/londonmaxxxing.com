@@ -68,6 +68,7 @@ export default function MapPageClient({ ecosystemPoints }: MapPageClientProps) {
           </span>
         </div>
         <nav className="topbar-nav" aria-label="Map layers">
+          <span className="topbar-cta topbar-toggle-label">toggle:</span>
           {availableTypes.map((type) => {
             const isOn = enabledByType[type];
             return (

@@ -28,13 +28,13 @@ body {
   padding: 12px 16px;
   display: flex;
   justify-content: space-between;
-  align-items: center;
+  align-items: baseline;
   gap: 16px;
 }
 
 .topbar-brand {
   display: flex;
-  align-items: center;
+  align-items: baseline;
   gap: 12px;
 }
 
@@ -47,7 +47,7 @@ body {
 .topbar-nav {
   display: flex;
   gap: 12px;
-  align-items: center;
+  align-items: baseline;
   flex-wrap: wrap;
 }
 
@@ -71,12 +71,16 @@ body {
   background: transparent;
   color: #000;
   font-size: 13px;
-  padding: 6px 12px;
+  padding: 0 12px;
   cursor: pointer;
   font-family: "Times New Roman", Times, serif;
   display: inline-flex;
-  align-items: center;
+  align-items: baseline;
   gap: 6px;
+}
+
+.topbar-toggle-label {
+  display: inline-block;
 }
 
 .topbar-btn:hover {
