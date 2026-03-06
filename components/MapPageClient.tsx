@@ -1,6 +1,6 @@
 "use client";
 
-import { useMemo, useState } from "react";
+import { useEffect, useMemo, useState } from "react";
 
 import Map from "@/components/Map";
 import { ECOSYSTEM_META, ECOSYSTEM_ORDER } from "@/lib/ecosystemConfig";
@@ -30,7 +30,18 @@ function buildInitialState(points: EcosystemPoint[]): Record<EcosystemType, bool
 const DEFAULT_VISIBLE_TYPES: EcosystemType[] = ["vc", "ai", "fintech", "web3", "edu"];
 
 export default function MapPageClient({ ecosystemPoints }: MapPageClientProps) {
-  const [darkMode, setDarkMode] = useState(false);
+  const [darkMode, setDarkMode] = useState(() => {
+    if (typeof window !== "undefined") {
+      return window.matchMedia("(prefers-color-scheme: dark)").matches;
+    }
+    return false;
+  });
+
+  useEffect(() => {
+    const mediaQuery = window.matchMedia("(prefers-color-scheme: dark)");
+    setDarkMode(mediaQuery.matches);
+  }, []);
+
   const [enabledByType, setEnabledByType] = useState<Record<EcosystemType, boolean>>(() => {
     const initial = buildInitialState(ecosystemPoints);
     const hasAny = Object.values(initial).some(Boolean);

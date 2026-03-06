@@ -3,10 +3,10 @@ import { EcosystemType } from "@/lib/types";
 export const ECOSYSTEM_ORDER: EcosystemType[] = ["vc", "ai", "fintech", "web3", "edu", "tech"];
 
 export const ECOSYSTEM_META: Record<EcosystemType, { label: string; color: string }> = {
-  vc: { label: "VC", color: "#2f62ff" },
-  ai: { label: "AI", color: "#c026d3" },
-  fintech: { label: "Fintech", color: "#0f766e" },
-  web3: { label: "Web3", color: "#f97316" },
-  edu: { label: "Education", color: "#b45309" },
-  tech: { label: "Tech", color: "#ff7b22" }
+  vc: { label: "VC", color: "#3b82f6" },
+  ai: { label: "AI", color: "#ec4899" },
+  fintech: { label: "Fintech", color: "#10b981" },
+  web3: { label: "Web3", color: "#f59e0b" },
+  edu: { label: "Education", color: "#8b5cf6" },
+  tech: { label: "Tech", color: "#ef4444" }
 };
