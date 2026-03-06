@@ -1,0 +1,75 @@
+id,name,address,postcode,latitude,longitude,type,category,source_url
+eco-vc-001,Entrepreneur First,Senna Building Gorsuch Place London,E2 8JF,51.5303,-0.0759,vc,vc,https://www.joinef.com/about/contact
+eco-vc-002,Seedcamp,12 Little Portland Street London,W1W 8BJ,51.5194,-0.1414,vc,vc,https://seedcamp.com/contact/
+eco-vc-003,Hoxton Ventures,55 New Oxford Street London,WC1A 1BS,51.5165,-0.1264,vc,vc,https://www.hoxtonventures.com/contact/
+eco-vc-004,Index Ventures,5-8 Lower John Street London,W1F 9DY,51.513,-0.1376,vc,vc,https://www.indexventures.com/contact/
+eco-vc-005,Atomico,29 Rathbone Street London,W1T 1NJ,51.5189,-0.1347,vc,vc,https://atomico.com/about/
+eco-vc-006,EQT Partners,30 Broadwick Street 3rd Floor London,W1F 8JB,51.5136,-0.1357,vc,vc,https://eqtgroup.com/about/offices/london
+tech-001,Monzo,Broadwalk House 5 Appold Street London,EC2A 2AG,51.5201,-0.0828,tech,fintech,https://monzo.com/legal/terms-and-conditions/
+tech-002,Wise,Worship Square 65 Clifton Street London,EC2A 4JE,51.5235,-0.0842,tech,fintech,https://www.wise.com/gb/blog/wise-london-office-launch
+tech-003,Snyk,Mainframe Building 24 Eversholt Street London,NW1 1AD,51.5291,-0.1338,tech,saas,https://snyk.io/about/
+tech-004,Revolut,30 South Colonnade London,E14 5HX,51.5047,-0.0194,tech,fintech,https://opengovuk.com/company/08804411
+tech-005,Starling Bank,5th Floor London Fruit and Wool Exchange 1 Duval Square London,E1 6PW,51.5157,-0.0642,tech,fintech,https://www.clay.com/dossier/starling-bank-headquarters-office-locations
+tech-006,OakNorth,57 Broadwick Street London,W1F 9QS,51.5136,-0.1354,tech,fintech,https://salestools.io/en/report/oaknorth-headquarters
+tech-007,SumUp,16-20 Shorts Gardens London,WC2H 9US,51.5151,-0.1256,tech,fintech,https://www.sumup.com/en-gb/disclaimer/
+tech-008,Checkout.com,Wenlock Works Shepherdess Walk London,N1 7BQ,51.5294,-0.0945,tech,fintech,https://www.checkout.com/blog/checkout-com-moves-into-new-london-headquarters
+tech-009,Blockchain.com,86-90 Paul Street London,EC2A 4NE,51.5251,-0.0845,tech,crypto,https://leadiq.com/c/blockchaincom/5a1d98952300005300874113
+tech-010,Deliveroo,1 Cousin Lane London,EC4R 3TE,51.5120,-0.0873,tech,marketplace,https://www.clay.com/dossier/deliveroo-headquarters-office-locations
+tech-011,Gousto,The Shepherdess London,N1 7LH,51.5304,-0.1036,tech,ecommerce,https://salestools.io/en/report/gousto-headquarters
+tech-012,Darktrace,80 Strand London,WC2R 0DT,51.5117,-0.1184,tech,ai-cybersecurity,https://www.linkedin.com/posts/toby-lewis-bb290b64_darktraces-london-office-has-moved-from-activity-6975365012047458304-bIsT
+tech-013,Cazoo,40 Churchway London,NW1 1LW,51.5340,-0.1270,tech,marketplace,https://craft.co/cazoo/locations
+tech-014,Babylon Health,1 Knightsbridge Green London,SW1X 7QA,51.5031,-0.1584,tech,healthtech,https://www.babylonhealth.com/contact
+tech-015,Octopus Energy,UK House 5th Floor 164-182 Oxford Street London,W1D 1NN,51.5164,-0.1396,tech,climate-tech,https://find-and-update.company-information.service.gov.uk/company/09263424
+tech-016,Synthesia,20 Triton Street London,NW1 3BF,51.5279,-0.1310,tech,ai,https://www.synthesia.io/post/introducing-our-new-london-headquarters
+tech-017,Stability AI,88 Notting Hill Gate London,W11 3HP,51.5095,-0.1968,tech,ai,https://www.clay.com/dossier/stability-ai-headquarters-office-locations
+tech-018,Google DeepMind,6 Pancras Square London,N1C 4AG,51.5344,-0.1255,tech,ai,https://www.alamy.com/google-deepmind-offices-at-6-8-handyside-street-googles-artificial-intelligence-lab-hq-company-at-kings-cross-north-london-uk-image570936444.html
+tech-019,Multiverse,2 Eastbourne Terrace London,W2 6LG,51.5159,-0.1769,tech,edtech,https://tracxn.com/d/companies/multiverse/___ajElGGz1B7XV4KlpuHkRxMJXpeDBrkvwS-WCmoGvZM
+tech-020,Wayve,230 York Way London,N7 9AG,51.5465,-0.1189,tech,ai-autonomous,https://find-and-update.company-information.service.gov.uk/company/10924127
+tech-021,Bumble,The Broadgate Tower 20 Primrose Street London,EC2A 2RS,51.5202,-0.0814,tech,social,https://opengovuk.com/company/09214520
+tech-022,Match Group,The Helicon 1 South Place London,EC2M 2UP,51.5188,-0.0849,tech,social,https://www.clay.com/dossier/match-group-headquarters-office-locations
+tech-023,Copper,100 Bishopsgate London,EC2N 4AG,51.5156,-0.0815,tech,crypto,https://builtinlondon.uk/companies/type/blockchain-companies
+tech-024,Nethermind,Aldgate Tower 2 Leman Street London,E1 8FA,51.5138,-0.0743,tech,crypto,https://builtinlondon.uk/companies/type/blockchain-companies
+tech-025,Wintermute,70 Wilson Street London,EC2A 2DB,51.5251,-0.0842,tech,crypto,https://builtinlondon.uk/companies/type/blockchain-companies
+tech-026,Elliptic,60 St Martins Lane London,WC2N 4JS,51.5108,-0.1267,tech,crypto,https://builtinlondon.uk/companies/type/blockchain-companies
+tech-027,Autolus Therapeutics,The MediaWorks 191 Wood Lane London,W12 7FP,51.5137,-0.2243,tech,biotech,https://capitalwestlondon.co.uk/five-new-biotech-companies-move-to-white-city/
+tech-028,Complement Therapeutics,Translation & Innovation HUB 84 Wood Lane London,W12 0BZ,51.5096,-0.2238,tech,biotech,https://capitalwestlondon.co.uk/five-new-biotech-companies-move-to-white-city/
+tech-029,Avacta,Scale Space 58 Wood Lane London,W12 7RZ,51.5102,-0.2241,tech,biotech,https://www.labiotech.eu/in-depth/scale-space-white-city/
+tech-030,PhycoWorks,Scale Space 58 Wood Lane London,W12 7RZ,51.5102,-0.2241,tech,biotech,https://www.labiotech.eu/in-depth/scale-space-white-city/
+tech-031,Amazon UK,1 Principal Place Worship Street London,EC2A 2FA,51.5250,-0.0820,tech,tech-giant,https://www.aboutamazon.co.uk/news/working-at-amazon/amazon-office-london-photo-tour
+tech-032,Spotify,Adelphi Building 4 Savoy Place London,WC2N 6AT,51.5090,-0.1205,tech,media,https://www.clay.com/dossier/spotify-headquarters-office-locations
+tech-033,Meta Facebook,10 Brock Street Regents Place London,NW1 3FG,51.5276,-0.1372,tech,tech-giant,https://opengovuk.com/company/06331310
+tech-034,GoCardless,Sutton Yard 65 Goswell Road London,EC1V 7EN,51.5262,-0.1008,tech,fintech,https://opengovuk.com/company/07495895
+tech-035,Skyscanner,Level 5 Ilona Rose House Manette Street London,W1D 4AL,51.5145,-0.1300,tech,travel-tech,https://find-and-update.company-information.service.gov.uk/company/04217916
+tech-036,TransferGo,The Bower 207 Old Street London,EC1V 9NR,51.5253,-0.0872,tech,fintech,https://find-and-update.company-information.service.gov.uk/company/07914165
+tech-037,Thought Machine,7 Herbrand Street London,WC1N 1EX,51.5255,-0.1232,tech,fintech,https://www.thoughtmachine.net/contact
+tech-038,Funding Circle,71 Queen Victoria Street London,EC4V 4AY,51.5121,-0.0938,tech,fintech,https://www.oktra.co.uk/our-work/funding-circle/
+tech-039,Nutmeg,25-28 Old Burlington Street London,W1S 3AN,51.5102,-0.1412,tech,fintech,https://salestools.io/en/report/nutmeg-headquarters
+tech-040,Farfetch,The Bower 211 Old Street London,EC1V 9NR,51.5253,-0.0872,tech,fashion-tech,https://find-and-update.company-information.service.gov.uk/company/06400760
+tech-041,ASOS,Greater London House Hampstead Road London,NW1 7FB,51.5361,-0.1408,tech,fashion-tech,https://find-and-update.company-information.service.gov.uk/company/03584121
+tech-042,Tide,1 Alie Street London,E1 8DE,51.5135,-0.0755,tech,fintech,https://salestools.io/en/report/tide-headquarters
+tech-043,Curve,London,EC1V,51.5250,-0.0900,tech,fintech,https://tracxn.com/d/companies/curve/__dwXGxtjbA1JD2IpGbkhjqpPq6NFk46bA6rybbjFM4z8
+tech-044,Coadjute,2nd Floor 73 Watling Street London,EC4M 9BJ,51.5126,-0.0945,tech,proptech,https://uk.linkedin.com/company/coadjute
+tech-045,Improbable,10 Bishops Square London,E1 6EG,51.5170,-0.0784,tech,ai-gaming,https://www.failory.com/startups/london-unicorns
+tech-046,Griffin,Aviation House 125 Kingsway London,WC2B 6NH,51.5154,-0.1197,tech,fintech,https://www.seedtable.com/best-fintech-startups-in-london
+tech-047,Zopa,27 Old Gloucester Street London,WC1N 3AX,51.5204,-0.1233,tech,fintech,https://www.seedtable.com/best-fintech-startups-in-london
+tech-048,Isomorphic Labs,6 Pancras Square London,N1C 4AG,51.5344,-0.1255,tech,ai-biotech,https://eutechfuture.com/deep-tech-in-europe/top-5-tech-cities-in-europe-2026-where-founders-funding-and-deep-tech-rd-converge/
+tech-049,Paddle,Market House 19 Market Place London,W1W 8AE,51.5196,-0.1423,tech,saas,https://www.clay.com/dossier/paddle-headquarters-office-locations
+tech-050,Faculty,54 Welbeck Street London,W1G 9XS,51.5175,-0.1485,tech,ai,https://www.seedtable.com/best-ai-startups-in-london
+tech-051,Tractable,Nova South 160 Victoria Street London,SW1E 5LB,51.4969,-0.1414,tech,ai,https://www.seedtable.com/best-ai-startups-in-london
+tech-052,Healx,59 St Martins Lane London,WC2N 4JS,51.5108,-0.1267,tech,ai-healthtech,https://www.seedtable.com/best-ai-startups-in-london
+tech-053,Peak,20 Little Portland Street London,W1W 8BW,51.5196,-0.1416,tech,ai-saas,https://www.seedtable.com/best-ai-startups-in-london
+tech-054,Tenpoint Therapeutics,Level39 One Canada Square London,E14 5AB,51.5045,-0.0193,tech,biotech,https://group.canarywharf.com/life-science-healthcare/
+tech-055,Myricx Bio,Level39 One Canada Square London,E14 5AB,51.5045,-0.0193,tech,biotech,https://group.canarywharf.com/life-science-healthcare/
+tech-056,AviadoBio,Level39 One Canada Square London,E14 5AB,51.5045,-0.0193,tech,biotech,https://group.canarywharf.com/life-science-healthcare/
+tech-057,Impli,Scale Space 58 Wood Lane London,W12 7RZ,51.5102,-0.2241,tech,biotech,https://www.labiotech.eu/in-depth/scale-space-white-city/
+tech-058,PHappi,Scale Space 58 Wood Lane London,W12 7RZ,51.5102,-0.2241,tech,healthtech,https://www.labiotech.eu/in-depth/scale-space-white-city/
+tech-059,Mayde,5-10 Brandon Road London,N7 9TP,51.5401,-0.1203,tech,climate-biotech,https://www.seedtable.com/best-climate-tech-green-tech-startups-in-london
+tech-060,Eden Bio,Scale Space 58 Wood Lane London,W12 7RZ,51.5102,-0.2241,tech,climate-biotech,https://www.labiotech.eu/in-depth/scale-space-white-city/
+space-001,Techspace Shoreditch,25 Luke Street London,EC2A 4DS,51.5247,-0.0833,workspace,coworking,https://www.techspace.co/locations/shoreditch
+space-002,Impact Hub Kings Cross,34b York Way London,N1 9AB,51.5359,-0.1214,workspace,climate-innovation,https://climateinnovators.uk/resources/innovation-space/
+space-003,Scale Space White City,58 Wood Lane London,W12 7RZ,51.5102,-0.2241,workspace,biotech-lab,https://www.labiotech.eu/in-depth/scale-space-white-city/
+space-004,Level39 Canary Wharf,One Canada Square 39th Floor London,E14 5AB,51.5045,-0.0193,workspace,fintech-incubator,https://pharmafile.com/news/canary-wharf-attracts-life-sciences-focused-startups-and-scaleups-its-technology-community-0/
+space-005,London Innovation Centre,20 Water Street Canary Wharf London,E14 9FA,51.5053,-0.0234,workspace,healthtech-incubator,https://group.canarywharf.com/life-science-healthcare/
+space-006,London AI Hub,Techspace Goswell Road London,EC1V 7LQ,51.5262,-0.1008,workspace,ai-hub,https://www.techspace.co/locations/goswell-road
+space-007,Digital Catapult London,101 Euston Road London,NW1 2RA,51.5267,-0.1330,workspace,tech-innovation,https://www.digicatapult.org.uk/about/regions/london/
+space-008,BaseKX,Kings Cross London,N1C 4AG,51.5344,-0.1255,workspace,university-startup-hub,https://techround.co.uk/startups/kings-cross-is-londons-smartest-tech-hub-heres-what-you-need-to-know/
