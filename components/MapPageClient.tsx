@@ -70,7 +70,7 @@ export default function MapPageClient({ ecosystemPoints }: MapPageClientProps) {
             <a href="https://x.com/b1rdmania" target="_blank" rel="noreferrer">
               b1rdmania
             </a>
-            ] [{ecosystemPoints.length} so far] [wish I&apos;d never started this...]
+            ] [{ecosystemPoints.length} so far]
           </span>
         </div>
         <nav className="topbar-nav" aria-label="Map layers">
