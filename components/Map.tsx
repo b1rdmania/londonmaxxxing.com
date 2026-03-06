@@ -132,7 +132,7 @@ export default function Map({ ecosystemPoints, enabledTypes, darkMode = false }:
         interactiveLayerIds={interactiveLayerIds}
         onClick={onMapClick}
         dragRotate={false}
-        touchZoomRotate={false}
+        touchPitch={false}
         attributionControl={{
           compact: false,
           customAttribution: '<a href="https://x.com/b1rdmania" target="_blank" rel="noreferrer">Built by Birdmania</a>'
