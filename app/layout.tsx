@@ -4,10 +4,10 @@ import "./globals.css";
 
 export const metadata: Metadata = {
   title: "london tech heatmap 🔥",
-  description: "where london tech happens. vcs, ai labs, fintech, web3. raw data, real addresses.",
+  description: "where london tech happens. vcs, ai labs, fintech, web3.",
   openGraph: {
     title: "london tech heatmap 🔥",
-    description: "where london tech happens. vcs, ai labs, fintech, web3. raw data, real addresses.",
+    description: "where london tech happens. vcs, ai labs, fintech, web3.",
     url: "https://londonmaxxxing.com",
     siteName: "london tech heatmap",
     images: [
@@ -24,7 +24,7 @@ export const metadata: Metadata = {
   twitter: {
     card: "summary_large_image",
     title: "london tech heatmap 🔥",
-    description: "where london tech happens. vcs, ai labs, fintech, web3. raw data, real addresses.",
+    description: "where london tech happens. vcs, ai labs, fintech, web3.",
     images: ["/og-image.png"] // Placeholder - user will create
   },
   robots: {
