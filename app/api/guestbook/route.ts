@@ -14,6 +14,7 @@ const MAX_MESSAGE_LENGTH = 500;
 const MAX_ENTRIES = 200;
 
 export const dynamic = "force-dynamic";
+const IS_PRODUCTION = process.env.NODE_ENV === "production";
 
 function sanitize(value: unknown): string {
   return typeof value === "string" ? value.trim() : "";
@@ -100,9 +101,21 @@ async function insertIntoSupabase(name: string, message: string): Promise<Guestb
 export async function GET() {
   const supabaseEntries = await listFromSupabase();
   if (supabaseEntries) {
-    return NextResponse.json({ entries: supabaseEntries });
+    return NextResponse.json({ entries: supabaseEntries, storage: "supabase" });
   }
-  return NextResponse.json({ entries: guestbookEntries });
+
+  if (IS_PRODUCTION) {
+    return NextResponse.json(
+      {
+        error: "Guestbook persistence is not configured. Set SUPABASE_URL + SUPABASE_SERVICE_ROLE_KEY.",
+        entries: [],
+        storage: "unavailable"
+      },
+      { status: 503 }
+    );
+  }
+
+  return NextResponse.json({ entries: guestbookEntries, storage: "memory" });
 }
 
 export async function POST(request: Request) {
@@ -123,6 +136,13 @@ export async function POST(request: Request) {
   const persistedEntry = await insertIntoSupabase(normalizedName, message);
   if (persistedEntry) {
     return NextResponse.json({ entry: persistedEntry }, { status: 201 });
+  }
+
+  if (IS_PRODUCTION) {
+    return NextResponse.json(
+      { error: "Guestbook persistence is not configured. Set SUPABASE_URL + SUPABASE_SERVICE_ROLE_KEY." },
+      { status: 503 }
+    );
   }
 
   const entry: GuestbookEntry = {

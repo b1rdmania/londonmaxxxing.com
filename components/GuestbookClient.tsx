@@ -12,6 +12,7 @@ interface GuestbookEntry {
 
 export default function GuestbookClient() {
   const [entries, setEntries] = useState<GuestbookEntry[]>([]);
+  const [storage, setStorage] = useState<"supabase" | "memory" | "unavailable" | null>(null);
   const [name, setName] = useState("");
   const [message, setMessage] = useState("");
   const [loading, setLoading] = useState(true);
@@ -22,9 +23,14 @@ export default function GuestbookClient() {
     async function loadEntries() {
       try {
         const response = await fetch("/api/guestbook", { cache: "no-store" });
-        if (!response.ok) throw new Error("Failed to load guestbook.");
-        const data = (await response.json()) as { entries: GuestbookEntry[] };
+        const data = (await response.json()) as {
+          entries?: GuestbookEntry[];
+          storage?: "supabase" | "memory" | "unavailable";
+          error?: string;
+        };
+        if (!response.ok) throw new Error(data.error || "Failed to load guestbook.");
         setEntries(data.entries || []);
+        setStorage(data.storage || null);
       } catch (err) {
         setError(err instanceof Error ? err.message : "Failed to load guestbook.");
       } finally {
@@ -82,6 +88,9 @@ export default function GuestbookClient() {
       </header>
 
       <section className="guestbook-form-wrap">
+        {storage === "supabase" ? <p className="guestbook-ok">storage: supabase (persistent)</p> : null}
+        {storage === "memory" ? <p className="guestbook-warning">storage: memory (not persistent)</p> : null}
+        {storage === "unavailable" ? <p className="guestbook-warning">storage unavailable: configure Supabase</p> : null}
         <form className="guestbook-form" onSubmit={onSubmit}>
           <label>
             name (optional)

@@ -358,6 +358,16 @@ body {
   color: #a10000;
 }
 
+.guestbook-warning {
+  margin-bottom: 8px;
+  color: #a10000;
+}
+
+.guestbook-ok {
+  margin-bottom: 8px;
+  color: #1f6f1f;
+}
+
 .guestbook-list {
   display: grid;
   gap: 10px;
