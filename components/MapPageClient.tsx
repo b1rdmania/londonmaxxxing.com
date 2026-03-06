@@ -62,7 +62,7 @@ export default function MapPageClient({ ecosystemPoints }: MapPageClientProps) {
     <main className={darkMode ? "shell dark" : "shell"}>
       <header className="topbar">
         <div className="topbar-brand">
-          <h1>London Tech heat map 🔥</h1>
+          <h1>London Tech Scene 🔥</h1>
           <span className="topbar-cta">
             [Add your company <a href="mailto:birdandy@me.com?subject=Add%20my%20company%20to%20londonmaxxxing.com">here</a>]
           </span>

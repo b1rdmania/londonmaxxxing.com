@@ -109,6 +109,19 @@ body {
   height: 100%;
 }
 
+.maplibregl-ctrl-attrib {
+  background: rgba(255, 255, 255, 0.5);
+}
+
+.shell.dark .maplibregl-ctrl-attrib {
+  background: rgba(0, 0, 0, 0.5);
+}
+
+.maplibregl-ctrl-attrib a {
+  color: #f00;
+  font-family: "Times New Roman", Times, serif;
+}
+
 .maplibregl-popup-content {
   border: 1px solid #ddd;
   border-radius: 4px;
