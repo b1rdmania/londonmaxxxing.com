@@ -8,5 +8,5 @@ export const ECOSYSTEM_META: Record<EcosystemType, { label: string; color: strin
   fintech: { label: "Fintech", color: "#10b981" },
   web3: { label: "Web3", color: "#f59e0b" },
   edu: { label: "Education", color: "#8b5cf6" },
-  tech: { label: "Tech", color: "#ef4444" }
+  tech: { label: "Tech", color: "#334155" }
 };
