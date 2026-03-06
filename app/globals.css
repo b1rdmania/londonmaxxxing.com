@@ -86,7 +86,8 @@ body {
 }
 
 .map-wrap {
-  min-height: calc(100vh - 74px);
+  height: 100%;
+  width: 100%;
 }
 
 .maplibregl-map {
