@@ -27,11 +27,28 @@ function buildInitialState(points: EcosystemPoint[]): Record<EcosystemType, bool
   return initial;
 }
 
+const DEFAULT_VISIBLE_TYPES: EcosystemType[] = ["vc", "ai", "fintech", "web3", "edu"];
+
 export default function MapPageClient({ ecosystemPoints }: MapPageClientProps) {
-  const [enabledByType, setEnabledByType] = useState<Record<EcosystemType, boolean>>(() => buildInitialState(ecosystemPoints));
+  const [enabledByType, setEnabledByType] = useState<Record<EcosystemType, boolean>>(() => {
+    const initial = buildInitialState(ecosystemPoints);
+    const hasAny = Object.values(initial).some(Boolean);
+    if (hasAny) return initial;
+    return {
+      ...initial,
+      vc: true,
+      ai: true,
+      fintech: true,
+      web3: true,
+      edu: true
+    };
+  });
 
   const availableTypes = useMemo(
-    () => ECOSYSTEM_ORDER.filter((type) => ecosystemPoints.some((point) => point.type === type)),
+    () => {
+      const fromData = ECOSYSTEM_ORDER.filter((type) => ecosystemPoints.some((point) => point.type === type));
+      return fromData.length ? fromData : DEFAULT_VISIBLE_TYPES;
+    },
     [ecosystemPoints]
   );
 
