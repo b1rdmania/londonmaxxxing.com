@@ -1,23 +1,16 @@
-:root {
-  --bg: #080b11;
-  --panel: #0f1521;
-  --panel-border: #1f2a3f;
-  --text: #e8eeff;
-  --muted: #9bb0d1;
-  --accent: #4f83ff;
-}
-
 * {
   box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 
 html,
 body {
-  margin: 0;
-  padding: 0;
-  background: radial-gradient(circle at 20% 0%, #162338 0%, #080b11 45%);
-  color: var(--text);
-  font-family: "IBM Plex Sans", "Segoe UI", sans-serif;
+  background: #000;
+  color: #0f0;
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 16px;
+  line-height: 1.4;
   height: 100%;
 }
 
@@ -32,22 +25,21 @@ body {
 }
 
 .topbar {
-  border-bottom: 1px solid var(--panel-border);
-  padding: 14px 20px;
-  backdrop-filter: blur(8px);
-  background: rgba(8, 11, 17, 0.7);
+  border-bottom: 1px solid #0f0;
+  padding: 12px;
+  background: #000;
 }
 
 .topbar h1 {
-  margin: 0;
-  font-size: 1.2rem;
-  letter-spacing: 0.03em;
+  font-size: 18px;
+  font-weight: normal;
+  letter-spacing: 2px;
 }
 
 .topbar p {
-  margin: 4px 0 0;
-  color: var(--muted);
-  font-size: 0.9rem;
+  font-size: 14px;
+  margin-top: 4px;
+  opacity: 0.7;
 }
 
 .map-shell {
@@ -57,35 +49,40 @@ body {
 
 .layer-controls {
   position: absolute;
-  top: 16px;
-  left: 16px;
+  top: 12px;
+  left: 12px;
   z-index: 10;
-  background: rgba(10, 14, 22, 0.9);
-  border: 1px solid #25344f;
-  border-radius: 10px;
+  background: #000;
+  border: 1px solid #0f0;
   padding: 12px;
-  min-width: 220px;
-  display: grid;
-  gap: 8px;
-  backdrop-filter: blur(6px);
+  min-width: 200px;
 }
 
 .layer-controls h2 {
-  margin: 0;
-  font-size: 0.95rem;
+  font-size: 14px;
+  font-weight: normal;
+  margin-bottom: 8px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
 }
 
 .layer-controls label {
-  display: flex;
-  gap: 8px;
-  align-items: center;
-  font-size: 0.9rem;
+  display: block;
+  font-size: 13px;
+  margin-bottom: 6px;
+  cursor: pointer;
+}
+
+.layer-controls input[type="checkbox"] {
+  margin-right: 6px;
 }
 
 .layer-controls p {
-  margin: 4px 0 0;
-  color: var(--muted);
-  font-size: 0.8rem;
+  font-size: 12px;
+  margin-top: 8px;
+  padding-top: 8px;
+  border-top: 1px solid #0f0;
+  opacity: 0.7;
 }
 
 .map-wrap {
@@ -97,29 +94,90 @@ body {
   height: 100%;
 }
 
+/* Override maplibre popup styles for hacker aesthetic */
+.maplibregl-popup-content {
+  background: #000 !important;
+  border: 1px solid #0f0 !important;
+  color: #0f0 !important;
+  font-family: 'Times New Roman', Times, serif !important;
+  padding: 12px !important;
+  border-radius: 0 !important;
+}
+
+.maplibregl-popup-close-button {
+  color: #0f0 !important;
+  font-size: 18px !important;
+  padding: 4px 8px !important;
+}
+
+.maplibregl-popup-close-button:hover {
+  background: #0f0 !important;
+  color: #000 !important;
+}
+
+.maplibregl-popup-tip {
+  border-top-color: #0f0 !important;
+}
+
 .popup-card {
-  color: #1a1f29;
-  font-size: 0.9rem;
+  font-family: 'Times New Roman', Times, serif;
 }
 
 .popup-card h3 {
-  margin: 0 0 4px;
+  font-size: 14px;
+  font-weight: normal;
+  margin-bottom: 8px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
 }
 
 .popup-card p {
-  margin: 4px 0;
+  font-size: 13px;
+  margin-bottom: 6px;
+}
+
+.popup-card strong {
+  font-weight: bold;
 }
 
 .popup-card a {
-  color: #0a62d0;
-  font-weight: 600;
-  text-decoration: none;
+  color: #0f0;
+  text-decoration: underline;
+  font-size: 13px;
 }
 
-@media (max-width: 720px) {
-  .layer-controls {
-    left: 10px;
-    right: 10px;
-    min-width: auto;
-  }
+.popup-card a:hover {
+  background: #0f0;
+  color: #000;
+}
+
+/* Marker info popup */
+.marker-info {
+  font-size: 13px;
+}
+
+.marker-info h3 {
+  font-size: 14px;
+  font-weight: normal;
+  margin-bottom: 8px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.marker-info p {
+  margin-bottom: 6px;
+}
+
+.marker-info strong {
+  font-weight: bold;
+}
+
+.marker-info a {
+  color: #0f0;
+  text-decoration: underline;
+}
+
+.marker-info a:hover {
+  background: #0f0;
+  color: #000;
 }

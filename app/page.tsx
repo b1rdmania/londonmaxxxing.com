@@ -13,14 +13,14 @@ export default function HomePage() {
     <main className="shell">
       <header className="topbar">
         <div>
-          <h1>Londonmaxxxing.com</h1>
-          <p>Map the London tech ecosystem.</p>
+          <h1>LONDONMAXXXING.COM</h1>
+          <p>infrastructure map // shoreditch office availability</p>
         </div>
       </header>
 
       <section className="map-shell">
         <div className="layer-controls">
-          <h2>Layers</h2>
+          <h2>[ LAYERS ]</h2>
           <label>
             <input type="checkbox" checked={showVcOverlay} onChange={(e) => setShowVcOverlay(e.target.checked)} />
             VC offices
@@ -29,7 +29,7 @@ export default function HomePage() {
             <input type="checkbox" checked={showTechOverlay} onChange={(e) => setShowTechOverlay(e.target.checked)} />
             Tech offices
           </label>
-          <p>Green/amber/red office markers show lower/mid/higher monthly cost.</p>
+          <p>green/amber/red = low/mid/high monthly cost</p>
         </div>
 
         <Map
