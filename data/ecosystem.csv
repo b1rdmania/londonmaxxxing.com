@@ -82,7 +82,7 @@ edu-001,Imperial College London Dept of Computing,edu,Huxley Building 180 Queen'
 edu-002,UCL Centre for Artificial Intelligence,edu,66-72 Gower Street,WC1E 6BT,London,UK,https://ucl.ac.uk/ai,https://www.ucl.ac.uk/ai,AI research centre,51.5218949,-0.1317863,ai_ucl
 edu-003,King's College London Institute for AI,edu,Bush House Strand Campus,WC2R 2LS,London,UK,https://kcl.ac.uk/ai,https://www.kcl.ac.uk/ai,AI research institute,51.5130562,-0.1173517,aiatkings
 edu-004,The Alan Turing Institute,edu,96 Euston Road British Library First Floor,NW1 2DB,London,UK,https://turing.ac.uk,https://turing.ac.uk,National institute for data science and AI,51.5299717,-0.1276759,turinginst
-cand-ai-001,OpenAI,ai,London,,London,UK,,https://openai.com/index/introducing-openai-london/,Creator of ChatGPT and GPT-4. Advanced AI research and deployment company.,51.5138,-0.1439,
+cand-ai-001,OpenAI,ai,"Suite 1, 7th Floor, 50 Broadway",SW1H 0BL,London,UK,https://openai.com,https://openai.com/index/introducing-openai-london/,Creator of ChatGPT and GPT-4. London research hub and international HQ.,51.4999001,-0.1334791,OpenAI
 cand-ai-002,ElevenLabs,ai,London,,London,UK,,https://elevenlabs.io/blog/london-office-opening,London HQ and operations,51.5138,-0.1439,
 cand-ai-003,PolyAI,ai,London,,London,UK,,https://poly.ai/contact/,London-founded conversational AI company,51.5138,-0.1439,
 cand-ai-004,Builder.ai,ai,London,,London,UK,,https://www.builder.ai/,London-founded AI app platform,51.5311,-0.124,
@@ -231,3 +231,4 @@ ai_bio-003,Valence Discovery,ai_bio,"3 Pancras Square, King's Cross, London",N1C
 ai_bio-004,Recursion Pharmaceuticals,ai_bio,"3 Pancras Square, King's Cross, London",N1C 4AG,London,UK,https://www.recursion.com,51.5339118,-0.1252266, chemistry and technology. London office opened June 2024 (6700 sq ft),51.5339118,-0.1252266,@RecursionPharma,high
 ai_bio-005,Hologen,ai_bio,"86-87 Campden Street, London",W8 7EN,London,UK,https://hologen.ai,https://find-and-update.company-information.service.gov.uk/company/14666561,51.50663609999999,-0.1956972,51.50663609999999,-0.1956972,,high
 ai-021,Scale AI,ai,"2 Pancras Square, King's Cross",N1C 4AG,London,UK,https://scale.com,https://www.gov.uk/government/news/scale-ai-expands-global-footprint-with-new-united-kingdom-headquarters,51.533599,-0.1251576,-0.1251576,@scale_AI,high
+ai-022,Mantic,ai,"Centro Forum, 78-80 Camden Street",NW1 0EG,London,UK,https://manifold.markets,https://find-and-update.company-information.service.gov.uk/company/15832845,Prediction markets and forecasting platform (Manifold Markets),51.53816759999999,-0.1376821,ManifoldMarkets
