@@ -47,6 +47,9 @@ export default function MapPageClient({ ecosystemPoints }: MapPageClientProps) {
           <h1>London Tech heat map 🔥</h1>
         </div>
         <nav className="topbar-nav" aria-label="Map layers">
+          <a className="topbar-cta" href="mailto:birdandy@me.com?subject=You%20forgot%20us!">
+            your company here and then here
+          </a>
           {availableTypes.map((type) => {
             const isOn = enabledByType[type];
             return (

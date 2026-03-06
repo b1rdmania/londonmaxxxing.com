@@ -45,6 +45,15 @@ body {
   flex-wrap: wrap;
 }
 
+.topbar-cta {
+  color: #222;
+  text-decoration: underline;
+  font-size: 12px;
+  font-family: "Courier New", Courier, monospace;
+  text-transform: lowercase;
+  align-self: center;
+}
+
 .topbar-btn {
   border: 1px solid #676767;
   background: #f3f3f3;
