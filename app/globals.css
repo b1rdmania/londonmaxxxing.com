@@ -89,14 +89,21 @@ body {
 
 .dot-vc {
   background: #2f62ff;
+  border-color: #2f62ff;
 }
 
 .dot-tech {
   background: #ff7b22;
+  border-color: #ff7b22;
 }
 
 .dot-office {
   background: #18a558;
+  border-color: #18a558;
+}
+
+.topbar-btn:not(.active) .dot {
+  background: transparent;
 }
 
 .map-shell {
