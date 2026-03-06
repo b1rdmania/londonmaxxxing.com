@@ -1,584 +1,150 @@
-import { EcosystemPoint, OfficeListing } from "@/lib/types";
+import "server-only";
 
-function withDerivedPricing(listing: Omit<OfficeListing, "cost_per_desk" | "cost_per_sqft">): OfficeListing {
-  const costPerDesk = Math.round(listing.monthly_cost / listing.desk_count);
-  const costPerSqft = listing.area_sqft
-    ? Math.round(((listing.monthly_cost * 12) / listing.area_sqft) * 100) / 100
+import { promises as fs } from "fs";
+import path from "path";
+
+import { EcosystemPoint, EcosystemType, OfficeListing, OfficeType } from "@/lib/types";
+
+const OFFICE_TYPES: ReadonlySet<OfficeType> = new Set(["serviced", "managed", "coworking"]);
+const ECO_TYPES: ReadonlySet<EcosystemType> = new Set(["vc", "tech"]);
+
+function parseCsv(text: string): Array<Record<string, string>> {
+  const rows: string[][] = [];
+  let current = "";
+  let row: string[] = [];
+  let inQuotes = false;
+
+  for (let i = 0; i < text.length; i += 1) {
+    const char = text[i];
+    const next = text[i + 1];
+
+    if (char === '"') {
+      if (inQuotes && next === '"') {
+        current += '"';
+        i += 1;
+      } else {
+        inQuotes = !inQuotes;
+      }
+      continue;
+    }
+
+    if (char === "," && !inQuotes) {
+      row.push(current.trim());
+      current = "";
+      continue;
+    }
+
+    if ((char === "\n" || char === "\r") && !inQuotes) {
+      if (char === "\r" && next === "\n") i += 1;
+      row.push(current.trim());
+      current = "";
+      if (row.some((value) => value.length > 0)) rows.push(row);
+      row = [];
+      continue;
+    }
+
+    current += char;
+  }
+
+  if (current.length > 0 || row.length > 0) {
+    row.push(current.trim());
+    if (row.some((value) => value.length > 0)) rows.push(row);
+  }
+
+  if (!rows.length) return [];
+
+  const [headers, ...dataRows] = rows;
+  return dataRows.map((values) => {
+    const record: Record<string, string> = {};
+    headers.forEach((header, index) => {
+      record[header] = values[index] ?? "";
+    });
+    return record;
+  });
+}
+
+function parseNumber(value: string): number | null {
+  if (!value) return null;
+  const parsed = Number(value);
+  return Number.isFinite(parsed) ? parsed : null;
+}
+
+function parseOptionalNumber(value: string): number | undefined {
+  const parsed = parseNumber(value);
+  return parsed === null ? undefined : parsed;
+}
+
+function toOfficeListing(record: Record<string, string>): OfficeListing | null {
+  const officeType = record.office_type as OfficeType;
+  if (!OFFICE_TYPES.has(officeType)) return null;
+
+  const latitude = parseNumber(record.latitude);
+  const longitude = parseNumber(record.longitude);
+  const deskCount = parseNumber(record.desk_count);
+  const monthlyCost = parseNumber(record.monthly_cost);
+
+  if (latitude === null || longitude === null || deskCount === null || monthlyCost === null) {
+    return null;
+  }
+
+  const areaSqft = parseOptionalNumber(record.area_sqft);
+  const derivedCostPerDesk = Math.round(monthlyCost / deskCount);
+  const derivedCostPerSqft = areaSqft
+    ? Math.round(((monthlyCost * 12) / areaSqft) * 100) / 100
     : undefined;
 
   return {
-    ...listing,
-    cost_per_desk: Number.isFinite(costPerDesk) ? costPerDesk : undefined,
-    cost_per_sqft: costPerSqft
+    id: record.id,
+    name: record.name,
+    address: record.address,
+    postcode: record.postcode,
+    latitude,
+    longitude,
+    office_type: officeType,
+    desk_count: deskCount,
+    area_sqft: areaSqft,
+    monthly_cost: monthlyCost,
+    cost_per_desk: parseOptionalNumber(record.cost_per_desk) ?? derivedCostPerDesk,
+    cost_per_sqft: parseOptionalNumber(record.cost_per_sqft) ?? derivedCostPerSqft,
+    availability_date: record.availability_date,
+    lease_term: record.lease_term,
+    broker_name: record.broker_name,
+    source_url: record.source_url,
+    notes: record.notes || undefined
   };
 }
 
-const rawOfficeListings: Array<Omit<OfficeListing, "cost_per_desk" | "cost_per_sqft">> = [
-  {
-    id: "ldn-001",
-    name: "Silicon Roundabout Studios",
-    address: "120 Old Street, London",
-    postcode: "EC1V 9BD",
-    latitude: 51.5258,
-    longitude: -0.0879,
-    office_type: "serviced",
-    desk_count: 6,
-    area_sqft: 650,
-    monthly_cost: 3600,
-    availability_date: "Now",
-    lease_term: "12 months",
-    broker_name: "Shoreditch Offices",
-    source_url: "https://example.com/listings/ldn-001",
-    notes: "Natural light, meeting room included"
-  },
-  {
-    id: "ldn-002",
-    name: "Curtain Road Collective",
-    address: "81 Curtain Road, London",
-    postcode: "EC2A 3AG",
-    latitude: 51.5252,
-    longitude: -0.0798,
-    office_type: "managed",
-    desk_count: 14,
-    area_sqft: 1500,
-    monthly_cost: 9800,
-    availability_date: "Next 3 months",
-    lease_term: "24 months",
-    broker_name: "Founders Space London",
-    source_url: "https://example.com/listings/ldn-002"
-  },
-  {
-    id: "ldn-003",
-    name: "Hoxton Yard Private",
-    address: "30 Great Eastern Street, London",
-    postcode: "EC2A 3ES",
-    latitude: 51.5246,
-    longitude: -0.0811,
-    office_type: "coworking",
-    desk_count: 4,
-    area_sqft: 420,
-    monthly_cost: 2400,
-    availability_date: "Now",
-    lease_term: "Flexible",
-    broker_name: "Orbit Workspaces",
-    source_url: "https://example.com/listings/ldn-003"
-  },
-  {
-    id: "ldn-004",
-    name: "Spitalfields Foundry",
-    address: "15 Folgate Street, London",
-    postcode: "E1 6BX",
-    latitude: 51.5198,
-    longitude: -0.0755,
-    office_type: "serviced",
-    desk_count: 10,
-    area_sqft: 1100,
-    monthly_cost: 6200,
-    availability_date: "Next 3 months",
-    lease_term: "12 months",
-    broker_name: "East London Brokers",
-    source_url: "https://example.com/listings/ldn-004"
-  },
-  {
-    id: "ldn-005",
-    name: "Aldgate East Labs",
-    address: "58 Commercial Road, London",
-    postcode: "E1 1LP",
-    latitude: 51.5146,
-    longitude: -0.0707,
-    office_type: "managed",
-    desk_count: 18,
-    area_sqft: 2100,
-    monthly_cost: 11200,
-    availability_date: "Flexible",
-    lease_term: "18 months",
-    broker_name: "Canal & City Offices",
-    source_url: "https://example.com/listings/ldn-005"
-  },
-  {
-    id: "ldn-006",
-    name: "Liverpool Street Annex",
-    address: "16 Devonshire Square, London",
-    postcode: "EC2M 4SQ",
-    latitude: 51.5173,
-    longitude: -0.0809,
-    office_type: "serviced",
-    desk_count: 8,
-    area_sqft: 900,
-    monthly_cost: 5400,
-    availability_date: "Now",
-    lease_term: "12 months",
-    broker_name: "City Fringe Offices",
-    source_url: "https://example.com/listings/ldn-006"
-  },
-  {
-    id: "ldn-007",
-    name: "Shoreditch High Street Hub",
-    address: "94 Shoreditch High Street, London",
-    postcode: "E1 6JQ",
-    latitude: 51.5233,
-    longitude: -0.0751,
-    office_type: "coworking",
-    desk_count: 12,
-    area_sqft: 1200,
-    monthly_cost: 7800,
-    availability_date: "Flexible",
-    lease_term: "Flexible",
-    broker_name: "Orbit Workspaces",
-    source_url: "https://example.com/listings/ldn-007"
-  },
-  {
-    id: "ldn-008",
-    name: "Hoxton Canal Works",
-    address: "5 Kingsland Road, London",
-    postcode: "E2 8AA",
-    latitude: 51.5264,
-    longitude: -0.0786,
-    office_type: "managed",
-    desk_count: 22,
-    area_sqft: 2600,
-    monthly_cost: 14800,
-    availability_date: "Next 3 months",
-    lease_term: "24 months",
-    broker_name: "Founders Space London",
-    source_url: "https://example.com/listings/ldn-008"
-  },
-  {
-    id: "ldn-009",
-    name: "Old Street Arcade",
-    address: "210 Old Street, London",
-    postcode: "EC1V 9NR",
-    latitude: 51.5262,
-    longitude: -0.0845,
-    office_type: "serviced",
-    desk_count: 3,
-    area_sqft: 300,
-    monthly_cost: 1700,
-    availability_date: "Now",
-    lease_term: "6 months",
-    broker_name: "Shoreditch Offices",
-    source_url: "https://example.com/listings/ldn-009"
-  },
-  {
-    id: "ldn-010",
-    name: "Bishopsgate Makerspace",
-    address: "155 Bishopsgate, London",
-    postcode: "EC2M 3YD",
-    latitude: 51.5189,
-    longitude: -0.0818,
-    office_type: "managed",
-    desk_count: 16,
-    area_sqft: 1850,
-    monthly_cost: 12600,
-    availability_date: "Now",
-    lease_term: "24 months",
-    broker_name: "City Fringe Offices",
-    source_url: "https://example.com/listings/ldn-010"
-  },
-  {
-    id: "ldn-011",
-    name: "Brick Lane Team Suite",
-    address: "43 Brick Lane, London",
-    postcode: "E1 6QL",
-    latitude: 51.5218,
-    longitude: -0.0714,
-    office_type: "serviced",
-    desk_count: 9,
-    area_sqft: 980,
-    monthly_cost: 5900,
-    availability_date: "Next 3 months",
-    lease_term: "12 months",
-    broker_name: "East London Brokers",
-    source_url: "https://example.com/listings/ldn-011"
-  },
-  {
-    id: "ldn-012",
-    name: "Whitechapel Scaleup Floor",
-    address: "72 Whitechapel High Street, London",
-    postcode: "E1 7QX",
-    latitude: 51.5158,
-    longitude: -0.0698,
-    office_type: "managed",
-    desk_count: 28,
-    area_sqft: 3200,
-    monthly_cost: 19600,
-    availability_date: "Flexible",
-    lease_term: "36 months",
-    broker_name: "Canal & City Offices",
-    source_url: "https://example.com/listings/ldn-012"
-  },
-  {
-    id: "ldn-013",
-    name: "Spitalfields Loft",
-    address: "11 Lamb Street, London",
-    postcode: "E1 6EA",
-    latitude: 51.5206,
-    longitude: -0.0749,
-    office_type: "coworking",
-    desk_count: 5,
-    area_sqft: 480,
-    monthly_cost: 2900,
-    availability_date: "Now",
-    lease_term: "Flexible",
-    broker_name: "Orbit Workspaces",
-    source_url: "https://example.com/listings/ldn-013"
-  },
-  {
-    id: "ldn-014",
-    name: "Tech City North Pod",
-    address: "2-4 Hoxton Square, London",
-    postcode: "N1 6NU",
-    latitude: 51.5274,
-    longitude: -0.0803,
-    office_type: "serviced",
-    desk_count: 4,
-    area_sqft: 390,
-    monthly_cost: 2100,
-    availability_date: "Now",
-    lease_term: "6 months",
-    broker_name: "Shoreditch Offices",
-    source_url: "https://example.com/listings/ldn-014"
-  },
-  {
-    id: "ldn-015",
-    name: "City Road Builder Suite",
-    address: "145 City Road, London",
-    postcode: "EC1V 1LP",
-    latitude: 51.527,
-    longitude: -0.0894,
-    office_type: "managed",
-    desk_count: 20,
-    area_sqft: 2400,
-    monthly_cost: 13900,
-    availability_date: "Next 3 months",
-    lease_term: "24 months",
-    broker_name: "Founders Space London",
-    source_url: "https://example.com/listings/ldn-015"
-  },
-  {
-    id: "ldn-016",
-    name: "Great Eastern Garage",
-    address: "71 Great Eastern Street, London",
-    postcode: "EC2A 3HU",
-    latitude: 51.5248,
-    longitude: -0.0831,
-    office_type: "coworking",
-    desk_count: 7,
-    area_sqft: 760,
-    monthly_cost: 4600,
-    availability_date: "Flexible",
-    lease_term: "Flexible",
-    broker_name: "Orbit Workspaces",
-    source_url: "https://example.com/listings/ldn-016"
-  },
-  {
-    id: "ldn-017",
-    name: "Aldgate Buildspace",
-    address: "1 Leman Street, London",
-    postcode: "E1 8FA",
-    latitude: 51.5149,
-    longitude: -0.0745,
-    office_type: "serviced",
-    desk_count: 11,
-    area_sqft: 1250,
-    monthly_cost: 7200,
-    availability_date: "Now",
-    lease_term: "12 months",
-    broker_name: "East London Brokers",
-    source_url: "https://example.com/listings/ldn-017"
-  },
-  {
-    id: "ldn-018",
-    name: "Commercial Street Collective",
-    address: "147 Commercial Street, London",
-    postcode: "E1 6BJ",
-    latitude: 51.5201,
-    longitude: -0.0731,
-    office_type: "managed",
-    desk_count: 13,
-    area_sqft: 1450,
-    monthly_cost: 9300,
-    availability_date: "Next 3 months",
-    lease_term: "18 months",
-    broker_name: "Canal & City Offices",
-    source_url: "https://example.com/listings/ldn-018"
-  },
-  {
-    id: "ldn-019",
-    name: "Minories Team Rooms",
-    address: "7 Minories, London",
-    postcode: "EC3N 1BJ",
-    latitude: 51.5123,
-    longitude: -0.0758,
-    office_type: "serviced",
-    desk_count: 6,
-    area_sqft: 620,
-    monthly_cost: 4100,
-    availability_date: "Now",
-    lease_term: "12 months",
-    broker_name: "City Fringe Offices",
-    source_url: "https://example.com/listings/ldn-019"
-  },
-  {
-    id: "ldn-020",
-    name: "Bethnal Green Annex",
-    address: "19 Redchurch Street, London",
-    postcode: "E2 7DJ",
-    latitude: 51.523,
-    longitude: -0.0772,
-    office_type: "coworking",
-    desk_count: 15,
-    area_sqft: 1720,
-    monthly_cost: 9600,
-    availability_date: "Flexible",
-    lease_term: "Flexible",
-    broker_name: "Orbit Workspaces",
-    source_url: "https://example.com/listings/ldn-020"
-  },
-  {
-    id: "ldn-021",
-    name: "Blossom Street Works",
-    address: "22 Blossom Street, London",
-    postcode: "E1 6PL",
-    latitude: 51.5214,
-    longitude: -0.0807,
-    office_type: "managed",
-    desk_count: 24,
-    area_sqft: 2750,
-    monthly_cost: 17100,
-    availability_date: "Next 3 months",
-    lease_term: "24 months",
-    broker_name: "Founders Space London",
-    source_url: "https://example.com/listings/ldn-021"
-  },
-  {
-    id: "ldn-022",
-    name: "Tabernacle Hub",
-    address: "34 Leonard Street, London",
-    postcode: "EC2A 4LX",
-    latitude: 51.5242,
-    longitude: -0.0825,
-    office_type: "serviced",
-    desk_count: 10,
-    area_sqft: 1020,
-    monthly_cost: 6500,
-    availability_date: "Now",
-    lease_term: "12 months",
-    broker_name: "Shoreditch Offices",
-    source_url: "https://example.com/listings/ldn-022"
-  },
-  {
-    id: "ldn-023",
-    name: "Worship Street Pods",
-    address: "31 Worship Street, London",
-    postcode: "EC2A 2DX",
-    latitude: 51.5229,
-    longitude: -0.0872,
-    office_type: "coworking",
-    desk_count: 3,
-    area_sqft: 310,
-    monthly_cost: 1650,
-    availability_date: "Now",
-    lease_term: "Flexible",
-    broker_name: "Orbit Workspaces",
-    source_url: "https://example.com/listings/ldn-023"
-  },
-  {
-    id: "ldn-024",
-    name: "Shoreditch Platform",
-    address: "18 Hewett Street, London",
-    postcode: "EC2A 3NN",
-    latitude: 51.5241,
-    longitude: -0.0805,
-    office_type: "serviced",
-    desk_count: 17,
-    area_sqft: 1880,
-    monthly_cost: 11800,
-    availability_date: "Flexible",
-    lease_term: "18 months",
-    broker_name: "East London Brokers",
-    source_url: "https://example.com/listings/ldn-024"
-  },
-  {
-    id: "ldn-025",
-    name: "Folgate Founders Floor",
-    address: "3 Folgate Street, London",
-    postcode: "E1 6BX",
-    latitude: 51.5195,
-    longitude: -0.077,
-    office_type: "managed",
-    desk_count: 21,
-    area_sqft: 2500,
-    monthly_cost: 15400,
-    availability_date: "Now",
-    lease_term: "24 months",
-    broker_name: "Canal & City Offices",
-    source_url: "https://example.com/listings/ldn-025"
-  },
-  {
-    id: "ldn-026",
-    name: "Liverpool Street Team Base",
-    address: "80 Middlesex Street, London",
-    postcode: "E1 7EZ",
-    latitude: 51.517,
-    longitude: -0.0766,
-    office_type: "serviced",
-    desk_count: 9,
-    area_sqft: 940,
-    monthly_cost: 6100,
-    availability_date: "Next 3 months",
-    lease_term: "12 months",
-    broker_name: "City Fringe Offices",
-    source_url: "https://example.com/listings/ldn-026"
-  },
-  {
-    id: "ldn-027",
-    name: "Artillery Lane Studio",
-    address: "8 Artillery Lane, London",
-    postcode: "E1 7LS",
-    latitude: 51.5187,
-    longitude: -0.0763,
-    office_type: "coworking",
-    desk_count: 6,
-    area_sqft: 600,
-    monthly_cost: 3500,
-    availability_date: "Now",
-    lease_term: "Flexible",
-    broker_name: "Orbit Workspaces",
-    source_url: "https://example.com/listings/ldn-027"
-  },
-  {
-    id: "ldn-028",
-    name: "Whitechapel Foundry Annex",
-    address: "31 Commercial Street, London",
-    postcode: "E1 6BD",
-    latitude: 51.5179,
-    longitude: -0.072,
-    office_type: "managed",
-    desk_count: 12,
-    area_sqft: 1320,
-    monthly_cost: 8700,
-    availability_date: "Flexible",
-    lease_term: "18 months",
-    broker_name: "Founders Space London",
-    source_url: "https://example.com/listings/ldn-028"
-  },
-  {
-    id: "ldn-029",
-    name: "Brick Lane Scale Bay",
-    address: "91 Brick Lane, London",
-    postcode: "E1 6QL",
-    latitude: 51.5227,
-    longitude: -0.0719,
-    office_type: "serviced",
-    desk_count: 19,
-    area_sqft: 2150,
-    monthly_cost: 13400,
-    availability_date: "Next 3 months",
-    lease_term: "24 months",
-    broker_name: "East London Brokers",
-    source_url: "https://example.com/listings/ldn-029"
-  },
-  {
-    id: "ldn-030",
-    name: "Hoxton Exchange",
-    address: "47 Hoxton Square, London",
-    postcode: "N1 6PB",
-    latitude: 51.5279,
-    longitude: -0.0792,
-    office_type: "coworking",
-    desk_count: 8,
-    area_sqft: 820,
-    monthly_cost: 4950,
-    availability_date: "Now",
-    lease_term: "Flexible",
-    broker_name: "Orbit Workspaces",
-    source_url: "https://example.com/listings/ldn-030"
-  }
-];
+function toEcosystemPoint(record: Record<string, string>): EcosystemPoint | null {
+  const type = record.type as EcosystemType;
+  if (!ECO_TYPES.has(type)) return null;
 
-export const officeListings: OfficeListing[] = rawOfficeListings.map(withDerivedPricing);
+  const latitude = parseNumber(record.latitude);
+  const longitude = parseNumber(record.longitude);
+  if (latitude === null || longitude === null) return null;
 
-export const ecosystemPoints: EcosystemPoint[] = [
-  {
-    id: "eco-vc-001",
-    name: "Entrepreneur First",
-    address: "Senna Building, Gorsuch Place, London, E2 8JF",
-    latitude: 51.5303,
-    longitude: -0.0759,
-    type: "vc",
-    source_url: "https://www.joinef.com/about/contact"
-  },
-  {
-    id: "eco-vc-002",
-    name: "Seedcamp",
-    address: "12 Little Portland Street, London, W1W 8BJ",
-    latitude: 51.5194,
-    longitude: -0.1414,
-    type: "vc",
-    source_url: "https://seedcamp.com/contact/"
-  },
-  {
-    id: "eco-vc-003",
-    name: "Hoxton Ventures",
-    address: "55 New Oxford Street, London, WC1A 1BS",
-    latitude: 51.5165,
-    longitude: -0.1264,
-    type: "vc",
-    source_url: "https://www.hoxtonventures.com/contact/"
-  },
-  {
-    id: "eco-vc-004",
-    name: "Index Ventures",
-    address: "5-8 Lower John Street, London, W1F 9DY",
-    latitude: 51.513,
-    longitude: -0.1376,
-    type: "vc",
-    source_url: "https://www.indexventures.com/contact/"
-  },
-  {
-    id: "eco-vc-005",
-    name: "Atomico",
-    address: "29 Rathbone Street, London, W1T 1NJ",
-    latitude: 51.5189,
-    longitude: -0.1347,
-    type: "vc",
-    source_url: "https://atomico.com/about/"
-  },
-  {
-    id: "eco-tech-001",
-    name: "Monzo",
-    address: "Broadwalk House, 5 Appold Street, London, EC2A 2AG",
-    latitude: 51.5201,
-    longitude: -0.0828,
-    type: "tech",
-    source_url: "https://monzo.com/legal/terms-and-conditions/"
-  },
-  {
-    id: "eco-tech-002",
-    name: "Wise",
-    address: "Worship Square, 65 Clifton Street, London, EC2A 4JE",
-    latitude: 51.5235,
-    longitude: -0.0842,
-    type: "tech",
-    source_url: "https://www.wise.com/gb/blog/wise-london-office-launch"
-  },
-  {
-    id: "eco-tech-003",
-    name: "Snyk",
-    address: "Mainframe Building, 24 Eversholt Street, London, NW1 1AD",
-    latitude: 51.5291,
-    longitude: -0.1338,
-    type: "tech",
-    source_url: "https://snyk.io/about/"
-  },
-  {
-    id: "eco-tech-004",
-    name: "Revolut",
-    address: "30 South Colonnade, London, E14 5HX",
-    latitude: 51.5047,
-    longitude: -0.0194,
-    type: "tech",
-    source_url: "https://data.companieshouse.gov.uk/doc/company/08804411"
-  }
-];
+  return {
+    id: record.id,
+    name: record.name,
+    address: record.address,
+    latitude,
+    longitude,
+    type,
+    source_url: record.source_url
+  };
+}
+
+async function readCsv(fileName: string): Promise<Array<Record<string, string>>> {
+  const fullPath = path.join(process.cwd(), fileName);
+  const file = await fs.readFile(fullPath, "utf8");
+  return parseCsv(file);
+}
+
+export async function loadOfficeListings(): Promise<OfficeListing[]> {
+  const records = await readCsv("office-listings.csv");
+  return records.map(toOfficeListing).filter((row): row is OfficeListing => row !== null);
+}
+
+export async function loadEcosystemPoints(): Promise<EcosystemPoint[]> {
+  const records = await readCsv("companies.csv");
+  return records.map(toEcosystemPoint).filter((row): row is EcosystemPoint => row !== null);
+}
