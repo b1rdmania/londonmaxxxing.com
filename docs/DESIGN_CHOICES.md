@@ -13,7 +13,8 @@
 
 ## Typography
 - Brand/headline: serif (Georgia/Times).
-- Controls/meta/data: monospace (`Courier New` or equivalent).
+- Controls/meta/data: same serif family as the rest of the UI.
+- Never reintroduce `Courier`, `Courier New`, or monospace defaults unless explicitly requested.
 - Case: uppercase for system controls and labels.
 
 ## Layout
@@ -36,7 +37,7 @@
 
 ## Component Patterns
 - Buttons: OS-style hard controls (bordered, rectangular, compact).
-- Popups: hard border, monospace text, no rounded corners.
+- Popups: hard border, serif text, no rounded corners.
 - Status text: small, low-contrast metadata in top rail.
 
 ## Content Tone
