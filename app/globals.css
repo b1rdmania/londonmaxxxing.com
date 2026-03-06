@@ -251,6 +251,112 @@ body {
   background: #1f1f1f;
 }
 
+.guestbook-shell {
+  max-width: 920px;
+  margin: 0 auto;
+  padding: 24px 16px 40px;
+  font-family: "Times New Roman", Times, serif;
+}
+
+.guestbook-header h1 {
+  font-size: 40px;
+  font-weight: normal;
+  margin-bottom: 8px;
+}
+
+.guestbook-header p {
+  font-size: 16px;
+  margin-bottom: 10px;
+  line-height: 1.4;
+}
+
+.guestbook-header a {
+  color: #f00;
+  text-decoration: none;
+}
+
+.guestbook-header a:hover {
+  text-decoration: underline;
+}
+
+.guestbook-form-wrap {
+  margin: 18px 0 22px;
+}
+
+.guestbook-form {
+  display: grid;
+  gap: 10px;
+}
+
+.guestbook-form label {
+  display: grid;
+  gap: 6px;
+  font-size: 14px;
+}
+
+.guestbook-form input,
+.guestbook-form textarea {
+  border: 1px solid #999;
+  background: #fff;
+  color: #000;
+  padding: 8px;
+  font-size: 14px;
+  font-family: "Times New Roman", Times, serif;
+}
+
+.guestbook-form textarea {
+  min-height: 90px;
+  resize: vertical;
+}
+
+.guestbook-form button {
+  width: fit-content;
+  border: 1px solid #777;
+  background: #f4f4f4;
+  color: #000;
+  padding: 6px 12px;
+  font-size: 14px;
+  font-family: "Times New Roman", Times, serif;
+  cursor: pointer;
+}
+
+.guestbook-form button:hover {
+  background: #ececec;
+}
+
+.guestbook-form button:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.guestbook-error {
+  margin-top: 8px;
+  color: #a10000;
+}
+
+.guestbook-list {
+  display: grid;
+  gap: 10px;
+}
+
+.guestbook-entry {
+  border: 1px solid #ddd;
+  padding: 10px;
+}
+
+.guestbook-entry-meta {
+  display: flex;
+  justify-content: space-between;
+  gap: 12px;
+  font-size: 13px;
+  margin-bottom: 6px;
+}
+
+.guestbook-entry p {
+  font-size: 15px;
+  line-height: 1.35;
+}
+
 @media (max-width: 860px) {
   .topbar {
     flex-direction: column;

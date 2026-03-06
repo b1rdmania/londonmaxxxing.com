@@ -1,6 +1,7 @@
 "use client";
 
 import { useMemo, useState } from "react";
+import Link from "next/link";
 
 import Map from "@/components/Map";
 import { ECOSYSTEM_META, ECOSYSTEM_ORDER } from "@/lib/ecosystemConfig";
@@ -64,7 +65,7 @@ export default function MapPageClient({ ecosystemPoints }: MapPageClientProps) {
         <div className="topbar-brand">
           <h1>london tech heatmap 🔥</h1>
           <span className="topbar-cta">
-            [built by b1rdmania] [{ecosystemPoints.length} so far] [bit buggy, wish I&apos;d never started this...]
+            [built by b1rdmania] [{ecosystemPoints.length} so far] [bit buggy, wish I&apos;d never started this...] [<Link href="/guestbook">guestbook</Link>]
           </span>
         </div>
         <nav className="topbar-nav" aria-label="Map layers">
