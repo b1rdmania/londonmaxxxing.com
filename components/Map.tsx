@@ -43,7 +43,13 @@ function categoryLayer(type: EcosystemType): LayerProps {
     filter: ["==", ["get", "type"], type],
     paint: {
       "circle-color": meta.color,
-      "circle-radius": 6,
+      "circle-radius": [
+        "interpolate",
+        ["linear"],
+        ["zoom"],
+        10, 8,  // At zoom 10 (zoomed out), radius 8
+        14, 10  // At zoom 14 (zoomed in), radius 10
+      ],
       "circle-stroke-width": 1,
       "circle-stroke-color": "#ffffff"
     }
@@ -88,9 +94,19 @@ export default function Map({ ecosystemPoints, enabledTypes, darkMode = false }:
       return;
     }
 
-    const features = map.queryRenderedFeatures(event.point, {
-      layers: interactiveLayerIds
-    });
+    // Larger tap target on mobile - query 20px radius around tap point
+    const isMobile = window.innerWidth <= 768;
+    const buffer = isMobile ? 20 : 5;
+
+    const features = map.queryRenderedFeatures(
+      [
+        [event.point.x - buffer, event.point.y - buffer],
+        [event.point.x + buffer, event.point.y + buffer]
+      ],
+      {
+        layers: interactiveLayerIds
+      }
+    );
 
     if (!features.length) {
       setPopupEcosystemId(null);
