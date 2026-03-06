@@ -197,6 +197,7 @@ export default function Map({ listings, ecosystemPoints, showVcOverlay, showTech
     <div className="map-wrap">
       <MapGL
         ref={mapRef}
+        style={{ width: "100%", height: "100%" }}
         initialViewState={{
           longitude: -0.0815,
           latitude: 51.5218,
