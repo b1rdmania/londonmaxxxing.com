@@ -30,6 +30,7 @@ function buildInitialState(points: EcosystemPoint[]): Record<EcosystemType, bool
 const DEFAULT_VISIBLE_TYPES: EcosystemType[] = ["vc", "ai", "fintech", "web3", "edu"];
 
 export default function MapPageClient({ ecosystemPoints }: MapPageClientProps) {
+  const [darkMode, setDarkMode] = useState(false);
   const [enabledByType, setEnabledByType] = useState<Record<EcosystemType, boolean>>(() => {
     const initial = buildInitialState(ecosystemPoints);
     const hasAny = Object.values(initial).some(Boolean);
@@ -58,15 +59,22 @@ export default function MapPageClient({ ecosystemPoints }: MapPageClientProps) {
   );
 
   return (
-    <main className="shell">
+    <main className={darkMode ? "shell dark" : "shell"}>
       <header className="topbar">
         <div className="topbar-brand">
+          <h1>London Tech heat map 🔥</h1>
           <span className="topbar-cta">
             [Add your company <a href="mailto:birdandy@me.com?subject=Add%20my%20company%20to%20londonmaxxxing.com">here</a>]
           </span>
-          <h1>London Tech heat map 🔥</h1>
         </div>
         <nav className="topbar-nav" aria-label="Map layers">
+          <button
+            type="button"
+            className="topbar-btn"
+            onClick={() => setDarkMode(!darkMode)}
+          >
+            {darkMode ? "☀" : "☾"}
+          </button>
           {availableTypes.map((type) => {
             const isOn = enabledByType[type];
             return (
