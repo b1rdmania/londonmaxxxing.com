@@ -180,8 +180,8 @@ export default function Map({ ecosystemPoints, enabledTypes, darkMode = false }:
                   </a>
                 ) : null}
                 {popupEcosystem.twitter ? (
-                  <a className="popup-btn" href={`https://x.com/${popupEcosystem.twitter}`} target="_blank" rel="noreferrer">
-                    𝕏
+                  <a className="popup-btn" href={`https://x.com/${popupEcosystem.twitter.replace('@', '')}`} target="_blank" rel="noreferrer">
+                    X
                   </a>
                 ) : null}
               </div>
