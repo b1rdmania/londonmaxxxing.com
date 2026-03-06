@@ -25,11 +25,20 @@ body {
 .topbar {
   border-bottom: 1px solid #8f8f8f;
   background: #ebebeb;
-  padding: 8px 14px;
+  padding: 0 14px 8px;
   display: grid;
   grid-template-columns: auto 1fr auto;
   gap: 14px;
   align-items: center;
+}
+
+.status-line {
+  grid-column: 1 / -1;
+  border-bottom: 1px solid #b3b3b3;
+  font-size: 12px;
+  color: #222;
+  font-family: "Courier New", Courier, monospace;
+  padding: 4px 0 5px;
 }
 
 .topbar-brand h1 {
@@ -47,32 +56,29 @@ body {
 
 .topbar-nav {
   display: flex;
-  gap: 8px;
+  gap: 12px;
   justify-content: center;
   flex-wrap: wrap;
 }
 
 .topbar-btn {
-  border: 1px solid #4d4d4d;
-  background: linear-gradient(180deg, #f4f4f4 0%, #c8c8c8 100%);
+  border: 0;
+  background: transparent;
   color: #222;
   font-size: 12px;
-  padding: 5px 12px;
+  padding: 0;
   cursor: pointer;
-  letter-spacing: 0.04em;
-  text-transform: uppercase;
   font-family: "Courier New", Courier, monospace;
-  box-shadow: inset 0 1px 0 #ffffff, 0 1px 0 #9b9b9b;
+  text-transform: lowercase;
+  text-decoration: none;
 }
 
 .topbar-btn.active {
-  background: linear-gradient(180deg, #383838 0%, #1f1f1f 100%);
-  color: #f5f5f5;
-  box-shadow: inset 0 1px 0 #5b5b5b, 0 1px 0 #a6a6a6;
+  font-weight: 700;
 }
 
 .topbar-btn:hover {
-  filter: brightness(0.98);
+  text-decoration: underline;
 }
 
 .topbar-meta {
@@ -98,22 +104,13 @@ body {
 }
 
 .maplibregl-popup-content {
-  border: 1px solid #222;
-  border-radius: 0;
-  box-shadow: none;
-  background: #ececec;
+  border: 1px solid #444;
+  border-radius: 2px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.18);
+  background: #f5f5f5;
   color: #111;
   padding: 10px 12px;
   font-family: "Courier New", Courier, monospace;
-}
-
-.maplibregl-popup-close-button {
-  color: #111;
-  font-size: 16px;
-}
-
-.maplibregl-popup-tip {
-  border-top-color: #222;
 }
 
 .popup-card h3,

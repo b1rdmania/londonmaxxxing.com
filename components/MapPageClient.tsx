@@ -20,6 +20,9 @@ export default function MapPageClient({ listings, ecosystemPoints }: MapPageClie
   return (
     <main className="shell">
       <header className="topbar">
+        <div className="status-line">
+          {`> ready // vc:${showVcOverlay ? "on" : "off"} tech:${showTechOverlay ? "on" : "off"} office:${showOfficeLayer ? "on" : "off"}`}
+        </div>
         <div className="topbar-brand">
           <h1>LONDONMAXXXING.COM</h1>
           <p>london startup ecosystem map</p>
@@ -30,25 +33,25 @@ export default function MapPageClient({ listings, ecosystemPoints }: MapPageClie
             className={showVcOverlay ? "topbar-btn active" : "topbar-btn"}
             onClick={() => setShowVcOverlay((value) => !value)}
           >
-            VC ({vcCount})
+            [{showVcOverlay ? "x" : " "}] vc {vcCount}
           </button>
           <button
             type="button"
             className={showTechOverlay ? "topbar-btn active" : "topbar-btn"}
             onClick={() => setShowTechOverlay((value) => !value)}
           >
-            TECH ({techCount})
+            [{showTechOverlay ? "x" : " "}] tech {techCount}
           </button>
           <button
             type="button"
             className={showOfficeLayer ? "topbar-btn active" : "topbar-btn"}
             onClick={() => setShowOfficeLayer((value) => !value)}
           >
-            OFFICE (W2)
+            [{showOfficeLayer ? "x" : " "}] office (w2)
           </button>
         </nav>
         <div className="topbar-meta">
-          <span>{listings.length} office listings loaded</span>
+          <span>{listings.length} office listings indexed</span>
         </div>
       </header>
 
