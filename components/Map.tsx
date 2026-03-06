@@ -135,20 +135,31 @@ export default function Map({ ecosystemPoints, enabledTypes, darkMode = false }:
           >
             <div className="popup-card">
               <h3>{popupEcosystem.name}</h3>
-              <p>{popupEcosystem.address}</p>
-              <p>
-                Type: <strong>{ECOSYSTEM_META[popupEcosystem.type].label.toUpperCase()}</strong>
-              </p>
-              {popupEcosystem.website ? (
-                <p>
-                  <a href={popupEcosystem.website} target="_blank" rel="noreferrer">
+              <div className="popup-meta-row">
+                <span
+                  className="popup-badge"
+                  style={{
+                    borderColor: ECOSYSTEM_META[popupEcosystem.type].color,
+                    color: ECOSYSTEM_META[popupEcosystem.type].color
+                  }}
+                >
+                  {ECOSYSTEM_META[popupEcosystem.type].label.toUpperCase()}
+                </span>
+                <span className="popup-meta-text">London</span>
+                <span className="popup-meta-text">Verified source</span>
+              </div>
+              {popupEcosystem.notes ? <p className="popup-description">{popupEcosystem.notes}</p> : null}
+              <p className="popup-address">{popupEcosystem.address}</p>
+              <div className="popup-actions">
+                {popupEcosystem.website ? (
+                  <a className="popup-btn" href={popupEcosystem.website} target="_blank" rel="noreferrer">
                     Website
                   </a>
-                </p>
-              ) : null}
-              <a href={popupEcosystem.source_url} target="_blank" rel="noreferrer">
-                Source
-              </a>
+                ) : null}
+                <a className="popup-btn" href={popupEcosystem.source_url} target="_blank" rel="noreferrer">
+                  Source
+                </a>
+              </div>
             </div>
           </Popup>
         ) : null}

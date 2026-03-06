@@ -123,33 +123,82 @@ body {
 }
 
 .maplibregl-popup-content {
-  border: 1px solid #ddd;
-  border-radius: 4px;
+  border: 1px solid #d1d1d1;
+  border-radius: 6px;
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
   background: #fff;
   color: #000;
-  padding: 12px;
+  padding: 14px;
   font-family: "Times New Roman", Times, serif;
-  font-size: 12px;
-}
-
-.popup-card h3,
-.marker-info h3 {
   font-size: 13px;
-  margin-bottom: 6px;
-  font-weight: normal;
 }
 
-.popup-card p,
-.marker-info p {
+.popup-card h3 {
+  font-size: 18px;
+  margin-bottom: 8px;
+  font-weight: 600;
+  line-height: 1.25;
+}
+
+.popup-card p {
   font-size: 12px;
   margin-bottom: 4px;
 }
 
-.popup-card a,
-.marker-info a {
-  color: #000;
-  text-decoration: underline;
+.popup-meta-row {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+  flex-wrap: wrap;
+  margin-bottom: 8px;
+}
+
+.popup-badge {
+  border: 1px solid currentColor;
+  border-radius: 999px;
+  padding: 2px 8px;
+  font-size: 11px;
+  font-family: "Courier New", Courier, monospace;
+  letter-spacing: 0.03em;
+}
+
+.popup-meta-text {
+  font-size: 11px;
+  color: #606060;
+  font-family: "Courier New", Courier, monospace;
+}
+
+.popup-description {
+  font-size: 13px;
+  color: #2f2f2f;
+  margin-bottom: 8px;
+  line-height: 1.35;
+}
+
+.popup-address {
+  font-size: 13px;
+  margin-bottom: 10px;
+  line-height: 1.35;
+}
+
+.popup-actions {
+  display: flex;
+  gap: 8px;
+}
+
+.popup-btn {
+  border: 1px solid #8f8f8f;
+  border-radius: 4px;
+  padding: 5px 9px;
+  background: #f7f7f7;
+  color: #111;
+  text-decoration: none;
+  font-size: 12px;
+  font-family: "Courier New", Courier, monospace;
+}
+
+.popup-btn:hover {
+  background: #efefef;
 }
 
 /* Dark mode */
@@ -182,9 +231,19 @@ body {
   color: #fff;
 }
 
-.shell.dark .popup-card a,
-.shell.dark .marker-info a {
+.shell.dark .popup-meta-text,
+.shell.dark .popup-description {
+  color: #bdbdbd;
+}
+
+.shell.dark .popup-btn {
+  border: 1px solid #555;
+  background: #151515;
   color: #fff;
+}
+
+.shell.dark .popup-btn:hover {
+  background: #1f1f1f;
 }
 
 @media (max-width: 860px) {
