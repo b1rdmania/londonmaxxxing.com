@@ -12,20 +12,23 @@ interface MapProps {
   darkMode?: boolean;
 }
 
-const ecosystemLabelLayer: LayerProps = {
-  id: "ecosystem-labels",
-  type: "symbol",
-  source: "ecosystem",
-  layout: {
-    "text-field": ["get", "name"],
-    "text-size": 10,
-    "text-offset": [0, 1.1],
-    "text-anchor": "top"
-  },
-  paint: {
-    "text-color": "#1f1f1f"
-  }
-};
+function labelLayer(type: EcosystemType): LayerProps {
+  return {
+    id: `ecosystem-label-${type}`,
+    type: "symbol",
+    source: "ecosystem",
+    filter: ["==", ["get", "type"], type],
+    layout: {
+      "text-field": ["get", "name"],
+      "text-size": 10,
+      "text-offset": [0, 1.1],
+      "text-anchor": "top"
+    },
+    paint: {
+      "text-color": "#1f1f1f"
+    }
+  };
+}
 
 function layerId(type: EcosystemType): string {
   return `ecosystem-${type}`;
@@ -121,7 +124,9 @@ export default function Map({ ecosystemPoints, enabledTypes, darkMode = false }:
             {enabledTypes.map((type) => (
               <Layer key={type} {...categoryLayer(type)} />
             ))}
-            <Layer {...ecosystemLabelLayer} />
+            {enabledTypes.map((type) => (
+              <Layer key={`label-${type}`} {...labelLayer(type)} />
+            ))}
           </Source>
         ) : null}
 
