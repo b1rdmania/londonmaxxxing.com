@@ -131,6 +131,8 @@ export default function Map({ ecosystemPoints, enabledTypes, darkMode = false }:
         mapStyle={darkMode ? "https://basemaps.cartocdn.com/gl/dark-matter-gl-style/style.json" : "https://basemaps.cartocdn.com/gl/positron-gl-style/style.json"}
         interactiveLayerIds={interactiveLayerIds}
         onClick={onMapClick}
+        dragRotate={false}
+        touchZoomRotate={false}
         attributionControl={{
           compact: false,
           customAttribution: '<a href="https://x.com/b1rdmania" target="_blank" rel="noreferrer">Built by Birdmania</a>'
