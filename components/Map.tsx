@@ -110,6 +110,9 @@ export default function Map({ ecosystemPoints, enabledTypes }: MapProps) {
         mapStyle="https://basemaps.cartocdn.com/gl/positron-gl-style/style.json"
         interactiveLayerIds={interactiveLayerIds}
         onClick={onMapClick}
+        attributionControl={{
+          customAttribution: 'built by <a href="https://x.com/b1rdmania" target="_blank" rel="noreferrer">b1rdmania</a>'
+        }}
       >
         {enabledTypes.length ? (
           <Source id="ecosystem" type="geojson" data={ecosystemGeoJson}>
