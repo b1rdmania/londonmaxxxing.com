@@ -9,6 +9,7 @@ import { EcosystemPoint, EcosystemType } from "@/lib/types";
 interface MapProps {
   ecosystemPoints: EcosystemPoint[];
   enabledTypes: EcosystemType[];
+  darkMode?: boolean;
 }
 
 const ecosystemLabelLayer: LayerProps = {
@@ -46,7 +47,7 @@ function categoryLayer(type: EcosystemType): LayerProps {
   };
 }
 
-export default function Map({ ecosystemPoints, enabledTypes }: MapProps) {
+export default function Map({ ecosystemPoints, enabledTypes, darkMode = false }: MapProps) {
   const mapRef = useRef<MapRef | null>(null);
   const [popupEcosystemId, setPopupEcosystemId] = useState<string | null>(null);
   const interactiveLayerIds = enabledTypes.map(layerId);
@@ -107,7 +108,7 @@ export default function Map({ ecosystemPoints, enabledTypes }: MapProps) {
           latitude: 51.515,
           zoom: 11.2
         }}
-        mapStyle="https://basemaps.cartocdn.com/gl/positron-gl-style/style.json"
+        mapStyle={darkMode ? "https://basemaps.cartocdn.com/gl/dark-matter-gl-style/style.json" : "https://basemaps.cartocdn.com/gl/positron-gl-style/style.json"}
         interactiveLayerIds={interactiveLayerIds}
         onClick={onMapClick}
         attributionControl={{

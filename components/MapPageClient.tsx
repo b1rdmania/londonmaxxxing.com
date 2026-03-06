@@ -93,7 +93,7 @@ export default function MapPageClient({ ecosystemPoints }: MapPageClientProps) {
       </header>
 
       <section className="map-shell">
-        <Map ecosystemPoints={ecosystemPoints} enabledTypes={enabledTypes} />
+        <Map ecosystemPoints={ecosystemPoints} enabledTypes={enabledTypes} darkMode={darkMode} />
       </section>
     </main>
   );
