@@ -1,11 +1,11 @@
-import EventsPageClient from "@/components/EventsPageClient";
+"use client";
 
-export const metadata = {
-  title: "London Tech Events - London Tech Heatmap",
-  description: "Upcoming AI, web3, fintech, and tech events in London"
-};
+import dynamic from 'next/dynamic';
 
-export const dynamic = 'force-dynamic';
+const EventsPageClient = dynamic(() => import('@/components/EventsPageClient'), {
+  ssr: false,
+  loading: () => <div style={{ padding: '48px', textAlign: 'center' }}>Loading events...</div>
+});
 
 export default function EventsPage() {
   return <EventsPageClient />;
