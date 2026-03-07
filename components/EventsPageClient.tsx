@@ -38,31 +38,31 @@ export default function EventsPageClient() {
   const [selectedCategory, setSelectedCategory] = useState<string>("all");
 
   useEffect(() => {
+    const fetchEvents = async () => {
+      try {
+        const today = new Date().toISOString().split("T")[0];
+        const url = `${SUPABASE_URL}?status=eq.approved&date=gte.${today}&select=*&order=date.asc,time.asc`;
+
+        const response = await fetch(url, {
+          headers: {
+            apikey: API_KEY,
+            Authorization: `Bearer ${API_KEY}`
+          }
+        });
+
+        if (!response.ok) throw new Error("Failed to fetch events");
+
+        const data = await response.json();
+        setEvents(data);
+      } catch (error) {
+        console.error("Error fetching events:", error);
+      } finally {
+        setLoading(false);
+      }
+    };
+
     fetchEvents();
   }, []);
-
-  const fetchEvents = async () => {
-    try {
-      const today = new Date().toISOString().split("T")[0];
-      const url = `${SUPABASE_URL}?status=eq.approved&date=gte.${today}&select=*&order=date.asc,time.asc`;
-
-      const response = await fetch(url, {
-        headers: {
-          apikey: API_KEY,
-          Authorization: `Bearer ${API_KEY}`
-        }
-      });
-
-      if (!response.ok) throw new Error("Failed to fetch events");
-
-      const data = await response.json();
-      setEvents(data);
-    } catch (error) {
-      console.error("Error fetching events:", error);
-    } finally {
-      setLoading(false);
-    }
-  };
 
   const categories = ["all", ...Array.from(new Set(events.map(e => e.category)))];
   const filteredEvents = selectedCategory === "all"
