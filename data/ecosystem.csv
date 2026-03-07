@@ -83,38 +83,38 @@ edu-002,UCL Centre for Artificial Intelligence,edu,66-72 Gower Street,WC1E 6BT,L
 edu-003,King's College London Institute for AI,edu,Bush House Strand Campus,WC2R 2LS,London,UK,https://kcl.ac.uk/ai,https://www.kcl.ac.uk/ai,AI research institute,51.511613,-0.116228,aiatkings
 edu-004,The Alan Turing Institute,edu,96 Euston Road British Library First Floor,NW1 2DB,London,UK,https://turing.ac.uk,https://turing.ac.uk,National institute for data science and AI,51.529987,-0.126989,turinginst
 cand-ai-001,OpenAI,ai,"Suite 1, 7th Floor, 50 Broadway",SW1H 0BL,London,UK,https://openai.com,https://openai.com/index/introducing-openai-london/,Creator of ChatGPT and GPT-4. London research hub.,51.4999001,-0.1334791,OpenAI
-cand-ai-002,ElevenLabs,ai,London,,London,UK,,https://elevenlabs.io/blog/london-office-opening,London HQ and operations,51.5138,-0.1439,
-cand-ai-003,PolyAI,ai,London,,London,UK,,https://poly.ai/contact/,London-founded conversational AI company,51.5138,-0.1439,
-cand-ai-004,Builder.ai,ai,London,,London,UK,,https://www.builder.ai/,London-founded AI app platform,51.5311,-0.124,
-cand-ai-005,Robin AI,ai,London,,London,UK,,https://www.wired.com/story/the-hottest-startups-in-london-in-2024/,London legal AI startup (WIRED list),51.5167,-0.093,
-cand-ai-006,PhysicsX,ai,London,,London,UK,,https://sifted.eu/rankings/ai-100-2025,London AI engineering startup (WIRED/Sifted),51.5311,-0.124,
-cand-ai-007,Graphcore,ai,London,,London,UK,,https://www.graphcore.ai/,UK AI chip company with London presence,51.5198,-0.1455,
-cand-ai-008,Darktrace,ai,80 Strand,WC2R 0BP,London,UK,,https://www.darktrace.com/,UK AI cybersecurity company (London HQ),51.5101173,-0.1218421,
-cand-ai-009,Luminance,ai,2,W1T 3BP,London,UK,,https://www.luminance.com/,London legal AI company,51.5187842,-0.1379594,
-cand-ai-010,Causaly,ai,London,,London,UK,,https://www.causaly.com/,AI scientific platform with London base,51.5311,-0.124,
-cand-ai-011,Seldon,ai,London,,London,UK,,https://www.seldon.io/,London MLOps / AI deployment company,51.5167,-0.093,
-cand-ai-012,Signal AI,ai,4th Floor,EC1Y 8RN,London,UK,,https://www.signal-ai.com/,London AI media intelligence company,51.52464440000001,-0.0889104,
-cand-ai-013,Eigen Technologies,ai,Fetter Yard,EC4A 1EN,London,UK,,https://www.eigentech.com/,London NLP automation company,51.51713789999999,-0.1091394,
-cand-ai-014,Faculty,ai,London,,London,UK,,https://faculty.ai/,London AI consultancy/product company,51.525,-0.0913,
-cand-ai-015,Harvey,ai,Harvey Rd,SE5,London,UK,,https://www.londonandpartners.com/newsroom/news-and-communications/london-leading-global-city-for-ai-businesses-to-grow,AI legal startup expanding into London,51.4756188,-0.0883797,
+cand-ai-002,ElevenLabs,ai,London,,London,UK,https://elevenlabs.io,https://elevenlabs.io/blog/london-office-opening,London HQ and operations,51.5138,-0.1439,elevenlabsio
+cand-ai-003,PolyAI,ai,London,,London,UK,https://poly.ai,https://poly.ai/contact/,London-founded conversational AI company,51.5138,-0.1439,poly_ai
+cand-ai-004,Builder.ai,ai,London,,London,UK,https://www.builder.ai,https://www.builder.ai/,London-founded AI app platform,51.5311,-0.124,Builderai
+cand-ai-005,Robin AI,ai,London,,London,UK,https://robinai.com,https://www.wired.com/story/the-hottest-startups-in-london-in-2024/,London legal AI startup (WIRED list),51.5167,-0.093,RobinAI_UK
+cand-ai-006,PhysicsX,ai,London,,London,UK,https://www.physicsx.ai,https://sifted.eu/rankings/ai-100-2025,London AI engineering startup (WIRED/Sifted),51.5311,-0.124,PhysicsxAI
+cand-ai-007,Graphcore,ai,London,,London,UK,https://www.graphcore.ai,https://www.graphcore.ai/,UK AI chip company with London presence,51.5198,-0.1455,graphcoreai
+cand-ai-008,Darktrace,ai,80 Strand,WC2R 0BP,London,UK,https://www.darktrace.com,https://www.darktrace.com/,UK AI cybersecurity company (London HQ),51.5101173,-0.1218421,Darktrace
+cand-ai-009,Luminance,ai,2,W1T 3BP,London,UK,https://www.luminance.com,https://www.luminance.com/,London legal AI company,51.5187842,-0.1379594,LuminanceOne
+cand-ai-010,Causaly,ai,London,,London,UK,https://www.causaly.com,https://www.causaly.com/,AI scientific platform with London base,51.5311,-0.124,CausalyAI
+cand-ai-011,Seldon,ai,London,,London,UK,https://www.seldon.io,https://www.seldon.io/,London MLOps / AI deployment company,51.5167,-0.093,seldon_io
+cand-ai-012,Signal AI,ai,4th Floor,EC1Y 8RN,London,UK,https://signal-ai.com,https://www.signal-ai.com/,London AI media intelligence company,51.52464440000001,-0.0889104,SignalHQ
+cand-ai-013,Eigen Technologies,ai,Fetter Yard,EC4A 1EN,London,UK,https://eigentech.com,https://www.eigentech.com/,London NLP automation company,51.51713789999999,-0.1091394,Eigen_Tech
+cand-ai-014,Faculty,ai,London,,London,UK,https://faculty.ai,https://faculty.ai/,London AI consultancy/product company,51.525,-0.0913,faculty_ai
+cand-ai-015,Harvey,ai,Harvey Rd,SE5,London,UK,https://www.harvey.ai,https://www.londonandpartners.com/newsroom/news-and-communications/london-leading-global-city-for-ai-businesses-to-grow,AI legal startup expanding into London,51.4756188,-0.0883797,harvey
 cand-ai-016,Mphasis AI Innovation Hub,ai,4 Coleman St,EC2R 5AR,London,UK,,https://www.londonandpartners.com/newsroom/news-and-communications/london-leading-global-city-for-ai-businesses-to-grow,London AI hub expansion cited by London & Partners,51.51653659999999,-0.0899865,
-cand-ai-017,Huma,ai,13th floor,SW1P 4QP,London,UK,,https://www.huma.com/,London health AI / digital health scaleup,51.4923181,-0.1258401,
-cand-ai-018,Relation Therapeutics,ai_bio,London,,London,UK,,https://www.londonandpartners.com/newsroom/news-and-communications/london-hits-all-time-high-for-venture-capital-investment-into-ai-in-2024,London health AI startup (L&P 2024 list),51.5311,-0.124,
-cand-ai-019,Limbic,ai,100 Drummond Rd,SE3 7SG,London,UK,,https://www.limbic.ai/,London mental-health AI company,51.49444680000001,-0.06119239999999999,
-cand-ai-020,Baseimmune,ai_bio,London,,London,UK,,https://www.baseimmune.com/,London biotech/AI company,51.5311,-0.124,
-cand-ai-021,Fetch.ai,ai,Arch 642,SW4 6DH,London,UK,,https://fetch.ai/,London-origin AI x web3 company,51.46478990000001,-0.1311319,
-cand-web3-001,OKX,web3,London,,London,UK,,https://www.okx.com/,Global exchange with UK/London operations,51.5138,-0.0896,
-cand-web3-002,Crypto.com,web3,32-33 Cartwright Gardens,WC1H 9EH,London,UK,,https://crypto.com/,Global exchange with UK presence,51.52731259999999,-0.1275751,
-cand-web3-003,eToro,web3,London,,London,UK,,https://www.etoro.com/,Social trading and multi-asset investment platform.,51.5044,-0.0223,
-cand-web3-004,Bitpanda,web3,32 Threadneedle Street,EC2R 8AY,London,UK,,https://www.bitpanda.com/,UK expansion and London presence,51.5142507,-0.0847826,
-cand-web3-005,Nexo,web3,9 White Lion St,N1 9PD,London,UK,,https://nexo.com/,UK-facing crypto platform with London activity,51.5326937,-0.1069324,
-cand-web3-006,Blockdaemon,web3,30th Floor Leadenhall Building 122 Leadenhall St,EC3V 4AB,London,UK,,https://blockdaemon.com/,Institutional web3 infra with London base,51.51387829999999,-0.0822841,
-cand-web3-007,Alchemy,web3,London,,London,UK,,https://www.alchemy.com/,Web3 infra company with London hiring/presence,51.5135,-0.1026,
-cand-web3-008,QuickNode,web3,Kemp House 160 City Road,EC1V 2NX,London,UK,,https://www.quicknode.com/,Web3 infra provider with London presence,51.5273645,-0.08891579999999999,
-cand-web3-009,Chainlink Labs,web3,12 Old Compton St,W1D 4TQ,London,UK,,https://chain.link/,Major web3 infra team with London footprint,51.513734,-0.1299972,
-cand-web3-011,Argent,web3,London,,London,UK,,https://www.argent.xyz/,London crypto wallet startup,51.5359,-0.1256,
-cand-web3-012,Ramp Network,web3,Ramp,SE10 8JA,London,UK,,https://ramp.network/,London web3 payments infrastructure,51.478134,-0.013314,
-cand-web3-015,Dapper Labs,web3,12 Old Compton St,W1D 4TQ,London,UK,,https://www.dapperlabs.com/,Web3/NFT company with London hiring footprint,51.513734,-0.1299972,
+cand-ai-017,Huma,ai,13th floor,SW1P 4QP,London,UK,https://www.huma.com,https://www.huma.com/,London health AI / digital health scaleup,51.4923181,-0.1258401,HumaForHealth
+cand-ai-018,Relation Therapeutics,ai_bio,London,,London,UK,https://www.relationrx.com,https://www.londonandpartners.com/newsroom/news-and-communications/london-hits-all-time-high-for-venture-capital-investment-into-ai-in-2024,London health AI startup (L&P 2024 list),51.5311,-0.124,RelationRx
+cand-ai-019,Limbic,ai,100 Drummond Rd,SE3 7SG,London,UK,https://limbic.ai,https://www.limbic.ai/,London mental-health AI company,51.49444680000001,-0.06119239999999999,Limbic_ai
+cand-ai-020,Baseimmune,ai_bio,London,,London,UK,https://www.baseimmune.co.uk,https://www.baseimmune.com/,London biotech/AI company,51.5311,-0.124,baseimmune
+cand-ai-021,Fetch.ai,ai,Arch 642,SW4 6DH,London,UK,https://www.fetch.ai,https://fetch.ai/,London-origin AI x web3 company,51.46478990000001,-0.1311319,Fetch_ai
+cand-web3-001,OKX,web3,London,,London,UK,https://www.okx.com,https://www.okx.com/,Global exchange with UK/London operations,51.5138,-0.0896,okx
+cand-web3-002,Crypto.com,web3,32-33 Cartwright Gardens,WC1H 9EH,London,UK,https://crypto.com,https://crypto.com/,Global exchange with UK presence,51.52731259999999,-0.1275751,cryptocom
+cand-web3-003,eToro,web3,London,,London,UK,https://www.etoro.com,https://www.etoro.com/,Social trading and multi-asset investment platform.,51.5044,-0.0223,eToro
+cand-web3-004,Bitpanda,web3,32 Threadneedle Street,EC2R 8AY,London,UK,https://www.bitpanda.com,https://www.bitpanda.com/,UK expansion and London presence,51.5142507,-0.0847826,Bitpanda
+cand-web3-005,Nexo,web3,9 White Lion St,N1 9PD,London,UK,https://nexo.com,https://nexo.com/,UK-facing crypto platform with London activity,51.5326937,-0.1069324,Nexo
+cand-web3-006,Blockdaemon,web3,30th Floor Leadenhall Building 122 Leadenhall St,EC3V 4AB,London,UK,https://www.blockdaemon.com,https://blockdaemon.com/,Institutional web3 infra with London base,51.51387829999999,-0.0822841,BlockdaemonHQ
+cand-web3-007,Alchemy,web3,London,,London,UK,https://www.alchemy.com,https://www.alchemy.com/,Web3 infra company with London hiring/presence,51.5135,-0.1026,Alchemy
+cand-web3-008,QuickNode,web3,Kemp House 160 City Road,EC1V 2NX,London,UK,https://www.quicknode.com,https://www.quicknode.com/,Web3 infra provider with London presence,51.5273645,-0.08891579999999999,QuickNode
+cand-web3-009,Chainlink Labs,web3,12 Old Compton St,W1D 4TQ,London,UK,https://chain.link,https://chain.link/,Major web3 infra team with London footprint,51.513734,-0.1299972,chainlink
+cand-web3-011,Argent,web3,London,,London,UK,https://www.argent.xyz,https://www.argent.xyz/,London crypto wallet startup,51.5359,-0.1256,argentHQ
+cand-web3-012,Ramp Network,web3,Ramp,SE10 8JA,London,UK,https://rampnetwork.com,https://ramp.network/,London web3 payments infrastructure,51.478134,-0.013314,RampNetwork
+cand-web3-015,Dapper Labs,web3,12 Old Compton St,W1D 4TQ,London,UK,https://www.dapperlabs.com,https://www.dapperlabs.com/,Web3/NFT company with London hiring footprint,51.513734,-0.1299972,dapperlabs
 cand-web3-016,R3,web3,Orion House,WC2H 9EA,London,UK,,https://www.r3.com/,Enterprise blockchain company with London HQ,51.5124161,-0.1274749,
 cand-web3-017,Coincover,web3,Lowndes St,SW1 8JL,London,UK,,https://www.coincover.com/,UK crypto custody protection company,51.4985744,-0.1572301,
 cand-web3-018,Ziglu,web3,201 Borough High St,SE1 1JA,London,UK,,https://www.ziglu.io/,London crypto fintech,51.501874,-0.0922109,
