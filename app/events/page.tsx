@@ -128,7 +128,7 @@ export default function EventsPage() {
         </nav>
       </div>
 
-      <div style={{ padding: '24px', display: 'grid', gridTemplateColumns: 'repeat(auto-fill, minmax(320px, 1fr))', gap: '24px', maxWidth: '1400px', margin: '0 auto' }}>
+      <div className="events-grid-container" style={{ padding: '24px', display: 'grid', gridTemplateColumns: 'repeat(auto-fill, minmax(320px, 1fr))', gap: '24px', maxWidth: '1400px', margin: '0 auto' }}>
         {filteredEvents.map(event => (
           <a
             key={event.id}

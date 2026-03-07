@@ -236,9 +236,27 @@ body {
     display: none;
   }
 
-  /* Hide category toggles on mobile - just show the map */
+  /* Hide category toggles on mobile for map page only */
   .topbar-nav {
     display: none;
+  }
+
+  /* But show toggles on events page */
+  body:has([aria-label="Event categories"]) .topbar-nav {
+    display: flex;
+    width: 100%;
+    margin-top: 8px;
+    gap: 4px;
+  }
+
+  /* Make toggle buttons smaller on mobile events page */
+  body:has([aria-label="Event categories"]) .topbar-btn {
+    font-size: 11px;
+    padding: 2px 8px;
+  }
+
+  body:has([aria-label="Event categories"]) .topbar-toggle-label {
+    font-size: 11px;
   }
 
   /* Keep CTA visible but smaller */
@@ -680,6 +698,12 @@ body {
   .events-grid {
     grid-template-columns: 1fr;
     padding: 16px;
+  }
+
+  .events-grid-container {
+    grid-template-columns: 1fr !important;
+    padding: 16px !important;
+    gap: 16px !important;
   }
 
   .events-header h1 {
