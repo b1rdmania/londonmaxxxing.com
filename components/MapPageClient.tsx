@@ -67,23 +67,27 @@ export default function MapPageClient({ ecosystemPoints }: MapPageClientProps) {
     <main className="shell">
       <header className="topbar">
         <div className="topbar-brand">
-          <h1>london tech heatmap 🔥</h1>
+          <h1>london tech heatmap</h1>
           <span className="topbar-cta">
-            [By{" "}
+            [by{" "}
             <a href="https://x.com/b1rdmania" target="_blank" rel="noreferrer">
               b1rdmania
             </a>
             ] [{ecosystemPoints.length} so far] [
+            <a href="/events">
+              events
+            </a>
+            ] [
             <a
               href="https://x.com/intent/tweet?text=London%20tech%20ecosystem%20map%20%E2%80%94%20251%2B%20AI%20labs%2C%20VCs%2C%20fintechs%2C%20and%20startups%20%F0%9F%94%A5%0A%0Aby%20%40b1rdmania&url=https%3A%2F%2Flondonmaxxxing.com"
               target="_blank"
               rel="noreferrer"
             >
-              Share
+              share
             </a>
             ] [
             <a href="/embed-code" target="_blank" rel="noreferrer">
-              Embed
+              embed
             </a>
             ]
           </span>

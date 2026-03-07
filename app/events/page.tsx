@@ -1,6 +1,7 @@
 'use client';
 
-import { useEffect, useState } from 'react';
+import { useEffect, useState, useMemo } from 'react';
+import Link from 'next/link';
 
 interface Event {
   id: string;
@@ -16,9 +17,21 @@ interface Event {
   organizer: string | null;
 }
 
+const CATEGORY_COLORS: Record<string, string> = {
+  AI: '#ec4899',
+  Web3: '#f59e0b',
+  Finance: '#10b981',
+  Fintech: '#10b981',
+  VC: '#3b82f6',
+  Startup: '#8b5cf6',
+  Tech: '#334155',
+  Networking: '#06b6d4'
+};
+
 export default function EventsPage() {
   const [events, setEvents] = useState<Event[]>([]);
   const [loading, setLoading] = useState(true);
+  const [activeCategories, setActiveCategories] = useState<Record<string, boolean>>({});
 
   useEffect(() => {
     fetch(
@@ -33,6 +46,13 @@ export default function EventsPage() {
       .then(res => res.json())
       .then(data => {
         setEvents(data);
+        // Initialize all categories as active
+        const categories = Array.from(new Set<string>(data.map((e: Event) => e.category)));
+        const initial: Record<string, boolean> = {};
+        categories.forEach(cat => {
+          initial[cat] = true;
+        });
+        setActiveCategories(initial);
         setLoading(false);
       })
       .catch(err => {
@@ -41,19 +61,75 @@ export default function EventsPage() {
       });
   }, []);
 
+  const filteredEvents = useMemo(() => {
+    return events.filter(event => activeCategories[event.category]);
+  }, [events, activeCategories]);
+
+  const categories = useMemo(() => {
+    return Array.from(new Set(events.map(e => e.category))).sort();
+  }, [events]);
+
+  const toggleCategory = (category: string) => {
+    setActiveCategories(prev => ({
+      ...prev,
+      [category]: !prev[category]
+    }));
+  };
+
   if (loading) {
-    return <div style={{ padding: '48px', textAlign: 'center', fontFamily: 'Times New Roman' }}>Loading events...</div>;
+    return (
+      <div className="shell">
+        <div className="topbar">
+          <div className="topbar-brand">
+            <h1>london tech heatmap</h1>
+          </div>
+        </div>
+        <div style={{ padding: '48px', textAlign: 'center' }}>loading events...</div>
+      </div>
+    );
   }
 
   return (
-    <div style={{ fontFamily: 'Times New Roman', minHeight: '100vh' }}>
-      <header style={{ borderBottom: '1px solid #ddd', padding: '32px 24px', textAlign: 'center' }}>
-        <h1 style={{ fontSize: '36px', fontWeight: 'normal', margin: '0 0 8px 0' }}>London Tech Events</h1>
-        <p style={{ fontSize: '16px', color: '#666', margin: 0 }}>{events.length} upcoming events</p>
-      </header>
+    <div className="shell">
+      <div className="topbar">
+        <div className="topbar-brand">
+          <h1>london tech heatmap</h1>
+          <span className="subtle">— {filteredEvents.length} events</span>
+        </div>
+        <div className="topbar-nav">
+          <Link href="/">map</Link>
+          <Link href="/events">events</Link>
+          <a href="https://x.com/intent/tweet?text=London%20tech%20ecosystem%20map%20%E2%80%94%20251%2B%20AI%20labs%2C%20VCs%2C%20fintechs%2C%20and%20startups%20%F0%9F%94%A5%0A%0Aby%20%40b1rdmania&url=https%3A%2F%2Flondonmaxxxing.com" target="_blank" rel="noopener noreferrer">share</a>
+          <Link href="/embed-code">embed</Link>
+        </div>
+      </div>
+
+      <div className="topbar" style={{ borderTop: 'none' }}>
+        <div style={{ display: 'flex', gap: '8px', flexWrap: 'wrap', alignItems: 'center' }}>
+          {categories.map(cat => (
+            <button
+              key={cat}
+              onClick={() => toggleCategory(cat)}
+              className="toggle-btn"
+              style={{
+                padding: '6px 12px',
+                border: '1px solid #ddd',
+                background: activeCategories[cat] ? (CATEGORY_COLORS[cat] || '#000') : '#fff',
+                color: activeCategories[cat] ? '#fff' : '#000',
+                cursor: 'pointer',
+                fontSize: '13px',
+                fontFamily: 'Times New Roman',
+                textTransform: 'lowercase'
+              }}
+            >
+              {cat.toLowerCase()}
+            </button>
+          ))}
+        </div>
+      </div>
 
       <div style={{ padding: '24px', display: 'grid', gridTemplateColumns: 'repeat(auto-fill, minmax(320px, 1fr))', gap: '24px', maxWidth: '1400px', margin: '0 auto' }}>
-        {events.map(event => (
+        {filteredEvents.map(event => (
           <a
             key={event.id}
             href={event.source_url}
@@ -66,7 +142,7 @@ export default function EventsPage() {
             )}
             <div style={{ padding: '16px', display: 'flex', flexDirection: 'column', gap: '12px', flex: 1 }}>
               <div style={{ fontSize: '12px', color: '#666' }}>
-                {event.category} • {new Date(event.date).toLocaleDateString('en-GB', { weekday: 'short', day: 'numeric', month: 'short' })}
+                {event.category.toLowerCase()} • {new Date(event.date).toLocaleDateString('en-GB', { weekday: 'short', day: 'numeric', month: 'short' })}
               </div>
               <h3 style={{ fontSize: '18px', fontWeight: 'normal', lineHeight: '1.3', margin: 0 }}>{event.title}</h3>
               <p style={{ fontSize: '14px', color: '#666', lineHeight: '1.5', margin: 0 }}>{event.description}</p>
@@ -77,10 +153,6 @@ export default function EventsPage() {
           </a>
         ))}
       </div>
-
-      <footer style={{ padding: '32px 24px', textAlign: 'center', borderTop: '1px solid #ddd' }}>
-        <a href="/" style={{ color: '#000', textDecoration: 'none', fontSize: '16px' }}>← Back to map</a>
-      </footer>
     </div>
   );
 }
