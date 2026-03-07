@@ -115,15 +115,15 @@ cand-web3-009,Chainlink Labs,web3,12 Old Compton St,W1D 4TQ,London,UK,https://ch
 cand-web3-011,Argent,web3,London,,London,UK,https://www.argent.xyz,https://www.argent.xyz/,London crypto wallet startup,51.5359,-0.1256,argentHQ
 cand-web3-012,Ramp Network,web3,Ramp,SE10 8JA,London,UK,https://rampnetwork.com,https://ramp.network/,London web3 payments infrastructure,51.478134,-0.013314,RampNetwork
 cand-web3-015,Dapper Labs,web3,12 Old Compton St,W1D 4TQ,London,UK,https://www.dapperlabs.com,https://www.dapperlabs.com/,Web3/NFT company with London hiring footprint,51.513734,-0.1299972,dapperlabs
-cand-web3-016,R3,web3,Orion House,WC2H 9EA,London,UK,,https://www.r3.com/,Enterprise blockchain company with London HQ,51.5124161,-0.1274749,
-cand-web3-017,Coincover,web3,Lowndes St,SW1 8JL,London,UK,,https://www.coincover.com/,UK crypto custody protection company,51.4985744,-0.1572301,
-cand-web3-018,Ziglu,web3,201 Borough High St,SE1 1JA,London,UK,,https://www.ziglu.io/,London crypto fintech,51.501874,-0.0922109,
-cand-web3-019,Mercuryo,web3,77 Gracechurch St,EC3V 0AS,London,UK,,https://mercuryo.io/,Crypto payments with UK/London presence,51.51233939999999,-0.0846242,
-cand-web3-020,Transak,web3,7 Pancras Square,N1C 4AG,London,UK,,https://transak.com/,Web3 onboarding with UK presence,51.5326424,-0.1256538,
-cand-web3-021,Safe (Gnosis Safe),web3,60 Princes Gate Mews,SW7 2PR,London,UK,,https://safe.global/,Core team presence in London ecosystem,51.4982131,-0.1732879,
-cand-web3-022,Worldcoin (Tools for Humanity),web3,Lower Ground Floor 14 Devonshire Square,EC2M 4YT,London,UK,,https://world.org/,London activity and hiring,51.5168602,-0.07932689999999999,
-cand-web3-023,Elliptic Enterprises,web3,London,,London,UK,,https://www.elliptic.co/,Additional legal entities/teams in London,51.5138,-0.1021,
-cand-web3-024,TRM Labs UK,web3,Suite 1 7th Floor 50 Broadway,SW1H 0BL,London,UK,,https://www.trmlabs.com/,Crypto compliance company with London expansion,51.4999001,-0.1334791,
+cand-web3-016,R3,web3,Orion House,WC2H 9EA,London,UK,https://r3.com,https://www.r3.com/,Enterprise blockchain company with London HQ,51.5124161,-0.1274749,inside_r3
+cand-web3-017,Coincover,web3,Lowndes St,SW1 8JL,London,UK,https://www.coincover.com,https://www.coincover.com/,UK crypto custody protection company,51.4985744,-0.1572301,Coincoverglobal
+cand-web3-018,Ziglu,web3,201 Borough High St,SE1 1JA,London,UK,https://www.ziglu.io,https://www.ziglu.io/,London crypto fintech,51.501874,-0.0922109,ziglumoney
+cand-web3-019,Mercuryo,web3,77 Gracechurch St,EC3V 0AS,London,UK,https://mercuryo.io,https://mercuryo.io/,Crypto payments with UK/London presence,51.51233939999999,-0.0846242,Mercuryo_io
+cand-web3-020,Transak,web3,7 Pancras Square,N1C 4AG,London,UK,https://transak.com,https://transak.com/,Web3 onboarding with UK presence,51.5326424,-0.1256538,Transak
+cand-web3-021,Safe (Gnosis Safe),web3,60 Princes Gate Mews,SW7 2PR,London,UK,https://safe.global,https://safe.global/,Core team presence in London ecosystem,51.4982131,-0.1732879,safe
+cand-web3-022,Worldcoin (Tools for Humanity),web3,Lower Ground Floor 14 Devonshire Square,EC2M 4YT,London,UK,https://world.org,https://world.org/,London activity and hiring,51.5168602,-0.07932689999999999,tfh_technology
+cand-web3-023,Elliptic Enterprises,web3,London,,London,UK,https://www.elliptic.co,https://www.elliptic.co/,Additional legal entities/teams in London,51.5138,-0.1021,elliptic
+cand-web3-024,TRM Labs UK,web3,Suite 1 7th Floor 50 Broadway,SW1H 0BL,London,UK,https://www.trmlabs.com,https://www.trmlabs.com/,Crypto compliance company with London expansion,51.4999001,-0.1334791,trmlabs
 cand-fintech-001,9fin,fintech,London,,London,UK,,https://en.wikipedia.org/wiki/9fin,London fintech debt intelligence,51.5138,-0.1439,
 cand-fintech-002,Rapyd,fintech,119 Marylebone Rd,NW1 5PN,London,UK,,https://en.wikipedia.org/wiki/Rapyd,London-headquartered payments company,51.5211173,-0.1612848,
 cand-fintech-003,Allica Bank,fintech,15 Worship St,EC2A 2DT,London,UK,,https://en.wikipedia.org/wiki/Allica_Bank,London/Milton Keynes challenger bank,51.5222851,-0.0859554,
