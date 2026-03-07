@@ -93,35 +93,17 @@ export default function EventsPage() {
     <div className="shell">
       <div className="topbar">
         <div className="topbar-brand">
-          <h1>london tech heatmap</h1>
+          <h1>london tech heatmap 🔥</h1>
           <span className="topbar-cta">
-            — {filteredEvents.length} events
+            [{filteredEvents.length} events] [
+            <Link href="/">map</Link>
+            ] [
+            <Link href="/events">events</Link>
+            ]
           </span>
         </div>
-        <nav className="topbar-nav">
-          <span className="topbar-cta">[</span>
-          <Link href="/">map</Link>
-          <span className="topbar-cta">] [</span>
-          <Link href="/events">events</Link>
-          <span className="topbar-cta">] [</span>
-          <a
-            href="https://x.com/intent/tweet?text=London%20tech%20ecosystem%20map%20%E2%80%94%20251%2B%20AI%20labs%2C%20VCs%2C%20fintechs%2C%20and%20startups%20%F0%9F%94%A5%0A%0Aby%20%40b1rdmania&url=https%3A%2F%2Flondonmaxxxing.com"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            share
-          </a>
-          <span className="topbar-cta">] [</span>
-          <Link href="/embed-code">embed</Link>
-          <span className="topbar-cta">]</span>
-        </nav>
-      </div>
-
-      <div className="topbar" style={{ borderTop: 'none' }}>
-        <div className="topbar-brand">
-          <span className="topbar-cta topbar-toggle-label">filter:</span>
-        </div>
         <nav className="topbar-nav" aria-label="Event categories">
+          <span className="topbar-cta topbar-toggle-label">toggle:</span>
           {categories.map(cat => {
             const isOn = activeCategories[cat];
             return (
