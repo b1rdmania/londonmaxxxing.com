@@ -124,14 +124,14 @@ cand-web3-021,Safe (Gnosis Safe),web3,60 Princes Gate Mews,SW7 2PR,London,UK,htt
 cand-web3-022,Worldcoin (Tools for Humanity),web3,Lower Ground Floor 14 Devonshire Square,EC2M 4YT,London,UK,https://world.org,https://world.org/,London activity and hiring,51.5168602,-0.07932689999999999,tfh_technology
 cand-web3-023,Elliptic Enterprises,web3,London,,London,UK,https://www.elliptic.co,https://www.elliptic.co/,Additional legal entities/teams in London,51.5138,-0.1021,elliptic
 cand-web3-024,TRM Labs UK,web3,Suite 1 7th Floor 50 Broadway,SW1H 0BL,London,UK,https://www.trmlabs.com,https://www.trmlabs.com/,Crypto compliance company with London expansion,51.4999001,-0.1334791,trmlabs
-cand-fintech-001,9fin,fintech,London,,London,UK,,https://en.wikipedia.org/wiki/9fin,London fintech debt intelligence,51.5138,-0.1439,
-cand-fintech-002,Rapyd,fintech,119 Marylebone Rd,NW1 5PN,London,UK,,https://en.wikipedia.org/wiki/Rapyd,London-headquartered payments company,51.5211173,-0.1612848,
-cand-fintech-003,Allica Bank,fintech,15 Worship St,EC2A 2DT,London,UK,,https://en.wikipedia.org/wiki/Allica_Bank,London/Milton Keynes challenger bank,51.5222851,-0.0859554,
-cand-fintech-004,Zilch,fintech,111 Buckingham Palace Rd,SW1W 0SR,London,UK,,https://en.wikipedia.org/wiki/Zilch_%28company%29,London BNPL fintech,51.4952103,-0.1455344,
-cand-fintech-005,Noda,fintech,78 York St,W1H 1DP,London,UK,,https://en.wikipedia.org/wiki/Noda_%28company%29,London open banking platform,51.5200124,-0.1624881,
-cand-fintech-006,Tide,fintech,London,,London,UK,,https://www.tide.co/,London SME banking fintech,51.5138,-0.0896,
-cand-fintech-007,SumUp,fintech,16-20 Short's Gardens,WC2H 9US,London,UK,,https://www.sumup.com/,Large payments company with London HQ,51.5148834,-0.1249412,
-cand-fintech-008,Monese,fintech,Eagle House,N1 7LP,London,UK,,https://www.monese.com/,London digital banking fintech,51.5283544,-0.0900415,
+cand-fintech-001,9fin,fintech,London,,London,UK,https://www.9fin.com,https://en.wikipedia.org/wiki/9fin,London fintech debt intelligence,51.5138,-0.1439,9finHQ
+cand-fintech-002,Rapyd,fintech,119 Marylebone Rd,NW1 5PN,London,UK,https://www.rapyd.net,https://en.wikipedia.org/wiki/Rapyd,London-headquartered payments company,51.5211173,-0.1612848,RapydGlobal
+cand-fintech-003,Allica Bank,fintech,15 Worship St,EC2A 2DT,London,UK,https://www.allica.bank,https://en.wikipedia.org/wiki/Allica_Bank,London/Milton Keynes challenger bank,51.5222851,-0.0859554,AllicaBank
+cand-fintech-004,Zilch,fintech,111 Buckingham Palace Rd,SW1W 0SR,London,UK,https://www.zilch.com,https://en.wikipedia.org/wiki/Zilch_%28company%29,London BNPL fintech,51.4952103,-0.1455344,PayZilch
+cand-fintech-005,Noda,fintech,78 York St,W1H 1DP,London,UK,https://noda.live,https://en.wikipedia.org/wiki/Noda_%28company%29,London open banking platform,51.5200124,-0.1624881,
+cand-fintech-006,Tide,fintech,London,,London,UK,https://www.tide.co,https://www.tide.co/,London SME banking fintech,51.5138,-0.0896,TideBusiness
+cand-fintech-007,SumUp,fintech,16-20 Short's Gardens,WC2H 9US,London,UK,https://www.sumup.com,https://www.sumup.com/,Large payments company with London HQ,51.5148834,-0.1249412,SumUp
+cand-fintech-008,Monese,fintech,Eagle House,N1 7LP,London,UK,https://www.monese.com,https://www.monese.com/,London digital banking fintech,51.5283544,-0.0900415,monese
 cand-fintech-009,Cleo,fintech,London,,London,UK,,https://web.meetcleo.com/,London consumer finance app,51.5167,-0.093,
 cand-fintech-010,Plum,fintech,London,,London,UK,,https://withplum.com/,London savings/investing fintech,51.5167,-0.093,
 cand-fintech-011,Modulr,fintech,Scale Space,W12 7RZ,London,UK,,https://www.modulrfinance.com/,London payments infrastructure,51.5138067,-0.2231634,
