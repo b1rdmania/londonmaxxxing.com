@@ -20,7 +20,8 @@ function buildInitialState(points: EcosystemPoint[]): Record<EcosystemType, bool
     web3: false,
     coworking: false,
     edu: false,
-    big_tech: false
+    big_tech: false,
+    funding: false
   };
 
   points.forEach((point) => {
@@ -30,7 +31,7 @@ function buildInitialState(points: EcosystemPoint[]): Record<EcosystemType, bool
   return initial;
 }
 
-const DEFAULT_VISIBLE_TYPES: EcosystemType[] = ["vc", "ai", "ai_bio", "fintech", "web3", "coworking", "edu", "big_tech"];
+const DEFAULT_VISIBLE_TYPES: EcosystemType[] = ["vc", "funding", "ai", "ai_bio", "fintech", "web3", "coworking", "edu", "big_tech"];
 
 export default function EmbedPageClient({ ecosystemPoints }: EmbedPageClientProps) {
   const searchParams = useSearchParams();
