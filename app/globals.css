@@ -218,10 +218,22 @@ body {
     width: 100%;
     justify-content: space-between;
     gap: 8px;
+    flex-wrap: nowrap;
   }
 
   .topbar-brand h1 {
-    font-size: 20px;
+    font-size: 18px;
+    white-space: nowrap;
+  }
+
+  .topbar-cta {
+    font-size: 11px;
+    white-space: nowrap;
+  }
+
+  /* Hide Share/Embed links on mobile */
+  .share-embed-links {
+    display: none;
   }
 
   /* Hide category toggles on mobile - just show the map */
