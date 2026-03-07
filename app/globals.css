@@ -207,16 +207,21 @@ body {
 }
 
 /* Make close button bigger and easier to tap */
-.maplibregl-popup-close-button {
+.maplibregl-popup .maplibregl-popup-close-button {
   font-size: 32px !important;
   width: 40px !important;
   height: 40px !important;
   padding: 0 !important;
   line-height: 40px !important;
+  text-align: center !important;
   color: #666 !important;
+  right: 0 !important;
+  top: 0 !important;
+  border: none !important;
+  background: transparent !important;
 }
 
-.maplibregl-popup-close-button:hover {
+.maplibregl-popup .maplibregl-popup-close-button:hover {
   background: rgba(0, 0, 0, 0.05) !important;
   color: #000 !important;
 }
