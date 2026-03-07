@@ -71,7 +71,15 @@ export default function MapPageClient({ ecosystemPoints }: MapPageClientProps) {
             <a href="https://x.com/b1rdmania" target="_blank" rel="noreferrer">
               b1rdmania
             </a>
-            ] [{ecosystemPoints.length} so far]
+            ] [{ecosystemPoints.length} so far] [
+            <a
+              href="https://x.com/intent/tweet?text=London%20tech%20ecosystem%20map%20%E2%80%94%20251%2B%20AI%20labs%2C%20VCs%2C%20fintechs%2C%20and%20startups%20%F0%9F%94%A5&url=https%3A%2F%2Flondonmaxxxing.com"
+              target="_blank"
+              rel="noreferrer"
+            >
+              Share
+            </a>
+            ]
           </span>
         </div>
         <nav className="topbar-nav" aria-label="Map layers">
