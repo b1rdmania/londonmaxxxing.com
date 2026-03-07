@@ -491,3 +491,18 @@ body {
     height: 300px;
   }
 }
+
+/* Hide MapLibre attribution control (legally required OSM attribution) */
+.maplibregl-ctrl-attrib {
+  display: none !important;
+}
+
+/* Or make it very minimal if you want to keep legal compliance */
+.maplibregl-ctrl-bottom-right {
+  opacity: 0.3;
+  font-size: 8px;
+}
+
+.maplibregl-ctrl-bottom-right:hover {
+  opacity: 1;
+}
