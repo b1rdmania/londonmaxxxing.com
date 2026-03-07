@@ -332,3 +332,162 @@ body {
 .shell.embed-mode .topbar {
   display: none;
 }
+
+/* Embed code generator */
+.embed-generator {
+  min-height: 100vh;
+  background: #fafafa;
+  padding: 40px 20px;
+}
+
+.embed-generator-container {
+  max-width: 900px;
+  margin: 0 auto;
+  background: #fff;
+  border: 1px solid #ddd;
+  padding: 40px;
+  border-radius: 4px;
+}
+
+.embed-generator-header {
+  margin-bottom: 40px;
+}
+
+.embed-generator-header h1 {
+  font-size: 32px;
+  margin-bottom: 12px;
+}
+
+.embed-generator-header p {
+  color: #666;
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+.embed-generator-options h2,
+.embed-generator-preview h2,
+.embed-generator-code h2 {
+  font-size: 20px;
+  margin-bottom: 16px;
+}
+
+.embed-generator-options,
+.embed-generator-preview,
+.embed-generator-code {
+  margin-bottom: 40px;
+}
+
+.category-checkboxes {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+}
+
+.category-checkbox {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  cursor: pointer;
+  user-select: none;
+}
+
+.category-checkbox input[type="checkbox"] {
+  position: absolute;
+  opacity: 0;
+  pointer-events: none;
+}
+
+.category-checkbox-indicator {
+  width: 16px;
+  height: 16px;
+  border: 2px solid;
+  border-radius: 3px;
+  transition: all 0.2s;
+}
+
+.category-checkbox-label {
+  font-size: 14px;
+}
+
+.embed-preview-frame {
+  border: 1px solid #ddd;
+  background: #fafafa;
+  padding: 8px;
+  border-radius: 4px;
+}
+
+.code-block {
+  position: relative;
+  background: #1f1f1f;
+  color: #f0f0f0;
+  padding: 20px;
+  border-radius: 4px;
+  margin-bottom: 12px;
+}
+
+.code-block pre {
+  font-family: "Courier New", Courier, monospace;
+  font-size: 13px;
+  line-height: 1.6;
+  overflow-x: auto;
+  margin: 0;
+  white-space: pre-wrap;
+  word-break: break-all;
+}
+
+.copy-btn {
+  position: absolute;
+  top: 12px;
+  right: 12px;
+  background: #333;
+  color: #fff;
+  border: 1px solid #555;
+  padding: 6px 12px;
+  border-radius: 3px;
+  font-size: 12px;
+  cursor: pointer;
+  font-family: "Times New Roman", Times, serif;
+}
+
+.copy-btn:hover {
+  background: #444;
+}
+
+.code-instructions {
+  font-size: 14px;
+  color: #666;
+  line-height: 1.5;
+}
+
+.embed-generator-footer {
+  border-top: 1px solid #ddd;
+  padding-top: 20px;
+}
+
+.back-link {
+  color: #000;
+  text-decoration: none;
+  font-size: 14px;
+}
+
+.back-link:hover {
+  text-decoration: underline;
+}
+
+@media (max-width: 768px) {
+  .embed-generator-container {
+    padding: 24px;
+  }
+
+  .embed-generator-header h1 {
+    font-size: 24px;
+  }
+
+  .category-checkboxes {
+    gap: 12px;
+  }
+
+  .embed-preview-frame iframe {
+    height: 300px;
+  }
+}
