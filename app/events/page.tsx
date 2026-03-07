@@ -94,38 +94,56 @@ export default function EventsPage() {
       <div className="topbar">
         <div className="topbar-brand">
           <h1>london tech heatmap</h1>
-          <span className="subtle">— {filteredEvents.length} events</span>
+          <span className="topbar-cta">
+            — {filteredEvents.length} events
+          </span>
         </div>
-        <div className="topbar-nav">
+        <nav className="topbar-nav">
+          <span className="topbar-cta">[</span>
           <Link href="/">map</Link>
+          <span className="topbar-cta">] [</span>
           <Link href="/events">events</Link>
-          <a href="https://x.com/intent/tweet?text=London%20tech%20ecosystem%20map%20%E2%80%94%20251%2B%20AI%20labs%2C%20VCs%2C%20fintechs%2C%20and%20startups%20%F0%9F%94%A5%0A%0Aby%20%40b1rdmania&url=https%3A%2F%2Flondonmaxxxing.com" target="_blank" rel="noopener noreferrer">share</a>
+          <span className="topbar-cta">] [</span>
+          <a
+            href="https://x.com/intent/tweet?text=London%20tech%20ecosystem%20map%20%E2%80%94%20251%2B%20AI%20labs%2C%20VCs%2C%20fintechs%2C%20and%20startups%20%F0%9F%94%A5%0A%0Aby%20%40b1rdmania&url=https%3A%2F%2Flondonmaxxxing.com"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            share
+          </a>
+          <span className="topbar-cta">] [</span>
           <Link href="/embed-code">embed</Link>
-        </div>
+          <span className="topbar-cta">]</span>
+        </nav>
       </div>
 
       <div className="topbar" style={{ borderTop: 'none' }}>
-        <div style={{ display: 'flex', gap: '8px', flexWrap: 'wrap', alignItems: 'center' }}>
-          {categories.map(cat => (
-            <button
-              key={cat}
-              onClick={() => toggleCategory(cat)}
-              className="toggle-btn"
-              style={{
-                padding: '6px 12px',
-                border: '1px solid #ddd',
-                background: activeCategories[cat] ? (CATEGORY_COLORS[cat] || '#000') : '#fff',
-                color: activeCategories[cat] ? '#fff' : '#000',
-                cursor: 'pointer',
-                fontSize: '13px',
-                fontFamily: 'Times New Roman',
-                textTransform: 'lowercase'
-              }}
-            >
-              {cat.toLowerCase()}
-            </button>
-          ))}
+        <div className="topbar-brand">
+          <span className="topbar-cta topbar-toggle-label">filter:</span>
         </div>
+        <nav className="topbar-nav" aria-label="Event categories">
+          {categories.map(cat => {
+            const isOn = activeCategories[cat];
+            return (
+              <button
+                key={cat}
+                type="button"
+                className={isOn ? "topbar-btn active" : "topbar-btn"}
+                onClick={() => toggleCategory(cat)}
+              >
+                <span
+                  className="dot"
+                  style={{
+                    background: isOn ? (CATEGORY_COLORS[cat] || '#000') : 'transparent',
+                    borderColor: CATEGORY_COLORS[cat] || '#000'
+                  }}
+                  aria-hidden="true"
+                />
+                {cat.toLowerCase()}
+              </button>
+            );
+          })}
+        </nav>
       </div>
 
       <div style={{ padding: '24px', display: 'grid', gridTemplateColumns: 'repeat(auto-fill, minmax(320px, 1fr))', gap: '24px', maxWidth: '1400px', margin: '0 auto' }}>
