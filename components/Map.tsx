@@ -135,7 +135,7 @@ export default function Map({ ecosystemPoints, enabledTypes, darkMode = false }:
         touchPitch={false}
         attributionControl={{
           compact: false,
-          customAttribution: '<a href="https://x.com/b1rdmania" target="_blank" rel="noreferrer">Built by Birdmania</a>'
+          customAttribution: '<a href="https://x.com/b1rdmania" target="_blank" rel="noreferrer">Built by Birdmania</a> | <a href="https://github.com/b1rdmania/londonmaxxxing.com" target="_blank" rel="noreferrer">GitHub</a>'
         }}
       >
         {enabledTypes.length ? (
@@ -192,9 +192,7 @@ export default function Map({ ecosystemPoints, enabledTypes, darkMode = false }:
 
       {/* Credits footer */}
       <div className="map-credits">
-        Built by <a href="https://github.com/qwibitai/ghostclaw" target="_blank" rel="noreferrer">GhostClaw</a>
-        {" · "}
-        <a href="https://github.com/b1rdmania/londonmaxxxing.com" target="_blank" rel="noreferrer">GitHub</a>
+        Built in GhostClaw
       </div>
     </div>
   );
