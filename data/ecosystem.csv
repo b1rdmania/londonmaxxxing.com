@@ -132,27 +132,27 @@ cand-fintech-005,Noda,fintech,78 York St,W1H 1DP,London,UK,https://noda.live,htt
 cand-fintech-006,Tide,fintech,London,,London,UK,https://www.tide.co,https://www.tide.co/,London SME banking fintech,51.5138,-0.0896,TideBusiness
 cand-fintech-007,SumUp,fintech,16-20 Short's Gardens,WC2H 9US,London,UK,https://www.sumup.com,https://www.sumup.com/,Large payments company with London HQ,51.5148834,-0.1249412,SumUp
 cand-fintech-008,Monese,fintech,Eagle House,N1 7LP,London,UK,https://www.monese.com,https://www.monese.com/,London digital banking fintech,51.5283544,-0.0900415,monese
-cand-fintech-009,Cleo,fintech,London,,London,UK,,https://web.meetcleo.com/,London consumer finance app,51.5167,-0.093,
-cand-fintech-010,Plum,fintech,London,,London,UK,,https://withplum.com/,London savings/investing fintech,51.5167,-0.093,
-cand-fintech-011,Modulr,fintech,Scale Space,W12 7RZ,London,UK,,https://www.modulrfinance.com/,London payments infrastructure,51.5138067,-0.2231634,
-cand-fintech-012,Yapily,fintech,Huckletree,W1D 2LG,London,UK,,https://www.yapily.com/,London open banking API company,51.5154229,-0.1399766,
-cand-fintech-013,PensionBee,fintech,London,,London,UK,,https://www.pensionbee.com/,London pension fintech,51.5211,-0.073,
-cand-fintech-014,Nutmeg,fintech,Bank St,E14 4PA,London,UK,,https://www.nutmeg.com/,London wealthtech,51.5035466,-0.0215992,
-cand-fintech-015,Chip,fintech,Fora Montacute Yards,E1 6HU,London,UK,,https://www.getchip.uk/,London savings fintech,51.5242438,-0.0774245,
-cand-fintech-016,PrimaryBid,fintech,Fifth Floor,SW1E 5JL,London,UK,,https://www.primarybid.com/,London retail investment platform,51.4970873,-0.1395648,
-cand-fintech-017,Curve,fintech,London,,London,UK,,https://www.curve.com/,London fintech super card,51.5211,-0.073,
-cand-fintech-018,Soldo,fintech,119 Marylebone Road C/O Wework,NW1 5PU,London,UK,,https://www.soldo.com/,London spend management fintech,51.5212115,-0.1612346,
-cand-fintech-019,Airwallex UK,fintech,45 Mortimer St,W1W 8HJ,London,UK,,https://www.airwallex.com/,Global fintech with London presence,51.5179382,-0.1391455,
-cand-fintech-020,Mollie UK,fintech,Huckletree,EC2N 4BQ,London,UK,,https://www.mollie.com/,European payment service provider for online businesses.,51.5140141,-0.0833636,
-cand-fintech-021,Pleo UK,fintech,3rd floor,EC1M 4AA,London,UK,,https://www.pleo.io/,Spend management with London team,51.52021,-0.1019614,
-cand-fintech-022,Flagstone,fintech,Clareville House,SW1Y 4EL,London,UK,,https://www.flagstoneim.com/,UK savings fintech with London presence,51.5098601,-0.1315321,
-cand-fintech-023,Volt,fintech,17 Hobart Pl,SW1W 0HH,London,UK,,https://www.wired.com/story/the-hottest-startups-in-london-in-2024/,London open payments startup (WIRED),51.4982304,-0.1481166,
-cand-fintech-024,Gaia Family,fintech,65 Alfred Rd,W2 5EU,London,UK,,https://www.wired.com/story/the-hottest-startups-in-london-in-2024/,London fertility-finance startup (WIRED),51.52121289999999,-0.1964151,
-cand-fintech-025,Salary Finance,fintech,1 Hammersmith Broadway,W6 9DL,London,UK,,https://www.salaryfinance.com/,London fintech for employee finance,51.4928466,-0.2240484,
-cand-fintech-026,Abound,fintech,Summit House,WC1R 4HQ,London,UK,,https://www.abound.com/,London AI lending startup,51.51878749999999,-0.1188149,
-cand-fintech-027,Payhawk UK,fintech,Payhawk,WC2A 1QS,London,UK,,https://payhawk.com/,"Spend management platform combining cards, expense management, and AP automation.",51.5174424,-0.1128765,
-cand-fintech-028,ClearScore,fintech,London,,London,UK,,https://www.clearscore.com/,London consumer credit fintech,51.4862,-0.1185,
-cand-fintech-030,Iwoca,fintech,One Bedford Ave,WC1B 3AU,London,UK,,https://www.iwoca.co.uk/,London SME lender,51.51766689999999,-0.1309123,
+cand-fintech-009,Cleo,fintech,London,,London,UK,https://web.meetcleo.com,https://web.meetcleo.com/,London consumer finance app,51.5167,-0.093,meetcleo
+cand-fintech-010,Plum,fintech,London,,London,UK,https://withplum.com,https://withplum.com/,London savings/investing fintech,51.5167,-0.093,withplum
+cand-fintech-011,Modulr,fintech,Scale Space,W12 7RZ,London,UK,https://www.modulrfinance.com,https://www.modulrfinance.com/,London payments infrastructure,51.5138067,-0.2231634,modulr
+cand-fintech-012,Yapily,fintech,Huckletree,W1D 2LG,London,UK,https://www.yapily.com,https://www.yapily.com/,London open banking API company,51.5154229,-0.1399766,yapily
+cand-fintech-013,PensionBee,fintech,London,,London,UK,https://www.pensionbee.com,https://www.pensionbee.com/,London pension fintech,51.5211,-0.073,pensionbee
+cand-fintech-014,Nutmeg,fintech,Bank St,E14 4PA,London,UK,https://www.nutmeg.com,https://www.nutmeg.com/,London wealthtech,51.5035466,-0.0215992,thenutmegteam
+cand-fintech-015,Chip,fintech,Fora Montacute Yards,E1 6HU,London,UK,https://www.getchip.uk,https://www.getchip.uk/,London savings fintech,51.5242438,-0.0774245,chip
+cand-fintech-016,PrimaryBid,fintech,Fifth Floor,SW1E 5JL,London,UK,https://www.primarybid.com,https://www.primarybid.com/,London retail investment platform,51.4970873,-0.1395648,PrimaryBid
+cand-fintech-017,Curve,fintech,London,,London,UK,https://www.curve.com,https://www.curve.com/,London fintech super card,51.5211,-0.073,imaginecurve
+cand-fintech-018,Soldo,fintech,119 Marylebone Road C/O Wework,NW1 5PU,London,UK,https://www.soldo.com,https://www.soldo.com/,London spend management fintech,51.5212115,-0.1612346,Soldo
+cand-fintech-019,Airwallex UK,fintech,45 Mortimer St,W1W 8HJ,London,UK,https://www.airwallex.com,https://www.airwallex.com/,Global fintech with London presence,51.5179382,-0.1391455,Airwallex
+cand-fintech-020,Mollie UK,fintech,Huckletree,EC2N 4BQ,London,UK,https://www.mollie.com,https://www.mollie.com/,European payment service provider for online businesses.,51.5140141,-0.0833636,Mollie
+cand-fintech-021,Pleo UK,fintech,3rd floor,EC1M 4AA,London,UK,https://www.pleo.io,https://www.pleo.io/,Spend management with London team,51.52021,-0.1019614,pleo
+cand-fintech-022,Flagstone,fintech,Clareville House,SW1Y 4EL,London,UK,https://www.flagstoneim.com,https://www.flagstoneim.com/,UK savings fintech with London presence,51.5098601,-0.1315321,FlagstoneIM
+cand-fintech-023,Volt,fintech,17 Hobart Pl,SW1W 0HH,London,UK,https://www.volt.io,https://www.wired.com/story/the-hottest-startups-in-london-in-2024/,London open payments startup (WIRED),51.4982304,-0.1481166,voltpayments
+cand-fintech-024,Gaia Family,fintech,65 Alfred Rd,W2 5EU,London,UK,https://www.gaiafamily.com,https://www.wired.com/story/the-hottest-startups-in-london-in-2024/,London fertility-finance startup (WIRED),51.52121289999999,-0.1964151,gaiafamily
+cand-fintech-025,Salary Finance,fintech,1 Hammersmith Broadway,W6 9DL,London,UK,https://www.salaryfinance.com,https://www.salaryfinance.com/,London fintech for employee finance,51.4928466,-0.2240484,SalaryFinance
+cand-fintech-026,Abound,fintech,Summit House,WC1R 4HQ,London,UK,https://www.abound.com,https://www.abound.com/,London AI lending startup,51.51878749999999,-0.1188149,aboundfinance
+cand-fintech-027,Payhawk UK,fintech,Payhawk,WC2A 1QS,London,UK,https://payhawk.com,https://payhawk.com/,"Spend management platform combining cards, expense management, and AP automation.",51.5174424,-0.1128765,Payhawk
+cand-fintech-028,ClearScore,fintech,London,,London,UK,https://www.clearscore.com,https://www.clearscore.com/,London consumer credit fintech,51.4862,-0.1185,ClearScore
+cand-fintech-030,Iwoca,fintech,One Bedford Ave,WC1B 3AU,London,UK,https://www.iwoca.co.uk,https://www.iwoca.co.uk/,London SME lender,51.51766689999999,-0.1309123,iwoca
 cand-edu-001,Multiverse,edu,London,,London,UK,,https://www.multiverse.io/,London workforce upskilling platform,51.5203,-0.157,
 cand-edu-002,Century Tech,edu,15 Alfred Pl,WC1E 7EB,London,UK,,https://www.century.tech/,London AI learning platform,51.5202904,-0.1333922,
 cand-edu-003,Seneca Learning,edu,84 Eccleston Square,SW1V 1PH,London,UK,,https://senecalearning.com/,London edtech platform,51.49312159999999,-0.1435837,
