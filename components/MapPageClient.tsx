@@ -67,9 +67,9 @@ export default function MapPageClient({ ecosystemPoints }: MapPageClientProps) {
     <main className="shell">
       <header className="topbar">
         <div className="topbar-brand">
-          <h1>london tech heatmap</h1>
+          <h1>london tech heatmap 🔥</h1>
           <span className="topbar-cta">
-            [by{" "}
+            [By{" "}
             <a href="https://x.com/b1rdmania" target="_blank" rel="noreferrer">
               b1rdmania
             </a>
@@ -79,11 +79,11 @@ export default function MapPageClient({ ecosystemPoints }: MapPageClientProps) {
               target="_blank"
               rel="noreferrer"
             >
-              share
+              Share
             </a>
             ] [
             <a href="/embed-code" target="_blank" rel="noreferrer">
-              embed
+              Embed
             </a>
             ]
           </span>
