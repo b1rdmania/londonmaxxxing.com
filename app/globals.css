@@ -323,3 +323,12 @@ body {
     width: 100%;
   }
 }
+
+/* Embed mode - full screen map, no header */
+.shell.embed-mode {
+  grid-template-rows: 1fr;
+}
+
+.shell.embed-mode .topbar {
+  display: none;
+}

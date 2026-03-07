@@ -79,6 +79,10 @@ export default function MapPageClient({ ecosystemPoints }: MapPageClientProps) {
             >
               Share
             </a>
+            ] [
+            <a href="/embed" target="_blank" rel="noreferrer">
+              Embed
+            </a>
             ]
           </span>
         </div>
