@@ -13,6 +13,7 @@ interface MapPageClientProps {
 function buildInitialState(points: EcosystemPoint[]): Record<EcosystemType, boolean> {
   const initial: Record<EcosystemType, boolean> = {
     vc: false,
+    funding: false,
     ai: false,
     ai_bio: false,
     fintech: false,
@@ -29,7 +30,7 @@ function buildInitialState(points: EcosystemPoint[]): Record<EcosystemType, bool
   return initial;
 }
 
-const DEFAULT_VISIBLE_TYPES: EcosystemType[] = ["vc", "ai", "ai_bio", "fintech", "web3", "coworking", "edu", "big_tech"];
+const DEFAULT_VISIBLE_TYPES: EcosystemType[] = ["vc", "funding", "ai", "ai_bio", "fintech", "web3", "coworking", "edu", "big_tech"];
 
 export default function MapPageClient({ ecosystemPoints }: MapPageClientProps) {
   const [enabledByType, setEnabledByType] = useState<Record<EcosystemType, boolean>>(() => {
@@ -39,6 +40,7 @@ export default function MapPageClient({ ecosystemPoints }: MapPageClientProps) {
     return {
       ...initial,
       vc: true,
+      funding: true,
       ai: true,
       ai_bio: true,
       fintech: true,

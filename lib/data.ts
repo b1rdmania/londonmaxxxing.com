@@ -6,7 +6,7 @@ import path from "path";
 import { EcosystemPoint, EcosystemType, OfficeListing, OfficeType } from "@/lib/types";
 
 const OFFICE_TYPES: ReadonlySet<OfficeType> = new Set(["serviced", "managed", "coworking"]);
-const ECO_TYPES: ReadonlySet<EcosystemType> = new Set(["vc", "ai", "ai_bio", "fintech", "web3", "coworking", "edu", "big_tech"]);
+const ECO_TYPES: ReadonlySet<EcosystemType> = new Set(["vc", "funding", "ai", "ai_bio", "fintech", "web3", "coworking", "edu", "big_tech"]);
 
 function parseCsv(text: string): Array<Record<string, string>> {
   const rows: string[][] = [];
