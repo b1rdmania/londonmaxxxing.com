@@ -93,7 +93,7 @@ export default function EventsPage() {
     <div className="shell">
       <div className="topbar">
         <div className="topbar-brand">
-          <h1>london tech heatmap 🔥</h1>
+          <h1>London tech heatmap 🔥</h1>
           <span className="topbar-cta">
             [{filteredEvents.length} events] [
             <Link href="/">map</Link>

@@ -67,7 +67,7 @@ export default function MapPageClient({ ecosystemPoints }: MapPageClientProps) {
     <main className="shell">
       <header className="topbar">
         <div className="topbar-brand">
-          <h1>london tech heatmap 🔥</h1>
+          <h1>London tech heatmap 🔥</h1>
           <span className="topbar-cta">
             [By{" "}
             <a href="https://x.com/b1rdmania" target="_blank" rel="noreferrer">
