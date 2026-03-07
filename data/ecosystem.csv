@@ -153,21 +153,21 @@ cand-fintech-026,Abound,fintech,Summit House,WC1R 4HQ,London,UK,https://www.abou
 cand-fintech-027,Payhawk UK,fintech,Payhawk,WC2A 1QS,London,UK,https://payhawk.com,https://payhawk.com/,"Spend management platform combining cards, expense management, and AP automation.",51.5174424,-0.1128765,Payhawk
 cand-fintech-028,ClearScore,fintech,London,,London,UK,https://www.clearscore.com,https://www.clearscore.com/,London consumer credit fintech,51.4862,-0.1185,ClearScore
 cand-fintech-030,Iwoca,fintech,One Bedford Ave,WC1B 3AU,London,UK,https://www.iwoca.co.uk,https://www.iwoca.co.uk/,London SME lender,51.51766689999999,-0.1309123,iwoca
-cand-edu-001,Multiverse,edu,London,,London,UK,,https://www.multiverse.io/,London workforce upskilling platform,51.5203,-0.157,
-cand-edu-002,Century Tech,edu,15 Alfred Pl,WC1E 7EB,London,UK,,https://www.century.tech/,London AI learning platform,51.5202904,-0.1333922,
-cand-edu-003,Seneca Learning,edu,84 Eccleston Square,SW1V 1PH,London,UK,,https://senecalearning.com/,London edtech platform,51.49312159999999,-0.1435837,
-cand-edu-004,Atom Learning,edu,Fox Court,WC1X 8HN,London,UK,,https://atomlearning.com/,London adaptive learning startup,51.51927060000001,-0.1109205,
-cand-edu-005,Firefly Learning,edu,The Aircraft Factory,W6 0LE,London,UK,,https://www.fireflylearning.com/,London school platform,51.4959132,-0.2306881,
-cand-edu-006,Edumentors,edu,505 Pinner Road Harrow,HA2 6EH,London,UK,,https://en.wikipedia.org/wiki/Edumentors,London AI tutoring startup,51.5882118,-0.3630625000000001,
-cand-edu-007,Perlego,edu,1 Waterhouse Square 138,EC1N 2ST,London,UK,,https://www.perlego.com/,London learning subscription platform,51.5186877,-0.109298,
-cand-edu-008,Memrise,edu,London,,London,UK,,https://www.memrise.com/,London language learning company,51.5184,-0.0739,
-cand-edu-009,Lingumi,edu,33 Chapel Side,W2 4LL,London,UK,,https://lingumi.com/,London kids English edtech,51.5124243,-0.1891116,
-cand-edu-010,MyTutor,edu,The Bower,EC1V 9NR,London,UK,,https://www.mytutor.co.uk/,London tutoring marketplace,51.5259961,-0.0888394,
-cand-edu-011,FutureLearn,edu,Buchanan House 30 Holborn,EC1N 2HS,London,UK,,https://www.futurelearn.com/,London online education platform,51.5175764,-0.1096975,
-cand-edu-012,Sparx Learning,edu,71-75 Shelton St,WC2H 9JQ,London,UK,,https://sparx.co.uk/,UK edtech with London presence,51.5149056,-0.1235464,
-cand-edu-013,Third Space Learning,edu,68 Hanbury St,E1 5JL,London,UK,,https://thirdspacelearning.com/,London maths tutoring platform,51.5200292,-0.0703168,
-cand-edu-014,Arbor Education,edu,21-33 Great Eastern St,EC2A 3EJ,London,UK,,https://arbor-education.com/,School management information system (MIS) for UK schools.,51.5234782,-0.07930179999999999,
-cand-edu-015,Kahoot UK,edu,The Trampery 239 Old Street,EC1V 9EY,London,UK,,https://kahoot.com/,Edtech with London operations,51.526562,-0.0844217,
+cand-edu-001,Multiverse,edu,London,,London,UK,https://www.multiverse.io,https://www.multiverse.io/,London workforce upskilling platform,51.5203,-0.157,JoinMultiverse
+cand-edu-002,Century Tech,edu,15 Alfred Pl,WC1E 7EB,London,UK,https://www.century.tech,https://www.century.tech/,London AI learning platform,51.5202904,-0.1333922,century_tech
+cand-edu-003,Seneca Learning,edu,84 Eccleston Square,SW1V 1PH,London,UK,https://senecalearning.com,https://senecalearning.com/,London edtech platform,51.49312159999999,-0.1435837,senecalearn
+cand-edu-004,Atom Learning,edu,Fox Court,WC1X 8HN,London,UK,https://atomlearning.com,https://atomlearning.com/,London adaptive learning startup,51.51927060000001,-0.1109205,AtomLearning
+cand-edu-005,Firefly Learning,edu,The Aircraft Factory,W6 0LE,London,UK,https://www.fireflylearning.com,https://www.fireflylearning.com/,London school platform,51.4959132,-0.2306881,fireflyteam
+cand-edu-006,Edumentors,edu,505 Pinner Road Harrow,HA2 6EH,London,UK,https://www.edumentors.co.uk,https://en.wikipedia.org/wiki/Edumentors,London AI tutoring startup,51.5882118,-0.3630625000000001,edumentors
+cand-edu-007,Perlego,edu,1 Waterhouse Square 138,EC1N 2ST,London,UK,https://www.perlego.com,https://www.perlego.com/,London learning subscription platform,51.5186877,-0.109298,perlego
+cand-edu-008,Memrise,edu,London,,London,UK,https://www.memrise.com,https://www.memrise.com/,London language learning company,51.5184,-0.0739,memrise
+cand-edu-009,Lingumi,edu,33 Chapel Side,W2 4LL,London,UK,https://lingumi.com,https://lingumi.com/,London kids English edtech,51.5124243,-0.1891116,Lingumi
+cand-edu-010,MyTutor,edu,The Bower,EC1V 9NR,London,UK,https://www.mytutor.co.uk,https://www.mytutor.co.uk/,London tutoring marketplace,51.5259961,-0.0888394,MyTutorWeb
+cand-edu-011,FutureLearn,edu,Buchanan House 30 Holborn,EC1N 2HS,London,UK,https://www.futurelearn.com,https://www.futurelearn.com/,London online education platform,51.5175764,-0.1096975,FutureLearn
+cand-edu-012,Sparx Learning,edu,71-75 Shelton St,WC2H 9JQ,London,UK,https://sparx.co.uk,https://sparx.co.uk/,UK edtech with London presence,51.5149056,-0.1235464,SparxMaths
+cand-edu-013,Third Space Learning,edu,68 Hanbury St,E1 5JL,London,UK,https://thirdspacelearning.com,https://thirdspacelearning.com/,London maths tutoring platform,51.5200292,-0.0703168,thirdspacetweet
+cand-edu-014,Arbor Education,edu,21-33 Great Eastern St,EC2A 3EJ,London,UK,https://arbor-education.com,https://arbor-education.com/,School management information system (MIS) for UK schools.,51.5234782,-0.07930179999999999,arbor_ed
+cand-edu-015,Kahoot UK,edu,The Trampery 239 Old Street,EC1V 9EY,London,UK,https://kahoot.com,https://kahoot.com/,Edtech with London operations,51.526562,-0.0844217,kahoot
 cand-tech-001,Lindus Health,big_tech,65 Southwark Street,SE1 0HR,London,UK,,https://www.wired.com/story/the-hottest-startups-in-london-in-2024/,London clinical trials startup (WIRED),51.5049532,-0.0972241,
 cand-tech-002,GetHarley,big_tech,15A North Audley Street,W1K 6WZ,London,UK,,https://www.wired.com/story/the-hottest-startups-in-london-in-2024/,London dermatology platform (WIRED),51.5132378,-0.1532235,
 cand-tech-003,Field,big_tech,The Bun House,SE15 5ED,London,UK,,https://www.wired.com/story/the-hottest-startups-in-london-in-2024/,London battery storage startup (WIRED),51.473698,-0.068825,
