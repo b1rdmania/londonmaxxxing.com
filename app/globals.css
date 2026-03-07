@@ -46,7 +46,7 @@ body {
 
 .topbar-nav {
   display: flex;
-  gap: 12px;
+  gap: 6px;
   align-items: baseline;
   flex-wrap: wrap;
 }
