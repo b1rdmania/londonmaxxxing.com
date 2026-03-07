@@ -1,6 +1,6 @@
 # londonmaxxxing.com
 
-Interactive map of London's tech ecosystem — 235+ AI labs, VCs, big tech offices, fintechs, and startups in Shoreditch, King's Cross, and beyond.
+Interactive map of London's tech ecosystem — 293 companies including AI labs, VCs, big tech offices, fintechs, web3 companies, funding orgs, and startups across London.
 
 Built entirely by [GhostClaw](https://github.com/qwibitai/ghostclaw) — an AI assistant that codes, commits, and ships.
 
@@ -25,10 +25,13 @@ Then open http://localhost:3000
 All companies are in `data/ecosystem.csv`. Categories:
 - **AI**: AI labs, research orgs, and AI-focused startups
 - **VC**: Venture capital firms and investors
-- **Big Tech**: Major tech companies (Google, Meta, Amazon, etc.)
+- **Funding**: Government agencies (Innovate UK, ARIA) and philanthropic orgs (Wellcome Trust, Gatsby, etc.)
+- **Big Tech**: Major tech companies (Google, Meta, Amazon, xAI, etc.)
 - **Fintech**: Financial technology companies
 - **Web3**: Crypto and blockchain companies
 - **AI × Bio**: AI-driven biotech and drug discovery
+- **Coworking**: Tech-focused coworking spaces
+- **Education**: Universities, research centers, accelerators
 
 ## Contributing
 
