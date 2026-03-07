@@ -35,6 +35,7 @@ const CATEGORY_COLORS: Record<string, string> = {
 export default function EventsPageClient() {
   const [events, setEvents] = useState<Event[]>([]);
   const [loading, setLoading] = useState(true);
+  const [error, setError] = useState<string | null>(null);
   const [selectedCategory, setSelectedCategory] = useState<string>("all");
 
   useEffect(() => {
@@ -56,6 +57,7 @@ export default function EventsPageClient() {
         setEvents(data);
       } catch (error) {
         console.error("Error fetching events:", error);
+        setError(error instanceof Error ? error.message : "Failed to load events");
       } finally {
         setLoading(false);
       }
@@ -113,6 +115,10 @@ export default function EventsPageClient() {
 
       {loading ? (
         <div className="events-loading">Loading events...</div>
+      ) : error ? (
+        <div className="events-loading" style={{ color: "#ef4444" }}>
+          {error}
+        </div>
       ) : (
         <div className="events-grid">
           {filteredEvents.map(event => (

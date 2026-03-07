@@ -5,6 +5,8 @@ export const metadata = {
   description: "Upcoming AI, web3, fintech, and tech events in London"
 };
 
+export const dynamic = 'force-dynamic';
+
 export default function EventsPage() {
   return <EventsPageClient />;
 }
