@@ -131,6 +131,7 @@ export default function Map({ ecosystemPoints, enabledTypes, darkMode = false }:
         mapStyle={darkMode ? "https://basemaps.cartocdn.com/gl/dark-matter-gl-style/style.json" : "https://basemaps.cartocdn.com/gl/positron-gl-style/style.json"}
         interactiveLayerIds={interactiveLayerIds}
         onClick={onMapClick}
+        onMove={() => setPopupEcosystemId(null)}
         dragRotate={false}
         touchPitch={false}
         attributionControl={{
