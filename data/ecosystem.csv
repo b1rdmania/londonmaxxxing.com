@@ -83,36 +83,34 @@ edu-002,UCL Centre for Artificial Intelligence,edu,66-72 Gower Street,WC1E 6BT,L
 edu-003,King's College London Institute for AI,edu,Bush House Strand Campus,WC2R 2LS,London,UK,https://kcl.ac.uk/ai,https://www.kcl.ac.uk/ai,AI research institute,51.511613,-0.116228,aiatkings
 edu-004,The Alan Turing Institute,edu,96 Euston Road British Library First Floor,NW1 2DB,London,UK,https://turing.ac.uk,https://turing.ac.uk,National institute for data science and AI,51.529987,-0.126989,turinginst
 cand-ai-001,OpenAI,ai,"Suite 1, 7th Floor, 50 Broadway",SW1H 0BL,London,UK,https://openai.com,https://openai.com/index/introducing-openai-london/,Creator of ChatGPT and GPT-4. London research hub.,51.4999001,-0.1334791,OpenAI
-cand-ai-002,ElevenLabs,ai,London,,London,UK,https://elevenlabs.io,https://elevenlabs.io/blog/london-office-opening,London HQ and operations,51.5138,-0.1439,elevenlabsio
-cand-ai-003,PolyAI,ai,London,,London,UK,https://poly.ai,https://poly.ai/contact/,London-founded conversational AI company,51.5138,-0.1439,poly_ai
-cand-ai-004,Builder.ai,big_tech,London,,London,UK,https://www.builder.ai,https://www.builder.ai/,No-code app development platform. Note: entered insolvency proceedings May 2025,51.5311,-0.124,Builderai
-cand-ai-005,Robin AI,ai,London,,London,UK,https://robinai.com,https://www.wired.com/story/the-hottest-startups-in-london-in-2024/,London legal AI startup (WIRED list),51.5167,-0.093,RobinAI_UK
-cand-ai-006,PhysicsX,ai,London,,London,UK,https://www.physicsx.ai,https://sifted.eu/rankings/ai-100-2025,London AI engineering startup (WIRED/Sifted),51.5311,-0.124,PhysicsxAI
-cand-ai-007,Graphcore,ai,London,,London,UK,https://www.graphcore.ai,https://www.graphcore.ai/,AI chip designer making IPUs for machine learning. Acquired by SoftBank 2024 for $500M,51.5198,-0.1455,graphcoreai
+cand-ai-002,ElevenLabs,ai,33 Broadwick Street,W1F 0DQ,London,UK,https://elevenlabs.io,https://elevenlabs.io/blog/london-office-opening,AI voice generation. European HQ and worldwide operations in Soho,51.513316,-0.136133,elevenlabsio
+cand-ai-003,PolyAI,ai,3 Sheldon Square,W2 6HY,London,UK,https://poly.ai,https://poly.ai/contact/,Conversational AI for customer service. HQ at Paddington Central,51.519699,-0.1807,poly_ai
+cand-ai-004,Builder.ai,big_tech,119 Marylebone Road,NW1 5PU,London,UK,https://www.builder.ai,https://www.builder.ai/,No-code app development platform. Note: entered insolvency proceedings May 2025,51.521159,-0.161298,Builderai
+cand-ai-005,Robin AI,ai,10 Devonshire Square,EC2M 4YP,London,UK,https://robinai.com,https://www.robinai.com/contact-us,Legal AI for contract review and analysis. HQ at Devonshire Square,51.516544,-0.078146,RobinAI_UK
+cand-ai-006,PhysicsX,ai,1 Leonard Circus,EC2A 4DQ,London,UK,https://www.physicsx.ai,https://www.physicsx.ai,Physics-based AI simulation. HQ in Shoreditch,51.524861,-0.083605,PhysicsxAI
+cand-ai-007,Graphcore,ai,107 Cheapside,EC2V 6DN,London,UK,https://www.graphcore.ai,https://www.graphcore.ai,AI chip designer. Bristol HQ with London office,51.514178,-0.093552,graphcoreai
 cand-ai-008,Darktrace,ai,80 Strand,WC2R 0BP,London,UK,https://www.darktrace.com,https://www.darktrace.com/,AI cybersecurity platform using ML to detect and respond to threats in real-time. 10000+ customers,51.5101173,-0.1218421,Darktrace
 cand-ai-009,Luminance,ai,2,W1T 3BP,London,UK,https://www.luminance.com,https://www.luminance.com/,London legal AI company,51.5187842,-0.1379594,LuminanceOne
-cand-ai-010,Causaly,ai,London,,London,UK,https://www.causaly.com,https://www.causaly.com/,AI scientific platform with London base,51.5311,-0.124,CausalyAI
-cand-ai-011,Seldon,ai,London,,London,UK,https://www.seldon.io,https://www.seldon.io/,London MLOps / AI deployment company,51.5167,-0.093,seldon_io
+cand-ai-010,Causaly,ai,10-16 Elm Street,WC1X 0BJ,London,UK,https://www.causaly.com,https://www.causaly.com,AI biomedical research platform,51.52301,-0.113595,CausalyAI
+cand-ai-011,Seldon,ai,41 Luke Street,EC2A 4DP,London,UK,https://www.seldon.io,https://www.seldon.io,MLOps platform. HQ at Rise London,51.523893,-0.083775,seldon_io
 cand-ai-012,Signal AI,ai,4th Floor,EC1Y 8RN,London,UK,https://signal-ai.com,https://www.signal-ai.com/,London AI media intelligence company,51.52464440000001,-0.0889104,SignalHQ
 cand-ai-013,Eigen Technologies,ai,Fetter Yard,EC4A 1EN,London,UK,https://eigentech.com,https://www.eigentech.com/,London NLP automation company,51.51713789999999,-0.1091394,Eigen_Tech
-cand-ai-014,Faculty,ai,London,,London,UK,https://faculty.ai,https://faculty.ai/,London AI consultancy/product company,51.525,-0.0913,faculty_ai
 cand-ai-015,Harvey,ai,Harvey Rd,SE5,London,UK,https://www.harvey.ai,https://www.londonandpartners.com/newsroom/news-and-communications/london-leading-global-city-for-ai-businesses-to-grow,AI legal startup expanding into London,51.4756188,-0.0883797,harvey
 cand-ai-016,Mphasis AI Innovation Hub,ai,4 Coleman St,EC2R 5AR,London,UK,https://www.mphasis.com,https://www.londonandpartners.com/newsroom/news-and-communications/london-leading-global-city-for-ai-businesses-to-grow,London AI hub expansion cited by London & Partners,51.51653659999999,-0.0899865,mphasis
 cand-ai-017,Huma,ai,13th floor,SW1P 4QP,London,UK,https://www.huma.com,https://www.huma.com/,London health AI / digital health scaleup,51.4923181,-0.1258401,HumaForHealth
-cand-ai-018,Relation Therapeutics,ai_bio,London,,London,UK,https://www.relationrx.com,https://www.londonandpartners.com/newsroom/news-and-communications/london-hits-all-time-high-for-venture-capital-investment-into-ai-in-2024,London health AI startup (L&P 2024 list),51.5311,-0.124,RelationRx
+cand-ai-018,Relation Therapeutics,ai_bio,338 Euston Road,NW1 3BG,London,UK,https://www.relationrx.com,https://www.relationrx.com,AI-powered cell atlas for drug discovery,51.524581,-0.141597,RelationRx
 cand-ai-019,Limbic,ai,100 Drummond Rd,SE3 7SG,London,UK,https://limbic.ai,https://www.limbic.ai/,London mental-health AI company,51.49444680000001,-0.06119239999999999,Limbic_ai
-cand-ai-020,Baseimmune,ai_bio,London,,London,UK,https://www.baseimmune.co.uk,https://www.baseimmune.com/,London biotech/AI company,51.5311,-0.124,baseimmune
+cand-ai-020,Baseimmune,ai_bio,2 Royal College Street,NW1 0NH,London,UK,https://www.baseimmune.co.uk,https://www.baseimmune.co.uk,AI-driven universal vaccine development,51.536259,-0.13345,baseimmune
 cand-ai-021,Fetch.ai,ai,Arch 642,SW4 6DH,London,UK,https://www.fetch.ai,https://fetch.ai/,London-origin AI x web3 company,51.46478990000001,-0.1311319,Fetch_ai
-cand-web3-001,OKX,web3,London,,London,UK,https://www.okx.com,https://www.okx.com/,Global exchange with UK/London operations,51.5138,-0.0896,okx
+cand-web3-001,OKX,web3,1 Cornhill,EC3V 3ND,London,UK,https://www.okx.com,https://www.okx.com,Crypto exchange with UK operations,51.513229,-0.087134,okx
 cand-web3-002,Crypto.com,web3,32-33 Cartwright Gardens,WC1H 9EH,London,UK,https://crypto.com,https://crypto.com/,Global exchange with UK presence,51.52731259999999,-0.1275751,cryptocom
-cand-web3-003,eToro,web3,London,,London,UK,https://www.etoro.com,https://www.etoro.com/,Social trading and multi-asset investment platform.,51.5044,-0.0223,eToro
+cand-web3-003,eToro,web3,One Canada Square,E14 5AB,London,UK,https://www.etoro.com,https://www.etoro.com,Social trading platform. HQ at Canary Wharf,51.504938,-0.019496,eToro
 cand-web3-004,Bitpanda,web3,32 Threadneedle Street,EC2R 8AY,London,UK,https://www.bitpanda.com,https://www.bitpanda.com/,UK expansion and London presence,51.5142507,-0.0847826,Bitpanda
 cand-web3-005,Nexo,web3,9 White Lion St,N1 9PD,London,UK,https://nexo.com,https://nexo.com/,UK-facing crypto platform with London activity,51.5326937,-0.1069324,Nexo
 cand-web3-006,Blockdaemon,web3,30th Floor Leadenhall Building 122 Leadenhall St,EC3V 4AB,London,UK,https://www.blockdaemon.com,https://blockdaemon.com/,Institutional web3 infra with London base,51.51387829999999,-0.0822841,BlockdaemonHQ
-cand-web3-007,Alchemy,web3,London,,London,UK,https://www.alchemy.com,https://www.alchemy.com/,Web3 infra company with London hiring/presence,51.5135,-0.1026,Alchemy
 cand-web3-008,QuickNode,web3,Kemp House 160 City Road,EC1V 2NX,London,UK,https://www.quicknode.com,https://www.quicknode.com/,Web3 infra provider with London presence,51.5273645,-0.08891579999999999,QuickNode
 cand-web3-009,Chainlink Labs,web3,12 Old Compton St,W1D 4TQ,London,UK,https://chain.link,https://chain.link/,Major web3 infra team with London footprint,51.513734,-0.1299972,chainlink
-cand-web3-011,Argent,web3,London,,London,UK,https://www.argent.xyz,https://www.argent.xyz/,London crypto wallet startup,51.5359,-0.1256,argentHQ
+cand-web3-011,Argent,web3,107 Cheapside,EC2V 6DN,London,UK,https://www.argent.xyz,https://www.argent.xyz,Ethereum wallet. Remote-first with London HQ,51.514178,-0.093552,argentHQ
 cand-web3-012,Ramp Network,web3,Ramp,SE10 8JA,London,UK,https://rampnetwork.com,https://ramp.network/,London web3 payments infrastructure,51.478134,-0.013314,RampNetwork
 cand-web3-015,Dapper Labs,web3,12 Old Compton St,W1D 4TQ,London,UK,https://www.dapperlabs.com,https://www.dapperlabs.com/,Web3/NFT company with London hiring footprint,51.513734,-0.1299972,dapperlabs
 cand-web3-016,R3,web3,Orion House,WC2H 9EA,London,UK,https://r3.com,https://www.r3.com/,Enterprise blockchain company with London HQ,51.5124161,-0.1274749,inside_r3
@@ -122,25 +120,23 @@ cand-web3-019,Mercuryo,web3,77 Gracechurch St,EC3V 0AS,London,UK,https://mercury
 cand-web3-020,Transak,web3,7 Pancras Square,N1C 4AG,London,UK,https://transak.com,https://transak.com/,Web3 onboarding with UK presence,51.5326424,-0.1256538,Transak
 cand-web3-021,Safe (Gnosis Safe),web3,60 Princes Gate Mews,SW7 2PR,London,UK,https://safe.global,https://safe.global/,Core team presence in London ecosystem,51.4982131,-0.1732879,safe
 cand-web3-022,Worldcoin (Tools for Humanity),web3,Lower Ground Floor 14 Devonshire Square,EC2M 4YT,London,UK,https://world.org,https://world.org/,London activity and hiring,51.5168602,-0.07932689999999999,tfh_technology
-cand-web3-023,Elliptic Enterprises,web3,London,,London,UK,https://www.elliptic.co,https://www.elliptic.co/,Additional legal entities/teams in London,51.5138,-0.1021,elliptic
 cand-web3-024,TRM Labs UK,web3,Suite 1 7th Floor 50 Broadway,SW1H 0BL,London,UK,https://www.trmlabs.com,https://www.trmlabs.com/,Crypto compliance company with London expansion,51.4999001,-0.1334791,trmlabs
-cand-fintech-001,9fin,fintech,London,,London,UK,https://www.9fin.com,https://en.wikipedia.org/wiki/9fin,Debt capital markets intelligence and data platform,51.5138,-0.1439,9finHQ
 cand-fintech-002,Rapyd,fintech,119 Marylebone Rd,NW1 5PN,London,UK,https://www.rapyd.net,https://en.wikipedia.org/wiki/Rapyd,London-headquartered payments company,51.5211173,-0.1612848,RapydGlobal
 cand-fintech-003,Allica Bank,fintech,15 Worship St,EC2A 2DT,London,UK,https://www.allica.bank,https://en.wikipedia.org/wiki/Allica_Bank,London/Milton Keynes challenger bank,51.5222851,-0.0859554,AllicaBank
 cand-fintech-004,Zilch,fintech,111 Buckingham Palace Rd,SW1W 0SR,London,UK,https://www.zilch.com,https://en.wikipedia.org/wiki/Zilch_%28company%29,London BNPL fintech,51.4952103,-0.1455344,PayZilch
 cand-fintech-005,Noda,fintech,78 York St,W1H 1DP,London,UK,https://noda.live,https://en.wikipedia.org/wiki/Noda_%28company%29,London open banking platform,51.5200124,-0.1624881,
-cand-fintech-006,Tide,fintech,London,,London,UK,https://www.tide.co,https://www.tide.co/,London SME banking fintech,51.5138,-0.0896,TideBusiness
+cand-fintech-006,Tide,fintech,66 City Road,EC1Y 2AL,London,UK,https://www.tide.co,https://www.tide.co,Business banking platform. HQ at The Featherstone Building,51.524452,-0.087745,TideBusiness
 cand-fintech-007,SumUp,fintech,16-20 Short's Gardens,WC2H 9US,London,UK,https://www.sumup.com,https://www.sumup.com/,Large payments company with London HQ,51.5148834,-0.1249412,SumUp
 cand-fintech-008,Monese,fintech,Eagle House,N1 7LP,London,UK,https://www.monese.com,https://www.monese.com/,London digital banking fintech,51.5283544,-0.0900415,monese
-cand-fintech-009,Cleo,fintech,London,,London,UK,https://web.meetcleo.com,https://web.meetcleo.com/,London consumer finance app,51.5167,-0.093,meetcleo
-cand-fintech-010,Plum,fintech,London,,London,UK,https://withplum.com,https://withplum.com/,London savings/investing fintech,51.5167,-0.093,withplum
+cand-fintech-009,Cleo,fintech,40 Finsbury Square,EC2A 1PX,London,UK,https://web.meetcleo.com,https://web.meetcleo.com,AI financial assistant. HQ at The Gilbert,51.520182,-0.086137,meetcleo
+cand-fintech-010,Plum,fintech,2-7 Clerkenwell Green,EC1R 0DE,London,UK,https://withplum.com,https://withplum.com,AI savings and investment app,51.523157,-0.104334,withplum
 cand-fintech-011,Modulr,fintech,Scale Space,W12 7RZ,London,UK,https://www.modulrfinance.com,https://www.modulrfinance.com/,London payments infrastructure,51.5138067,-0.2231634,modulr
 cand-fintech-012,Yapily,fintech,Huckletree,W1D 2LG,London,UK,https://www.yapily.com,https://www.yapily.com/,London open banking API company,51.5154229,-0.1399766,yapily
-cand-fintech-013,PensionBee,fintech,London,,London,UK,https://www.pensionbee.com,https://www.pensionbee.com/,London pension fintech,51.5211,-0.073,pensionbee
+cand-fintech-013,PensionBee,fintech,209 Blackfriars Road,SE1 8NL,London,UK,https://www.pensionbee.com,https://www.pensionbee.com,Online pension provider,51.504962,-0.104196,pensionbee
 cand-fintech-014,Nutmeg,fintech,Bank St,E14 4PA,London,UK,https://www.nutmeg.com,https://www.nutmeg.com/,London wealthtech,51.5035466,-0.0215992,thenutmegteam
 cand-fintech-015,Chip,fintech,Fora Montacute Yards,E1 6HU,London,UK,https://www.getchip.uk,https://www.getchip.uk/,London savings fintech,51.5242438,-0.0774245,chip
 cand-fintech-016,PrimaryBid,fintech,Fifth Floor,SW1E 5JL,London,UK,https://www.primarybid.com,https://www.primarybid.com/,London retail investment platform,51.4970873,-0.1395648,PrimaryBid
-cand-fintech-017,Curve,fintech,London,,London,UK,https://www.curve.com,https://www.curve.com/,London fintech super card,51.5211,-0.073,imaginecurve
+cand-fintech-017,Curve,fintech,15-19 Bloomsbury Way,WC1A 2TH,London,UK,https://www.curve.com,https://www.curve.com,All-in-one card and payment platform,51.517706,-0.123241,imaginecurve
 cand-fintech-018,Soldo,fintech,119 Marylebone Road C/O Wework,NW1 5PU,London,UK,https://www.soldo.com,https://www.soldo.com/,London spend management fintech,51.5212115,-0.1612346,Soldo
 cand-fintech-019,Airwallex UK,fintech,45 Mortimer St,W1W 8HJ,London,UK,https://www.airwallex.com,https://www.airwallex.com/,Global fintech with London presence,51.5179382,-0.1391455,Airwallex
 cand-fintech-020,Mollie UK,fintech,Huckletree,EC2N 4BQ,London,UK,https://www.mollie.com,https://www.mollie.com/,European payment service provider for online businesses.,51.5140141,-0.0833636,Mollie
@@ -151,16 +147,16 @@ cand-fintech-024,Gaia Family,fintech,65 Alfred Rd,W2 5EU,London,UK,https://www.g
 cand-fintech-025,Salary Finance,fintech,1 Hammersmith Broadway,W6 9DL,London,UK,https://www.salaryfinance.com,https://www.salaryfinance.com/,London fintech for employee finance,51.4928466,-0.2240484,SalaryFinance
 cand-fintech-026,Abound,fintech,Summit House,WC1R 4HQ,London,UK,https://www.abound.com,https://www.abound.com/,London AI lending startup,51.51878749999999,-0.1188149,aboundfinance
 cand-fintech-027,Payhawk UK,fintech,Payhawk,WC2A 1QS,London,UK,https://payhawk.com,https://payhawk.com/,"Spend management platform combining cards, expense management, and AP automation.",51.5174424,-0.1128765,Payhawk
-cand-fintech-028,ClearScore,fintech,London,,London,UK,https://www.clearscore.com,https://www.clearscore.com/,London consumer credit fintech,51.4862,-0.1185,ClearScore
+cand-fintech-028,ClearScore,fintech,1-45 Durham Street,SE11 5JH,London,UK,https://www.clearscore.com,https://www.clearscore.com,Free credit score and financial marketplace. HQ at Vox Studios,51.485973,-0.118365,ClearScore
 cand-fintech-030,Iwoca,fintech,One Bedford Ave,WC1B 3AU,London,UK,https://www.iwoca.co.uk,https://www.iwoca.co.uk/,London SME lender,51.51766689999999,-0.1309123,iwoca
-cand-edu-001,Multiverse,edu,London,,London,UK,https://www.multiverse.io,https://www.multiverse.io/,London workforce upskilling platform,51.5203,-0.157,JoinMultiverse
+cand-edu-001,Multiverse,edu,2 Eastbourne Terrace,W2 6LG,London,UK,https://www.multiverse.io,https://www.multiverse.io,Tech apprenticeship platform. HQ at WeWork Paddington,51.516753,-0.179204,JoinMultiverse
 cand-edu-002,Century Tech,edu,15 Alfred Pl,WC1E 7EB,London,UK,https://www.century.tech,https://www.century.tech/,London AI learning platform,51.5202904,-0.1333922,century_tech
 cand-edu-003,Seneca Learning,edu,84 Eccleston Square,SW1V 1PH,London,UK,https://senecalearning.com,https://senecalearning.com/,London edtech platform,51.49312159999999,-0.1435837,senecalearn
 cand-edu-004,Atom Learning,edu,Fox Court,WC1X 8HN,London,UK,https://atomlearning.com,https://atomlearning.com/,London adaptive learning startup,51.51927060000001,-0.1109205,AtomLearning
 cand-edu-005,Firefly Learning,edu,The Aircraft Factory,W6 0LE,London,UK,https://www.fireflylearning.com,https://www.fireflylearning.com/,London school platform,51.4959132,-0.2306881,fireflyteam
 cand-edu-006,Edumentors,edu,505 Pinner Road Harrow,HA2 6EH,London,UK,https://www.edumentors.co.uk,https://en.wikipedia.org/wiki/Edumentors,London AI tutoring startup,51.5882118,-0.3630625000000001,edumentors
 cand-edu-007,Perlego,edu,1 Waterhouse Square 138,EC1N 2ST,London,UK,https://www.perlego.com,https://www.perlego.com/,London learning subscription platform,51.5186877,-0.109298,perlego
-cand-edu-008,Memrise,edu,London,,London,UK,https://www.memrise.com,https://www.memrise.com/,London language learning company,51.5184,-0.0739,memrise
+cand-edu-008,Memrise,edu,3-5 Fashion Street,E1 6PX,London,UK,https://www.memrise.com,https://www.memrise.com,Language learning platform,51.518547,-0.072555,memrise
 cand-edu-009,Lingumi,edu,33 Chapel Side,W2 4LL,London,UK,https://lingumi.com,https://lingumi.com/,London kids English edtech,51.5124243,-0.1891116,Lingumi
 cand-edu-010,MyTutor,edu,The Bower,EC1V 9NR,London,UK,https://www.mytutor.co.uk,https://www.mytutor.co.uk/,London tutoring marketplace,51.5259961,-0.0888394,MyTutorWeb
 cand-edu-011,FutureLearn,edu,Buchanan House 30 Holborn,EC1N 2HS,London,UK,https://www.futurelearn.com,https://www.futurelearn.com/,London online education platform,51.5175764,-0.1096975,FutureLearn
@@ -257,7 +253,7 @@ web3-029,Montis Digital,web3,10 Queen Street Place,EC4R 1BE,London,UK,https://mo
 web3-030,BPX Markets,web3,33 Cavendish Square 14th Floor,W1G 0PW,London,UK,https://bpx.exchange,https://find-and-update.company-information.service.gov.uk/company/15240592,FCA-authorised marketplace for traditional and tokenised securities.,51.5169,-0.1437,
 web3-031,Slix Finance,web3,86-90 Paul Street 3rd Floor,EC2A 4NE,London,UK,https://www.slix.finance,https://find-and-update.company-information.service.gov.uk/company/16140193,Blockchain-native APIs for securities trading and settlement.,51.5256,-0.0836,
 web3-032,Liquidity Digital Assets,web3,Level 30 122 Leadenhall Street,EC3V 4AB,London,UK,https://liqda.com,https://find-and-update.company-information.service.gov.uk/company/08451486,Digital asset liquidity and trading solutions.,51.5139,-0.0823,LiquidityDgtl
-web3-033,TechT Labs,web3,London,,,UK,https://www.techt.io,https://find-and-update.company-information.service.gov.uk/company/14167413,Ethereum banking infrastructure for on-chain financial services.,51.5074,-0.1278,
+web3-033,TechT Labs,web3,Sharif Villa Park Lane,SL3 9PR,Slough,UK,https://www.techt.io,https://find-and-update.company-information.service.gov.uk/company/14167413,Ethereum banking infrastructure. Based in Slough.,51.4897,-0.5426,
 web3-034,Ctrl Alt,web3,86-90 Paul Street 3rd Floor,EC2A 4NE,London,UK,https://www.ctrl-alt.co,https://find-and-update.company-information.service.gov.uk/company/16547640,Institutional tokenization infrastructure platform.,51.5256,-0.0836,CtrlAltCo
 ai-026,tldraw,ai,"Floor 3 The Arts Building, Morris Place",N4 3JG,London,UK,https://tldraw.com,https://tldraw.com,Infinite canvas SDK with AI-powered whiteboard and collaboration tools.,51.5667158,-0.1065344,tldraw
 ai-027,Intercom,ai,"9th Floor The Warehouse, 211 Old Street",EC1V 9NR,London,UK,https://intercom.com,https://intercom.com,AI-powered customer service platform with conversational support and messaging.,51.5258766,-0.0879411,intercom
@@ -277,7 +273,6 @@ funding-009,London Co-Investment Fund,funding,69 Wilson Street,EC2A 2BB,London,U
 funding-010,Royal Society,funding,6-9 Carlton House Terrace,SW1Y 5AG,London,UK,https://royalsociety.org,https://royalsociety.org/grants/,UK's national academy of sciences providing research grants and fellowships.,51.5051,-0.1302,royalsociety
 funding-011,Imperial Enterprise Lab,funding,White City Campus 80-92 Wood Lane,W12 0BZ,London,UK,https://www.imperial.ac.uk/enterprise/,https://www.imperial.ac.uk/news/195957/innovation-fund-imperial-staff-student-startups/,Imperial College's innovation ecosystem including Innovation Fund for staff and student startups.,51.5116,-0.2242,
 funding-012,Capital Enterprise,funding,Office 605 Albert House 256-260 Old Street,EC1V 9DD,London,UK,https://capitalenterprise.org,https://find-and-update.company-information.service.gov.uk/company/02826978,Membership body delivering enterprise support services and funding programs for London startups.,51.5273,-0.0889,
-funding-013,UK Innovation & Science Seed Fund,funding,London,,London,UK,https://ukinnovationscienceseedfund.co.uk,https://www.ukri.org/what-we-do/browse-our-areas-of-investment-and-support/uk-innovation-and-science-seed-fund/,£100M+ early-stage VC fund investing in UK science and engineering companies. Managed by Future Planet Capital.,51.5074,-0.1278,uki2s
 funding-014,Plexal,funding,The Press Centre Here East 14 East Bay Lane,E15 2GW,London,UK,https://www.plexal.com,https://hereeast.com/whos-here/plexal/,Innovation hub at Olympic Park running innovation programs and providing funding access for tech startups.,51.5445,-0.0296,Plexal
 funding-015,Innovate Finance,funding,5th Floor 2 Throgmorton Avenue,EC2N 2DG,London,UK,https://www.innovatefinance.com,https://www.innovatefinance.com/about/,Industry body representing UK FinTech providing networking funding access and policy advocacy.,51.5155,-0.0875,InnFin
 funding-016,Longview Philanthropy,funding,"Fora Shoreditch, 21-33 Great Eastern Street",EC2A 3EJ,London,UK,https://www.longview.org,https://www.longview.org,Philanthropic advisory focused on safeguarding the long-term future and AI safety.,51.5252991,-0.0843558,LongviewPhil
@@ -298,3 +293,4 @@ ai-105,9fin,ai,"2 Minster Court, Mincing Lane",EC3R 7BB,London,UK,https://9fin.c
 funding-022,Community Jameel,funding,23 Hill Street,W1J 5LW,London,UK,https://www.communityjameel.org,https://www.communityjameel.org,Independent global organization advancing science and learning for communities to thrive. AI labs education climate healthcare poverty alleviation.,51.508507,-0.148218,CommunityJameel
 funding-023,24Haymarket,funding,"3rd & 4th Floor, 24 Haymarket",SW1Y 4DG,London,UK,https://24haymarket.com,https://24haymarket.com,Angel network with 100+ seasoned investors and operators. £60k-£4m investments. 3000+ years collective experience backing early-stage startups.,51.509211,-0.132045,24haymarket
 funding-024,Envestors,funding,1 Lancaster Place,WC2E 7EA,London,UK,https://www.envestors.co.uk,https://www.envestors.co.uk,Angel network with 4000+ sophisticated investors. £228m deployed across 189 fundraisings. £250k-£2m equity funding for SaaS and tech startups.,51.511149,-0.118765,envestors
+funding-013,UK Innovation & Science Seed Fund,funding,London,,London,UK,https://ukinnovationscienceseedfund.co.uk,https://www.ukri.org/what-we-do/browse-our-areas-of-investment-and-support/uk-innovation-and-science-seed-fund/,£100M+ early-stage VC fund investing in UK science and engineering companies. Managed by Future Planet Capital.,51.5074,-0.1278,uki2s
