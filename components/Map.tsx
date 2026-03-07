@@ -192,7 +192,7 @@ export default function Map({ ecosystemPoints, enabledTypes, darkMode = false }:
 
       {/* Credits footer */}
       <div className="map-credits">
-        Built in GhostClaw
+        Built in <a href="https://ghostclaw.io" target="_blank" rel="noreferrer">GhostClaw</a>
       </div>
     </div>
   );
