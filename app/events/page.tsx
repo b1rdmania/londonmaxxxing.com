@@ -161,11 +161,11 @@ export default function EventsPage() {
       {/* Footer credits */}
       <div className="map-credits" style={{ position: 'fixed', bottom: '16px', right: '16px', fontSize: '12px', color: '#666', backgroundColor: 'rgba(255,255,255,0.9)', padding: '8px 12px', borderRadius: '4px', boxShadow: '0 2px 4px rgba(0,0,0,0.1)' }}>
         data from{" "}
-        <a href="https://londn.app" target="_blank" rel="noreferrer">
+        <a href="https://londn.app" target="_blank" rel="noreferrer" style={{ color: '#dc2626' }}>
           londn.app
         </a>
         {" · "}
-        Built in <a href="https://ghostclaw.io" target="_blank" rel="noreferrer">GhostClaw</a>
+        Built in <a href="https://ghostclaw.io" target="_blank" rel="noreferrer" style={{ color: '#6b7280' }}>GhostClaw</a>
       </div>
     </div>
   );
