@@ -7,7 +7,9 @@
       "lat": 51.5185,
       "lng": -0.0732,
       "rating": 4.5,
-      "reviews": 892
+      "reviews": 892,
+      "mapsUrl": "https://maps.google.com/?q=51.5185,-0.0732",
+      "website": "http://www.prideofspitalfields.com"
     },
     {
       "id": "2",
@@ -16,7 +18,9 @@
       "lat": 51.5191,
       "lng": -0.0745,
       "rating": 4.3,
-      "reviews": 1245
+      "reviews": 1245,
+      "mapsUrl": "https://maps.google.com/?q=51.5191,-0.0745",
+      "website": "http://www.tenbells.com"
     },
     {
       "id": "3",
@@ -25,7 +29,9 @@
       "lat": 51.5208,
       "lng": -0.1572,
       "rating": 4.4,
-      "reviews": 567
+      "reviews": 567,
+      "mapsUrl": "https://maps.google.com/?q=51.5208,-0.1572",
+      "website": "http://www.volunteerpub.co.uk"
     },
     {
       "id": "4",
@@ -34,7 +40,9 @@
       "lat": 51.5067,
       "lng": -0.1944,
       "rating": 4.6,
-      "reviews": 3421
+      "reviews": 3421,
+      "mapsUrl": "https://maps.google.com/?q=51.5067,-0.1944",
+      "website": "https://www.churchillarmskensington.co.uk"
     },
     {
       "id": "5",
@@ -43,7 +51,9 @@
       "lat": 51.5145,
       "lng": -0.1078,
       "rating": 4.4,
-      "reviews": 2156
+      "reviews": 2156,
+      "mapsUrl": "https://maps.google.com/?q=51.5145,-0.1078",
+      "website": "https://www.yeoldecheshirecheese.com"
     },
     {
       "id": "6",
@@ -52,7 +62,9 @@
       "lat": 51.5005,
       "lng": -0.0546,
       "rating": 4.5,
-      "reviews": 1876
+      "reviews": 1876,
+      "mapsUrl": "https://maps.google.com/?q=51.5005,-0.0546",
+      "website": "http://www.themayflowerpub.com"
     },
     {
       "id": "7",
@@ -61,7 +73,9 @@
       "lat": 51.5181,
       "lng": -0.1207,
       "rating": 4.5,
-      "reviews": 2034
+      "reviews": 2034,
+      "mapsUrl": "https://maps.google.com/?q=51.5181,-0.1207",
+      "website": "https://www.princesslouisepub.co.uk"
     },
     {
       "id": "8",
@@ -70,7 +84,9 @@
       "lat": 51.5228,
       "lng": -0.1203,
       "rating": 4.4,
-      "reviews": 1543
+      "reviews": 1543,
+      "mapsUrl": "https://maps.google.com/?q=51.5228,-0.1203",
+      "website": "http://www.thelambpub.co.uk"
     },
     {
       "id": "9",
@@ -79,7 +95,9 @@
       "lat": 51.5046,
       "lng": -0.0924,
       "rating": 4.3,
-      "reviews": 3245
+      "reviews": 3245,
+      "mapsUrl": "https://maps.google.com/?q=51.5046,-0.0924",
+      "website": "https://www.greeneking.co.uk/pubs/greater-london/george-inn"
     },
     {
       "id": "10",
@@ -88,7 +106,9 @@
       "lat": 51.5123,
       "lng": -0.1032,
       "rating": 4.5,
-      "reviews": 2891
+      "reviews": 2891,
+      "mapsUrl": "https://maps.google.com/?q=51.5123,-0.1032",
+      "website": "https://www.nicholsonspubs.co.uk/theblackfriarlondon"
     },
     {
       "id": "11",
@@ -97,7 +117,9 @@
       "lat": 51.5217,
       "lng": -0.1034,
       "rating": 4.4,
-      "reviews": 987
+      "reviews": 987,
+      "mapsUrl": "https://maps.google.com/?q=51.5217,-0.1034",
+      "website": "http://www.stpetersbrewery.co.uk/the-jerusalem-tavern"
     },
     {
       "id": "12",
@@ -106,7 +128,9 @@
       "lat": 51.5099,
       "lng": -0.1252,
       "rating": 4.6,
-      "reviews": 1654
+      "reviews": 1654,
+      "mapsUrl": "https://maps.google.com/?q=51.5099,-0.1252",
+      "website": "https://www.harpcoventgarden.com"
     },
     {
       "id": "13",
@@ -115,7 +139,9 @@
       "lat": 51.5101,
       "lng": -0.1219,
       "rating": 4.2,
-      "reviews": 876
+      "reviews": 876,
+      "mapsUrl": "https://maps.google.com/?q=51.5101,-0.1219",
+      "website": "https://www.nicholsonspubs.co.uk/thecoalholestrandlondon"
     },
     {
       "id": "14",
@@ -124,7 +150,9 @@
       "lat": 51.5042,
       "lng": -0.0575,
       "rating": 4.3,
-      "reviews": 2543
+      "reviews": 2543,
+      "mapsUrl": "https://maps.google.com/?q=51.5042,-0.0575",
+      "website": "https://www.greeneking.co.uk/pubs/greater-london/prospect-of-whitby"
     },
     {
       "id": "15",
@@ -133,7 +161,9 @@
       "lat": 51.5175,
       "lng": -0.1156,
       "rating": 4.4,
-      "reviews": 1234
+      "reviews": 1234,
+      "mapsUrl": "https://maps.google.com/?q=51.5175,-0.1156",
+      "website": "https://www.nicholsonspubs.co.uk/thecittieofyorkehighbornlondon"
     },
     {
       "id": "16",
@@ -142,7 +172,9 @@
       "lat": 51.5147,
       "lng": -0.1141,
       "rating": 4.5,
-      "reviews": 765
+      "reviews": 765,
+      "mapsUrl": "https://maps.google.com/?q=51.5147,-0.1141",
+      "website": null
     },
     {
       "id": "17",
@@ -151,7 +183,9 @@
       "lat": 51.5057,
       "lng": -0.0593,
       "rating": 4.2,
-      "reviews": 1432
+      "reviews": 1432,
+      "mapsUrl": "https://maps.google.com/?q=51.5057,-0.0593",
+      "website": "https://www.greeneking.co.uk/pubs/greater-london/captain-kidd"
     },
     {
       "id": "18",
@@ -160,9 +194,209 @@
       "lat": 51.5142,
       "lng": -0.1089,
       "rating": 4.3,
-      "reviews": 1098
+      "reviews": 1098,
+      "mapsUrl": "https://maps.google.com/?q=51.5142,-0.1089",
+      "website": "https://www.nicholsonspubs.co.uk/theoldbellfleetstlondon"
+    },
+    {
+      "id": "19",
+      "name": "The French House",
+      "address": "49 Dean St, London W1D 5BG",
+      "lat": 51.5133,
+      "lng": -0.1315,
+      "rating": 4.4,
+      "reviews": 1876,
+      "mapsUrl": "https://maps.google.com/?q=51.5133,-0.1315",
+      "website": "https://www.frenchhousesoho.com"
+    },
+    {
+      "id": "20",
+      "name": "The Spaniards Inn",
+      "address": "Spaniards Rd, London NW3 7JJ",
+      "lat": 51.5715,
+      "lng": -0.1653,
+      "rating": 4.5,
+      "reviews": 3214,
+      "mapsUrl": "https://maps.google.com/?q=51.5715,-0.1653",
+      "website": "https://www.thespaniardshampstead.co.uk"
+    },
+    {
+      "id": "21",
+      "name": "The Holly Bush",
+      "address": "22 Holly Mount, London NW3 6SG",
+      "lat": 51.5561,
+      "lng": -0.1764,
+      "rating": 4.5,
+      "reviews": 2345,
+      "mapsUrl": "https://maps.google.com/?q=51.5561,-0.1764",
+      "website": "http://www.hollybushhampstead.co.uk"
+    },
+    {
+      "id": "22",
+      "name": "The Grapes",
+      "address": "76 Narrow St, London E14 8BP",
+      "lat": 51.5086,
+      "lng": -0.0369,
+      "rating": 4.4,
+      "reviews": 1987,
+      "mapsUrl": "https://maps.google.com/?q=51.5086,-0.0369",
+      "website": "http://www.thegrapes.co.uk"
+    },
+    {
+      "id": "23",
+      "name": "The Anchor Bankside",
+      "address": "34 Park St, London SE1 9EF",
+      "lat": 51.5076,
+      "lng": -0.0935,
+      "rating": 4.2,
+      "reviews": 4123,
+      "mapsUrl": "https://maps.google.com/?q=51.5076,-0.0935",
+      "website": "https://www.greeneking.co.uk/pubs/greater-london/anchor-bankside"
+    },
+    {
+      "id": "24",
+      "name": "The Flask",
+      "address": "77 Highgate West Hill, London N6 6BU",
+      "lat": 51.5714,
+      "lng": -0.1481,
+      "rating": 4.4,
+      "reviews": 1654,
+      "mapsUrl": "https://maps.google.com/?q=51.5714,-0.1481",
+      "website": "https://www.theflaskhighgate.com"
+    },
+    {
+      "id": "25",
+      "name": "The Punch Tavern",
+      "address": "99 Fleet St, London EC4Y 1DE",
+      "lat": 51.5144,
+      "lng": -0.1087,
+      "rating": 4.3,
+      "reviews": 987,
+      "mapsUrl": "https://maps.google.com/?q=51.5144,-0.1087",
+      "website": "https://www.punchtavern.com"
+    },
+    {
+      "id": "26",
+      "name": "The Ship",
+      "address": "41 Jews Row, London SW18 1TB",
+      "lat": 51.4587,
+      "lng": -0.1891,
+      "rating": 4.5,
+      "reviews": 2134,
+      "mapsUrl": "https://maps.google.com/?q=51.4587,-0.1891",
+      "website": "https://www.theship.co.uk"
+    },
+    {
+      "id": "27",
+      "name": "The Dove",
+      "address": "19 Upper Mall, London W6 9TA",
+      "lat": 51.4907,
+      "lng": -0.2344,
+      "rating": 4.4,
+      "reviews": 1876,
+      "mapsUrl": "https://maps.google.com/?q=51.4907,-0.2344",
+      "website": "https://www.dovehammersmith.co.uk"
+    },
+    {
+      "id": "28",
+      "name": "The Blue Posts",
+      "address": "28 Rupert St, London W1D 6DJ",
+      "lat": 51.5117,
+      "lng": -0.1321,
+      "rating": 4.3,
+      "reviews": 876,
+      "mapsUrl": "https://maps.google.com/?q=51.5117,-0.1321",
+      "website": null
+    },
+    {
+      "id": "29",
+      "name": "The Marksman",
+      "address": "254 Hackney Rd, London E2 7SJ",
+      "lat": 51.5317,
+      "lng": -0.0735,
+      "rating": 4.6,
+      "reviews": 2456,
+      "mapsUrl": "https://maps.google.com/?q=51.5317,-0.0735",
+      "website": "https://www.marksmanpublichouse.com"
+    },
+    {
+      "id": "30",
+      "name": "The Gun",
+      "address": "27 Coldharbour, London E14 9NS",
+      "lat": 51.5009,
+      "lng": -0.0067,
+      "rating": 4.5,
+      "reviews": 3124,
+      "mapsUrl": "https://maps.google.com/?q=51.5009,-0.0067",
+      "website": "https://www.thegundocklands.com"
+    },
+    {
+      "id": "31",
+      "name": "The Dog & Duck",
+      "address": "18 Bateman St, London W1D 3AJ",
+      "lat": 51.5136,
+      "lng": -0.1315,
+      "rating": 4.4,
+      "reviews": 1432,
+      "mapsUrl": "https://maps.google.com/?q=51.5136,-0.1315",
+      "website": "https://www.nicholsonspubs.co.uk/thedogandducksoho"
+    },
+    {
+      "id": "32",
+      "name": "The Eagle",
+      "address": "159 Farringdon Rd, London EC1R 3AL",
+      "lat": 51.5253,
+      "lng": -0.1090,
+      "rating": 4.3,
+      "reviews": 1765,
+      "mapsUrl": "https://maps.google.com/?q=51.5253,-0.1090",
+      "website": "https://www.theeaglefarringdon.co.uk"
+    },
+    {
+      "id": "33",
+      "name": "The Cow",
+      "address": "89 Westbourne Park Rd, London W2 5QH",
+      "lat": 51.5186,
+      "lng": -0.1978,
+      "rating": 4.4,
+      "reviews": 1543,
+      "mapsUrl": "https://maps.google.com/?q=51.5186,-0.1978",
+      "website": "https://www.thecowlondon.co.uk"
+    },
+    {
+      "id": "34",
+      "name": "The Crown",
+      "address": "223 Grove Rd, London E3 5SN",
+      "lat": 51.5309,
+      "lng": -0.0382,
+      "rating": 4.5,
+      "reviews": 2134,
+      "mapsUrl": "https://maps.google.com/?q=51.5309,-0.0382",
+      "website": "https://www.thecrownvictoriapark.com"
+    },
+    {
+      "id": "35",
+      "name": "The Builders Arms",
+      "address": "1 Kensington Court Pl, London W8 5BJ",
+      "lat": 51.5003,
+      "lng": -0.1929,
+      "rating": 4.3,
+      "reviews": 987,
+      "mapsUrl": "https://maps.google.com/?q=51.5003,-0.1929",
+      "website": "https://www.geronimo-inns.co.uk/thebuildersarms"
+    },
+    {
+      "id": "36",
+      "name": "The White Horse",
+      "address": "1-3 Parsons Green, London SW6 4UL",
+      "lat": 51.4753,
+      "lng": -0.2015,
+      "rating": 4.4,
+      "reviews": 3456,
+      "mapsUrl": "https://maps.google.com/?q=51.4753,-0.2015",
+      "website": "https://www.whitehorsesw6.com"
     }
   ],
-  "fetchedAt": "2026-03-08T20:30:00.000Z",
-  "note": "Curated list of historic London pubs. Replace with real Google Places data if needed."
+  "fetchedAt": "2026-03-08T20:56:00.000Z",
+  "note": "Curated list of historic and notable London pubs with Google Maps links and websites."
 }

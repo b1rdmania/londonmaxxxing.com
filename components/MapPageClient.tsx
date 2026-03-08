@@ -77,8 +77,6 @@ export default function MapPageClient({ ecosystemPoints }: MapPageClientProps) {
             <a href="/">Map</a>
             ] [
             <a href="/events">Events</a>
-            ] [
-            <a href="/pubs">Pubs</a>
             ]
           </span>
         </div>

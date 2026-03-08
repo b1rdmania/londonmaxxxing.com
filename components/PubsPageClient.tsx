@@ -13,6 +13,8 @@ interface Pub {
   lng: number;
   rating: number;
   reviews: number;
+  mapsUrl: string;
+  website: string | null;
 }
 
 export default function PubsPageClient() {
@@ -93,10 +95,30 @@ export default function PubsPageClient() {
                     {selectedPub.address}
                   </p>
                   {selectedPub.rating > 0 && (
-                    <div style={{ fontSize: "12px", color: "#999" }}>
+                    <div style={{ fontSize: "12px", color: "#999", marginBottom: "8px" }}>
                       ⭐ {selectedPub.rating.toFixed(1)} ({selectedPub.reviews} reviews)
                     </div>
                   )}
+                  <div style={{ fontSize: "12px", display: "flex", gap: "12px", marginTop: "8px" }}>
+                    <a
+                      href={selectedPub.mapsUrl}
+                      target="_blank"
+                      rel="noreferrer"
+                      style={{ color: "#000", textDecoration: "underline" }}
+                    >
+                      Maps
+                    </a>
+                    {selectedPub.website && (
+                      <a
+                        href={selectedPub.website}
+                        target="_blank"
+                        rel="noreferrer"
+                        style={{ color: "#000", textDecoration: "underline" }}
+                      >
+                        Website
+                      </a>
+                    )}
+                  </div>
                 </div>
               </Popup>
             )}
