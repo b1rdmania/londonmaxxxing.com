@@ -192,6 +192,18 @@ export default function Map({ ecosystemPoints, enabledTypes, darkMode = false }:
 
       {/* Credits footer */}
       <div className="map-credits">
+        <a
+          href="https://x.com/intent/tweet?text=London%20tech%20ecosystem%20map%20%E2%80%94%20299%2B%20AI%20labs%2C%20VCs%2C%20fintechs%2C%20and%20startups%20%F0%9F%94%A5%0A%0Aby%20%40b1rdmania&url=https%3A%2F%2Flondonmaxxxing.com"
+          target="_blank"
+          rel="noreferrer"
+        >
+          Share
+        </a>
+        {" · "}
+        <a href="/embed-code" target="_blank" rel="noreferrer">
+          Embed
+        </a>
+        {" · "}
         Built in <a href="https://ghostclaw.io" target="_blank" rel="noreferrer">GhostClaw</a>
       </div>
     </div>
