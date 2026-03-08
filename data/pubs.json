@@ -1,0 +1,168 @@
+{
+  "pubs": [
+    {
+      "id": "1",
+      "name": "The Pride of Spitalfields",
+      "address": "3 Heneage St, London E1 5LJ",
+      "lat": 51.5185,
+      "lng": -0.0732,
+      "rating": 4.5,
+      "reviews": 892
+    },
+    {
+      "id": "2",
+      "name": "The Ten Bells",
+      "address": "84 Commercial St, London E1 6LY",
+      "lat": 51.5191,
+      "lng": -0.0745,
+      "rating": 4.3,
+      "reviews": 1245
+    },
+    {
+      "id": "3",
+      "name": "The Volunteer",
+      "address": "245-247 Baker St, London NW1 6XE",
+      "lat": 51.5208,
+      "lng": -0.1572,
+      "rating": 4.4,
+      "reviews": 567
+    },
+    {
+      "id": "4",
+      "name": "The Churchill Arms",
+      "address": "119 Kensington Church St, London W8 7LN",
+      "lat": 51.5067,
+      "lng": -0.1944,
+      "rating": 4.6,
+      "reviews": 3421
+    },
+    {
+      "id": "5",
+      "name": "Ye Olde Cheshire Cheese",
+      "address": "145 Fleet St, London EC4A 2BU",
+      "lat": 51.5145,
+      "lng": -0.1078,
+      "rating": 4.4,
+      "reviews": 2156
+    },
+    {
+      "id": "6",
+      "name": "The Mayflower",
+      "address": "117 Rotherhithe St, London SE16 4NF",
+      "lat": 51.5005,
+      "lng": -0.0546,
+      "rating": 4.5,
+      "reviews": 1876
+    },
+    {
+      "id": "7",
+      "name": "The Princess Louise",
+      "address": "208 High Holborn, London WC1V 7BW",
+      "lat": 51.5181,
+      "lng": -0.1207,
+      "rating": 4.5,
+      "reviews": 2034
+    },
+    {
+      "id": "8",
+      "name": "The Lamb",
+      "address": "94 Lamb's Conduit St, London WC1N 3LZ",
+      "lat": 51.5228,
+      "lng": -0.1203,
+      "rating": 4.4,
+      "reviews": 1543
+    },
+    {
+      "id": "9",
+      "name": "The George Inn",
+      "address": "77 Borough High St, London SE1 1NH",
+      "lat": 51.5046,
+      "lng": -0.0924,
+      "rating": 4.3,
+      "reviews": 3245
+    },
+    {
+      "id": "10",
+      "name": "The Blackfriar",
+      "address": "174 Queen Victoria St, London EC4V 4EG",
+      "lat": 51.5123,
+      "lng": -0.1032,
+      "rating": 4.5,
+      "reviews": 2891
+    },
+    {
+      "id": "11",
+      "name": "The Jerusalem Tavern",
+      "address": "55 Britton St, London EC1M 5UQ",
+      "lat": 51.5217,
+      "lng": -0.1034,
+      "rating": 4.4,
+      "reviews": 987
+    },
+    {
+      "id": "12",
+      "name": "The Harp",
+      "address": "47 Chandos Pl, London WC2N 4HS",
+      "lat": 51.5099,
+      "lng": -0.1252,
+      "rating": 4.6,
+      "reviews": 1654
+    },
+    {
+      "id": "13",
+      "name": "The Coal Hole",
+      "address": "91-92 Strand, London WC2R 0DW",
+      "lat": 51.5101,
+      "lng": -0.1219,
+      "rating": 4.2,
+      "reviews": 876
+    },
+    {
+      "id": "14",
+      "name": "The Prospect of Whitby",
+      "address": "57 Wapping Wall, London E1W 3SH",
+      "lat": 51.5042,
+      "lng": -0.0575,
+      "rating": 4.3,
+      "reviews": 2543
+    },
+    {
+      "id": "15",
+      "name": "The Cittie of Yorke",
+      "address": "22 High Holborn, London WC1V 6BN",
+      "lat": 51.5175,
+      "lng": -0.1156,
+      "rating": 4.4,
+      "reviews": 1234
+    },
+    {
+      "id": "16",
+      "name": "The Seven Stars",
+      "address": "53-54 Carey St, London WC2A 2JB",
+      "lat": 51.5147,
+      "lng": -0.1141,
+      "rating": 4.5,
+      "reviews": 765
+    },
+    {
+      "id": "17",
+      "name": "The Captain Kidd",
+      "address": "108 Wapping High St, London E1W 2NE",
+      "lat": 51.5057,
+      "lng": -0.0593,
+      "rating": 4.2,
+      "reviews": 1432
+    },
+    {
+      "id": "18",
+      "name": "The Old Bell Tavern",
+      "address": "95 Fleet St, London EC4Y 1DH",
+      "lat": 51.5142,
+      "lng": -0.1089,
+      "rating": 4.3,
+      "reviews": 1098
+    }
+  ],
+  "fetchedAt": "2026-03-08T20:30:00.000Z",
+  "note": "Curated list of historic London pubs. Replace with real Google Places data if needed."
+}
