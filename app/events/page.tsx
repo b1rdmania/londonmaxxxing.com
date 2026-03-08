@@ -95,10 +95,14 @@ export default function EventsPage() {
         <div className="topbar-brand">
           <h1>London tech heatmap 🔥</h1>
           <span className="topbar-cta">
-            [{filteredEvents.length} events] [
-            <Link href="/">map</Link>
+            [By{" "}
+            <a href="https://x.com/b1rdmania" target="_blank" rel="noreferrer">
+              b1rdmania
+            </a>
+            ] [{filteredEvents.length} events] [
+            <Link href="/">Map</Link>
             ] [
-            <Link href="/events">events</Link>
+            <Link href="/events">Events</Link>
             ]
           </span>
         </div>
