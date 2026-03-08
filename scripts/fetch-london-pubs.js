@@ -186,7 +186,7 @@ async function fetchPubsForPoint(point, radius = 1500) {
         headers: {
           'Content-Type': 'application/json',
           'X-Goog-Api-Key': apiKey,
-          'X-Goog-FieldMask': 'places.id,places.displayName,places.formattedAddress,places.location,places.rating,places.userRatingCount,places.googleMapsUri,places.websiteUri'
+          'X-Goog-FieldMask': 'places.id,places.displayName,places.formattedAddress,places.location,places.rating,places.userRatingCount,places.googleMapsUri,places.websiteUri,places.types'
         },
         body: JSON.stringify({
           includedTypes: ['bar'],
@@ -213,42 +213,34 @@ async function fetchPubsForPoint(point, radius = 1500) {
 
     const pubs = data.places
       .filter(place => {
+        const types = place.types || [];
         const name = place.displayName?.text?.toLowerCase() || '';
-        const address = place.formattedAddress?.toLowerCase() || '';
 
-        // STRICT exclusions - hotels, hostels, lodging
-        if (name.includes('hotel') || name.includes('hostel') ||
-            name.includes('apartments') || name.includes('travelodge') ||
-            name.includes('premier inn') || name.includes('ibis') ||
-            name.includes('lodge') || name.includes('motel') ||
-            name.includes('suites') || name.includes('inn hotel') ||
-            name.includes('guest house') || name.includes('bnb') ||
-            name.includes('b&b') || name.includes('accommodation') ||
-            address.includes('hotel') || address.includes('hostel')) {
+        // Use Google's type classification - exclude lodging
+        const hasLodgingType = types.some(t =>
+          t === 'lodging' ||
+          t === 'hotel' ||
+          t === 'hostel' ||
+          t === 'guest_house' ||
+          t === 'motel'
+        );
+
+        if (hasLodgingType) {
           return false;
         }
 
-        // STRICT pub-only criteria - must match at least one
-        const isPub = name.includes(' pub') ||
-                      name.includes('pub ') ||
-                      name.endsWith('pub') ||
-                      name.startsWith('pub ');
+        // Must be classified as a bar by Google
+        const isBarType = types.includes('bar') || types.includes('night_club');
 
-        const isArms = name.includes('arms');
-        const isTavern = name.includes('tavern');
-        const isBrewery = name.includes('brewery') || name.includes('taproom') || name.includes('tap room');
-        const isAleHouse = name.includes('ale house') || name.includes('alehouse');
+        // Or have pub/brewery/tavern in the name (Google doesn't have a "pub" type)
+        const hasPubName = name.includes('pub') ||
+                          name.includes('arms') ||
+                          name.includes('tavern') ||
+                          name.includes('brewery') ||
+                          name.includes('ale house') ||
+                          name.includes('alehouse');
 
-        // "Inn" only if not part of hotel name
-        const isInn = (name.includes(' inn') || name.endsWith('inn')) &&
-                      !name.includes('inn hotel') &&
-                      !name.includes('inn &') &&
-                      !name.includes('inn at');
-
-        // Bar only if clearly a pub-style bar (with "the")
-        const isBar = name.startsWith('the ') && name.includes(' bar');
-
-        return isPub || isArms || isTavern || isBrewery || isAleHouse || isInn || isBar;
+        return isBarType || hasPubName;
       })
       .map(place => ({
         id: place.id || Math.random().toString(),
