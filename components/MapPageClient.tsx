@@ -74,9 +74,9 @@ export default function MapPageClient({ ecosystemPoints }: MapPageClientProps) {
               b1rdmania
             </a>
             ] [{ecosystemPoints.length} so far] [
-            <a href="/events" rel="noreferrer">
-              Events
-            </a>
+            <a href="/">Map</a>
+            ] [
+            <a href="/events">Events</a>
             ]
           </span>
         </div>
