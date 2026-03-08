@@ -113,6 +113,62 @@ const searchPoints = [
   { lat: 51.5500, lng: -0.1800, name: 'Swiss Cottage' },
   { lat: 51.5700, lng: -0.1150, name: 'Highgate Village' },
   { lat: 51.5850, lng: -0.1350, name: 'East Finchley' },
+
+  // Outer London - North (M25 ring)
+  { lat: 51.6250, lng: -0.1350, name: 'Barnet' },
+  { lat: 51.6500, lng: -0.2100, name: 'Edgware' },
+  { lat: 51.6450, lng: -0.0800, name: 'Enfield' },
+  { lat: 51.6200, lng: -0.0700, name: 'Southgate' },
+  { lat: 51.6100, lng: -0.1100, name: 'Finchley' },
+  { lat: 51.6350, lng: -0.2800, name: 'Stanmore' },
+  { lat: 51.6000, lng: -0.2500, name: 'Hendon' },
+
+  // Outer London - East (M25 ring)
+  { lat: 51.5900, lng: -0.0100, name: 'Walthamstow' },
+  { lat: 51.6350, lng: -0.0450, name: 'Chingford' },
+  { lat: 51.5700, lng: 0.0100, name: 'Leyton' },
+  { lat: 51.5600, lng: 0.0400, name: 'Leytonstone' },
+  { lat: 51.5850, lng: 0.0650, name: 'Woodford' },
+  { lat: 51.5650, lng: 0.1050, name: 'Redbridge' },
+  { lat: 51.5400, lng: 0.0700, name: 'Stratford' },
+  { lat: 51.5200, lng: 0.1250, name: 'East Ham' },
+  { lat: 51.4900, lng: 0.0850, name: 'Woolwich' },
+  { lat: 51.4500, lng: 0.0150, name: 'Eltham' },
+  { lat: 51.4250, lng: 0.0100, name: 'Sidcup' },
+
+  // Outer London - South (M25 ring)
+  { lat: 51.3850, lng: -0.1050, name: 'Croydon' },
+  { lat: 51.3500, lng: -0.1200, name: 'Purley' },
+  { lat: 51.3800, lng: -0.0350, name: 'Bromley' },
+  { lat: 51.4050, lng: -0.0150, name: 'Beckenham' },
+  { lat: 51.4200, lng: -0.0700, name: 'Crystal Palace' },
+  { lat: 51.4050, lng: -0.1400, name: 'Mitcham' },
+  { lat: 51.3700, lng: -0.1600, name: 'Sutton' },
+  { lat: 51.3550, lng: -0.2050, name: 'Epsom' },
+  { lat: 51.4300, lng: -0.2100, name: 'Wimbledon' },
+  { lat: 51.4150, lng: -0.2500, name: 'Morden' },
+  { lat: 51.3900, lng: -0.2800, name: 'Kingston' },
+
+  // Outer London - West (M25 ring)
+  { lat: 51.4300, lng: -0.3400, name: 'Richmond' },
+  { lat: 51.4650, lng: -0.3200, name: 'Twickenham' },
+  { lat: 51.4900, lng: -0.3100, name: 'Hounslow' },
+  { lat: 51.5100, lng: -0.3600, name: 'Brentford' },
+  { lat: 51.5350, lng: -0.3800, name: 'Ealing' },
+  { lat: 51.5550, lng: -0.3350, name: 'Acton' },
+  { lat: 51.5200, lng: -0.4200, name: 'Greenford' },
+  { lat: 51.5450, lng: -0.4600, name: 'Northolt' },
+  { lat: 51.5700, lng: -0.4200, name: 'Wembley' },
+  { lat: 51.5900, lng: -0.3500, name: 'Harrow' },
+  { lat: 51.6100, lng: -0.2900, name: 'Harrow Weald' },
+
+  // Northwest
+  { lat: 51.5800, lng: -0.2200, name: 'Brent Cross' },
+  { lat: 51.6200, lng: -0.2800, name: 'Mill Hill' },
+
+  // Southwest
+  { lat: 51.3800, lng: -0.3200, name: 'Surbiton' },
+  { lat: 51.4100, lng: -0.3000, name: 'New Malden' },
 ];
 
 async function fetchPubsForPoint(point, radius = 1500) {
