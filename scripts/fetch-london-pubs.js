@@ -216,25 +216,39 @@ async function fetchPubsForPoint(point, radius = 1500) {
         const name = place.displayName?.text?.toLowerCase() || '';
         const address = place.formattedAddress?.toLowerCase() || '';
 
-        // Exclude hotels, hostels, apartments
+        // STRICT exclusions - hotels, hostels, lodging
         if (name.includes('hotel') || name.includes('hostel') ||
             name.includes('apartments') || name.includes('travelodge') ||
             name.includes('premier inn') || name.includes('ibis') ||
+            name.includes('lodge') || name.includes('motel') ||
+            name.includes('suites') || name.includes('inn hotel') ||
+            name.includes('guest house') || name.includes('bnb') ||
+            name.includes('b&b') || name.includes('accommodation') ||
             address.includes('hotel') || address.includes('hostel')) {
           return false;
         }
 
-        // Include actual pubs
-        return name.includes('pub') ||
-               name.includes('arms') ||
-               name.includes('inn ') ||
-               name.includes('tavern') ||
-               name.includes(' bar') ||
-               name.includes('beer') ||
-               name.includes('brewery') ||
-               name.includes('tap room') ||
-               name.includes('ale house') ||
-               name.includes('the ') && (place.rating && place.rating > 4.0);
+        // STRICT pub-only criteria - must match at least one
+        const isPub = name.includes(' pub') ||
+                      name.includes('pub ') ||
+                      name.endsWith('pub') ||
+                      name.startsWith('pub ');
+
+        const isArms = name.includes('arms');
+        const isTavern = name.includes('tavern');
+        const isBrewery = name.includes('brewery') || name.includes('taproom') || name.includes('tap room');
+        const isAleHouse = name.includes('ale house') || name.includes('alehouse');
+
+        // "Inn" only if not part of hotel name
+        const isInn = (name.includes(' inn') || name.endsWith('inn')) &&
+                      !name.includes('inn hotel') &&
+                      !name.includes('inn &') &&
+                      !name.includes('inn at');
+
+        // Bar only if clearly a pub-style bar (with "the")
+        const isBar = name.startsWith('the ') && name.includes(' bar');
+
+        return isPub || isArms || isTavern || isBrewery || isAleHouse || isInn || isBar;
       })
       .map(place => ({
         id: place.id || Math.random().toString(),
