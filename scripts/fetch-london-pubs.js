@@ -73,6 +73,46 @@ const searchPoints = [
   { lat: 51.5145, lng: -0.1598, name: 'Mayfair' },
   { lat: 51.5036, lng: -0.1458, name: 'Westminster' },
   { lat: 51.4875, lng: -0.1229, name: 'Kennington' },
+
+  // More dense central coverage
+  { lat: 51.5200, lng: -0.0900, name: 'Clerkenwell' },
+  { lat: 51.5100, lng: -0.1100, name: 'Fleet Street' },
+  { lat: 51.5120, lng: -0.0900, name: 'Cannon Street' },
+  { lat: 51.5180, lng: -0.1500, name: 'Goodge Street' },
+  { lat: 51.5100, lng: -0.1450, name: 'Piccadilly' },
+  { lat: 51.5050, lng: -0.1150, name: 'Southwark' },
+  { lat: 51.5250, lng: -0.1250, name: 'King\'s Cross/St Pancras' },
+  { lat: 51.5350, lng: -0.1100, name: 'Angel' },
+
+  // More east
+  { lat: 51.5300, lng: -0.0300, name: 'Victoria Park' },
+  { lat: 51.5400, lng: -0.0300, name: 'Hackney Wick' },
+  { lat: 51.5150, lng: -0.0200, name: 'Bow' },
+  { lat: 51.5050, lng: -0.0350, name: 'Stepney' },
+  { lat: 51.5150, lng: -0.0050, name: 'Limehouse' },
+  { lat: 51.5050, lng: 0.0200, name: 'Poplar' },
+
+  // More west
+  { lat: 51.5100, lng: -0.2200, name: 'Westbourne Park' },
+  { lat: 51.5250, lng: -0.2200, name: 'Maida Vale' },
+  { lat: 51.5350, lng: -0.1700, name: 'Primrose Hill' },
+  { lat: 51.4900, lng: -0.2100, name: 'Holland Park' },
+
+  // More south
+  { lat: 51.4600, lng: -0.0900, name: 'Dulwich' },
+  { lat: 51.4500, lng: -0.1400, name: 'Streatham' },
+  { lat: 51.4550, lng: -0.1700, name: 'Tooting' },
+  { lat: 51.4750, lng: -0.1900, name: 'Wandsworth' },
+  { lat: 51.4650, lng: -0.1950, name: 'Balham' },
+  { lat: 51.4400, lng: -0.0800, name: 'Catford' },
+  { lat: 51.4550, lng: -0.0450, name: 'Blackheath' },
+
+  // More north
+  { lat: 51.5550, lng: -0.1650, name: 'Belsize Park' },
+  { lat: 51.5650, lng: -0.1750, name: 'West Hampstead' },
+  { lat: 51.5500, lng: -0.1800, name: 'Swiss Cottage' },
+  { lat: 51.5700, lng: -0.1150, name: 'Highgate Village' },
+  { lat: 51.5850, lng: -0.1350, name: 'East Finchley' },
 ];
 
 async function fetchPubsForPoint(point, radius = 1500) {
