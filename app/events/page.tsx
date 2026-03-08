@@ -103,6 +103,8 @@ export default function EventsPage() {
             <Link href="/">Map</Link>
             ] [
             <Link href="/events">Events</Link>
+            ] [
+            <Link href="/pubs">Pubs</Link>
             ]
           </span>
         </div>
