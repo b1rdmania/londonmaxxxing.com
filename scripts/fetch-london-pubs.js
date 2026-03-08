@@ -10,9 +10,12 @@ if (!apiKey) {
   process.exit(1);
 }
 
-// Grid of search points covering all of London
-// Covers City, West End, East London, South London, North London
-const searchPoints = [
+// Load dense auto-generated grid
+const searchPoints = require('./search-grid.js');
+
+/*
+// Original manual search points (replaced by dense grid)
+const manualSearchPoints = [
   // Central & City
   { lat: 51.5145, lng: -0.0906, name: 'City of London' },
   { lat: 51.5074, lng: -0.0977, name: 'Bank/Monument' },
@@ -170,6 +173,7 @@ const searchPoints = [
   { lat: 51.3800, lng: -0.3200, name: 'Surbiton' },
   { lat: 51.4100, lng: -0.3000, name: 'New Malden' },
 ];
+*/
 
 async function fetchPubsForPoint(point, radius = 1500) {
   console.log(`Fetching pubs near ${point.name}...`);
@@ -210,12 +214,27 @@ async function fetchPubsForPoint(point, radius = 1500) {
     const pubs = data.places
       .filter(place => {
         const name = place.displayName?.text?.toLowerCase() || '';
+        const address = place.formattedAddress?.toLowerCase() || '';
+
+        // Exclude hotels, hostels, apartments
+        if (name.includes('hotel') || name.includes('hostel') ||
+            name.includes('apartments') || name.includes('travelodge') ||
+            name.includes('premier inn') || name.includes('ibis') ||
+            address.includes('hotel') || address.includes('hostel')) {
+          return false;
+        }
+
+        // Include actual pubs
         return name.includes('pub') ||
                name.includes('arms') ||
-               name.includes('inn') ||
+               name.includes('inn ') ||
                name.includes('tavern') ||
-               name.includes('bar') ||
-               (place.rating && place.rating > 3.5);
+               name.includes(' bar') ||
+               name.includes('beer') ||
+               name.includes('brewery') ||
+               name.includes('tap room') ||
+               name.includes('ale house') ||
+               name.includes('the ') && (place.rating && place.rating > 4.0);
       })
       .map(place => ({
         id: place.id || Math.random().toString(),
