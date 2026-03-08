@@ -1,11 +1,11 @@
 import PubsPageClient from "@/components/PubsPageClient";
 
 export const metadata = {
-  title: "London Pubs // londonmaxxxing.com",
-  description: "485 pubs across London - from City of London to Shoreditch, Soho to Greenwich",
+  title: "london tech heatmap 🍺",
+  description: "where london tech happens. vcs, ai labs, fintech, web3.",
   openGraph: {
-    title: "London Pubs 🍺",
-    description: "485 pubs across London",
+    title: "london tech heatmap 🍺",
+    description: "where london tech happens. vcs, ai labs, fintech, web3.",
     images: [
       {
         url: "/pubs-og.jpg",
@@ -17,8 +17,8 @@ export const metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "London Pubs 🍺",
-    description: "485 pubs across London",
+    title: "london tech heatmap 🍺",
+    description: "where london tech happens. vcs, ai labs, fintech, web3.",
     images: ["/pubs-og.jpg"]
   }
 };
