@@ -1,0 +1,210 @@
+// Fetch comprehensive London pubs data from Google Places API
+// Usage: GOOGLE_MAPS_API_KEY=xxx node scripts/fetch-london-pubs.js
+
+const fs = require('fs');
+
+const apiKey = process.env.GOOGLE_MAPS_API_KEY;
+
+if (!apiKey) {
+  console.error('Error: Set GOOGLE_MAPS_API_KEY environment variable');
+  process.exit(1);
+}
+
+// Grid of search points covering all of London
+// Covers City, West End, East London, South London, North London
+const searchPoints = [
+  // Central & City
+  { lat: 51.5145, lng: -0.0906, name: 'City of London' },
+  { lat: 51.5074, lng: -0.0977, name: 'Bank/Monument' },
+  { lat: 51.5155, lng: -0.1076, name: 'Farringdon/Barbican' },
+  { lat: 51.5194, lng: -0.1269, name: 'Bloomsbury' },
+  { lat: 51.5074, lng: -0.1278, name: 'Trafalgar Square' },
+  { lat: 51.5136, lng: -0.1361, name: 'Soho' },
+  { lat: 51.5123, lng: -0.1200, name: 'Covent Garden' },
+  { lat: 51.5152, lng: -0.1419, name: 'Fitzrovia' },
+  { lat: 51.5175, lng: -0.1162, name: 'Holborn' },
+
+  // East London
+  { lat: 51.5186, lng: -0.0750, name: 'Spitalfields/Shoreditch' },
+  { lat: 51.5251, lng: -0.0834, name: 'Hoxton' },
+  { lat: 51.5309, lng: -0.0590, name: 'Hackney' },
+  { lat: 51.5433, lng: -0.0553, name: 'Stoke Newington' },
+  { lat: 51.5099, lng: -0.0813, name: 'Aldgate' },
+  { lat: 51.5155, lng: -0.0550, name: 'Bethnal Green' },
+  { lat: 51.5226, lng: -0.0437, name: 'Mile End' },
+  { lat: 51.5099, lng: -0.0564, name: 'Wapping/Shadwell' },
+
+  // West London
+  { lat: 51.5186, lng: -0.1707, name: 'Marylebone' },
+  { lat: 51.5152, lng: -0.1907, name: 'Paddington' },
+  { lat: 51.5074, lng: -0.1950, name: 'Notting Hill' },
+  { lat: 51.4927, lng: -0.1931, name: 'Kensington' },
+  { lat: 51.4947, lng: -0.1773, name: 'South Kensington' },
+  { lat: 51.4875, lng: -0.1687, name: 'Chelsea' },
+  { lat: 51.5194, lng: -0.2078, name: 'Bayswater' },
+  { lat: 51.5230, lng: -0.1547, name: 'Regent\'s Park' },
+
+  // North London
+  { lat: 51.5454, lng: -0.1427, name: 'Camden' },
+  { lat: 51.5387, lng: -0.1434, name: 'Kentish Town' },
+  { lat: 51.5656, lng: -0.1058, name: 'Highgate' },
+  { lat: 51.5749, lng: -0.1463, name: 'Hampstead' },
+  { lat: 51.5588, lng: -0.1410, name: 'Gospel Oak' },
+  { lat: 51.5311, lng: -0.1042, name: 'King\'s Cross' },
+  { lat: 51.5477, lng: -0.1053, name: 'Islington' },
+
+  // South London
+  { lat: 51.5007, lng: -0.1246, name: 'Waterloo/South Bank' },
+  { lat: 51.5048, lng: -0.0863, name: 'Borough/London Bridge' },
+  { lat: 51.4826, lng: -0.0929, name: 'Elephant & Castle' },
+  { lat: 51.4624, lng: -0.1149, name: 'Camberwell' },
+  { lat: 51.4995, lng: -0.1357, name: 'Lambeth' },
+  { lat: 51.4716, lng: -0.1303, name: 'Brixton' },
+  { lat: 51.4861, lng: -0.1696, name: 'Battersea' },
+  { lat: 51.4706, lng: -0.1615, name: 'Clapham' },
+  { lat: 51.4713, lng: -0.0632, name: 'Peckham' },
+  { lat: 51.4826, lng: -0.0077, name: 'Greenwich' },
+  { lat: 51.4578, lng: -0.0137, name: 'Lewisham' },
+
+  // Additional coverage
+  { lat: 51.5462, lng: -0.0586, name: 'Dalston' },
+  { lat: 51.4995, lng: 0.0051, name: 'Canary Wharf' },
+  { lat: 51.5074, lng: -0.0644, name: 'Whitechapel' },
+  { lat: 51.5145, lng: -0.1598, name: 'Mayfair' },
+  { lat: 51.5036, lng: -0.1458, name: 'Westminster' },
+  { lat: 51.4875, lng: -0.1229, name: 'Kennington' },
+];
+
+async function fetchPubsForPoint(point, radius = 1500) {
+  console.log(`Fetching pubs near ${point.name}...`);
+
+  try {
+    const response = await fetch(
+      'https://places.googleapis.com/v1/places:searchNearby',
+      {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+          'X-Goog-Api-Key': apiKey,
+          'X-Goog-FieldMask': 'places.id,places.displayName,places.formattedAddress,places.location,places.rating,places.userRatingCount,places.googleMapsUri,places.websiteUri'
+        },
+        body: JSON.stringify({
+          includedTypes: ['bar'],
+          maxResultCount: 20,
+          locationRestriction: {
+            circle: {
+              center: {
+                latitude: point.lat,
+                longitude: point.lng
+              },
+              radius: radius
+            }
+          }
+        })
+      }
+    );
+
+    const data = await response.json();
+
+    if (!data.places) {
+      console.log(`  No places found for ${point.name}`);
+      return [];
+    }
+
+    const pubs = data.places
+      .filter(place => {
+        const name = place.displayName?.text?.toLowerCase() || '';
+        return name.includes('pub') ||
+               name.includes('arms') ||
+               name.includes('inn') ||
+               name.includes('tavern') ||
+               name.includes('bar') ||
+               (place.rating && place.rating > 3.5);
+      })
+      .map(place => ({
+        id: place.id || Math.random().toString(),
+        name: place.displayName?.text || 'Unknown Pub',
+        address: place.formattedAddress || '',
+        lat: place.location?.latitude || 0,
+        lng: place.location?.longitude || 0,
+        rating: place.rating || 0,
+        reviews: place.userRatingCount || 0,
+        mapsUrl: place.googleMapsUri || '',
+        website: place.websiteUri || null
+      }));
+
+    console.log(`  Found ${pubs.length} pubs in ${point.name}`);
+    return pubs;
+
+  } catch (error) {
+    console.error(`Error fetching ${point.name}:`, error.message);
+    return [];
+  }
+}
+
+async function fetchAllPubs() {
+  const allPubs = [];
+  const seenIds = new Set();
+
+  // Fetch from each point with delay to avoid rate limits
+  for (let i = 0; i < searchPoints.length; i++) {
+    const pubs = await fetchPubsForPoint(searchPoints[i]);
+
+    // Deduplicate by ID
+    for (const pub of pubs) {
+      if (!seenIds.has(pub.id)) {
+        seenIds.add(pub.id);
+        allPubs.push(pub);
+      }
+    }
+
+    // Progress update
+    console.log(`Progress: ${i + 1}/${searchPoints.length} areas searched, ${allPubs.length} unique pubs found\n`);
+
+    // Delay to avoid rate limiting (adjust as needed)
+    if (i < searchPoints.length - 1) {
+      await new Promise(resolve => setTimeout(resolve, 1000));
+    }
+  }
+
+  return allPubs;
+}
+
+async function main() {
+  console.log('🍺 Fetching London pubs from Google Places API...\n');
+  console.log(`Searching ${searchPoints.length} locations across London\n`);
+
+  const pubs = await fetchAllPubs();
+
+  // Sort by rating and reviews
+  pubs.sort((a, b) => {
+    if (b.rating !== a.rating) return b.rating - a.rating;
+    return b.reviews - a.reviews;
+  });
+
+  const output = {
+    pubs,
+    fetchedAt: new Date().toISOString(),
+    totalPubs: pubs.length,
+    searchPoints: searchPoints.length
+  };
+
+  fs.writeFileSync(
+    'data/pubs.json',
+    JSON.stringify(output, null, 2)
+  );
+
+  console.log('\n✅ Complete!');
+  console.log(`📊 Total unique pubs: ${pubs.length}`);
+  console.log(`💾 Saved to data/pubs.json`);
+
+  console.log('\n🏆 Top 10 pubs by rating:');
+  pubs.slice(0, 10).forEach((pub, i) => {
+    console.log(`  ${i + 1}. ${pub.name} - ⭐ ${pub.rating} (${pub.reviews} reviews)`);
+  });
+}
+
+main().catch(error => {
+  console.error('Fatal error:', error);
+  process.exit(1);
+});
