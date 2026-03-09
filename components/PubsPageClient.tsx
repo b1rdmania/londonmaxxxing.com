@@ -36,7 +36,7 @@ export default function PubsPageClient() {
             <a href="https://x.com/b1rdmania" target="_blank" rel="noreferrer">
               b1rdmania
             </a>
-            ] [{pubsData.pubs.length} pubs] [
+            ] [<span className="mobile-hide">{pubsData.pubs.length} pubs</span><span className="mobile-hide">] [</span>
             <a href="/">Map</a>
             ] [
             <a href="/events">Events</a>

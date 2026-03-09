@@ -99,7 +99,7 @@ export default function EventsPage() {
             <a href="https://x.com/b1rdmania" target="_blank" rel="noreferrer">
               b1rdmania
             </a>
-            ] [{filteredEvents.length} events] [
+            ] [<span className="mobile-hide">{filteredEvents.length} events</span><span className="mobile-hide">] [</span>
             <Link href="/">Map</Link>
             ] [
             <Link href="/events">Events</Link>

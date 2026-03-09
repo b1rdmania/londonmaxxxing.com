@@ -251,6 +251,11 @@ body {
     white-space: nowrap;
   }
 
+  /* Hide count on mobile so nav links fit */
+  .mobile-hide {
+    display: none;
+  }
+
   /* Hide Share/Embed links on mobile */
   .share-embed-links {
     display: none;

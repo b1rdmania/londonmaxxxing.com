@@ -73,7 +73,7 @@ export default function MapPageClient({ ecosystemPoints }: MapPageClientProps) {
             <a href="https://x.com/b1rdmania" target="_blank" rel="noreferrer">
               b1rdmania
             </a>
-            ] [{ecosystemPoints.length} so far] [
+            ] [<span className="mobile-hide">{ecosystemPoints.length} so far</span><span className="mobile-hide">] [</span>
             <a href="/">Map</a>
             ] [
             <a href="/events">Events</a>
