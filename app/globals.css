@@ -388,60 +388,6 @@ body {
   display: none;
 }
 
-/* Embed legend for mobile/thin screens */
-.embed-legend {
-  position: absolute;
-  bottom: 20px;
-  left: 20px;
-  z-index: 10;
-  display: flex;
-  flex-wrap: wrap;
-  gap: 8px;
-  max-width: calc(100% - 40px);
-  background: rgba(255, 255, 255, 0.95);
-  padding: 12px;
-  border-radius: 8px;
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
-}
-
-.legend-btn {
-  border: 1px solid #ddd;
-  background: #fff;
-  color: #000;
-  font-size: 12px;
-  padding: 6px 12px;
-  cursor: pointer;
-  border-radius: 4px;
-  display: flex;
-  align-items: center;
-  gap: 6px;
-  transition: opacity 0.2s;
-}
-
-.legend-btn:hover {
-  opacity: 0.7;
-}
-
-.legend-btn.active {
-  background: #f5f5f5;
-  border-color: #999;
-}
-
-@media (max-width: 768px) {
-  .embed-legend {
-    bottom: 10px;
-    left: 10px;
-    max-width: calc(100% - 20px);
-    padding: 8px;
-    gap: 6px;
-  }
-
-  .legend-btn {
-    font-size: 11px;
-    padding: 5px 10px;
-  }
-}
-
 /* Embed code generator */
 .embed-generator {
   min-height: 100vh;

@@ -94,22 +94,6 @@ export default function EmbedPageClient({ ecosystemPoints }: EmbedPageClientProp
 
   return (
     <main className="shell embed-mode">
-      <nav className="embed-legend" aria-label="Map layers">
-        {availableTypes.map((type) => {
-          const isOn = enabledByType[type];
-          return (
-            <button
-              key={type}
-              type="button"
-              className={isOn ? "legend-btn active" : "legend-btn"}
-              onClick={() => setEnabledByType((state) => ({ ...state, [type]: !state[type] }))}
-            >
-              <span className="dot" style={{ background: isOn ? ECOSYSTEM_META[type].color : "transparent", borderColor: ECOSYSTEM_META[type].color }} aria-hidden="true" />
-              {ECOSYSTEM_META[type].label}
-            </button>
-          );
-        })}
-      </nav>
       <Map ecosystemPoints={ecosystemPoints} enabledTypes={enabledTypes} />
     </main>
   );
