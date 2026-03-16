@@ -35,6 +35,7 @@ const DEFAULT_VISIBLE_TYPES: EcosystemType[] = ["vc", "funding", "ai", "ai_bio",
 
 export default function EmbedPageClient({ ecosystemPoints }: EmbedPageClientProps) {
   const searchParams = useSearchParams();
+  const [legendOpen, setLegendOpen] = useState(false);
 
   // Parse URL params for filtering
   const categoryParam = searchParams.get("category");
@@ -95,6 +96,92 @@ export default function EmbedPageClient({ ecosystemPoints }: EmbedPageClientProp
   return (
     <main className="shell embed-mode">
       <Map ecosystemPoints={ecosystemPoints} enabledTypes={enabledTypes} />
+
+      {/* Legend toggle */}
+      <div style={{
+        position: 'absolute',
+        top: '12px',
+        right: '12px',
+        zIndex: 10
+      }}>
+        <button
+          onClick={() => setLegendOpen(!legendOpen)}
+          style={{
+            background: 'rgba(255, 255, 255, 0.95)',
+            border: '1px solid #ddd',
+            borderRadius: '4px',
+            padding: '8px 12px',
+            cursor: 'pointer',
+            fontSize: '12px',
+            fontFamily: '"Times New Roman", Times, serif',
+            display: 'flex',
+            alignItems: 'center',
+            gap: '6px',
+            boxShadow: '0 2px 4px rgba(0, 0, 0, 0.1)'
+          }}
+        >
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+            <circle cx="12" cy="12" r="10"/>
+            <line x1="12" y1="16" x2="12" y2="12"/>
+            <line x1="12" y1="8" x2="12.01" y2="8"/>
+          </svg>
+          Legend
+        </button>
+
+        {legendOpen && (
+          <div style={{
+            background: 'rgba(255, 255, 255, 0.95)',
+            border: '1px solid #ddd',
+            borderRadius: '4px',
+            padding: '12px',
+            marginTop: '8px',
+            boxShadow: '0 2px 8px rgba(0, 0, 0, 0.15)',
+            minWidth: '180px'
+          }}>
+            <div style={{
+              fontSize: '11px',
+              fontWeight: '600',
+              marginBottom: '8px',
+              fontFamily: '"Times New Roman", Times, serif',
+              color: '#666'
+            }}>
+              COMPANY TYPES
+            </div>
+            <div style={{
+              display: 'flex',
+              flexDirection: 'column',
+              gap: '6px'
+            }}>
+              {availableTypes.map((type) => {
+                const meta = ECOSYSTEM_META[type];
+                return (
+                  <div
+                    key={type}
+                    style={{
+                      display: 'flex',
+                      alignItems: 'center',
+                      gap: '8px',
+                      fontSize: '12px',
+                      fontFamily: '"Times New Roman", Times, serif'
+                    }}
+                  >
+                    <div style={{
+                      width: '10px',
+                      height: '10px',
+                      borderRadius: '50%',
+                      backgroundColor: meta.color,
+                      border: '1px solid #fff',
+                      boxShadow: '0 0 0 1px rgba(0,0,0,0.1)',
+                      flexShrink: 0
+                    }} />
+                    <span>{meta.label}</span>
+                  </div>
+                );
+              })}
+            </div>
+          </div>
+        )}
+      </div>
     </main>
   );
 }
